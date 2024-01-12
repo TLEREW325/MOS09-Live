@@ -1,0 +1,104 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class PrintRecurringPayment
+    Inherits System.Windows.Forms.Form
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
+        Me.FileExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.EmailToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
+        Me.CRVARRecurringPayment = New CrystalDecisions.Windows.Forms.CrystalReportViewer
+        Me.MenuStrip1.SuspendLayout()
+        Me.SuspendLayout()
+        '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileExitToolStripMenuItem, Me.ExitToolStripMenuItem, Me.ExitToolStripMenuItem1})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(1034, 24)
+        Me.MenuStrip1.TabIndex = 0
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'FileExitToolStripMenuItem
+        '
+        Me.FileExitToolStripMenuItem.Name = "FileExitToolStripMenuItem"
+        Me.FileExitToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileExitToolStripMenuItem.Text = "File"
+        '
+        'ExitToolStripMenuItem
+        '
+        Me.ExitToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmailToolStripMenuItem})
+        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.ExitToolStripMenuItem.Text = "Edit"
+        '
+        'EmailToolStripMenuItem
+        '
+        Me.EmailToolStripMenuItem.Name = "EmailToolStripMenuItem"
+        Me.EmailToolStripMenuItem.Size = New System.Drawing.Size(98, 22)
+        Me.EmailToolStripMenuItem.Text = "Email"
+        '
+        'ExitToolStripMenuItem1
+        '
+        Me.ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1"
+        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(37, 20)
+        Me.ExitToolStripMenuItem1.Text = "Exit"
+        '
+        'CRVARRecurringPayment
+        '
+        Me.CRVARRecurringPayment.ActiveViewIndex = -1
+        Me.CRVARRecurringPayment.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.CRVARRecurringPayment.DisplayGroupTree = False
+        Me.CRVARRecurringPayment.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CRVARRecurringPayment.Location = New System.Drawing.Point(0, 24)
+        Me.CRVARRecurringPayment.Name = "CRVARRecurringPayment"
+        Me.CRVARRecurringPayment.SelectionFormula = ""
+        Me.CRVARRecurringPayment.Size = New System.Drawing.Size(1034, 737)
+        Me.CRVARRecurringPayment.TabIndex = 1
+        Me.CRVARRecurringPayment.ViewTimeSelectionFormula = ""
+        '
+        'PrintRecurringPayment
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(1034, 761)
+        Me.Controls.Add(Me.CRVARRecurringPayment)
+        Me.Controls.Add(Me.MenuStrip1)
+        Me.MainMenuStrip = Me.MenuStrip1
+        Me.Name = "PrintRecurringPayment"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Print AR Recurring Payment"
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
+    End Sub
+    Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
+    Friend WithEvents FileExitToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ExitToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents CRVARRecurringPayment As CrystalDecisions.Windows.Forms.CrystalReportViewer
+    Friend WithEvents EmailToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ExitToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+End Class

@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="cmdProcessForCredit.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="cmdProcessForCredit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="cmdProcessForCredit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>497, 326</value>
+  </data>
+  <data name="cmdProcessForCredit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 40</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="cmdProcessForCredit.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="cmdProcessForCredit.Text" xml:space="preserve">
+    <value>Process For Credit</value>
+  </data>
+  <data name="&gt;&gt;cmdProcessForCredit.Name" xml:space="preserve">
+    <value>cmdProcessForCredit</value>
+  </data>
+  <data name="&gt;&gt;cmdProcessForCredit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmdProcessForCredit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cmdProcessForCredit.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cmdExit.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="cmdExit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cmdExit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>574, 326</value>
+  </data>
+  <data name="cmdExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 40</value>
+  </data>
+  <data name="cmdExit.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="cmdExit.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="&gt;&gt;cmdExit.Name" xml:space="preserve">
+    <value>cmdExit</value>
+  </data>
+  <data name="&gt;&gt;cmdExit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmdExit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cmdExit.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cmdCheckAll.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="cmdCheckAll.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cmdCheckAll.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 326</value>
+  </data>
+  <data name="cmdCheckAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 40</value>
+  </data>
+  <data name="cmdCheckAll.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="cmdCheckAll.Text" xml:space="preserve">
+    <value>Check All</value>
+  </data>
+  <data name="&gt;&gt;cmdCheckAll.Name" xml:space="preserve">
+    <value>cmdCheckAll</value>
+  </data>
+  <data name="&gt;&gt;cmdCheckAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmdCheckAll.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cmdCheckAll.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="cmdUnCheckAll.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="cmdUnCheckAll.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cmdUnCheckAll.Location" type="System.Drawing.Point, System.Drawing">
+    <value>89, 326</value>
+  </data>
+  <data name="cmdUnCheckAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 40</value>
+  </data>
+  <data name="cmdUnCheckAll.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="cmdUnCheckAll.Text" xml:space="preserve">
+    <value>Uncheck All</value>
+  </data>
+  <data name="&gt;&gt;cmdUnCheckAll.Name" xml:space="preserve">
+    <value>cmdUnCheckAll</value>
+  </data>
+  <data name="&gt;&gt;cmdUnCheckAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmdUnCheckAll.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cmdUnCheckAll.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="dgvCustomerReturns.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <metadata name="SelectForProcessing.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="SelectForProcessing.HeaderText" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="SelectForProcessing.Width" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="ReturnNumberColumn.HeaderText" xml:space="preserve">
+    <value>Return #</value>
+  </data>
+  <data name="ReturnNumberColumn.Width" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="ReturnDateColumn.HeaderText" xml:space="preserve">
+    <value>Return Date</value>
+  </data>
+  <data name="ReturnDateColumn.Width" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="CustomerIDColumn.HeaderText" xml:space="preserve">
+    <value>Customer ID</value>
+  </data>
+  <data name="DivisionIDColumn.HeaderText" xml:space="preserve">
+    <value>DivisionID</value>
+  </data>
+  <data name="DivisionIDColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="SalesOrderNumberColumn.HeaderText" xml:space="preserve">
+    <value>SO #</value>
+  </data>
+  <data name="SalesOrderNumberColumn.Width" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="SalespersonColumn.HeaderText" xml:space="preserve">
+    <value>Salesperson</value>
+  </data>
+  <data name="SalespersonColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <metadata name="CustomerPOColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="CustomerPOColumn.HeaderText" xml:space="preserve">
+    <value>Cust. PO</value>
+  </data>
+  <data name="ProductTotalColumn.HeaderText" xml:space="preserve">
+    <value>Product Total</value>
+  </data>
+  <data name="ProductTotalColumn.Width" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="FreightTotalColumn.HeaderText" xml:space="preserve">
+    <value>Freight Total</value>
+  </data>
+  <data name="FreightTotalColumn.Width" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="SalesTaxTotalColumn.HeaderText" xml:space="preserve">
+    <value>Sales Tax Total</value>
+  </data>
+  <data name="SalesTaxTotalColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="SalesTaxTotalColumn.Width" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <metadata name="SalesTax2TotalColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="SalesTax2TotalColumn.HeaderText" xml:space="preserve">
+    <value>SalesTax2Total</value>
+  </data>
+  <data name="SalesTax2TotalColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <metadata name="SalesTax3TotalColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="SalesTax3TotalColumn.HeaderText" xml:space="preserve">
+    <value>SalesTax3Total</value>
+  </data>
+  <data name="SalesTax3TotalColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="OtherTotalColumn.HeaderText" xml:space="preserve">
+    <value>Other Total</value>
+  </data>
+  <data name="OtherTotalColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="OtherTotalColumn.Width" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="ReturnTotalColumn.HeaderText" xml:space="preserve">
+    <value>Return Total</value>
+  </data>
+  <data name="ReturnTotalColumn.Width" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="ReasonColumn.HeaderText" xml:space="preserve">
+    <value>Reason</value>
+  </data>
+  <data name="ReasonColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <metadata name="CustomerClassColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="CustomerClassColumn.HeaderText" xml:space="preserve">
+    <value>CustomerClass</value>
+  </data>
+  <data name="CustomerClassColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <metadata name="FOBColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="FOBColumn.HeaderText" xml:space="preserve">
+    <value>FOB</value>
+  </data>
+  <data name="FOBColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ReturnStatusColumn.HeaderText" xml:space="preserve">
+    <value>ReturnStatus</value>
+  </data>
+  <data name="ReturnStatusColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <metadata name="ReturnProductHeaderTableBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>247, 17</value>
+  </metadata>
+  <metadata name="SQLTFPOperationsDatabaseDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="dgvCustomerReturns.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 6</value>
+  </data>
+  <data name="dgvCustomerReturns.Size" type="System.Drawing.Size, System.Drawing">
+    <value>633, 314</value>
+  </data>
+  <data name="dgvCustomerReturns.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;dgvCustomerReturns.Name" xml:space="preserve">
+    <value>dgvCustomerReturns</value>
+  </data>
+  <data name="&gt;&gt;dgvCustomerReturns.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvCustomerReturns.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dgvCustomerReturns.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="AssemblyPartNumberColumn2.HeaderText" xml:space="preserve">
+    <value>AssemblyPartNumber</value>
+  </data>
+  <data name="SerialNumberColumn2.HeaderText" xml:space="preserve">
+    <value>SerialNumber</value>
+  </data>
+  <data name="DivisionIDColumn2.HeaderText" xml:space="preserve">
+    <value>DivisionID</value>
+  </data>
+  <data name="TotalCostColumn2.HeaderText" xml:space="preserve">
+    <value>TotalCost</value>
+  </data>
+  <data name="CommentColumn2.HeaderText" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="BuildDateColumn2.HeaderText" xml:space="preserve">
+    <value>BuildDate</value>
+  </data>
+  <data name="StatusColumn2.HeaderText" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="BuildNumberColumn2.HeaderText" xml:space="preserve">
+    <value>BuildNumber</value>
+  </data>
+  <data name="CustomerIDColumn2.HeaderText" xml:space="preserve">
+    <value>CustomerID</value>
+  </data>
+  <data name="BatchNumberColumn2.HeaderText" xml:space="preserve">
+    <value>BatchNumber</value>
+  </data>
+  <data name="TransactionNumberColumn2.HeaderText" xml:space="preserve">
+    <value>TransactionNumber</value>
+  </data>
+  <metadata name="AssemblySerialTempTableBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>269, 54</value>
+  </metadata>
+  <data name="dgvSerialLines.Location" type="System.Drawing.Point, System.Drawing">
+    <value>170, 217</value>
+  </data>
+  <data name="dgvSerialLines.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 40</value>
+  </data>
+  <data name="dgvSerialLines.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="dgvSerialLines.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;dgvSerialLines.Name" xml:space="preserve">
+    <value>dgvSerialLines</value>
+  </data>
+  <data name="&gt;&gt;dgvSerialLines.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvSerialLines.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dgvSerialLines.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <metadata name="ReturnProductHeaderTableTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 54</value>
+  </metadata>
+  <metadata name="AssemblySerialTempTableTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>521, 54</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>657, 378</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>TFP Corporation Select Customer Returns</value>
+  </data>
+  <data name="&gt;&gt;ReturnProductHeaderTableBindingSource.Name" xml:space="preserve">
+    <value>ReturnProductHeaderTableBindingSource</value>
+  </data>
+  <data name="&gt;&gt;ReturnProductHeaderTableBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SQLTFPOperationsDatabaseDataSet.Name" xml:space="preserve">
+    <value>SQLTFPOperationsDatabaseDataSet</value>
+  </data>
+  <data name="&gt;&gt;SQLTFPOperationsDatabaseDataSet.Type" xml:space="preserve">
+    <value>MOS09Program.SQLTFPOperationsDatabaseDataSet, SQLTFPOperationsDatabaseDataSet.Designer.vb, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;AssemblyPartNumberColumn2.Name" xml:space="preserve">
+    <value>AssemblyPartNumberColumn2</value>
+  </data>
+  <data name="&gt;&gt;AssemblyPartNumberColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SerialNumberColumn2.Name" xml:space="preserve">
+    <value>SerialNumberColumn2</value>
+  </data>
+  <data name="&gt;&gt;SerialNumberColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DivisionIDColumn2.Name" xml:space="preserve">
+    <value>DivisionIDColumn2</value>
+  </data>
+  <data name="&gt;&gt;DivisionIDColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TotalCostColumn2.Name" xml:space="preserve">
+    <value>TotalCostColumn2</value>
+  </data>
+  <data name="&gt;&gt;TotalCostColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CommentColumn2.Name" xml:space="preserve">
+    <value>CommentColumn2</value>
+  </data>
+  <data name="&gt;&gt;CommentColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BuildDateColumn2.Name" xml:space="preserve">
+    <value>BuildDateColumn2</value>
+  </data>
+  <data name="&gt;&gt;BuildDateColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;StatusColumn2.Name" xml:space="preserve">
+    <value>StatusColumn2</value>
+  </data>
+  <data name="&gt;&gt;StatusColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BuildNumberColumn2.Name" xml:space="preserve">
+    <value>BuildNumberColumn2</value>
+  </data>
+  <data name="&gt;&gt;BuildNumberColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CustomerIDColumn2.Name" xml:space="preserve">
+    <value>CustomerIDColumn2</value>
+  </data>
+  <data name="&gt;&gt;CustomerIDColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BatchNumberColumn2.Name" xml:space="preserve">
+    <value>BatchNumberColumn2</value>
+  </data>
+  <data name="&gt;&gt;BatchNumberColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TransactionNumberColumn2.Name" xml:space="preserve">
+    <value>TransactionNumberColumn2</value>
+  </data>
+  <data name="&gt;&gt;TransactionNumberColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AssemblySerialTempTableBindingSource.Name" xml:space="preserve">
+    <value>AssemblySerialTempTableBindingSource</value>
+  </data>
+  <data name="&gt;&gt;AssemblySerialTempTableBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ReturnProductHeaderTableTableAdapter.Name" xml:space="preserve">
+    <value>ReturnProductHeaderTableTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;ReturnProductHeaderTableTableAdapter.Type" xml:space="preserve">
+    <value>MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.ReturnProductHeaderTableTableAdapter, SQLTFPOperationsDatabaseDataSet.Designer.vb, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;AssemblySerialTempTableTableAdapter.Name" xml:space="preserve">
+    <value>AssemblySerialTempTableTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;AssemblySerialTempTableTableAdapter.Type" xml:space="preserve">
+    <value>MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.AssemblySerialTempTableTableAdapter, SQLTFPOperationsDatabaseDataSet.Designer.vb, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;SelectForProcessing.Name" xml:space="preserve">
+    <value>SelectForProcessing</value>
+  </data>
+  <data name="&gt;&gt;SelectForProcessing.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ReturnNumberColumn.Name" xml:space="preserve">
+    <value>ReturnNumberColumn</value>
+  </data>
+  <data name="&gt;&gt;ReturnNumberColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ReturnDateColumn.Name" xml:space="preserve">
+    <value>ReturnDateColumn</value>
+  </data>
+  <data name="&gt;&gt;ReturnDateColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CustomerIDColumn.Name" xml:space="preserve">
+    <value>CustomerIDColumn</value>
+  </data>
+  <data name="&gt;&gt;CustomerIDColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DivisionIDColumn.Name" xml:space="preserve">
+    <value>DivisionIDColumn</value>
+  </data>
+  <data name="&gt;&gt;DivisionIDColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SalesOrderNumberColumn.Name" xml:space="preserve">
+    <value>SalesOrderNumberColumn</value>
+  </data>
+  <data name="&gt;&gt;SalesOrderNumberColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SalespersonColumn.Name" xml:space="preserve">
+    <value>SalespersonColumn</value>
+  </data>
+  <data name="&gt;&gt;SalespersonColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CustomerPOColumn.Name" xml:space="preserve">
+    <value>CustomerPOColumn</value>
+  </data>
+  <data name="&gt;&gt;CustomerPOColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ProductTotalColumn.Name" xml:space="preserve">
+    <value>ProductTotalColumn</value>
+  </data>
+  <data name="&gt;&gt;ProductTotalColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FreightTotalColumn.Name" xml:space="preserve">
+    <value>FreightTotalColumn</value>
+  </data>
+  <data name="&gt;&gt;FreightTotalColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SalesTaxTotalColumn.Name" xml:space="preserve">
+    <value>SalesTaxTotalColumn</value>
+  </data>
+  <data name="&gt;&gt;SalesTaxTotalColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SalesTax2TotalColumn.Name" xml:space="preserve">
+    <value>SalesTax2TotalColumn</value>
+  </data>
+  <data name="&gt;&gt;SalesTax2TotalColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SalesTax3TotalColumn.Name" xml:space="preserve">
+    <value>SalesTax3TotalColumn</value>
+  </data>
+  <data name="&gt;&gt;SalesTax3TotalColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OtherTotalColumn.Name" xml:space="preserve">
+    <value>OtherTotalColumn</value>
+  </data>
+  <data name="&gt;&gt;OtherTotalColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ReturnTotalColumn.Name" xml:space="preserve">
+    <value>ReturnTotalColumn</value>
+  </data>
+  <data name="&gt;&gt;ReturnTotalColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ReasonColumn.Name" xml:space="preserve">
+    <value>ReasonColumn</value>
+  </data>
+  <data name="&gt;&gt;ReasonColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CustomerClassColumn.Name" xml:space="preserve">
+    <value>CustomerClassColumn</value>
+  </data>
+  <data name="&gt;&gt;CustomerClassColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FOBColumn.Name" xml:space="preserve">
+    <value>FOBColumn</value>
+  </data>
+  <data name="&gt;&gt;FOBColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ReturnStatusColumn.Name" xml:space="preserve">
+    <value>ReturnStatusColumn</value>
+  </data>
+  <data name="&gt;&gt;ReturnStatusColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>SelectCustomerReturnsForCredit</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
