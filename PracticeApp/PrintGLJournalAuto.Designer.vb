@@ -22,21 +22,27 @@ Partial Class PrintGLJournalAuto
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.CRJournalViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXGLJournalFiltered1 = New MOS09Program.CRXGLJournalFiltered
+        Me.CRJournalViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXGLJournalFiltered1 = New MOS09Program.CRXGLJournalFiltered()
         Me.SuspendLayout()
         '
         'CRJournalViewer
         '
         Me.CRJournalViewer.ActiveViewIndex = 0
         Me.CRJournalViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRJournalViewer.DisplayGroupTree = False
+        Me.CRJournalViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRJournalViewer.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRJournalViewer.Location = New System.Drawing.Point(0, 0)
         Me.CRJournalViewer.Name = "CRJournalViewer"
         Me.CRJournalViewer.ReportSource = Me.CRXGLJournalFiltered1
+        Me.CRJournalViewer.ShowGroupTreeButton = False
+        Me.CRJournalViewer.ShowLogo = False
+        Me.CRJournalViewer.ShowParameterPanelButton = False
+        Me.CRJournalViewer.ShowTextSearchButton = False
+        Me.CRJournalViewer.ShowZoomButton = False
         Me.CRJournalViewer.Size = New System.Drawing.Size(292, 273)
         Me.CRJournalViewer.TabIndex = 0
+        Me.CRJournalViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintGLJournalAuto
         '

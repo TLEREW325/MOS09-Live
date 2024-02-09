@@ -22,15 +22,15 @@ Partial Class PrintARCustomerHolds
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileFileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRCustomerViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXARCustomerHolds1 = New MOS09Program.CRXARCustomerHolds
-        Me.AllCompanyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileFileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AllCompanyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRCustomerViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXARCustomerHolds1 = New MOS09Program.CRXARCustomerHolds()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -46,21 +46,27 @@ Partial Class PrintARCustomerHolds
         'FileFileToolStripMenuItem
         '
         Me.FileFileToolStripMenuItem.Name = "FileFileToolStripMenuItem"
-        Me.FileFileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileFileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileFileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AllCompanyToolStripMenuItem})
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
+        '
+        'AllCompanyToolStripMenuItem
+        '
+        Me.AllCompanyToolStripMenuItem.Name = "AllCompanyToolStripMenuItem"
+        Me.AllCompanyToolStripMenuItem.Size = New System.Drawing.Size(143, 22)
+        Me.AllCompanyToolStripMenuItem.Text = "All Company"
         '
         'ExitToolStripMenuItem
         '
@@ -72,29 +78,26 @@ Partial Class PrintARCustomerHolds
         'ExitToolStripMenuItem1
         '
         Me.ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1"
-        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(92, 22)
         Me.ExitToolStripMenuItem1.Text = "Exit"
         '
         'CRCustomerViewer
         '
         Me.CRCustomerViewer.ActiveViewIndex = 0
         Me.CRCustomerViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRCustomerViewer.DisplayGroupTree = False
+        Me.CRCustomerViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRCustomerViewer.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRCustomerViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRCustomerViewer.Name = "CRCustomerViewer"
         Me.CRCustomerViewer.ReportSource = Me.CRXARCustomerHolds1
         Me.CRCustomerViewer.ShowGroupTreeButton = False
+        Me.CRCustomerViewer.ShowLogo = False
+        Me.CRCustomerViewer.ShowParameterPanelButton = False
         Me.CRCustomerViewer.ShowTextSearchButton = False
         Me.CRCustomerViewer.ShowZoomButton = False
         Me.CRCustomerViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRCustomerViewer.TabIndex = 1
-        '
-        'AllCompanyToolStripMenuItem
-        '
-        Me.AllCompanyToolStripMenuItem.Name = "AllCompanyToolStripMenuItem"
-        Me.AllCompanyToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.AllCompanyToolStripMenuItem.Text = "All Company"
+        Me.CRCustomerViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintARCustomerHolds
         '

@@ -22,14 +22,14 @@ Partial Class PrintInventoryTubList
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRTubViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXInventoryTubList1 = New MOS09Program.CRXInventoryTubList
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRTubViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXInventoryTubList1 = New MOS09Program.CRXInventoryTubList()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -45,19 +45,19 @@ Partial Class PrintInventoryTubList
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -77,15 +77,19 @@ Partial Class PrintInventoryTubList
         '
         Me.CRTubViewer.ActiveViewIndex = 0
         Me.CRTubViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRTubViewer.DisplayGroupTree = False
+        Me.CRTubViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRTubViewer.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRTubViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRTubViewer.Name = "CRTubViewer"
         Me.CRTubViewer.ReportSource = Me.CRXInventoryTubList1
         Me.CRTubViewer.ShowGroupTreeButton = False
+        Me.CRTubViewer.ShowLogo = False
+        Me.CRTubViewer.ShowParameterPanelButton = False
         Me.CRTubViewer.ShowTextSearchButton = False
+        Me.CRTubViewer.ShowZoomButton = False
         Me.CRTubViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRTubViewer.TabIndex = 1
+        Me.CRTubViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintInventoryTubList
         '

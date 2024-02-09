@@ -898,6 +898,19 @@ Public Class ElectronicSchedulingBoard
         reader1.Close()
         con.Close()
 
+        'Check to see if the Lot # is for one of Facil's Special Parts
+        If txtScanEntry25.Text.StartsWith("3416") Then
+            PartNumber = "WD00108ABU"
+        ElseIf txtScanEntry25.Text.StartsWith("3872") Then
+            PartNumber = "WD00112ADD"
+        ElseIf txtScanEntry25.Text.StartsWith("3603") Then
+            PartNumber = "WD00307ADD"
+        ElseIf txtScanEntry25.Text.StartsWith("3444") Then
+            PartNumber = "WD00311ADD"
+        Else
+            'Do nothing - part number is loaded from Lot Number
+        End If
+
         txtPartNumber25.Text = PartNumber
         txtPartDescription25.Text = ShortDescription
         txtSupplierNumber25.Text = "100254"
@@ -1374,6 +1387,8 @@ Public Class ElectronicSchedulingBoard
     Private Sub cmdClear_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdClear.Click
         ClearLabelFields()
         ClearAllGroupBoxesAndMakeInvisible()
+        LoadPickTicketNumber()
+        LoadInspectionProcess()
 
         LabelPrintPosition = 0
     End Sub
@@ -1912,32 +1927,7 @@ Public Class ElectronicSchedulingBoard
         LoadPickTicketNumber()
     End Sub
 
-    Private Sub cboPickTicket06_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles cboPickTicket06.KeyDown
-        If e.KeyCode = Keys.Enter Then
-            txtCustomerID06.Focus()
-        End If
-    End Sub
-
-    Private Sub cboPickTicket06_Leave(ByVal sender As Object, ByVal e As System.EventArgs) Handles cboPickTicket06.Leave
-        If cboPickTicket06.Text.Length > 0 Then
-            Select Case cboPickTicket06.Text.Substring(0, 1).ToUpper
-                Case "S"
-                    If cboPickTicket06.Text.Length = 1 Then
-                        cboPickTicket06.Text = ""
-                    Else
-                        cboPickTicket06.Text = cboPickTicket06.Text.Substring(1)
-                    End If
-
-                Case Else
-                    cboPickTicket06.Text = cboPickTicket06.Text
-            End Select
-        End If
-
-        LoadShippingAddressFromShipment()
-        CheckIfSpecialLabelExists()
-    End Sub
-
-    Private Sub cboPickTicket06_LostFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles cboPickTicket06.LostFocus
+    Private Sub cboPickTicket06_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cboPickTicket06.SelectedIndexChanged
         If cboPickTicket06.Text.Length > 0 Then
             Select Case cboPickTicket06.Text.Substring(0, 1).ToUpper
                 Case "S"
@@ -2572,6 +2562,7 @@ Public Class ElectronicSchedulingBoard
             ClearAllLabelArray()
             ClearLabelFields()
             ClearAllVariables()
+            LoadPickTicketNumber()
             cboDivisionID06.Text = EmployeeCompanyCode
             cboPickTicket06.Focus()
             LabelPrintPosition = 6
@@ -4851,8 +4842,8 @@ Public Class ElectronicSchedulingBoard
         For Each s As String In split
             counter = counter + 1
         Next
-        Dim counter1 As Integer = counter / 2
-        Dim counter2 As Integer = counter1
+        Dim counter1 As Integer = (counter / 2) + 1
+        Dim counter2 As Integer = (counter1)
         Dim counter3 As Integer = 0
         Dim counterSave1, counterSave2 As Integer
         counterSave1 = counter1
@@ -4863,14 +4854,11 @@ Public Class ElectronicSchedulingBoard
             counter3 = counter3 + 1
         End While
 
-
         While counter2 < counter
             ShortDescription2 = ShortDescription2 + " " + split(counter2)
             counter2 = counter2 + 1
         End While
 
-
-        
         If EmployeeCompanyCode = "TWE" Then
             While ShortDescription1.Length > 15
                 counterSave1 = counterSave1 - 1
@@ -4906,13 +4894,8 @@ Public Class ElectronicSchedulingBoard
             LabelFormat(6) = "TTh:m"
             LabelFormat(7) = "TDy2mn.dd"
 
-
-
             'Fill In Verbiage
-
             LabelFormat(12) = "A300,10,4,5,1,1,N," + Chr(34) + "TRU-WELD" + Chr(34)
-
-
             LabelFormat(13) = "A25,90,4,5,1,1,N," + Chr(34) + "-PART:" + NoteOne + Chr(34)
             LabelFormat(14) = "A25,170,4,5,1,1,N," + Chr(34) + "-DESC:" + ShortDescription1 + Chr(34)
             LabelFormat(15) = "A25,250,4,5,1,1,N," + Chr(34) + ShortDescription2 + Chr(34)
@@ -4923,12 +4906,11 @@ Public Class ElectronicSchedulingBoard
             LabelFormat(23) = vbFormFeed
             LabelLines = 22
         ElseIf EmployeeCompanyCode = "SLC" Then
-
             While ShortDescription1.Length > 21
-                counterSave1 = counterSave1 - 1
+                counterSave1 = counterSave1 + 1
                 counterSave2 = counterSave1 + 1
-                counter1 = counterSave1
-                counter2 = counterSave2
+                counter1 = counterSave1 + 1
+                counter2 = counterSave2 + 1
                 counter3 = 0
                 ShortDescription1 = ""
                 ShortDescription2 = ""
@@ -4942,7 +4924,6 @@ Public Class ElectronicSchedulingBoard
                     ShortDescription2 = ShortDescription2 + " " + split(counter2)
                     counter2 = counter2 + 1
                 End While
-
             End While
 
             ShortDescription1.Replace(ControlChars.Quote, "\" + ControlChars.Quote).Replace("'", "\'")
@@ -4958,14 +4939,8 @@ Public Class ElectronicSchedulingBoard
             LabelFormat(6) = "TTh:m"
             LabelFormat(7) = "TDy2mn.dd"
 
-
-
             'Fill In Verbiage
-           
-
             LabelFormat(12) = "A0,10,4,5,1,1,N," + Chr(34) + "TRU-FIT PROD. TRU-WELD" + Chr(34)
-       
-
             LabelFormat(13) = "A25,90,4,5,1,1,N," + Chr(34) + "-PART:" + NoteOne + Chr(34)
             LabelFormat(14) = "A25,170,4,5,1,1,N," + Chr(34) + ShortDescription1 + Chr(34)
             LabelFormat(15) = "A25,250,4,5,1,1,N," + Chr(34) + ShortDescription2 + Chr(34)
@@ -4976,7 +4951,6 @@ Public Class ElectronicSchedulingBoard
             LabelFormat(23) = vbFormFeed
             LabelLines = 22
         Else
-
             While ShortDescription1.Length > 15
                 counterSave1 = counterSave1 - 1
                 counterSave2 = counterSave1 + 1
@@ -5011,13 +4985,8 @@ Public Class ElectronicSchedulingBoard
             LabelFormat(6) = "TTh:m"
             LabelFormat(7) = "TDy2mn.dd"
 
-
-
             'Fill In Verbiage
-            
             LabelFormat(12) = "A300,10,4,5,1,1,N," + Chr(34) + "TRU-FIT" + Chr(34)
-
-
             LabelFormat(13) = "A25,90,4,5,1,1,N," + Chr(34) + "-PART:" + NoteOne + Chr(34)
             LabelFormat(14) = "A25,170,4,5,1,1,N," + Chr(34) + "-DESC:" + ShortDescription1 + Chr(34)
             LabelFormat(15) = "A25,250,4,5,1,1,N," + Chr(34) + ShortDescription2 + Chr(34)
@@ -5028,7 +4997,6 @@ Public Class ElectronicSchedulingBoard
             LabelFormat(23) = vbFormFeed
             LabelLines = 22
         End If
-
     End Sub
 
     Public Sub SetupAndCreateBranamLabel(ByVal labels As Integer)
@@ -5511,6 +5479,10 @@ Public Class ElectronicSchedulingBoard
 
         'Clear Label Fields
         ClearAllLabelArray()
+
+        'Reload data
+        LoadPickTicketNumber()
+        LoadInspectionProcess()
  
         cmdPrintLabels.Focus()
     End Sub
@@ -5523,6 +5495,8 @@ Public Class ElectronicSchedulingBoard
         ClearLabelFields()
         ClearAllVariables()
         ClearAllLabelArray()
+        LoadPickTicketNumber()
+        LoadInspectionProcess()
     End Sub
 
     'Set Button on the Enter Key
@@ -5575,6 +5549,7 @@ Public Class ElectronicSchedulingBoard
     Private Sub cmdReloadData_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdReloadData.Click
         ClearLabelFields()
         LoadInspectionProcess()
+        LoadPickTicketNumber()
 
         If EmployeeCompanyCode = "CHT" Then
             LoadFerrulePartNumber()

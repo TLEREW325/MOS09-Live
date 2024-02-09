@@ -22,14 +22,14 @@ Partial Class PrintCustomerOrdersFiltered
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CROrderViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXCustomerOrdersFiltered1 = New MOS09Program.CRXCustomerOrdersFiltered
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CROrderViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXCustomerOrdersFiltered1 = New MOS09Program.CRXCustomerOrdersFiltered()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -45,19 +45,19 @@ Partial Class PrintCustomerOrdersFiltered
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -77,18 +77,21 @@ Partial Class PrintCustomerOrdersFiltered
         '
         Me.CROrderViewer.ActiveViewIndex = 0
         Me.CROrderViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CROrderViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CROrderViewer.DisplayGroupTree = False
+        Me.CROrderViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CROrderViewer.Location = New System.Drawing.Point(0, 24)
         Me.CROrderViewer.Name = "CROrderViewer"
         Me.CROrderViewer.ReportSource = Me.CRXCustomerOrdersFiltered1
         Me.CROrderViewer.ShowGroupTreeButton = False
+        Me.CROrderViewer.ShowLogo = False
+        Me.CROrderViewer.ShowParameterPanelButton = False
         Me.CROrderViewer.ShowTextSearchButton = False
         Me.CROrderViewer.ShowZoomButton = False
         Me.CROrderViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CROrderViewer.TabIndex = 1
+        Me.CROrderViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintCustomerOrdersFiltered
         '

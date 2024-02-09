@@ -22,15 +22,15 @@ Partial Class PrintCanamSales
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EmailReturnToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CanamSalesViewer1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXCanamSales1 = New MOS09Program.CRXCanamSales
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmailReturnToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CanamSalesViewer1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXCanamSales1 = New MOS09Program.CRXCanamSales()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -46,26 +46,26 @@ Partial Class PrintCanamSales
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmailReturnToolStripMenuItem})
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'EmailReturnToolStripMenuItem
         '
         Me.EmailReturnToolStripMenuItem.Name = "EmailReturnToolStripMenuItem"
-        Me.EmailReturnToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.EmailReturnToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
         Me.EmailReturnToolStripMenuItem.Text = "Email"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -85,12 +85,18 @@ Partial Class PrintCanamSales
         '
         Me.CanamSalesViewer1.ActiveViewIndex = 0
         Me.CanamSalesViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CanamSalesViewer1.DisplayGroupTree = False
+        Me.CanamSalesViewer1.Cursor = System.Windows.Forms.Cursors.Default
         Me.CanamSalesViewer1.Location = New System.Drawing.Point(12, 56)
         Me.CanamSalesViewer1.Name = "CanamSalesViewer1"
         Me.CanamSalesViewer1.ReportSource = Me.CRXCanamSales1
+        Me.CanamSalesViewer1.ShowGroupTreeButton = False
+        Me.CanamSalesViewer1.ShowLogo = False
+        Me.CanamSalesViewer1.ShowParameterPanelButton = False
+        Me.CanamSalesViewer1.ShowTextSearchButton = False
+        Me.CanamSalesViewer1.ShowZoomButton = False
         Me.CanamSalesViewer1.Size = New System.Drawing.Size(1016, 564)
         Me.CanamSalesViewer1.TabIndex = 2
+        Me.CanamSalesViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintCanamSales
         '

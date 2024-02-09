@@ -654,6 +654,7 @@ Partial Class MainInterface
         Me.crxInvoice1 = New MOS09Program.CRXInvoice
         Me.crxInvoiceTFF1 = New MOS09Program.CRXInvoiceTFF
         Me.crxtwCert011 = New MOS09Program.CRXTWCert01
+        Me.llViewStructuralCertsSH = New System.Windows.Forms.LinkLabel
         Label7 = New System.Windows.Forms.Label
         Label6 = New System.Windows.Forms.Label
         Label5 = New System.Windows.Forms.Label
@@ -881,6 +882,7 @@ Partial Class MainInterface
         '
         'gpxShippingMenu
         '
+        Me.gpxShippingMenu.Controls.Add(Me.llViewStructuralCertsSH)
         Me.gpxShippingMenu.Controls.Add(Me.llViewRackActivitySH)
         Me.gpxShippingMenu.Controls.Add(Me.llCheckBackOrdersSH)
         Me.gpxShippingMenu.Controls.Add(Me.llRackingUtilitySH)
@@ -5581,6 +5583,13 @@ Partial Class MainInterface
         'tmrInvoiceEmail
         '
         '
+        'llViewStructuralCertsSH
+        '
+        resources.ApplyResources(Me.llViewStructuralCertsSH, "llViewStructuralCertsSH")
+        Me.llViewStructuralCertsSH.LinkColor = System.Drawing.Color.Navy
+        Me.llViewStructuralCertsSH.Name = "llViewStructuralCertsSH"
+        Me.llViewStructuralCertsSH.TabStop = True
+        '
         'MainInterface
         '
         resources.ApplyResources(Me, "$this")
@@ -6284,4 +6293,5 @@ Partial Class MainInterface
     Friend WithEvents crxInvoice1 As MOS09Program.CRXInvoice
     Friend WithEvents crxInvoiceTFF1 As MOS09Program.CRXInvoiceTFF
     Friend WithEvents crxtwCert011 As MOS09Program.CRXTWCert01
+    Friend WithEvents llViewStructuralCertsSH As System.Windows.Forms.LinkLabel
 End Class

@@ -22,17 +22,17 @@ Partial Class PrintShipmentConfirmationRemote
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EmailConfirmationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRShipViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXShippingConfirmationCanadian1 = New MOS09Program.CRXShippingConfirmationCanadian
-        Me.CRXShippingConfirmation1 = New MOS09Program.CRXShippingConfirmation
-        Me.CRXShippingConfirmationTFP1 = New MOS09Program.CRXShippingConfirmationTFP
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmailConfirmationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRShipViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXShippingConfirmationTFP1 = New MOS09Program.CRXShippingConfirmationTFP()
+        Me.CRXShippingConfirmationCanadian1 = New MOS09Program.CRXShippingConfirmationCanadian()
+        Me.CRXShippingConfirmation1 = New MOS09Program.CRXShippingConfirmation()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -48,26 +48,26 @@ Partial Class PrintShipmentConfirmationRemote
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmailConfirmationToolStripMenuItem})
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'EmailConfirmationToolStripMenuItem
         '
         Me.EmailConfirmationToolStripMenuItem.Name = "EmailConfirmationToolStripMenuItem"
-        Me.EmailConfirmationToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
+        Me.EmailConfirmationToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
         Me.EmailConfirmationToolStripMenuItem.Text = "Email Confirmation"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -87,20 +87,23 @@ Partial Class PrintShipmentConfirmationRemote
         '
         Me.CRShipViewer.ActiveViewIndex = 0
         Me.CRShipViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRShipViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRShipViewer.DisplayGroupTree = False
+        Me.CRShipViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRShipViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRShipViewer.Name = "CRShipViewer"
         Me.CRShipViewer.ReportSource = Me.CRXShippingConfirmationTFP1
         Me.CRShipViewer.ShowGroupTreeButton = False
+        Me.CRShipViewer.ShowLogo = False
+        Me.CRShipViewer.ShowParameterPanelButton = False
         Me.CRShipViewer.ShowTextSearchButton = False
         Me.CRShipViewer.ShowZoomButton = False
         Me.CRShipViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRShipViewer.TabIndex = 1
+        Me.CRShipViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
-        'PrintShipmentConfirmation
+        'PrintShipmentConfirmationRemote
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -108,7 +111,7 @@ Partial Class PrintShipmentConfirmationRemote
         Me.Controls.Add(Me.CRShipViewer)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Name = "PrintShipmentConfirmation"
+        Me.Name = "PrintShipmentConfirmationRemote"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TFP Corporation Shipment Confirmation"
         Me.MenuStrip1.ResumeLayout(False)

@@ -22,15 +22,15 @@ Partial Class PrintVendorBOLRemote
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRBOLViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXVendorBOL1 = New MOS09Program.CRXVendorBOL
-        Me.EmailBOLToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmailBOLToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRBOLViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXVendorBOL1 = New MOS09Program.CRXVendorBOL()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -46,20 +46,26 @@ Partial Class PrintVendorBOLRemote
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmailBOLToolStripMenuItem})
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
+        '
+        'EmailBOLToolStripMenuItem
+        '
+        Me.EmailBOLToolStripMenuItem.Name = "EmailBOLToolStripMenuItem"
+        Me.EmailBOLToolStripMenuItem.Size = New System.Drawing.Size(128, 22)
+        Me.EmailBOLToolStripMenuItem.Text = "Email BOL"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -79,22 +85,21 @@ Partial Class PrintVendorBOLRemote
         '
         Me.CRBOLViewer.ActiveViewIndex = 0
         Me.CRBOLViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRBOLViewer.DisplayGroupTree = False
+        Me.CRBOLViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRBOLViewer.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRBOLViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRBOLViewer.Name = "CRBOLViewer"
         Me.CRBOLViewer.ReportSource = Me.CRXVendorBOL1
+        Me.CRBOLViewer.ShowGroupTreeButton = False
+        Me.CRBOLViewer.ShowLogo = False
+        Me.CRBOLViewer.ShowParameterPanelButton = False
         Me.CRBOLViewer.ShowTextSearchButton = False
+        Me.CRBOLViewer.ShowZoomButton = False
         Me.CRBOLViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRBOLViewer.TabIndex = 1
+        Me.CRBOLViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
-        'EmailBOLToolStripMenuItem
-        '
-        Me.EmailBOLToolStripMenuItem.Name = "EmailBOLToolStripMenuItem"
-        Me.EmailBOLToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.EmailBOLToolStripMenuItem.Text = "Email BOL"
-        '
-        'PrintVendorBOL
+        'PrintVendorBOLRemote
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -102,7 +107,7 @@ Partial Class PrintVendorBOLRemote
         Me.Controls.Add(Me.CRBOLViewer)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Name = "PrintVendorBOL"
+        Me.Name = "PrintVendorBOLRemote"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "PrintVendorBOL"
         Me.MenuStrip1.ResumeLayout(False)

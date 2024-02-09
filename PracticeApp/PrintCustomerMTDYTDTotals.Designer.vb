@@ -22,37 +22,37 @@ Partial Class PrintCustomerMTDYTDTotals
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRCustomerYTDViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXCustMTD_YTDInvoicesbyState1 = New MOS09Program.CRXCustMTD_YTDInvoicesbyState
-        Me.CRXCustMTD_YTDInvoicesTerritory1 = New MOS09Program.CRXCustMTD_YTDInvoicesTerritory
-        Me.CRXCustMTD_YTDInvoices1 = New MOS09Program.CRXCustMTD_YTDInvoices
-        Me.cboCustomer = New System.Windows.Forms.ComboBox
+        Me.components = New System.ComponentModel.Container()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRCustomerYTDViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXCustMTD_YTDInvoicesbyState1 = New MOS09Program.CRXCustMTD_YTDInvoicesbyState()
+        Me.CRXCustMTD_YTDInvoicesTerritory1 = New MOS09Program.CRXCustMTD_YTDInvoicesTerritory()
+        Me.CRXCustMTD_YTDInvoices1 = New MOS09Program.CRXCustMTD_YTDInvoices()
+        Me.cboCustomer = New System.Windows.Forms.ComboBox()
         Me.CustomerListBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet
-        Me.cmdViewByFilters = New System.Windows.Forms.Button
-        Me.cmdClear = New System.Windows.Forms.Button
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.CustomerListTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.CustomerListTableAdapter
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.cboCustomerName = New System.Windows.Forms.ComboBox
-        Me.chkGroupByZip = New System.Windows.Forms.CheckBox
+        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet()
+        Me.cmdViewByFilters = New System.Windows.Forms.Button()
+        Me.cmdClear = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.CustomerListTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.CustomerListTableAdapter()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.cboCustomerName = New System.Windows.Forms.ComboBox()
+        Me.chkGroupByZip = New System.Windows.Forms.CheckBox()
         Me.EmployeeDataBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.EmployeeDataTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.EmployeeDataTableAdapter
-        Me.Label5 = New System.Windows.Forms.Label
-        Me.cboSalesTerritory = New System.Windows.Forms.ComboBox
-        Me.CRXCustMTD_YTDInvoicesZip1 = New MOS09Program.CRXCustMTD_YTDInvoicesZip
-        Me.chkSalesTerritory = New System.Windows.Forms.CheckBox
-        Me.CRXCustMTD_YTDInvoicesbyTerritory1 = New MOS09Program.CRXCustMTD_YTDInvoicesbyTerritory
-        Me.chkState = New System.Windows.Forms.CheckBox
-        Me.chkTerritory = New System.Windows.Forms.CheckBox
+        Me.EmployeeDataTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.EmployeeDataTableAdapter()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.cboSalesTerritory = New System.Windows.Forms.ComboBox()
+        Me.CRXCustMTD_YTDInvoicesZip1 = New MOS09Program.CRXCustMTD_YTDInvoicesZip()
+        Me.chkSalesTerritory = New System.Windows.Forms.CheckBox()
+        Me.CRXCustMTD_YTDInvoicesbyTerritory1 = New MOS09Program.CRXCustMTD_YTDInvoicesbyTerritory()
+        Me.chkState = New System.Windows.Forms.CheckBox()
+        Me.chkTerritory = New System.Windows.Forms.CheckBox()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.CustomerListBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SQLTFPOperationsDatabaseDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -71,19 +71,19 @@ Partial Class PrintCustomerMTDYTDTotals
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -103,18 +103,21 @@ Partial Class PrintCustomerMTDYTDTotals
         '
         Me.CRCustomerYTDViewer.ActiveViewIndex = 0
         Me.CRCustomerYTDViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRCustomerYTDViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRCustomerYTDViewer.DisplayGroupTree = False
+        Me.CRCustomerYTDViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRCustomerYTDViewer.Location = New System.Drawing.Point(183, 24)
         Me.CRCustomerYTDViewer.Name = "CRCustomerYTDViewer"
         Me.CRCustomerYTDViewer.ReportSource = Me.CRXCustMTD_YTDInvoicesbyState1
         Me.CRCustomerYTDViewer.ShowGroupTreeButton = False
+        Me.CRCustomerYTDViewer.ShowLogo = False
+        Me.CRCustomerYTDViewer.ShowParameterPanelButton = False
         Me.CRCustomerYTDViewer.ShowTextSearchButton = False
         Me.CRCustomerYTDViewer.ShowZoomButton = False
         Me.CRCustomerYTDViewer.Size = New System.Drawing.Size(847, 608)
         Me.CRCustomerYTDViewer.TabIndex = 1
+        Me.CRCustomerYTDViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'cboCustomer
         '

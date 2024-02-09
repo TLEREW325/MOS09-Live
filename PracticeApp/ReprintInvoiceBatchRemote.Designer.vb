@@ -22,27 +22,27 @@ Partial Class ReprintInvoiceBatchRemote
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EmailInvoicesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRInvoiceViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXInvoiceTFF1 = New MOS09Program.CRXInvoiceTFF
-        Me.CRXInvoice1 = New MOS09Program.CRXInvoice
-        Me.dgvInvoiceHeader = New System.Windows.Forms.DataGridView
-        Me.InvoiceNumberColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.InvoiceDateColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.SalesOrderNumberColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.ShipmentNumberColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.DivisionIDColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.CustomerIDColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.components = New System.ComponentModel.Container()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmailInvoicesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRInvoiceViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXInvoiceTFF1 = New MOS09Program.CRXInvoiceTFF()
+        Me.CRXInvoice1 = New MOS09Program.CRXInvoice()
+        Me.dgvInvoiceHeader = New System.Windows.Forms.DataGridView()
+        Me.InvoiceNumberColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.InvoiceDateColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.SalesOrderNumberColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ShipmentNumberColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DivisionIDColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CustomerIDColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.InvoiceHeaderTableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet
-        Me.InvoiceHeaderTableTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.InvoiceHeaderTableTableAdapter
+        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet()
+        Me.InvoiceHeaderTableTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.InvoiceHeaderTableTableAdapter()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.dgvInvoiceHeader, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.InvoiceHeaderTableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -61,26 +61,26 @@ Partial Class ReprintInvoiceBatchRemote
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmailInvoicesToolStripMenuItem})
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'EmailInvoicesToolStripMenuItem
         '
         Me.EmailInvoicesToolStripMenuItem.Name = "EmailInvoicesToolStripMenuItem"
-        Me.EmailInvoicesToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
+        Me.EmailInvoicesToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
         Me.EmailInvoicesToolStripMenuItem.Text = "Email Invoices"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -100,15 +100,18 @@ Partial Class ReprintInvoiceBatchRemote
         '
         Me.CRInvoiceViewer.ActiveViewIndex = -1
         Me.CRInvoiceViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRInvoiceViewer.DisplayGroupTree = False
+        Me.CRInvoiceViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRInvoiceViewer.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRInvoiceViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRInvoiceViewer.Name = "CRInvoiceViewer"
         Me.CRInvoiceViewer.ShowGroupTreeButton = False
+        Me.CRInvoiceViewer.ShowLogo = False
+        Me.CRInvoiceViewer.ShowParameterPanelButton = False
         Me.CRInvoiceViewer.ShowTextSearchButton = False
         Me.CRInvoiceViewer.ShowZoomButton = False
         Me.CRInvoiceViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRInvoiceViewer.TabIndex = 1
+        Me.CRInvoiceViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'dgvInvoiceHeader
         '
@@ -181,7 +184,7 @@ Partial Class ReprintInvoiceBatchRemote
         '
         Me.InvoiceHeaderTableTableAdapter.ClearBeforeFill = True
         '
-        'ReprintInvoiceBatch
+        'ReprintInvoiceBatchRemote
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -190,7 +193,7 @@ Partial Class ReprintInvoiceBatchRemote
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.dgvInvoiceHeader)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Name = "ReprintInvoiceBatch"
+        Me.Name = "ReprintInvoiceBatchRemote"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TFP Corporation Invoice Batch"
         Me.MenuStrip1.ResumeLayout(False)

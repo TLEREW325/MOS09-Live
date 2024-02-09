@@ -22,17 +22,17 @@ Partial Class PrintInvoiceSO
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EmailInvoicesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRInvoiceViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXInvoice1 = New MOS09Program.CRXInvoice
-        Me.CRXInvoiceTFP1 = New MOS09Program.CRXInvoiceTFP
-        Me.CRXInvoiceTFF1 = New MOS09Program.CRXInvoiceTFF
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmailInvoicesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRInvoiceViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXInvoiceTFF1 = New MOS09Program.CRXInvoiceTFF()
+        Me.CRXInvoice1 = New MOS09Program.CRXInvoice()
+        Me.CRXInvoiceTFP1 = New MOS09Program.CRXInvoiceTFP()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -48,26 +48,26 @@ Partial Class PrintInvoiceSO
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmailInvoicesToolStripMenuItem})
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'EmailInvoicesToolStripMenuItem
         '
         Me.EmailInvoicesToolStripMenuItem.Name = "EmailInvoicesToolStripMenuItem"
-        Me.EmailInvoicesToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
+        Me.EmailInvoicesToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
         Me.EmailInvoicesToolStripMenuItem.Text = "Email Invoices"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -87,16 +87,19 @@ Partial Class PrintInvoiceSO
         '
         Me.CRInvoiceViewer.ActiveViewIndex = 0
         Me.CRInvoiceViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRInvoiceViewer.DisplayGroupTree = False
+        Me.CRInvoiceViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRInvoiceViewer.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRInvoiceViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRInvoiceViewer.Name = "CRInvoiceViewer"
         Me.CRInvoiceViewer.ReportSource = Me.CRXInvoiceTFF1
         Me.CRInvoiceViewer.ShowGroupTreeButton = False
+        Me.CRInvoiceViewer.ShowLogo = False
+        Me.CRInvoiceViewer.ShowParameterPanelButton = False
         Me.CRInvoiceViewer.ShowTextSearchButton = False
         Me.CRInvoiceViewer.ShowZoomButton = False
         Me.CRInvoiceViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRInvoiceViewer.TabIndex = 1
+        Me.CRInvoiceViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintInvoiceSO
         '

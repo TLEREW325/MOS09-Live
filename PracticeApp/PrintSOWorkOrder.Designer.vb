@@ -22,14 +22,14 @@ Partial Class PrintSOWorkOrder
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRWorkOrderViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXSOWorkOrder1 = New MOS09Program.CRXSOWorkOrder
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRWorkOrderViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXSOWorkOrder1 = New MOS09Program.CRXSOWorkOrder()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -45,19 +45,19 @@ Partial Class PrintSOWorkOrder
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -77,15 +77,19 @@ Partial Class PrintSOWorkOrder
         '
         Me.CRWorkOrderViewer.ActiveViewIndex = 0
         Me.CRWorkOrderViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRWorkOrderViewer.DisplayGroupTree = False
+        Me.CRWorkOrderViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRWorkOrderViewer.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRWorkOrderViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRWorkOrderViewer.Name = "CRWorkOrderViewer"
         Me.CRWorkOrderViewer.ReportSource = Me.CRXSOWorkOrder1
         Me.CRWorkOrderViewer.ShowGroupTreeButton = False
+        Me.CRWorkOrderViewer.ShowLogo = False
+        Me.CRWorkOrderViewer.ShowParameterPanelButton = False
         Me.CRWorkOrderViewer.ShowTextSearchButton = False
+        Me.CRWorkOrderViewer.ShowZoomButton = False
         Me.CRWorkOrderViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRWorkOrderViewer.TabIndex = 1
+        Me.CRWorkOrderViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintSOWorkOrder
         '

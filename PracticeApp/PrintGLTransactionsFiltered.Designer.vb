@@ -22,15 +22,15 @@ Partial Class PrintGLTransactionsFiltered
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRGLViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXGLTransactionExcel1 = New MOS09Program.CRXGLTransactionExcel
-        Me.CRXGLArchiveListing1 = New MOS09Program.CRXGLArchiveListing
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRGLViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXGLArchiveListing1 = New MOS09Program.CRXGLArchiveListing()
+        Me.CRXGLTransactionExcel1 = New MOS09Program.CRXGLTransactionExcel()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -46,19 +46,19 @@ Partial Class PrintGLTransactionsFiltered
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -78,15 +78,21 @@ Partial Class PrintGLTransactionsFiltered
         '
         Me.CRGLViewer.ActiveViewIndex = 0
         Me.CRGLViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRGLViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRGLViewer.DisplayGroupTree = False
+        Me.CRGLViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRGLViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRGLViewer.Name = "CRGLViewer"
         Me.CRGLViewer.ReportSource = Me.CRXGLArchiveListing1
+        Me.CRGLViewer.ShowGroupTreeButton = False
+        Me.CRGLViewer.ShowLogo = False
+        Me.CRGLViewer.ShowParameterPanelButton = False
+        Me.CRGLViewer.ShowTextSearchButton = False
+        Me.CRGLViewer.ShowZoomButton = False
         Me.CRGLViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRGLViewer.TabIndex = 4
+        Me.CRGLViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintGLTransactionsFiltered
         '

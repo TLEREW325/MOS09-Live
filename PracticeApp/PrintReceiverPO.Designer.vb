@@ -22,14 +22,14 @@ Partial Class PrintReceiverPO
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRRecieverViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXReceivingTicket1 = New MOS09Program.CRXReceivingTicket
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRRecieverViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXReceivingTicket1 = New MOS09Program.CRXReceivingTicket()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -45,19 +45,19 @@ Partial Class PrintReceiverPO
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -70,23 +70,26 @@ Partial Class PrintReceiverPO
         'ExitToolStripMenuItem1
         '
         Me.ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1"
-        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(92, 22)
         Me.ExitToolStripMenuItem1.Text = "Exit"
         '
         'CRRecieverViewer
         '
         Me.CRRecieverViewer.ActiveViewIndex = 0
         Me.CRRecieverViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRRecieverViewer.DisplayGroupTree = False
+        Me.CRRecieverViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRRecieverViewer.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRRecieverViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRRecieverViewer.Name = "CRRecieverViewer"
         Me.CRRecieverViewer.ReportSource = Me.CRXReceivingTicket1
         Me.CRRecieverViewer.ShowGroupTreeButton = False
+        Me.CRRecieverViewer.ShowLogo = False
+        Me.CRRecieverViewer.ShowParameterPanelButton = False
         Me.CRRecieverViewer.ShowTextSearchButton = False
         Me.CRRecieverViewer.ShowZoomButton = False
         Me.CRRecieverViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRRecieverViewer.TabIndex = 1
+        Me.CRRecieverViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintReceiverPO
         '

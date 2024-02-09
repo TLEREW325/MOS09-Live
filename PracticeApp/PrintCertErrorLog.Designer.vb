@@ -22,14 +22,14 @@ Partial Class PrintCertErrorLog
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRErrorViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXCertErrorReport1 = New MOS09Program.CRXCertErrorReport
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRErrorViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXCertErrorReport1 = New MOS09Program.CRXCertErrorReport()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -45,19 +45,19 @@ Partial Class PrintCertErrorLog
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -70,22 +70,26 @@ Partial Class PrintCertErrorLog
         'ExitToolStripMenuItem1
         '
         Me.ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1"
-        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(92, 22)
         Me.ExitToolStripMenuItem1.Text = "Exit"
         '
         'CRErrorViewer
         '
         Me.CRErrorViewer.ActiveViewIndex = 0
         Me.CRErrorViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRErrorViewer.DisplayGroupTree = False
+        Me.CRErrorViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRErrorViewer.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRErrorViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRErrorViewer.Name = "CRErrorViewer"
         Me.CRErrorViewer.ReportSource = Me.CRXCertErrorReport1
         Me.CRErrorViewer.ShowGroupTreeButton = False
+        Me.CRErrorViewer.ShowLogo = False
+        Me.CRErrorViewer.ShowParameterPanelButton = False
         Me.CRErrorViewer.ShowTextSearchButton = False
+        Me.CRErrorViewer.ShowZoomButton = False
         Me.CRErrorViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRErrorViewer.TabIndex = 1
+        Me.CRErrorViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintCertErrorLog
         '

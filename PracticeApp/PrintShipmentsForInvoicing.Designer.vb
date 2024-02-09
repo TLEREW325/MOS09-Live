@@ -22,14 +22,14 @@ Partial Class PrintShipmentsForInvoicing
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRShipmentViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXShipmentsForInvoicing1 = New MOS09Program.CRXShipmentsForInvoicing
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRShipmentViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXShipmentsForInvoicing1 = New MOS09Program.CRXShipmentsForInvoicing()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -38,26 +38,26 @@ Partial Class PrintShipmentsForInvoicing
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditToolStripMenuItem, Me.ReToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1022, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1030, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReToolStripMenuItem
         '
         Me.ReToolStripMenuItem.Name = "ReToolStripMenuItem"
-        Me.ReToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -77,21 +77,27 @@ Partial Class PrintShipmentsForInvoicing
         '
         Me.CRShipmentViewer.ActiveViewIndex = 0
         Me.CRShipmentViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRShipmentViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRShipmentViewer.DisplayGroupTree = False
+        Me.CRShipmentViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRShipmentViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRShipmentViewer.Name = "CRShipmentViewer"
         Me.CRShipmentViewer.ReportSource = Me.CRXShipmentsForInvoicing1
-        Me.CRShipmentViewer.Size = New System.Drawing.Size(1022, 597)
+        Me.CRShipmentViewer.ShowGroupTreeButton = False
+        Me.CRShipmentViewer.ShowLogo = False
+        Me.CRShipmentViewer.ShowParameterPanelButton = False
+        Me.CRShipmentViewer.ShowTextSearchButton = False
+        Me.CRShipmentViewer.ShowZoomButton = False
+        Me.CRShipmentViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRShipmentViewer.TabIndex = 1
+        Me.CRShipmentViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintShipmentsForInvoicing
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1022, 621)
+        Me.ClientSize = New System.Drawing.Size(1030, 632)
         Me.Controls.Add(Me.CRShipmentViewer)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1

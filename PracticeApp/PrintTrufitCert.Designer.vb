@@ -22,15 +22,15 @@ Partial Class PrintTrufitCert
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EmailCertToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRTFCertViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXTFCert1 = New MOS09Program.CRXTFCert
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmailCertToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRTFCertViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXTFCert1 = New MOS09Program.CRXTFCert()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -39,33 +39,33 @@ Partial Class PrintTrufitCert
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditToolStripMenuItem, Me.ReportsToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1028, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1030, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmailCertToolStripMenuItem})
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'EmailCertToolStripMenuItem
         '
         Me.EmailCertToolStripMenuItem.Name = "EmailCertToolStripMenuItem"
-        Me.EmailCertToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
+        Me.EmailCertToolStripMenuItem.Size = New System.Drawing.Size(128, 22)
         Me.EmailCertToolStripMenuItem.Text = "Email Cert"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -85,21 +85,27 @@ Partial Class PrintTrufitCert
         '
         Me.CRTFCertViewer.ActiveViewIndex = 0
         Me.CRTFCertViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRTFCertViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRTFCertViewer.DisplayGroupTree = False
+        Me.CRTFCertViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRTFCertViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRTFCertViewer.Name = "CRTFCertViewer"
         Me.CRTFCertViewer.ReportSource = Me.CRXTFCert1
-        Me.CRTFCertViewer.Size = New System.Drawing.Size(1028, 608)
+        Me.CRTFCertViewer.ShowGroupTreeButton = False
+        Me.CRTFCertViewer.ShowLogo = False
+        Me.CRTFCertViewer.ShowParameterPanelButton = False
+        Me.CRTFCertViewer.ShowTextSearchButton = False
+        Me.CRTFCertViewer.ShowZoomButton = False
+        Me.CRTFCertViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRTFCertViewer.TabIndex = 1
+        Me.CRTFCertViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintTrufitCert
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1028, 632)
+        Me.ClientSize = New System.Drawing.Size(1030, 632)
         Me.Controls.Add(Me.CRTFCertViewer)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1

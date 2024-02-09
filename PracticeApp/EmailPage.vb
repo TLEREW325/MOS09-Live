@@ -1712,11 +1712,13 @@ Public Class EmailPage
             lblEmailSentFrom.Text = "twd@tfpcorp.com"
             TFPMailReplyAddress = GetCopyAddress
 
-        ElseIf TFPMailTransactionType = "Print Certification Of Compliance" Then
+        ElseIf TFPMailTransactionType = "Email Structural Certification" Then
             LoadAddressBook()
 
-            'Load defaults
-            txtEmailSubject.Text = "Certification Of Compliance - " + CStr(TFPMailTransactionNumber)
+            Dim strDate As String = ""
+            strDate = CStr(Today.ToShortDateString)
+
+            txtEmailSubject.Text = "Structural Cert"
             LoadEmailSignature()
             lblEmailAttachments.Text = TFPMailFilename
 
@@ -1737,39 +1739,7 @@ Public Class EmailPage
             lblEmailCopyTo.Text = GetCopyAddress
             lblEmailSentFrom.Text = "twd@tfpcorp.com"
             TFPMailReplyAddress = GetCopyAddress
-
-            'Get Customer's Email Address
-            Dim EmailCustomer, EmailCustomerAddress As String
-
-            Dim EmailCustomerStatement As String = "SELECT CustomerID FROM ShipmentHeaderTable WHERE ShipmentNumber = @ShipmentNumber"
-            Dim EmailCustomerCommand As New SqlCommand(EmailCustomerStatement, con)
-            EmailCustomerCommand.Parameters.Add("@ShipmentNumber", SqlDbType.VarChar).Value = TFPMailTransactionNumber
-
-            If con.State = ConnectionState.Closed Then con.Open()
-            Try
-                EmailCustomer = CStr(EmailCustomerCommand.ExecuteScalar)
-            Catch ex As System.Exception
-                EmailCustomer = ""
-            End Try
-            con.Close()
-
-            TFPMailCustomer = EmailCustomer
-            LoadAddressBook()
-
-            Dim EmailCustomerAddressStatement As String = "SELECT PackingListEmail FROM CustomerList WHERE CustomerID = @CustomerID AND DivisionID = @DivisionID"
-            Dim EmailCustomerAddressCommand As New SqlCommand(EmailCustomerAddressStatement, con)
-            EmailCustomerAddressCommand.Parameters.Add("@CustomerID", SqlDbType.VarChar).Value = EmailCustomer
-            EmailCustomerAddressCommand.Parameters.Add("@DivisionID", SqlDbType.VarChar).Value = EmployeeCompanyCode
-
-            If con.State = ConnectionState.Closed Then con.Open()
-            Try
-                EmailCustomerAddress = CStr(EmailCustomerAddressCommand.ExecuteScalar)
-            Catch ex As System.Exception
-                EmailCustomerAddress = ""
-            End Try
-            con.Close()
-
-            txtEmailTo.Text = EmailCustomerAddress
+            txtEmailTo.Text = ""
         Else
             'Do nothing
         End If

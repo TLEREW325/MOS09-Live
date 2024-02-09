@@ -22,18 +22,18 @@ Partial Class PrintDropShipPackListRemote
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EmailPackingListToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EmailPackingListAndPOToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRDropShipViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXDropShipPackingSlip1 = New MOS09Program.CRXDropShipPackingSlip
-        Me.CRDropShipPOViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXPurchaseOrder1 = New MOS09Program.CRXPurchaseOrder
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmailPackingListToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmailPackingListAndPOToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRDropShipViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXDropShipPackingSlip1 = New MOS09Program.CRXDropShipPackingSlip()
+        Me.CRDropShipPOViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXPurchaseOrder1 = New MOS09Program.CRXPurchaseOrder()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -49,32 +49,32 @@ Partial Class PrintDropShipPackListRemote
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmailPackingListToolStripMenuItem, Me.EmailPackingListAndPOToolStripMenuItem})
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'EmailPackingListToolStripMenuItem
         '
         Me.EmailPackingListToolStripMenuItem.Name = "EmailPackingListToolStripMenuItem"
-        Me.EmailPackingListToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
+        Me.EmailPackingListToolStripMenuItem.Size = New System.Drawing.Size(211, 22)
         Me.EmailPackingListToolStripMenuItem.Text = "Email Packing List"
         '
         'EmailPackingListAndPOToolStripMenuItem
         '
         Me.EmailPackingListAndPOToolStripMenuItem.Name = "EmailPackingListAndPOToolStripMenuItem"
-        Me.EmailPackingListAndPOToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
+        Me.EmailPackingListAndPOToolStripMenuItem.Size = New System.Drawing.Size(211, 22)
         Me.EmailPackingListAndPOToolStripMenuItem.Text = "Email Packing List and PO"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -94,30 +94,34 @@ Partial Class PrintDropShipPackListRemote
         '
         Me.CRDropShipViewer.ActiveViewIndex = 0
         Me.CRDropShipViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRDropShipViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRDropShipViewer.DisplayGroupTree = False
+        Me.CRDropShipViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRDropShipViewer.Location = New System.Drawing.Point(0, 27)
         Me.CRDropShipViewer.Name = "CRDropShipViewer"
         Me.CRDropShipViewer.ReportSource = Me.CRXDropShipPackingSlip1
         Me.CRDropShipViewer.ShowGroupTreeButton = False
+        Me.CRDropShipViewer.ShowLogo = False
+        Me.CRDropShipViewer.ShowParameterPanelButton = False
         Me.CRDropShipViewer.ShowTextSearchButton = False
         Me.CRDropShipViewer.ShowZoomButton = False
         Me.CRDropShipViewer.Size = New System.Drawing.Size(1030, 605)
         Me.CRDropShipViewer.TabIndex = 1
+        Me.CRDropShipViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'CRDropShipPOViewer
         '
         Me.CRDropShipPOViewer.ActiveViewIndex = 0
         Me.CRDropShipPOViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.CRDropShipPOViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRDropShipPOViewer.Location = New System.Drawing.Point(134, 366)
         Me.CRDropShipPOViewer.Name = "CRDropShipPOViewer"
         Me.CRDropShipPOViewer.ReportSource = Me.CRXPurchaseOrder1
         Me.CRDropShipPOViewer.Size = New System.Drawing.Size(96, 64)
         Me.CRDropShipPOViewer.TabIndex = 2
         '
-        'PrintDropShipPackList
+        'PrintDropShipPackListRemote
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -126,7 +130,7 @@ Partial Class PrintDropShipPackListRemote
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.CRDropShipPOViewer)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Name = "PrintDropShipPackList"
+        Me.Name = "PrintDropShipPackListRemote"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TFP Corporation Drop Ship Packing List"
         Me.MenuStrip1.ResumeLayout(False)

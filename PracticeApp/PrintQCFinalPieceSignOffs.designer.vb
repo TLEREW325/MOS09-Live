@@ -22,26 +22,26 @@ Partial Class PrintQCFinalPieceSignOffs
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.CRXQCInspectedViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ViewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.Label4 = New System.Windows.Forms.Label
-        Me.Label5 = New System.Windows.Forms.Label
-        Me.cboLotNumber = New System.Windows.Forms.ComboBox
-        Me.cboPartNumber = New System.Windows.Forms.ComboBox
-        Me.cboFox = New System.Windows.Forms.ComboBox
-        Me.cboInspector = New System.Windows.Forms.ComboBox
-        Me.cboInspected = New System.Windows.Forms.ComboBox
-        Me.cmdFilter = New System.Windows.Forms.Button
-        Me.cmdClear = New System.Windows.Forms.Button
-        Me.Label6 = New System.Windows.Forms.Label
+        Me.CRXQCInspectedViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ViewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.cboLotNumber = New System.Windows.Forms.ComboBox()
+        Me.cboPartNumber = New System.Windows.Forms.ComboBox()
+        Me.cboFox = New System.Windows.Forms.ComboBox()
+        Me.cboInspector = New System.Windows.Forms.ComboBox()
+        Me.cboInspected = New System.Windows.Forms.ComboBox()
+        Me.cmdFilter = New System.Windows.Forms.Button()
+        Me.cmdClear = New System.Windows.Forms.Button()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -49,14 +49,18 @@ Partial Class PrintQCFinalPieceSignOffs
         '
         Me.CRXQCInspectedViewer.ActiveViewIndex = -1
         Me.CRXQCInspectedViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRXQCInspectedViewer.DisplayGroupTree = False
+        Me.CRXQCInspectedViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRXQCInspectedViewer.Location = New System.Drawing.Point(186, 29)
         Me.CRXQCInspectedViewer.Name = "CRXQCInspectedViewer"
         Me.CRXQCInspectedViewer.SelectionFormula = ""
         Me.CRXQCInspectedViewer.ShowGroupTreeButton = False
+        Me.CRXQCInspectedViewer.ShowLogo = False
+        Me.CRXQCInspectedViewer.ShowParameterPanelButton = False
         Me.CRXQCInspectedViewer.ShowTextSearchButton = False
+        Me.CRXQCInspectedViewer.ShowZoomButton = False
         Me.CRXQCInspectedViewer.Size = New System.Drawing.Size(845, 608)
         Me.CRXQCInspectedViewer.TabIndex = 0
+        Me.CRXQCInspectedViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         Me.CRXQCInspectedViewer.ViewTimeSelectionFormula = ""
         '
         'MenuStrip1
@@ -71,19 +75,19 @@ Partial Class PrintQCFinalPieceSignOffs
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ViewToolStripMenuItem
         '
         Me.ViewToolStripMenuItem.Name = "ViewToolStripMenuItem"
-        Me.ViewToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ViewToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ViewToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem

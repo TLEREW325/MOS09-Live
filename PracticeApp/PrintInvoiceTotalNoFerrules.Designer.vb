@@ -22,15 +22,15 @@ Partial Class PrintInvoiceTotalNoFerrules
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.CRDailyViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXInvoiceListingNoFerrule1 = New MOS09Program.CRXInvoiceListingNoFerrule
-        Me.MenuStrip2 = New System.Windows.Forms.MenuStrip
-        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem
-        Me.EmailInvoiceToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem
-        Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem
-        Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem
+        Me.CRDailyViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXInvoiceListingNoFerrule1 = New MOS09Program.CRXInvoiceListingNoFerrule()
+        Me.MenuStrip2 = New System.Windows.Forms.MenuStrip()
+        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmailInvoiceToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip2.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -38,18 +38,21 @@ Partial Class PrintInvoiceTotalNoFerrules
         '
         Me.CRDailyViewer.ActiveViewIndex = 0
         Me.CRDailyViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRDailyViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRDailyViewer.DisplayGroupTree = False
+        Me.CRDailyViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRDailyViewer.Location = New System.Drawing.Point(-2, 27)
         Me.CRDailyViewer.Name = "CRDailyViewer"
         Me.CRDailyViewer.ReportSource = Me.CRXInvoiceListingNoFerrule1
         Me.CRDailyViewer.ShowGroupTreeButton = False
+        Me.CRDailyViewer.ShowLogo = False
+        Me.CRDailyViewer.ShowParameterPanelButton = False
         Me.CRDailyViewer.ShowTextSearchButton = False
         Me.CRDailyViewer.ShowZoomButton = False
         Me.CRDailyViewer.Size = New System.Drawing.Size(1033, 608)
         Me.CRDailyViewer.TabIndex = 2
+        Me.CRDailyViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'MenuStrip2
         '
@@ -63,26 +66,26 @@ Partial Class PrintInvoiceTotalNoFerrules
         'ToolStripMenuItem1
         '
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(35, 20)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(37, 20)
         Me.ToolStripMenuItem1.Text = "File"
         '
         'ToolStripMenuItem2
         '
         Me.ToolStripMenuItem2.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmailInvoiceToolStripMenuItem})
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(37, 20)
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(39, 20)
         Me.ToolStripMenuItem2.Text = "Edit"
         '
         'EmailInvoiceToolStripMenuItem
         '
         Me.EmailInvoiceToolStripMenuItem.Name = "EmailInvoiceToolStripMenuItem"
-        Me.EmailInvoiceToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.EmailInvoiceToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
         Me.EmailInvoiceToolStripMenuItem.Text = "Email Invoice"
         '
         'ToolStripMenuItem3
         '
         Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(57, 20)
+        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(59, 20)
         Me.ToolStripMenuItem3.Text = "Reports"
         '
         'ToolStripMenuItem4

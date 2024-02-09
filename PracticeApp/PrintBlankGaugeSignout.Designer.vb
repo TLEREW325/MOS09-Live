@@ -22,21 +22,26 @@ Partial Class PrintBlankGaugeSignout
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.crvBlankGaugeSignout = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXBlankGaugeSignout1 = New MOS09Program.CRXBlankGaugeSignout
+        Me.crvBlankGaugeSignout = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXBlankGaugeSignout1 = New MOS09Program.CRXBlankGaugeSignout()
         Me.SuspendLayout()
         '
         'crvBlankGaugeSignout
         '
         Me.crvBlankGaugeSignout.ActiveViewIndex = 0
         Me.crvBlankGaugeSignout.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.crvBlankGaugeSignout.DisplayGroupTree = False
+        Me.crvBlankGaugeSignout.Cursor = System.Windows.Forms.Cursors.Default
         Me.crvBlankGaugeSignout.Dock = System.Windows.Forms.DockStyle.Fill
         Me.crvBlankGaugeSignout.Location = New System.Drawing.Point(0, 0)
         Me.crvBlankGaugeSignout.Name = "crvBlankGaugeSignout"
         Me.crvBlankGaugeSignout.ReportSource = Me.CRXBlankGaugeSignout1
+        Me.crvBlankGaugeSignout.ShowGroupTreeButton = False
+        Me.crvBlankGaugeSignout.ShowLogo = False
+        Me.crvBlankGaugeSignout.ShowTextSearchButton = False
+        Me.crvBlankGaugeSignout.ShowZoomButton = False
         Me.crvBlankGaugeSignout.Size = New System.Drawing.Size(1034, 711)
         Me.crvBlankGaugeSignout.TabIndex = 0
+        Me.crvBlankGaugeSignout.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintBlankGaugeSignout
         '

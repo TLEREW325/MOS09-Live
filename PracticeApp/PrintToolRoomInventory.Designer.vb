@@ -22,14 +22,14 @@ Partial Class PrintToolRoomInventory
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.PrintDataToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRVPrintToolRoomInventory = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.crxPrintToolRoomInventory1 = New MOS09Program.CRXPrintToolRoomInventory
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PrintDataToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRVPrintToolRoomInventory = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.crxPrintToolRoomInventory1 = New MOS09Program.CRXPrintToolRoomInventory()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -38,7 +38,7 @@ Partial Class PrintToolRoomInventory
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1034, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1030, 24)
         Me.MenuStrip1.TabIndex = 2
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -81,19 +81,25 @@ Partial Class PrintToolRoomInventory
         '
         Me.CRVPrintToolRoomInventory.ActiveViewIndex = 0
         Me.CRVPrintToolRoomInventory.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRVPrintToolRoomInventory.DisplayGroupTree = False
+        Me.CRVPrintToolRoomInventory.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRVPrintToolRoomInventory.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRVPrintToolRoomInventory.Location = New System.Drawing.Point(0, 24)
         Me.CRVPrintToolRoomInventory.Name = "CRVPrintToolRoomInventory"
         Me.CRVPrintToolRoomInventory.ReportSource = Me.crxPrintToolRoomInventory1
-        Me.CRVPrintToolRoomInventory.Size = New System.Drawing.Size(1034, 687)
+        Me.CRVPrintToolRoomInventory.ShowGroupTreeButton = False
+        Me.CRVPrintToolRoomInventory.ShowLogo = False
+        Me.CRVPrintToolRoomInventory.ShowParameterPanelButton = False
+        Me.CRVPrintToolRoomInventory.ShowTextSearchButton = False
+        Me.CRVPrintToolRoomInventory.ShowZoomButton = False
+        Me.CRVPrintToolRoomInventory.Size = New System.Drawing.Size(1030, 608)
         Me.CRVPrintToolRoomInventory.TabIndex = 3
+        Me.CRVPrintToolRoomInventory.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintToolRoomInventory
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1034, 711)
+        Me.ClientSize = New System.Drawing.Size(1030, 632)
         Me.Controls.Add(Me.CRVPrintToolRoomInventory)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Name = "PrintToolRoomInventory"

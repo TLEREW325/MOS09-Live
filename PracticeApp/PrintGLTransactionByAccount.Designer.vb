@@ -22,15 +22,15 @@ Partial Class PrintGLTransactionByAccount
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRAccountViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXGLTransactionsByAccount1 = New MOS09Program.CRXGLTransactionsByAccount
-        Me.CRXGLTransactionsByAccountArchived1 = New MOS09Program.CRXGLTransactionsByAccountArchived
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRAccountViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXGLTransactionsByAccountArchived1 = New MOS09Program.CRXGLTransactionsByAccountArchived()
+        Me.CRXGLTransactionsByAccount1 = New MOS09Program.CRXGLTransactionsByAccount()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -46,19 +46,19 @@ Partial Class PrintGLTransactionByAccount
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -78,17 +78,21 @@ Partial Class PrintGLTransactionByAccount
         '
         Me.CRAccountViewer.ActiveViewIndex = 0
         Me.CRAccountViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRAccountViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRAccountViewer.DisplayGroupTree = False
+        Me.CRAccountViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRAccountViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRAccountViewer.Name = "CRAccountViewer"
         Me.CRAccountViewer.ReportSource = Me.CRXGLTransactionsByAccountArchived1
         Me.CRAccountViewer.ShowGroupTreeButton = False
+        Me.CRAccountViewer.ShowLogo = False
+        Me.CRAccountViewer.ShowParameterPanelButton = False
         Me.CRAccountViewer.ShowTextSearchButton = False
+        Me.CRAccountViewer.ShowZoomButton = False
         Me.CRAccountViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRAccountViewer.TabIndex = 1
+        Me.CRAccountViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintGLTransactionByAccount
         '

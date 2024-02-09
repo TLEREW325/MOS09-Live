@@ -22,27 +22,27 @@ Partial Class PrintCustomerOrderHistory
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRHistoryViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXCustomerOrderHistory1 = New MOS09Program.CRXCustomerOrderHistory
-        Me.cboCustomer = New System.Windows.Forms.ComboBox
+        Me.components = New System.ComponentModel.Container()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRHistoryViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXCustomerOrderHistory1 = New MOS09Program.CRXCustomerOrderHistory()
+        Me.cboCustomer = New System.Windows.Forms.ComboBox()
         Me.CustomerListBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet
-        Me.cmdClear = New System.Windows.Forms.Button
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.CustomerListTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.CustomerListTableAdapter
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.cmdFilterByCustomerAndDateRange = New System.Windows.Forms.Button
-        Me.Label14 = New System.Windows.Forms.Label
-        Me.chkDateRange = New System.Windows.Forms.CheckBox
-        Me.dtpBeginDate = New System.Windows.Forms.DateTimePicker
-        Me.dtpEndDate = New System.Windows.Forms.DateTimePicker
+        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet()
+        Me.cmdClear = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.CustomerListTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.CustomerListTableAdapter()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.cmdFilterByCustomerAndDateRange = New System.Windows.Forms.Button()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.chkDateRange = New System.Windows.Forms.CheckBox()
+        Me.dtpBeginDate = New System.Windows.Forms.DateTimePicker()
+        Me.dtpEndDate = New System.Windows.Forms.DateTimePicker()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.CustomerListBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SQLTFPOperationsDatabaseDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -60,19 +60,19 @@ Partial Class PrintCustomerOrderHistory
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -92,18 +92,21 @@ Partial Class PrintCustomerOrderHistory
         '
         Me.CRHistoryViewer.ActiveViewIndex = -1
         Me.CRHistoryViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRHistoryViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRHistoryViewer.DisplayGroupTree = False
+        Me.CRHistoryViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRHistoryViewer.Location = New System.Drawing.Point(181, 27)
         Me.CRHistoryViewer.Name = "CRHistoryViewer"
         Me.CRHistoryViewer.SelectionFormula = ""
         Me.CRHistoryViewer.ShowGroupTreeButton = False
+        Me.CRHistoryViewer.ShowLogo = False
+        Me.CRHistoryViewer.ShowParameterPanelButton = False
         Me.CRHistoryViewer.ShowTextSearchButton = False
         Me.CRHistoryViewer.ShowZoomButton = False
         Me.CRHistoryViewer.Size = New System.Drawing.Size(849, 605)
         Me.CRHistoryViewer.TabIndex = 1
+        Me.CRHistoryViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         Me.CRHistoryViewer.ViewTimeSelectionFormula = ""
         '
         'cboCustomer

@@ -22,16 +22,16 @@ Partial Class PrintTWDStockStatusRemote
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.CRStockViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXTWDStockStatusWOC1 = New MOS09Program.CRXTWDStockStatusWOC
-        Me.CRXTWDStockStatus1 = New MOS09Program.CRXTWDStockStatus
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.EmailReportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.CRStockViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXTWDStockStatusWOC1 = New MOS09Program.CRXTWDStockStatusWOC()
+        Me.CRXTWDStockStatus1 = New MOS09Program.CRXTWDStockStatus()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmailReportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -39,14 +39,18 @@ Partial Class PrintTWDStockStatusRemote
         '
         Me.CRStockViewer.ActiveViewIndex = 0
         Me.CRStockViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRStockViewer.DisplayGroupTree = False
+        Me.CRStockViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRStockViewer.Location = New System.Drawing.Point(0, 27)
         Me.CRStockViewer.Name = "CRStockViewer"
         Me.CRStockViewer.ReportSource = Me.CRXTWDStockStatusWOC1
         Me.CRStockViewer.ShowGroupTreeButton = False
+        Me.CRStockViewer.ShowLogo = False
+        Me.CRStockViewer.ShowParameterPanelButton = False
         Me.CRStockViewer.ShowTextSearchButton = False
+        Me.CRStockViewer.ShowZoomButton = False
         Me.CRStockViewer.Size = New System.Drawing.Size(1030, 579)
         Me.CRStockViewer.TabIndex = 0
+        Me.CRStockViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'MenuStrip1
         '
@@ -60,20 +64,26 @@ Partial Class PrintTWDStockStatusRemote
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmailReportToolStripMenuItem})
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
+        '
+        'EmailReportToolStripMenuItem
+        '
+        Me.EmailReportToolStripMenuItem.Name = "EmailReportToolStripMenuItem"
+        Me.EmailReportToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
+        Me.EmailReportToolStripMenuItem.Text = "Email Report"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -86,23 +96,17 @@ Partial Class PrintTWDStockStatusRemote
         'ExitToolStripMenuItem1
         '
         Me.ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1"
-        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(92, 22)
         Me.ExitToolStripMenuItem1.Text = "Exit"
         '
-        'EmailReportToolStripMenuItem
-        '
-        Me.EmailReportToolStripMenuItem.Name = "EmailReportToolStripMenuItem"
-        Me.EmailReportToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.EmailReportToolStripMenuItem.Text = "Email Report"
-        '
-        'PrintTWDStockStatus
+        'PrintTWDStockStatusRemote
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1030, 632)
         Me.Controls.Add(Me.CRStockViewer)
         Me.Controls.Add(Me.MenuStrip1)
-        Me.Name = "PrintTWDStockStatus"
+        Me.Name = "PrintTWDStockStatusRemote"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TFP Corporation Stock Status"
         Me.MenuStrip1.ResumeLayout(False)

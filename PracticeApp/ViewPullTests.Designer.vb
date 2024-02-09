@@ -23,7 +23,7 @@ Partial Class ViewPullTests
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
@@ -54,6 +54,7 @@ Partial Class ViewPullTests
         Me.cmdClear = New System.Windows.Forms.Button
         Me.Label1 = New System.Windows.Forms.Label
         Me.cboDivisionID = New System.Windows.Forms.ComboBox
+        Me.DivisionTableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.chkDateRange = New System.Windows.Forms.CheckBox
         Me.Label14 = New System.Windows.Forms.Label
         Me.Label9 = New System.Windows.Forms.Label
@@ -68,6 +69,8 @@ Partial Class ViewPullTests
         Me.ItemListTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.ItemListTableAdapter
         Me.PullTestQueryTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.PullTestQueryTableAdapter
         Me.dgvPullTestQuery = New System.Windows.Forms.DataGridView
+        Me.HeatNumberLogTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.HeatNumberLogTableAdapter
+        Me.DivisionTableTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.DivisionTableTableAdapter
         Me.TestNumberColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.PullTestLineNumberColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.TestDateColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
@@ -102,18 +105,15 @@ Partial Class ViewPullTests
         Me.DivisionIDColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.RMIDColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.DescriptionColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.HeatNumberLogTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.HeatNumberLogTableAdapter
-        Me.DivisionTableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.DivisionTableTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.DivisionTableTableAdapter
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PullTestQueryBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SQLTFPOperationsDatabaseDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         CType(Me.ItemListBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.HeatNumberLogBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DivisionTableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gpxViewBy.SuspendLayout()
         CType(Me.dgvPullTestQuery, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DivisionTableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -369,6 +369,11 @@ Partial Class ViewPullTests
         Me.cboDivisionID.Size = New System.Drawing.Size(178, 21)
         Me.cboDivisionID.TabIndex = 0
         '
+        'DivisionTableBindingSource
+        '
+        Me.DivisionTableBindingSource.DataMember = "DivisionTable"
+        Me.DivisionTableBindingSource.DataSource = Me.SQLTFPOperationsDatabaseDataSet
+        '
         'chkDateRange
         '
         Me.chkDateRange.AutoSize = True
@@ -517,8 +522,8 @@ Partial Class ViewPullTests
         '
         Me.dgvPullTestQuery.AllowUserToAddRows = False
         Me.dgvPullTestQuery.AllowUserToDeleteRows = False
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.dgvPullTestQuery.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.dgvPullTestQuery.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvPullTestQuery.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -533,6 +538,14 @@ Partial Class ViewPullTests
         Me.dgvPullTestQuery.Name = "dgvPullTestQuery"
         Me.dgvPullTestQuery.Size = New System.Drawing.Size(785, 714)
         Me.dgvPullTestQuery.TabIndex = 16
+        '
+        'HeatNumberLogTableAdapter
+        '
+        Me.HeatNumberLogTableAdapter.ClearBeforeFill = True
+        '
+        'DivisionTableTableAdapter
+        '
+        Me.DivisionTableTableAdapter.ClearBeforeFill = True
         '
         'TestNumberColumn
         '
@@ -647,6 +660,7 @@ Partial Class ViewPullTests
         Me.NominalDiameterColumn.HeaderText = "Nom. Diameter"
         Me.NominalDiameterColumn.Name = "NominalDiameterColumn"
         Me.NominalDiameterColumn.ReadOnly = True
+        Me.NominalDiameterColumn.Visible = False
         Me.NominalDiameterColumn.Width = 80
         '
         'NominalLengthColumn
@@ -655,6 +669,7 @@ Partial Class ViewPullTests
         Me.NominalLengthColumn.HeaderText = "Nom. Length"
         Me.NominalLengthColumn.Name = "NominalLengthColumn"
         Me.NominalLengthColumn.ReadOnly = True
+        Me.NominalLengthColumn.Visible = False
         Me.NominalLengthColumn.Width = 80
         '
         'TestedByColumn
@@ -785,19 +800,6 @@ Partial Class ViewPullTests
         Me.DescriptionColumn.ReadOnly = True
         Me.DescriptionColumn.Visible = False
         '
-        'HeatNumberLogTableAdapter
-        '
-        Me.HeatNumberLogTableAdapter.ClearBeforeFill = True
-        '
-        'DivisionTableBindingSource
-        '
-        Me.DivisionTableBindingSource.DataMember = "DivisionTable"
-        Me.DivisionTableBindingSource.DataSource = Me.SQLTFPOperationsDatabaseDataSet
-        '
-        'DivisionTableTableAdapter
-        '
-        Me.DivisionTableTableAdapter.ClearBeforeFill = True
-        '
         'ViewPullTests
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -820,10 +822,10 @@ Partial Class ViewPullTests
         Me.GroupBox2.ResumeLayout(False)
         CType(Me.ItemListBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.HeatNumberLogBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DivisionTableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.gpxViewBy.ResumeLayout(False)
         Me.gpxViewBy.PerformLayout()
         CType(Me.dgvPullTestQuery, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DivisionTableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -871,6 +873,10 @@ Partial Class ViewPullTests
     Friend WithEvents cboStatus As System.Windows.Forms.ComboBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents HeatNumberLogBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents HeatNumberLogTableAdapter As MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.HeatNumberLogTableAdapter
+    Friend WithEvents DivisionTableBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents DivisionTableTableAdapter As MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.DivisionTableTableAdapter
     Friend WithEvents TestNumberColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents PullTestLineNumberColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents TestDateColumn As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -905,8 +911,4 @@ Partial Class ViewPullTests
     Friend WithEvents DivisionIDColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents RMIDColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DescriptionColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents HeatNumberLogBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents HeatNumberLogTableAdapter As MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.HeatNumberLogTableAdapter
-    Friend WithEvents DivisionTableBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents DivisionTableTableAdapter As MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.DivisionTableTableAdapter
 End Class

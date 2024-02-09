@@ -22,14 +22,14 @@ Partial Class PrintInventoryTubWIPReport
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.CRWIPViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXInventoryTubWIPReport1 = New MOS09Program.CRXInventoryTubWIPReport
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
+        Me.CRWIPViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXInventoryTubWIPReport1 = New MOS09Program.CRXInventoryTubWIPReport()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -37,15 +37,19 @@ Partial Class PrintInventoryTubWIPReport
         '
         Me.CRWIPViewer.ActiveViewIndex = 0
         Me.CRWIPViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRWIPViewer.DisplayGroupTree = False
+        Me.CRWIPViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRWIPViewer.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRWIPViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRWIPViewer.Name = "CRWIPViewer"
         Me.CRWIPViewer.ReportSource = Me.CRXInventoryTubWIPReport1
         Me.CRWIPViewer.ShowGroupTreeButton = False
+        Me.CRWIPViewer.ShowLogo = False
+        Me.CRWIPViewer.ShowParameterPanelButton = False
         Me.CRWIPViewer.ShowTextSearchButton = False
+        Me.CRWIPViewer.ShowZoomButton = False
         Me.CRWIPViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRWIPViewer.TabIndex = 0
+        Me.CRWIPViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'MenuStrip1
         '
@@ -59,19 +63,19 @@ Partial Class PrintInventoryTubWIPReport
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -84,7 +88,7 @@ Partial Class PrintInventoryTubWIPReport
         'ExitToolStripMenuItem1
         '
         Me.ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1"
-        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(92, 22)
         Me.ExitToolStripMenuItem1.Text = "Exit"
         '
         'PrintInventoryTubWIPReport

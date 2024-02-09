@@ -1,10 +1,5 @@
 ﻿Imports System
-Imports System.Windows.Forms
-Imports System.Math
-Imports System.IO
 Imports System.Data
-Imports System.Data.OleDb
-Imports System.Data.SqlClient
 Public Class CreateSOFromPO
     Inherits System.Windows.Forms.Form
 
@@ -1529,6 +1524,8 @@ Public Class CreateSOFromPO
 
                 ShipToCountry = CountryCodeFromState
             End If
+            '******************************************************************************************************
+
             '******************************************************************************************************
             'Create Sales Order Header
             Dim MAXStatement As String = "SELECT MAX(SalesOrderKey) FROM SalesOrderHeaderTable"

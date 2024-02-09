@@ -22,31 +22,37 @@ Partial Class PrintWIPTotals
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.CRVWIPTotals = New CrystalDecisions.Windows.Forms.CrystalReportViewer
+        Me.CRVWIPTotals = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
         Me.SuspendLayout()
         '
         'CRVWIPTotals
         '
         Me.CRVWIPTotals.ActiveViewIndex = -1
         Me.CRVWIPTotals.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRVWIPTotals.DisplayGroupTree = False
+        Me.CRVWIPTotals.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRVWIPTotals.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRVWIPTotals.Location = New System.Drawing.Point(0, 0)
         Me.CRVWIPTotals.Name = "CRVWIPTotals"
         Me.CRVWIPTotals.SelectionFormula = ""
-        Me.CRVWIPTotals.Size = New System.Drawing.Size(1034, 711)
+        Me.CRVWIPTotals.ShowGroupTreeButton = False
+        Me.CRVWIPTotals.ShowLogo = False
+        Me.CRVWIPTotals.ShowParameterPanelButton = False
+        Me.CRVWIPTotals.ShowTextSearchButton = False
+        Me.CRVWIPTotals.ShowZoomButton = False
+        Me.CRVWIPTotals.Size = New System.Drawing.Size(1030, 632)
         Me.CRVWIPTotals.TabIndex = 0
+        Me.CRVWIPTotals.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         Me.CRVWIPTotals.ViewTimeSelectionFormula = ""
         '
         'PrintWIPTotals
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1034, 711)
+        Me.ClientSize = New System.Drawing.Size(1030, 632)
         Me.Controls.Add(Me.CRVWIPTotals)
         Me.Name = "PrintWIPTotals"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "PrintWIPTotals"
+        Me.Text = "TFP Corporation WIP Totals"
         Me.ResumeLayout(False)
 
     End Sub

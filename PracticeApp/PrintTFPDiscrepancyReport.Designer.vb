@@ -22,20 +22,20 @@ Partial Class PrintTFPDiscrepancyReport
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.cmdItemClass = New System.Windows.Forms.Button
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.Label4 = New System.Windows.Forms.Label
-        Me.cmdClear = New System.Windows.Forms.Button
-        Me.txtTextFilter = New System.Windows.Forms.TextBox
-        Me.CRInventoryViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXTFPInventoryReport1 = New MOS09Program.CRXTFPInventoryReport
-        Me.chkZero = New System.Windows.Forms.CheckBox
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.cmdItemClass = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.cmdClear = New System.Windows.Forms.Button()
+        Me.txtTextFilter = New System.Windows.Forms.TextBox()
+        Me.CRInventoryViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXTFPInventoryReport1 = New MOS09Program.CRXTFPInventoryReport()
+        Me.chkZero = New System.Windows.Forms.CheckBox()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -51,19 +51,19 @@ Partial Class PrintTFPDiscrepancyReport
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -131,15 +131,21 @@ Partial Class PrintTFPDiscrepancyReport
         '
         Me.CRInventoryViewer.ActiveViewIndex = 0
         Me.CRInventoryViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRInventoryViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRInventoryViewer.DisplayGroupTree = False
+        Me.CRInventoryViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRInventoryViewer.Location = New System.Drawing.Point(178, 24)
         Me.CRInventoryViewer.Name = "CRInventoryViewer"
         Me.CRInventoryViewer.ReportSource = Me.CRXTFPInventoryReport1
+        Me.CRInventoryViewer.ShowGroupTreeButton = False
+        Me.CRInventoryViewer.ShowLogo = False
+        Me.CRInventoryViewer.ShowParameterPanelButton = False
+        Me.CRInventoryViewer.ShowTextSearchButton = False
+        Me.CRInventoryViewer.ShowZoomButton = False
         Me.CRInventoryViewer.Size = New System.Drawing.Size(850, 608)
         Me.CRInventoryViewer.TabIndex = 1
+        Me.CRInventoryViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'chkZero
         '

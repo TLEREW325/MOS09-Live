@@ -22,16 +22,16 @@ Partial Class PrintAPPaymentBatch
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRAPBatchViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRAPPaymentViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXAPPaymentBatch1 = New MOS09Program.CRXAPPaymentBatch
-        Me.EmailPaymentBatchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmailPaymentBatchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRAPBatchViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRAPPaymentViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXAPPaymentBatch1 = New MOS09Program.CRXAPPaymentBatch()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -47,20 +47,26 @@ Partial Class PrintAPPaymentBatch
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmailPaymentBatchToolStripMenuItem})
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
+        '
+        'EmailPaymentBatchToolStripMenuItem
+        '
+        Me.EmailPaymentBatchToolStripMenuItem.Name = "EmailPaymentBatchToolStripMenuItem"
+        Me.EmailPaymentBatchToolStripMenuItem.Size = New System.Drawing.Size(186, 22)
+        Me.EmailPaymentBatchToolStripMenuItem.Text = "Email Payment Batch"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -80,7 +86,7 @@ Partial Class PrintAPPaymentBatch
         '
         Me.CRAPBatchViewer.ActiveViewIndex = -1
         Me.CRAPBatchViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRAPBatchViewer.DisplayGroupTree = False
+        Me.CRAPBatchViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRAPBatchViewer.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRAPBatchViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRAPBatchViewer.Name = "CRAPBatchViewer"
@@ -93,24 +99,21 @@ Partial Class PrintAPPaymentBatch
         '
         Me.CRAPPaymentViewer.ActiveViewIndex = 0
         Me.CRAPPaymentViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRAPPaymentViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRAPPaymentViewer.DisplayGroupTree = False
+        Me.CRAPPaymentViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRAPPaymentViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRAPPaymentViewer.Name = "CRAPPaymentViewer"
         Me.CRAPPaymentViewer.ReportSource = Me.CRXAPPaymentBatch1
         Me.CRAPPaymentViewer.ShowGroupTreeButton = False
+        Me.CRAPPaymentViewer.ShowLogo = False
+        Me.CRAPPaymentViewer.ShowParameterPanelButton = False
         Me.CRAPPaymentViewer.ShowTextSearchButton = False
         Me.CRAPPaymentViewer.ShowZoomButton = False
         Me.CRAPPaymentViewer.Size = New System.Drawing.Size(1028, 608)
         Me.CRAPPaymentViewer.TabIndex = 2
-        '
-        'EmailPaymentBatchToolStripMenuItem
-        '
-        Me.EmailPaymentBatchToolStripMenuItem.Name = "EmailPaymentBatchToolStripMenuItem"
-        Me.EmailPaymentBatchToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
-        Me.EmailPaymentBatchToolStripMenuItem.Text = "Email Payment Batch"
+        Me.CRAPPaymentViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintAPPaymentBatch
         '

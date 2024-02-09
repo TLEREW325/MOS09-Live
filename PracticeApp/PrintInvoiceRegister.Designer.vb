@@ -22,39 +22,39 @@ Partial Class PrintInvoiceRegister
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRInvoiceViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXInvoiceRegister1 = New MOS09Program.CRXInvoiceRegister
-        Me.cboCustomer = New System.Windows.Forms.ComboBox
+        Me.components = New System.ComponentModel.Container()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRInvoiceViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXInvoiceRegister1 = New MOS09Program.CRXInvoiceRegister()
+        Me.cboCustomer = New System.Windows.Forms.ComboBox()
         Me.CustomerListBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet
-        Me.cboInvoiceNumber = New System.Windows.Forms.ComboBox
+        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet()
+        Me.cboInvoiceNumber = New System.Windows.Forms.ComboBox()
         Me.InvoiceHeaderTableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.cmdClear = New System.Windows.Forms.Button
-        Me.CustomerListTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.CustomerListTableAdapter
-        Me.InvoiceHeaderTableTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.InvoiceHeaderTableTableAdapter
-        Me.dtpBeginDate = New System.Windows.Forms.DateTimePicker
-        Me.Label4 = New System.Windows.Forms.Label
-        Me.cboCustomerName = New System.Windows.Forms.ComboBox
-        Me.dtpEndDate = New System.Windows.Forms.DateTimePicker
-        Me.Label5 = New System.Windows.Forms.Label
-        Me.cmdViewByCustomerAndDate = New System.Windows.Forms.Button
-        Me.chkDateRange = New System.Windows.Forms.CheckBox
-        Me.Label6 = New System.Windows.Forms.Label
-        Me.cboInvoiceStatus = New System.Windows.Forms.ComboBox
-        Me.Label7 = New System.Windows.Forms.Label
-        Me.cboDivisionID = New System.Windows.Forms.ComboBox
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.cmdClear = New System.Windows.Forms.Button()
+        Me.CustomerListTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.CustomerListTableAdapter()
+        Me.InvoiceHeaderTableTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.InvoiceHeaderTableTableAdapter()
+        Me.dtpBeginDate = New System.Windows.Forms.DateTimePicker()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.cboCustomerName = New System.Windows.Forms.ComboBox()
+        Me.dtpEndDate = New System.Windows.Forms.DateTimePicker()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.cmdViewByCustomerAndDate = New System.Windows.Forms.Button()
+        Me.chkDateRange = New System.Windows.Forms.CheckBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.cboInvoiceStatus = New System.Windows.Forms.ComboBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.cboDivisionID = New System.Windows.Forms.ComboBox()
         Me.DivisionTableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.DivisionTableTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.DivisionTableTableAdapter
+        Me.DivisionTableTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.DivisionTableTableAdapter()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.CustomerListBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SQLTFPOperationsDatabaseDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -106,15 +106,21 @@ Partial Class PrintInvoiceRegister
         '
         Me.CRInvoiceViewer.ActiveViewIndex = -1
         Me.CRInvoiceViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRInvoiceViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRInvoiceViewer.DisplayGroupTree = False
+        Me.CRInvoiceViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRInvoiceViewer.Location = New System.Drawing.Point(185, 24)
         Me.CRInvoiceViewer.Name = "CRInvoiceViewer"
         Me.CRInvoiceViewer.SelectionFormula = ""
+        Me.CRInvoiceViewer.ShowGroupTreeButton = False
+        Me.CRInvoiceViewer.ShowLogo = False
+        Me.CRInvoiceViewer.ShowParameterPanelButton = False
+        Me.CRInvoiceViewer.ShowTextSearchButton = False
+        Me.CRInvoiceViewer.ShowZoomButton = False
         Me.CRInvoiceViewer.Size = New System.Drawing.Size(845, 608)
         Me.CRInvoiceViewer.TabIndex = 1
+        Me.CRInvoiceViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         Me.CRInvoiceViewer.ViewTimeSelectionFormula = ""
         '
         'cboCustomer

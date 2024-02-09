@@ -22,15 +22,15 @@ Partial Class PrintSalesByItemClass
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRSalesViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXSalesByItemClass_TWD1 = New MOS09Program.CRXSalesByItemClass_TWD
-        Me.CRXSalesByItemClass1 = New MOS09Program.CRXSalesByItemClass
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRSalesViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXSalesByItemClass1 = New MOS09Program.CRXSalesByItemClass()
+        Me.CRXSalesByItemClass_TWD1 = New MOS09Program.CRXSalesByItemClass_TWD()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -46,19 +46,19 @@ Partial Class PrintSalesByItemClass
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -78,15 +78,19 @@ Partial Class PrintSalesByItemClass
         '
         Me.CRSalesViewer.ActiveViewIndex = 0
         Me.CRSalesViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRSalesViewer.DisplayGroupTree = False
+        Me.CRSalesViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRSalesViewer.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRSalesViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRSalesViewer.Name = "CRSalesViewer"
         Me.CRSalesViewer.ReportSource = Me.CRXSalesByItemClass1
         Me.CRSalesViewer.ShowGroupTreeButton = False
+        Me.CRSalesViewer.ShowLogo = False
+        Me.CRSalesViewer.ShowParameterPanelButton = False
         Me.CRSalesViewer.ShowTextSearchButton = False
+        Me.CRSalesViewer.ShowZoomButton = False
         Me.CRSalesViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRSalesViewer.TabIndex = 1
+        Me.CRSalesViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintSalesByItemClass
         '

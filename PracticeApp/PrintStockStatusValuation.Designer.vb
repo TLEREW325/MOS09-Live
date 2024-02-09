@@ -22,14 +22,14 @@ Partial Class PrintStockStatusValuation
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRStatusViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXStockStatusValuation1 = New MOS09Program.CRXStockStatusValuation
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRStatusViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXStockStatusValuation1 = New MOS09Program.CRXStockStatusValuation()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -45,19 +45,19 @@ Partial Class PrintStockStatusValuation
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportToolStripMenuItem
         '
         Me.ReportToolStripMenuItem.Name = "ReportToolStripMenuItem"
-        Me.ReportToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -77,15 +77,21 @@ Partial Class PrintStockStatusValuation
         '
         Me.CRStatusViewer.ActiveViewIndex = 0
         Me.CRStatusViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRStatusViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRStatusViewer.DisplayGroupTree = False
+        Me.CRStatusViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRStatusViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRStatusViewer.Name = "CRStatusViewer"
         Me.CRStatusViewer.ReportSource = Me.CRXStockStatusValuation1
+        Me.CRStatusViewer.ShowGroupTreeButton = False
+        Me.CRStatusViewer.ShowLogo = False
+        Me.CRStatusViewer.ShowParameterPanelButton = False
+        Me.CRStatusViewer.ShowTextSearchButton = False
+        Me.CRStatusViewer.ShowZoomButton = False
         Me.CRStatusViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRStatusViewer.TabIndex = 1
+        Me.CRStatusViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintStockStatusValuation
         '

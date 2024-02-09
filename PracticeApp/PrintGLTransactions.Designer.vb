@@ -22,14 +22,14 @@ Partial Class PrintGLTransactions
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRGLTransactionViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXGLTransactionList1 = New MOS09Program.CRXGLTransactionList
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRGLTransactionViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXGLTransactionList1 = New MOS09Program.CRXGLTransactionList()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -45,19 +45,19 @@ Partial Class PrintGLTransactions
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -77,15 +77,21 @@ Partial Class PrintGLTransactions
         '
         Me.CRGLTransactionViewer.ActiveViewIndex = 0
         Me.CRGLTransactionViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRGLTransactionViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRGLTransactionViewer.DisplayGroupTree = False
+        Me.CRGLTransactionViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRGLTransactionViewer.Location = New System.Drawing.Point(0, 27)
         Me.CRGLTransactionViewer.Name = "CRGLTransactionViewer"
         Me.CRGLTransactionViewer.ReportSource = Me.CRXGLTransactionList1
+        Me.CRGLTransactionViewer.ShowGroupTreeButton = False
+        Me.CRGLTransactionViewer.ShowLogo = False
+        Me.CRGLTransactionViewer.ShowParameterPanelButton = False
+        Me.CRGLTransactionViewer.ShowTextSearchButton = False
+        Me.CRGLTransactionViewer.ShowZoomButton = False
         Me.CRGLTransactionViewer.Size = New System.Drawing.Size(1028, 608)
         Me.CRGLTransactionViewer.TabIndex = 1
+        Me.CRGLTransactionViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintGLTransactions
         '

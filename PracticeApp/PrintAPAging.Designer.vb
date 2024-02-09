@@ -22,31 +22,31 @@ Partial Class PrintAPAging
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRAPViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXAPAging1 = New MOS09Program.CRXAPAging
-        Me.cmdFilter = New System.Windows.Forms.Button
-        Me.cmdClear = New System.Windows.Forms.Button
-        Me.cboVendor = New System.Windows.Forms.ComboBox
+        Me.components = New System.ComponentModel.Container()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRAPViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXAPAging1 = New MOS09Program.CRXAPAging()
+        Me.cmdFilter = New System.Windows.Forms.Button()
+        Me.cmdClear = New System.Windows.Forms.Button()
+        Me.cboVendor = New System.Windows.Forms.ComboBox()
         Me.VendorBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet
-        Me.VendorTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.VendorTableAdapter
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.Label4 = New System.Windows.Forms.Label
-        Me.Label14 = New System.Windows.Forms.Label
-        Me.chkDateRange = New System.Windows.Forms.CheckBox
-        Me.dtpBeginDate = New System.Windows.Forms.DateTimePicker
-        Me.dtpEndDate = New System.Windows.Forms.DateTimePicker
-        Me.label2 = New System.Windows.Forms.Label
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.rdoInvoice = New System.Windows.Forms.RadioButton
-        Me.rdoDue = New System.Windows.Forms.RadioButton
+        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet()
+        Me.VendorTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.VendorTableAdapter()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.chkDateRange = New System.Windows.Forms.CheckBox()
+        Me.dtpBeginDate = New System.Windows.Forms.DateTimePicker()
+        Me.dtpEndDate = New System.Windows.Forms.DateTimePicker()
+        Me.label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.rdoInvoice = New System.Windows.Forms.RadioButton()
+        Me.rdoDue = New System.Windows.Forms.RadioButton()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.VendorBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SQLTFPOperationsDatabaseDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -64,19 +64,19 @@ Partial Class PrintAPAging
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(38, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(40, 20)
         Me.FileToolStripMenuItem.Text = "File "
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -96,15 +96,20 @@ Partial Class PrintAPAging
         '
         Me.CRAPViewer.ActiveViewIndex = -1
         Me.CRAPViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRAPViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRAPViewer.DisplayGroupTree = False
+        Me.CRAPViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRAPViewer.Location = New System.Drawing.Point(183, 24)
         Me.CRAPViewer.Name = "CRAPViewer"
         Me.CRAPViewer.SelectionFormula = ""
+        Me.CRAPViewer.ShowGroupTreeButton = False
+        Me.CRAPViewer.ShowLogo = False
+        Me.CRAPViewer.ShowParameterPanelButton = False
+        Me.CRAPViewer.ShowTextSearchButton = False
         Me.CRAPViewer.Size = New System.Drawing.Size(845, 608)
         Me.CRAPViewer.TabIndex = 1
+        Me.CRAPViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         Me.CRAPViewer.ViewTimeSelectionFormula = ""
         '
         'cmdFilter
@@ -177,8 +182,8 @@ Partial Class PrintAPAging
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(162, 63)
         Me.Label14.TabIndex = 47
-        Me.Label14.Text = "To include date range in the filter, you must check the box. Then Select Invoice " & _
-            "Date or Due Date"
+        Me.Label14.Text = "To include date range in the filter, you must check the box. Then Select Invoice " &
+    "Date or Due Date"
         Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'chkDateRange

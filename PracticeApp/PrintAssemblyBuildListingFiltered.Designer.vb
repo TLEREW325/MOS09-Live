@@ -22,14 +22,14 @@ Partial Class PrintAssemblyBuildListingFiltered
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EDitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRAssemblyViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXAssemblyBuildListingFiltered1 = New MOS09Program.CRXAssemblyBuildListingFiltered
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EDitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRAssemblyViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXAssemblyBuildListingFiltered1 = New MOS09Program.CRXAssemblyBuildListingFiltered()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -45,19 +45,19 @@ Partial Class PrintAssemblyBuildListingFiltered
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EDitToolStripMenuItem
         '
         Me.EDitToolStripMenuItem.Name = "EDitToolStripMenuItem"
-        Me.EDitToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EDitToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EDitToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -70,23 +70,26 @@ Partial Class PrintAssemblyBuildListingFiltered
         'ExitToolStripMenuItem1
         '
         Me.ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1"
-        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(92, 22)
         Me.ExitToolStripMenuItem1.Text = "Exit"
         '
         'CRAssemblyViewer
         '
         Me.CRAssemblyViewer.ActiveViewIndex = 0
         Me.CRAssemblyViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRAssemblyViewer.DisplayGroupTree = False
+        Me.CRAssemblyViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRAssemblyViewer.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRAssemblyViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRAssemblyViewer.Name = "CRAssemblyViewer"
         Me.CRAssemblyViewer.ReportSource = Me.CRXAssemblyBuildListingFiltered1
         Me.CRAssemblyViewer.ShowGroupTreeButton = False
+        Me.CRAssemblyViewer.ShowLogo = False
+        Me.CRAssemblyViewer.ShowParameterPanelButton = False
         Me.CRAssemblyViewer.ShowTextSearchButton = False
         Me.CRAssemblyViewer.ShowZoomButton = False
         Me.CRAssemblyViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRAssemblyViewer.TabIndex = 1
+        Me.CRAssemblyViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintAssemblyBuildListingFiltered
         '

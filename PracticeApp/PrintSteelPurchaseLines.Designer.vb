@@ -22,20 +22,20 @@ Partial Class PrintSteelPurchaseLines
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRPurchaseViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXSteelPurchaseLines1 = New MOS09Program.CRXSteelPurchaseLines
+        Me.components = New System.ComponentModel.Container()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRPurchaseViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXSteelPurchaseLines1 = New MOS09Program.CRXSteelPurchaseLines()
         Me.SteelPurchaseOrderHeaderBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet
+        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet()
         Me.RawMaterialsTableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SteelPurchaseOrderHeaderTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.SteelPurchaseOrderHeaderTableAdapter
-        Me.RawMaterialsTableTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.RawMaterialsTableTableAdapter
+        Me.SteelPurchaseOrderHeaderTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.SteelPurchaseOrderHeaderTableAdapter()
+        Me.RawMaterialsTableTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.RawMaterialsTableTableAdapter()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.SteelPurchaseOrderHeaderBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SQLTFPOperationsDatabaseDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -54,19 +54,19 @@ Partial Class PrintSteelPurchaseLines
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -86,15 +86,21 @@ Partial Class PrintSteelPurchaseLines
         '
         Me.CRPurchaseViewer.ActiveViewIndex = 0
         Me.CRPurchaseViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRPurchaseViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRPurchaseViewer.DisplayGroupTree = False
+        Me.CRPurchaseViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRPurchaseViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRPurchaseViewer.Name = "CRPurchaseViewer"
         Me.CRPurchaseViewer.ReportSource = Me.CRXSteelPurchaseLines1
+        Me.CRPurchaseViewer.ShowGroupTreeButton = False
+        Me.CRPurchaseViewer.ShowLogo = False
+        Me.CRPurchaseViewer.ShowParameterPanelButton = False
+        Me.CRPurchaseViewer.ShowTextSearchButton = False
+        Me.CRPurchaseViewer.ShowZoomButton = False
         Me.CRPurchaseViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRPurchaseViewer.TabIndex = 1
+        Me.CRPurchaseViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'SteelPurchaseOrderHeaderBindingSource
         '

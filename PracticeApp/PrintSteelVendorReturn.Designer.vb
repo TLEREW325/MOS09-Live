@@ -22,14 +22,14 @@ Partial Class PrintSteelVendorReturn
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRSteelVendorReturnViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.crxSteelVendorReturn1 = New MOS09Program.CRXSteelVendorReturn
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRSteelVendorReturnViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.crxSteelVendorReturn1 = New MOS09Program.CRXSteelVendorReturn()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -38,26 +38,26 @@ Partial Class PrintSteelVendorReturn
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditToolStripMenuItem, Me.ReportsToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1042, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1030, 24)
         Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -77,22 +77,27 @@ Partial Class PrintSteelVendorReturn
         '
         Me.CRSteelVendorReturnViewer.ActiveViewIndex = 0
         Me.CRSteelVendorReturnViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRSteelVendorReturnViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRSteelVendorReturnViewer.DisplayGroupTree = False
+        Me.CRSteelVendorReturnViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRSteelVendorReturnViewer.Location = New System.Drawing.Point(0, 27)
         Me.CRSteelVendorReturnViewer.Name = "CRSteelVendorReturnViewer"
         Me.CRSteelVendorReturnViewer.ReportSource = Me.crxSteelVendorReturn1
+        Me.CRSteelVendorReturnViewer.ShowGroupTreeButton = False
+        Me.CRSteelVendorReturnViewer.ShowLogo = False
+        Me.CRSteelVendorReturnViewer.ShowParameterPanelButton = False
         Me.CRSteelVendorReturnViewer.ShowTextSearchButton = False
-        Me.CRSteelVendorReturnViewer.Size = New System.Drawing.Size(1042, 693)
+        Me.CRSteelVendorReturnViewer.ShowZoomButton = False
+        Me.CRSteelVendorReturnViewer.Size = New System.Drawing.Size(1030, 602)
         Me.CRSteelVendorReturnViewer.TabIndex = 2
+        Me.CRSteelVendorReturnViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintSteelVendorReturn
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1042, 723)
+        Me.ClientSize = New System.Drawing.Size(1030, 632)
         Me.Controls.Add(Me.CRSteelVendorReturnViewer)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Name = "PrintSteelVendorReturn"

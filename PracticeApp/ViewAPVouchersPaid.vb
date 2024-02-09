@@ -1021,6 +1021,11 @@ Public Class ViewAPVouchersPaid
     Private Sub gpxAPVoucherData_Enter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles gpxAPVoucherData.Enter
 
     End Sub
+
+    Private Sub cmdPrint1099Misc_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdPrint1099Misc.Click
+        Dim newPrint1099Misc As New View1099Misc
+        newPrint1099Misc.Show()
+    End Sub
 End Class
 
 Public Class GlobalVoucher

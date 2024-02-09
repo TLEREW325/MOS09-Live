@@ -22,14 +22,14 @@ Partial Class PrintAPCheckRemittance
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRRemmittanceViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXPTRemittance1 = New MOS09Program.CRXPTRemittance
-        Me.EmailRemittanceToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmailRemittanceToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRRemmittanceViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXPTRemittance1 = New MOS09Program.CRXPTRemittance()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -45,20 +45,26 @@ Partial Class PrintAPCheckRemittance
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmailRemittanceToolStripMenuItem})
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
+        '
+        'EmailRemittanceToolStripMenuItem
+        '
+        Me.EmailRemittanceToolStripMenuItem.Name = "EmailRemittanceToolStripMenuItem"
+        Me.EmailRemittanceToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
+        Me.EmailRemittanceToolStripMenuItem.Text = "Email Remittance"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -71,21 +77,19 @@ Partial Class PrintAPCheckRemittance
         '
         Me.CRRemmittanceViewer.ActiveViewIndex = 0
         Me.CRRemmittanceViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRRemmittanceViewer.DisplayGroupTree = False
+        Me.CRRemmittanceViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRRemmittanceViewer.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRRemmittanceViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRRemmittanceViewer.Name = "CRRemmittanceViewer"
         Me.CRRemmittanceViewer.ReportSource = Me.CRXPTRemittance1
         Me.CRRemmittanceViewer.ShowGroupTreeButton = False
+        Me.CRRemmittanceViewer.ShowLogo = False
+        Me.CRRemmittanceViewer.ShowParameterPanelButton = False
         Me.CRRemmittanceViewer.ShowTextSearchButton = False
+        Me.CRRemmittanceViewer.ShowZoomButton = False
         Me.CRRemmittanceViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRRemmittanceViewer.TabIndex = 1
-        '
-        'EmailRemittanceToolStripMenuItem
-        '
-        Me.EmailRemittanceToolStripMenuItem.Name = "EmailRemittanceToolStripMenuItem"
-        Me.EmailRemittanceToolStripMenuItem.Size = New System.Drawing.Size(155, 22)
-        Me.EmailRemittanceToolStripMenuItem.Text = "Email Remittance"
+        Me.CRRemmittanceViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintAPCheckRemittance
         '

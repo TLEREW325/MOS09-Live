@@ -22,14 +22,14 @@ Partial Class PrintEquipmentProduction
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRProductionViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXEquipmentProduction1 = New MOS09Program.CRXEquipmentProduction
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRProductionViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXEquipmentProduction1 = New MOS09Program.CRXEquipmentProduction()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -45,19 +45,19 @@ Partial Class PrintEquipmentProduction
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -70,21 +70,26 @@ Partial Class PrintEquipmentProduction
         'ExitToolStripMenuItem1
         '
         Me.ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1"
-        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(92, 22)
         Me.ExitToolStripMenuItem1.Text = "Exit"
         '
         'CRProductionViewer
         '
         Me.CRProductionViewer.ActiveViewIndex = 0
         Me.CRProductionViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRProductionViewer.DisplayGroupTree = False
+        Me.CRProductionViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRProductionViewer.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRProductionViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRProductionViewer.Name = "CRProductionViewer"
         Me.CRProductionViewer.ReportSource = Me.CRXEquipmentProduction1
+        Me.CRProductionViewer.ShowGroupTreeButton = False
+        Me.CRProductionViewer.ShowLogo = False
+        Me.CRProductionViewer.ShowParameterPanelButton = False
         Me.CRProductionViewer.ShowTextSearchButton = False
+        Me.CRProductionViewer.ShowZoomButton = False
         Me.CRProductionViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRProductionViewer.TabIndex = 1
+        Me.CRProductionViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintEquipmentProduction
         '

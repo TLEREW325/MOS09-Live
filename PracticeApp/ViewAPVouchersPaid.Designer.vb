@@ -121,6 +121,7 @@ Partial Class ViewAPVouchersPaid
         Me.cmd1099 = New System.Windows.Forms.Button
         Me.gpxPrint1099s = New System.Windows.Forms.GroupBox
         Me.Label10 = New System.Windows.Forms.Label
+        Me.cmdPrint1099Misc = New System.Windows.Forms.Button
         Me.MenuStrip1.SuspendLayout()
         Me.gpxAPVoucherData.SuspendLayout()
         CType(Me.PurchaseOrderHeaderTableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -888,7 +889,7 @@ Partial Class ViewAPVouchersPaid
         '
         'cmd1099
         '
-        Me.cmd1099.Location = New System.Drawing.Point(269, 23)
+        Me.cmd1099.Location = New System.Drawing.Point(218, 23)
         Me.cmd1099.Name = "cmd1099"
         Me.cmd1099.Size = New System.Drawing.Size(71, 43)
         Me.cmd1099.TabIndex = 50
@@ -898,12 +899,13 @@ Partial Class ViewAPVouchersPaid
         'gpxPrint1099s
         '
         Me.gpxPrint1099s.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.gpxPrint1099s.Controls.Add(Me.cmdPrint1099Misc)
         Me.gpxPrint1099s.Controls.Add(Me.cmd1099)
         Me.gpxPrint1099s.Controls.Add(Me.Label10)
         Me.gpxPrint1099s.Enabled = False
         Me.gpxPrint1099s.Location = New System.Drawing.Point(605, 730)
         Me.gpxPrint1099s.Name = "gpxPrint1099s"
-        Me.gpxPrint1099s.Size = New System.Drawing.Size(362, 83)
+        Me.gpxPrint1099s.Size = New System.Drawing.Size(372, 83)
         Me.gpxPrint1099s.TabIndex = 35
         Me.gpxPrint1099s.TabStop = False
         Me.gpxPrint1099s.Text = "Print 1099's for Vendors"
@@ -912,13 +914,22 @@ Partial Class ViewAPVouchersPaid
         '
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.Blue
-        Me.Label10.Location = New System.Drawing.Point(17, 23)
+        Me.Label10.Location = New System.Drawing.Point(6, 23)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(224, 46)
+        Me.Label10.Size = New System.Drawing.Size(206, 46)
         Me.Label10.TabIndex = 48
         Me.Label10.Text = "Filter the datagrid and then press ""Print 1099's"" to print all Vendor 1099 Forms " & _
             "for the selected filter."
         Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'cmdPrint1099Misc
+        '
+        Me.cmdPrint1099Misc.Location = New System.Drawing.Point(295, 23)
+        Me.cmdPrint1099Misc.Name = "cmdPrint1099Misc"
+        Me.cmdPrint1099Misc.Size = New System.Drawing.Size(71, 43)
+        Me.cmdPrint1099Misc.TabIndex = 51
+        Me.cmdPrint1099Misc.Text = "Print 1099 Misc"
+        Me.cmdPrint1099Misc.UseVisualStyleBackColor = True
         '
         'ViewAPVouchersPaid
         '
@@ -1048,4 +1059,5 @@ Partial Class ViewAPVouchersPaid
     Friend WithEvents InvoiceSalesTaxDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents OverrideVendorName As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents OverrideNameText As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents cmdPrint1099Misc As System.Windows.Forms.Button
 End Class

@@ -22,14 +22,14 @@ Partial Class PrintCharterSteelDispatchEntry
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.mnuItemExit = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRChaterSteelDispatchEntryViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXCharterSteelDispatchEntry1 = New MOS09Program.CRXCharterSteelDispatchEntry
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuItemExit = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRChaterSteelDispatchEntryViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXCharterSteelDispatchEntry1 = New MOS09Program.CRXCharterSteelDispatchEntry()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -45,19 +45,19 @@ Partial Class PrintCharterSteelDispatchEntry
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -77,15 +77,19 @@ Partial Class PrintCharterSteelDispatchEntry
         '
         Me.CRChaterSteelDispatchEntryViewer.ActiveViewIndex = 0
         Me.CRChaterSteelDispatchEntryViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRChaterSteelDispatchEntryViewer.DisplayGroupTree = False
+        Me.CRChaterSteelDispatchEntryViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRChaterSteelDispatchEntryViewer.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRChaterSteelDispatchEntryViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRChaterSteelDispatchEntryViewer.Name = "CRChaterSteelDispatchEntryViewer"
         Me.CRChaterSteelDispatchEntryViewer.ReportSource = Me.CRXCharterSteelDispatchEntry1
         Me.CRChaterSteelDispatchEntryViewer.ShowGroupTreeButton = False
+        Me.CRChaterSteelDispatchEntryViewer.ShowLogo = False
+        Me.CRChaterSteelDispatchEntryViewer.ShowParameterPanelButton = False
         Me.CRChaterSteelDispatchEntryViewer.ShowTextSearchButton = False
+        Me.CRChaterSteelDispatchEntryViewer.ShowZoomButton = False
         Me.CRChaterSteelDispatchEntryViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRChaterSteelDispatchEntryViewer.TabIndex = 4
+        Me.CRChaterSteelDispatchEntryViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintCharterSteelDispatchEntry
         '

@@ -22,15 +22,15 @@ Partial Class PrintStudweldingCerticate
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EmailCertificateToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRCertificateViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXStudWeldingCertificate1 = New MOS09Program.CRXStudWeldingCertificate
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmailCertificateToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRCertificateViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXStudWeldingCertificate1 = New MOS09Program.CRXStudWeldingCertificate()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -46,26 +46,26 @@ Partial Class PrintStudweldingCerticate
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmailCertificateToolStripMenuItem})
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'EmailCertificateToolStripMenuItem
         '
         Me.EmailCertificateToolStripMenuItem.Name = "EmailCertificateToolStripMenuItem"
-        Me.EmailCertificateToolStripMenuItem.Size = New System.Drawing.Size(151, 22)
+        Me.EmailCertificateToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
         Me.EmailCertificateToolStripMenuItem.Text = "Email Certificate"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -85,15 +85,19 @@ Partial Class PrintStudweldingCerticate
         '
         Me.CRCertificateViewer.ActiveViewIndex = 0
         Me.CRCertificateViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRCertificateViewer.DisplayGroupTree = False
+        Me.CRCertificateViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRCertificateViewer.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRCertificateViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRCertificateViewer.Name = "CRCertificateViewer"
         Me.CRCertificateViewer.ReportSource = Me.CRXStudWeldingCertificate1
         Me.CRCertificateViewer.ShowGroupTreeButton = False
+        Me.CRCertificateViewer.ShowLogo = False
+        Me.CRCertificateViewer.ShowParameterPanelButton = False
         Me.CRCertificateViewer.ShowTextSearchButton = False
+        Me.CRCertificateViewer.ShowZoomButton = False
         Me.CRCertificateViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRCertificateViewer.TabIndex = 1
+        Me.CRCertificateViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintStudweldingCerticate
         '

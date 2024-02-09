@@ -22,15 +22,15 @@ Partial Class PrintFabSouthSales
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRInvoiceViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXFabSouthSales1 = New MOS09Program.CRXFabSouthSales
-        Me.EmailToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmailToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRInvoiceViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXFabSouthSales1 = New MOS09Program.CRXFabSouthSales()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -46,21 +46,27 @@ Partial Class PrintFabSouthSales
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmailToolStripMenuItem})
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
+        '
+        'EmailToolStripMenuItem
+        '
+        Me.EmailToolStripMenuItem.Name = "EmailToolStripMenuItem"
+        Me.EmailToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
+        Me.EmailToolStripMenuItem.Text = "Email"
         '
         'ExitToolStripMenuItem
         '
@@ -79,22 +85,19 @@ Partial Class PrintFabSouthSales
         '
         Me.CRInvoiceViewer.ActiveViewIndex = 0
         Me.CRInvoiceViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRInvoiceViewer.DisplayGroupTree = False
+        Me.CRInvoiceViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRInvoiceViewer.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRInvoiceViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRInvoiceViewer.Name = "CRInvoiceViewer"
         Me.CRInvoiceViewer.ReportSource = Me.CRXFabSouthSales1
         Me.CRInvoiceViewer.ShowGroupTreeButton = False
+        Me.CRInvoiceViewer.ShowLogo = False
+        Me.CRInvoiceViewer.ShowParameterPanelButton = False
         Me.CRInvoiceViewer.ShowTextSearchButton = False
         Me.CRInvoiceViewer.ShowZoomButton = False
         Me.CRInvoiceViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRInvoiceViewer.TabIndex = 1
-        '
-        'EmailToolStripMenuItem
-        '
-        Me.EmailToolStripMenuItem.Name = "EmailToolStripMenuItem"
-        Me.EmailToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.EmailToolStripMenuItem.Text = "Email"
+        Me.CRInvoiceViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintFabSouthSales
         '

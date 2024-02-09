@@ -22,17 +22,17 @@ Partial Class PrintTWCert01Remote
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.AddToAppointmentsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EmailCertToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRCertViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXTruweldNOCERT1 = New MOS09Program.CRXTruweldNOCERT
-        Me.CRXTWCert011 = New MOS09Program.CRXTWCert01
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AddToAppointmentsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmailCertToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRCertViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXTruweldNOCERT1 = New MOS09Program.CRXTruweldNOCERT()
+        Me.CRXTWCert011 = New MOS09Program.CRXTWCert01()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -49,32 +49,32 @@ Partial Class PrintTWCert01Remote
         '
         Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddToAppointmentsToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'AddToAppointmentsToolStripMenuItem
         '
         Me.AddToAppointmentsToolStripMenuItem.Name = "AddToAppointmentsToolStripMenuItem"
-        Me.AddToAppointmentsToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
+        Me.AddToAppointmentsToolStripMenuItem.Size = New System.Drawing.Size(191, 22)
         Me.AddToAppointmentsToolStripMenuItem.Text = "Add To Appointments"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmailCertToolStripMenuItem1})
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'EmailCertToolStripMenuItem1
         '
         Me.EmailCertToolStripMenuItem1.Name = "EmailCertToolStripMenuItem1"
-        Me.EmailCertToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.EmailCertToolStripMenuItem1.Size = New System.Drawing.Size(128, 22)
         Me.EmailCertToolStripMenuItem1.Text = "Email Cert"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -94,17 +94,23 @@ Partial Class PrintTWCert01Remote
         '
         Me.CRCertViewer.ActiveViewIndex = 0
         Me.CRCertViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRCertViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRCertViewer.DisplayGroupTree = False
+        Me.CRCertViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRCertViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRCertViewer.Name = "CRCertViewer"
         Me.CRCertViewer.ReportSource = Me.CRXTruweldNOCERT1
+        Me.CRCertViewer.ShowGroupTreeButton = False
+        Me.CRCertViewer.ShowLogo = False
+        Me.CRCertViewer.ShowParameterPanelButton = False
+        Me.CRCertViewer.ShowTextSearchButton = False
+        Me.CRCertViewer.ShowZoomButton = False
         Me.CRCertViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRCertViewer.TabIndex = 1
+        Me.CRCertViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
-        'PrintTWCert01
+        'PrintTWCert01Remote
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -112,7 +118,7 @@ Partial Class PrintTWCert01Remote
         Me.Controls.Add(Me.CRCertViewer)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Name = "PrintTWCert01"
+        Me.Name = "PrintTWCert01Remote"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TFP Corporation Truweld Certification"
         Me.MenuStrip1.ResumeLayout(False)

@@ -22,16 +22,16 @@ Partial Class PrintCertOfCompliance
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.CRXViewerCert = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXCertOfCompliance1 = New MOS09Program.CRXCertOfCompliance
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.AddToAppointmentsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EmailCertToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
+        Me.CRXViewerCert = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXCertOfCompliance1 = New MOS09Program.CRXCertOfCompliance()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AddToAppointmentsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmailCertToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -39,13 +39,19 @@ Partial Class PrintCertOfCompliance
         '
         Me.CRXViewerCert.ActiveViewIndex = 0
         Me.CRXViewerCert.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRXViewerCert.DisplayGroupTree = False
+        Me.CRXViewerCert.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRXViewerCert.DisplayStatusBar = False
         Me.CRXViewerCert.Location = New System.Drawing.Point(0, 27)
         Me.CRXViewerCert.Name = "CRXViewerCert"
         Me.CRXViewerCert.ReportSource = Me.CRXCertOfCompliance1
+        Me.CRXViewerCert.ShowGroupTreeButton = False
+        Me.CRXViewerCert.ShowLogo = False
+        Me.CRXViewerCert.ShowParameterPanelButton = False
+        Me.CRXViewerCert.ShowTextSearchButton = False
+        Me.CRXViewerCert.ShowZoomButton = False
         Me.CRXViewerCert.Size = New System.Drawing.Size(1030, 605)
         Me.CRXViewerCert.TabIndex = 0
+        Me.CRXViewerCert.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'MenuStrip1
         '
@@ -60,32 +66,32 @@ Partial Class PrintCertOfCompliance
         '
         Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddToAppointmentsToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'AddToAppointmentsToolStripMenuItem
         '
         Me.AddToAppointmentsToolStripMenuItem.Name = "AddToAppointmentsToolStripMenuItem"
-        Me.AddToAppointmentsToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
+        Me.AddToAppointmentsToolStripMenuItem.Size = New System.Drawing.Size(191, 22)
         Me.AddToAppointmentsToolStripMenuItem.Text = "Add To Appointments"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmailCertToolStripMenuItem1})
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'EmailCertToolStripMenuItem1
         '
         Me.EmailCertToolStripMenuItem1.Name = "EmailCertToolStripMenuItem1"
-        Me.EmailCertToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.EmailCertToolStripMenuItem1.Size = New System.Drawing.Size(128, 22)
         Me.EmailCertToolStripMenuItem1.Text = "Email Cert"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -98,7 +104,7 @@ Partial Class PrintCertOfCompliance
         'ExitToolStripMenuItem1
         '
         Me.ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1"
-        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(92, 22)
         Me.ExitToolStripMenuItem1.Text = "Exit"
         '
         'PrintCertOfCompliance

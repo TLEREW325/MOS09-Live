@@ -2,7 +2,7 @@
 Imports System.Math
 Imports System.IO
 Imports System.Data
-'Imports System.Windows.Forms
+Imports System.Windows.Forms
 Imports System.Data.OleDb
 Imports CrystalDecisions.Windows.Forms
 Imports CrystalDecisions.ReportSource
@@ -14,7 +14,7 @@ Public Class PrintPackingList
     Inherits System.Windows.Forms.Form
 
     'Created Outlook Application object
-    Dim OLApp As New Application
+    Dim OLApp As New Microsoft.Office.Interop.Outlook.Application
     Dim MyReport = New CrystalDecisions.CrystalReports.Engine.ReportDocument
 
     'Variables for Date/Filename Creation
@@ -218,7 +218,7 @@ Public Class PrintPackingList
             MyReport = CRXPackingSlip1
             MyReport.SetDataSource(ds)
             CRPackingListViewer.ReportSource = MyReport
-            'MyReport.ExportToDisk(ExportFormatType.PortableDocFormat, "\\TFP-FS\TransferData\TruweldPackList\" & EmailPackingSlip)
+            MyReport.ExportToDisk(ExportFormatType.PortableDocFormat, "\\TFP-FS\TransferData\TruweldPackList\" & EmailPackingSlip)
             con.Close()
         ElseIf GlobalDivisionCode = "CHT" And GlobalCompleteShipment = "COMPLETE SHIPMENT" And GlobalAutoPrintPackingList = "YES" Then
             'Sets up viewer to display data from the loaded dataset

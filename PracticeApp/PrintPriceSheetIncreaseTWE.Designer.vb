@@ -22,26 +22,26 @@ Partial Class PrintPriceSheetIncreaseTWE
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.chkDistributer = New System.Windows.Forms.CheckBox
-        Me.chkEndUser = New System.Windows.Forms.CheckBox
-        Me.chkSWP = New System.Windows.Forms.CheckBox
-        Me.cboFilter = New System.Windows.Forms.Button
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EmailPriceSheetToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.chkRedDArce = New System.Windows.Forms.CheckBox
-        Me.CRXPriceSheetIncreaseTWERedD1 = New MOS09Program.CRXPriceSheetIncreaseTWERedD
-        Me.CRPriceSheetIncreaseViewer1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXPriceSheetIncreaseTWESwp1 = New MOS09Program.CRXPriceSheetIncreaseTWESwp
-        Me.CRXPriceSheetIncreaseTWEDist1 = New MOS09Program.CRXPriceSheetIncreaseTWEDist
-        Me.CRXPriceSheetIncreaseTWEEnd1 = New MOS09Program.CRXPriceSheetIncreaseTWEEnd
-        Me.chkHanlon = New System.Windows.Forms.CheckBox
-        Me.CRXPriceSheetIncreaseTWEHanlon1 = New MOS09Program.CRXPriceSheetIncreaseTWEHanlon
+        Me.chkDistributer = New System.Windows.Forms.CheckBox()
+        Me.chkEndUser = New System.Windows.Forms.CheckBox()
+        Me.chkSWP = New System.Windows.Forms.CheckBox()
+        Me.cboFilter = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmailPriceSheetToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.chkRedDArce = New System.Windows.Forms.CheckBox()
+        Me.CRXPriceSheetIncreaseTWERedD1 = New MOS09Program.CRXPriceSheetIncreaseTWERedD()
+        Me.CRPriceSheetIncreaseViewer1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXPriceSheetIncreaseTWEHanlon1 = New MOS09Program.CRXPriceSheetIncreaseTWEHanlon()
+        Me.CRXPriceSheetIncreaseTWESwp1 = New MOS09Program.CRXPriceSheetIncreaseTWESwp()
+        Me.CRXPriceSheetIncreaseTWEDist1 = New MOS09Program.CRXPriceSheetIncreaseTWEDist()
+        Me.CRXPriceSheetIncreaseTWEEnd1 = New MOS09Program.CRXPriceSheetIncreaseTWEEnd()
+        Me.chkHanlon = New System.Windows.Forms.CheckBox()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -99,33 +99,33 @@ Partial Class PrintPriceSheetIncreaseTWE
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditToolStripMenuItem, Me.ReportsToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1028, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1030, 24)
         Me.MenuStrip1.TabIndex = 7
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmailPriceSheetToolStripMenuItem})
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(40, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(42, 20)
         Me.EditToolStripMenuItem.Text = "Edit "
         '
         'EmailPriceSheetToolStripMenuItem
         '
         Me.EmailPriceSheetToolStripMenuItem.Name = "EmailPriceSheetToolStripMenuItem"
-        Me.EmailPriceSheetToolStripMenuItem.Size = New System.Drawing.Size(155, 22)
+        Me.EmailPriceSheetToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
         Me.EmailPriceSheetToolStripMenuItem.Text = "Email Price Sheet"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -155,17 +155,21 @@ Partial Class PrintPriceSheetIncreaseTWE
         '
         Me.CRPriceSheetIncreaseViewer1.ActiveViewIndex = 0
         Me.CRPriceSheetIncreaseViewer1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRPriceSheetIncreaseViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRPriceSheetIncreaseViewer1.DisplayGroupTree = False
+        Me.CRPriceSheetIncreaseViewer1.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRPriceSheetIncreaseViewer1.Location = New System.Drawing.Point(130, 27)
         Me.CRPriceSheetIncreaseViewer1.Name = "CRPriceSheetIncreaseViewer1"
         Me.CRPriceSheetIncreaseViewer1.ReportSource = Me.CRXPriceSheetIncreaseTWEHanlon1
         Me.CRPriceSheetIncreaseViewer1.ShowGroupTreeButton = False
+        Me.CRPriceSheetIncreaseViewer1.ShowLogo = False
+        Me.CRPriceSheetIncreaseViewer1.ShowParameterPanelButton = False
         Me.CRPriceSheetIncreaseViewer1.ShowTextSearchButton = False
-        Me.CRPriceSheetIncreaseViewer1.Size = New System.Drawing.Size(898, 584)
+        Me.CRPriceSheetIncreaseViewer1.ShowZoomButton = False
+        Me.CRPriceSheetIncreaseViewer1.Size = New System.Drawing.Size(900, 584)
         Me.CRPriceSheetIncreaseViewer1.TabIndex = 0
+        Me.CRPriceSheetIncreaseViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'chkHanlon
         '
@@ -181,7 +185,7 @@ Partial Class PrintPriceSheetIncreaseTWE
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1028, 632)
+        Me.ClientSize = New System.Drawing.Size(1030, 632)
         Me.Controls.Add(Me.chkHanlon)
         Me.Controls.Add(Me.chkRedDArce)
         Me.Controls.Add(Me.Label1)

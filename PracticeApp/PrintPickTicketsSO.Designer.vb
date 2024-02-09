@@ -22,15 +22,15 @@ Partial Class PrintPickTicketsSO
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRPickListViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXPickTicket1 = New MOS09Program.CRXPickTicket
-        Me.EmailPickTicketToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmailPickTicketToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRPickListViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXPickTicket1 = New MOS09Program.CRXPickTicket()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -46,20 +46,26 @@ Partial Class PrintPickTicketsSO
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmailPickTicketToolStripMenuItem})
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
+        '
+        'EmailPickTicketToolStripMenuItem
+        '
+        Me.EmailPickTicketToolStripMenuItem.Name = "EmailPickTicketToolStripMenuItem"
+        Me.EmailPickTicketToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
+        Me.EmailPickTicketToolStripMenuItem.Text = "Email PickTicket"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -72,29 +78,26 @@ Partial Class PrintPickTicketsSO
         'ExitToolStripMenuItem1
         '
         Me.ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1"
-        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(92, 22)
         Me.ExitToolStripMenuItem1.Text = "Exit"
         '
         'CRPickListViewer
         '
         Me.CRPickListViewer.ActiveViewIndex = 0
         Me.CRPickListViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRPickListViewer.DisplayGroupTree = False
+        Me.CRPickListViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRPickListViewer.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRPickListViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRPickListViewer.Name = "CRPickListViewer"
         Me.CRPickListViewer.ReportSource = Me.CRXPickTicket1
         Me.CRPickListViewer.ShowGroupTreeButton = False
+        Me.CRPickListViewer.ShowLogo = False
+        Me.CRPickListViewer.ShowParameterPanelButton = False
         Me.CRPickListViewer.ShowTextSearchButton = False
         Me.CRPickListViewer.ShowZoomButton = False
         Me.CRPickListViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRPickListViewer.TabIndex = 1
-        '
-        'EmailPickTicketToolStripMenuItem
-        '
-        Me.EmailPickTicketToolStripMenuItem.Name = "EmailPickTicketToolStripMenuItem"
-        Me.EmailPickTicketToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.EmailPickTicketToolStripMenuItem.Text = "Email PickTicket"
+        Me.CRPickListViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintPickTicketsSO
         '

@@ -22,21 +22,27 @@ Partial Class PrintSteelReceiptOfGoods
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.CRReceiptViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXSteelReceipt1 = New MOS09Program.CRXSteelReceipt
+        Me.CRReceiptViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXSteelReceipt1 = New MOS09Program.CRXSteelReceipt()
         Me.SuspendLayout()
         '
         'CRReceiptViewer
         '
         Me.CRReceiptViewer.ActiveViewIndex = 0
         Me.CRReceiptViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRReceiptViewer.DisplayGroupTree = False
+        Me.CRReceiptViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRReceiptViewer.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRReceiptViewer.Location = New System.Drawing.Point(0, 0)
         Me.CRReceiptViewer.Name = "CRReceiptViewer"
         Me.CRReceiptViewer.ReportSource = Me.CRXSteelReceipt1
+        Me.CRReceiptViewer.ShowGroupTreeButton = False
+        Me.CRReceiptViewer.ShowLogo = False
+        Me.CRReceiptViewer.ShowParameterPanelButton = False
+        Me.CRReceiptViewer.ShowTextSearchButton = False
+        Me.CRReceiptViewer.ShowZoomButton = False
         Me.CRReceiptViewer.Size = New System.Drawing.Size(1030, 632)
         Me.CRReceiptViewer.TabIndex = 0
+        Me.CRReceiptViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintSteelReceiptOfGoods
         '

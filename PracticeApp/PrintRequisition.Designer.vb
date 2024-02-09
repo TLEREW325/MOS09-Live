@@ -22,15 +22,15 @@ Partial Class PrintRequisition
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EmailRequisitionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.RToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRReqViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXRequisition1 = New MOS09Program.CRXRequisition
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmailRequisitionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRReqViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXRequisition1 = New MOS09Program.CRXRequisition()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -46,26 +46,26 @@ Partial Class PrintRequisition
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmailRequisitionToolStripMenuItem})
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'EmailRequisitionToolStripMenuItem
         '
         Me.EmailRequisitionToolStripMenuItem.Name = "EmailRequisitionToolStripMenuItem"
-        Me.EmailRequisitionToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
+        Me.EmailRequisitionToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
         Me.EmailRequisitionToolStripMenuItem.Text = "Email Requisition"
         '
         'RToolStripMenuItem
         '
         Me.RToolStripMenuItem.Name = "RToolStripMenuItem"
-        Me.RToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.RToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.RToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -85,15 +85,21 @@ Partial Class PrintRequisition
         '
         Me.CRReqViewer.ActiveViewIndex = 0
         Me.CRReqViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRReqViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRReqViewer.DisplayGroupTree = False
+        Me.CRReqViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRReqViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRReqViewer.Name = "CRReqViewer"
         Me.CRReqViewer.ReportSource = Me.CRXRequisition1
+        Me.CRReqViewer.ShowGroupTreeButton = False
+        Me.CRReqViewer.ShowLogo = False
+        Me.CRReqViewer.ShowParameterPanelButton = False
+        Me.CRReqViewer.ShowTextSearchButton = False
+        Me.CRReqViewer.ShowZoomButton = False
         Me.CRReqViewer.Size = New System.Drawing.Size(1028, 608)
         Me.CRReqViewer.TabIndex = 1
+        Me.CRReqViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintRequisition
         '
