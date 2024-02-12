@@ -225,7 +225,7 @@ Public Class PrintPackingList
             MyReport = CRXPackingSlip1
             MyReport.SetDataSource(ds)
             MyReport.PrintToPrinter(2, True, 1, 999)
-            MyReport.ExportToDisk(ExportFormatType.PortableDocFormat, "\\TFP-FS\TransferData\TruweldPackList\" & EmailPackingSlip)
+            'MyReport.ExportToDisk(ExportFormatType.PortableDocFormat, "\\TFP-FS\TransferData\TruweldPackList\" & EmailPackingSlip)
             con.Close()
             Me.Close()
 
@@ -246,14 +246,14 @@ Public Class PrintPackingList
             MyReport = CRXPackingSlip1
             MyReport.SetDataSource(ds)
             CRPackingListViewer.ReportSource = MyReport
-            'MyReport.ExportToDisk(ExportFormatType.PortableDocFormat, "\\TFP-FS\TransferData\TruweldPackList\" & EmailPackingSlip)
+            MyReport.ExportToDisk(ExportFormatType.PortableDocFormat, "\\TFP-FS\TransferData\TruweldPackList\" & EmailPackingSlip)
             con.Close()
         Else
             'Sets up viewer to display data from the loaded dataset
             MyReport = CRXPackingSlip1
             MyReport.SetDataSource(ds)
             CRPackingListViewer.ReportSource = MyReport
-            'MyReport.ExportToDisk(ExportFormatType.PortableDocFormat, "\\TFP-FS\TransferData\TruweldPackList\" & EmailPackingSlip)
+            MyReport.ExportToDisk(ExportFormatType.PortableDocFormat, "\\TFP-FS\TransferData\TruweldPackList\" & EmailPackingSlip)
             con.Close()
         End If
     End Sub
@@ -310,10 +310,10 @@ Public Class PrintPackingList
     End Sub
 
     Private Sub PrintPackingList_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        If (GlobalDivisionCode = "TWD" Or GlobalDivisionCode = "TFP") And GlobalCompleteShipment = "COMPLETE SHIPMENT" Then
-            Me.Visible = False
-        Else
-            Me.Visible = True
-        End If
+        'If (GlobalDivisionCode = "TWD" Or GlobalDivisionCode = "TFP") And GlobalCompleteShipment = "COMPLETE SHIPMENT" Then
+        '    Me.Visible = False
+        'Else
+        '    Me.Visible = True
+        'End If
     End Sub
 End Class
