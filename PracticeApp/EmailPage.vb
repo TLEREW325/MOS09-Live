@@ -2244,6 +2244,8 @@ Public Class EmailPage
         listCCAddressBook.Visible = False
         listBCCAddressBook.Visible = False
 
+
+
         If listToAddressBook.Visible = True Then
             listToAddressBook.Visible = False
 

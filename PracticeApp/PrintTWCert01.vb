@@ -2,7 +2,7 @@
 Imports System.Math
 Imports System.IO
 Imports System.Data
-'Imports System.Windows.Forms
+Imports System.Windows.Forms
 Imports System.Data.OleDb
 Imports CrystalDecisions.Windows.Forms
 Imports CrystalDecisions.ReportSource
@@ -14,7 +14,7 @@ Public Class PrintTWCert01
     Inherits System.Windows.Forms.Form
 
     'Created Outlook Application object
-    Dim OLApp As New Application
+    Dim OLApp As New Microsoft.Office.Interop.Outlook.Application
     Dim MyReport = New CrystalDecisions.CrystalReports.Engine.ReportDocument
     Dim MyReport2 = New CrystalDecisions.CrystalReports.Engine.ReportDocument
 
@@ -88,8 +88,10 @@ Public Class PrintTWCert01
             MyReport = CRXTWCert011
             MyReport.SetDataSource(ds)
             MyReport.PrintToPrinter(1, True, 1, 999)
-            con.Close()
 
+            'Close data connection and resources
+            con.Close()
+            CRCertViewer.Dispose()
             Me.Close()
 
             GlobalCompleteShipment = ""

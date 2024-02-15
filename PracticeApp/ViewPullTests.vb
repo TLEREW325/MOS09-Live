@@ -463,7 +463,6 @@ Public Class ViewPullTests
     End Sub
 
     Private Sub cmdPrint_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdPrint.Click
-
         Using NewPrintPullTestListing As New PrintPullTestListing(ds)
             Dim Result = NewPrintPullTestListing.ShowDialog()
         End Using

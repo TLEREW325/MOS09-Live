@@ -151,8 +151,9 @@ Public Class PrintPickTicketBatchRemote
             MyReport = CRXPickTicket1
             MyReport.SetDataSource(ds)
             MyReport.PrintToPrinter(1, True, 1, 999)
-            con.Close()
 
+            con.Close()
+            CRPickViewer.Dispose()
             Me.Close()
         Else
             'Sets up viewer to display data from the loaded dataset

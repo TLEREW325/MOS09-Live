@@ -22,91 +22,87 @@ Partial Class ViewStructuralCertsRemote
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
-        Me.lblLotNumber = New System.Windows.Forms.Label
-        Me.txtLotNumber = New System.Windows.Forms.TextBox
-        Me.txtHeatNumber = New System.Windows.Forms.TextBox
-        Me.lblHeatNumber = New System.Windows.Forms.Label
-        Me.lblComment = New System.Windows.Forms.Label
-        Me.lblPartDesc = New System.Windows.Forms.Label
-        Me.lblPartNum = New System.Windows.Forms.Label
-        Me.grpPart = New System.Windows.Forms.GroupBox
-        Me.cboVendor = New System.Windows.Forms.ComboBox
-        Me.cboPartNumber = New System.Windows.Forms.ComboBox
+        Me.components = New System.ComponentModel.Container()
+        Me.lblLotNumber = New System.Windows.Forms.Label()
+        Me.txtLotNumber = New System.Windows.Forms.TextBox()
+        Me.txtHeatNumber = New System.Windows.Forms.TextBox()
+        Me.lblHeatNumber = New System.Windows.Forms.Label()
+        Me.lblComment = New System.Windows.Forms.Label()
+        Me.lblPartDesc = New System.Windows.Forms.Label()
+        Me.lblPartNum = New System.Windows.Forms.Label()
+        Me.grpPart = New System.Windows.Forms.GroupBox()
+        Me.cboVendor = New System.Windows.Forms.ComboBox()
+        Me.cboPartNumber = New System.Windows.Forms.ComboBox()
         Me.ItemListBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet
-        Me.cboPartDescription = New System.Windows.Forms.ComboBox
-        Me.cboItemClass = New System.Windows.Forms.ComboBox
-        Me.lblDate = New System.Windows.Forms.Label
-        Me.dtpDateEntry = New System.Windows.Forms.DateTimePicker
-        Me.lblVendor = New System.Windows.Forms.Label
-        Me.cboSalesID = New System.Windows.Forms.ComboBox
-        Me.lblSalesId = New System.Windows.Forms.Label
-        Me.chkDateRange = New System.Windows.Forms.CheckBox
-        Me.dtpEndDate = New System.Windows.Forms.DateTimePicker
-        Me.lblEndD = New System.Windows.Forms.Label
-        Me.dtpBeginDate = New System.Windows.Forms.DateTimePicker
-        Me.lblBeginD = New System.Windows.Forms.Label
-        Me.cmdAdd = New System.Windows.Forms.Button
-        Me.cmdRemove = New System.Windows.Forms.Button
-        Me.cmdView = New System.Windows.Forms.Button
-        Me.cmdClose = New System.Windows.Forms.Button
-        Me.grpView = New System.Windows.Forms.GroupBox
-        Me.chkPDFScanned = New System.Windows.Forms.CheckBox
-        Me.chkOpen = New System.Windows.Forms.CheckBox
-        Me.txtLookVendorView = New System.Windows.Forms.TextBox
-        Me.lblVendorView = New System.Windows.Forms.Label
-        Me.txtLookSalesID = New System.Windows.Forms.RichTextBox
-        Me.lblCommentView = New System.Windows.Forms.Label
-        Me.lblHeatNum = New System.Windows.Forms.Label
-        Me.lblLotNum = New System.Windows.Forms.Label
-        Me.txtLookPartDesc = New System.Windows.Forms.TextBox
-        Me.txtLookHeatNumber = New System.Windows.Forms.TextBox
-        Me.txtLookLotNum = New System.Windows.Forms.TextBox
-        Me.lblDescView = New System.Windows.Forms.Label
-        Me.txtLookPartNum = New System.Windows.Forms.TextBox
-        Me.lblPartView = New System.Windows.Forms.Label
-        Me.txtSearch = New System.Windows.Forms.TextBox
-        Me.lblText = New System.Windows.Forms.Label
-        Me.dgvStructCert = New System.Windows.Forms.DataGridView
+        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet()
+        Me.cboPartDescription = New System.Windows.Forms.ComboBox()
+        Me.cboItemClass = New System.Windows.Forms.ComboBox()
+        Me.lblDate = New System.Windows.Forms.Label()
+        Me.dtpDateEntry = New System.Windows.Forms.DateTimePicker()
+        Me.lblVendor = New System.Windows.Forms.Label()
+        Me.cboSalesID = New System.Windows.Forms.ComboBox()
+        Me.lblSalesId = New System.Windows.Forms.Label()
+        Me.chkDateRange = New System.Windows.Forms.CheckBox()
+        Me.dtpEndDate = New System.Windows.Forms.DateTimePicker()
+        Me.lblEndD = New System.Windows.Forms.Label()
+        Me.dtpBeginDate = New System.Windows.Forms.DateTimePicker()
+        Me.lblBeginD = New System.Windows.Forms.Label()
+        Me.cmdAdd = New System.Windows.Forms.Button()
+        Me.cmdRemove = New System.Windows.Forms.Button()
+        Me.cmdView = New System.Windows.Forms.Button()
+        Me.cmdClose = New System.Windows.Forms.Button()
+        Me.grpView = New System.Windows.Forms.GroupBox()
+        Me.chkPDFScanned = New System.Windows.Forms.CheckBox()
+        Me.chkOpen = New System.Windows.Forms.CheckBox()
+        Me.txtLookVendorView = New System.Windows.Forms.TextBox()
+        Me.lblVendorView = New System.Windows.Forms.Label()
+        Me.txtLookSalesID = New System.Windows.Forms.RichTextBox()
+        Me.lblCommentView = New System.Windows.Forms.Label()
+        Me.lblHeatNum = New System.Windows.Forms.Label()
+        Me.lblLotNum = New System.Windows.Forms.Label()
+        Me.txtLookPartDesc = New System.Windows.Forms.TextBox()
+        Me.txtLookHeatNumber = New System.Windows.Forms.TextBox()
+        Me.txtLookLotNum = New System.Windows.Forms.TextBox()
+        Me.lblDescView = New System.Windows.Forms.Label()
+        Me.txtLookPartNum = New System.Windows.Forms.TextBox()
+        Me.lblPartView = New System.Windows.Forms.Label()
+        Me.txtSearch = New System.Windows.Forms.TextBox()
+        Me.lblText = New System.Windows.Forms.Label()
+        Me.dgvStructCert = New System.Windows.Forms.DataGridView()
+        Me.PDFStatusDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.LotNumberDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.HeatNumberDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PartNumberDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PartDescriptionDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ItemClassDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.SalesIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.VendorDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.StatusDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.StructuralCertTableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.cmdClear = New System.Windows.Forms.Button
-        Me.cmdViewPDF = New System.Windows.Forms.Button
-        Me.cmdViewAll = New System.Windows.Forms.Button
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.AddUpdateToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ClearToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.RemoveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ScanCertToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.UploadCertToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ViewVsViewAllToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.KeywordSearchingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EmailPDFOfStructCertToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EmailCoCOfCurrentLotToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.cmdScan = New System.Windows.Forms.Button
-        Me.cmdUpload = New System.Windows.Forms.Button
-        Me.cmdRemoteScan = New System.Windows.Forms.Button
-        Me.ItemListTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.ItemListTableAdapter
-        Me.grpCOC = New System.Windows.Forms.GroupBox
-        Me.lblCoC = New System.Windows.Forms.Label
-        Me.cboCustomerID = New System.Windows.Forms.ComboBox
-        Me.StructuralCertTableTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.StructuralCertTableTableAdapter
-        Me.LotNumberDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.HeatNumberDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.PartNumberDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.PartDescriptionDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.ItemClassDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.SalesIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.VendorDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.DateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.PDFStatusDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.StatusDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.cmdClear = New System.Windows.Forms.Button()
+        Me.cmdViewPDF = New System.Windows.Forms.Button()
+        Me.cmdViewAll = New System.Windows.Forms.Button()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AddUpdateToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ClearToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RemoveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ScanCertToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.UploadCertToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ViewVsViewAllToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.KeywordSearchingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmailPDFOfStructCertToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.cmdScan = New System.Windows.Forms.Button()
+        Me.cmdUpload = New System.Windows.Forms.Button()
+        Me.cmdRemoteScan = New System.Windows.Forms.Button()
+        Me.ItemListTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.ItemListTableAdapter()
+        Me.StructuralCertTableTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.StructuralCertTableTableAdapter()
         Me.grpPart.SuspendLayout()
         CType(Me.ItemListBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SQLTFPOperationsDatabaseDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -114,7 +110,6 @@ Partial Class ViewStructuralCertsRemote
         CType(Me.dgvStructCert, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.StructuralCertTableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
-        Me.grpCOC.SuspendLayout()
         Me.SuspendLayout()
         '
         'lblLotNumber
@@ -366,7 +361,7 @@ Partial Class ViewStructuralCertsRemote
         '
         'cmdView
         '
-        Me.cmdView.Location = New System.Drawing.Point(81, 815)
+        Me.cmdView.Location = New System.Drawing.Point(83, 727)
         Me.cmdView.Name = "cmdView"
         Me.cmdView.Size = New System.Drawing.Size(65, 36)
         Me.cmdView.TabIndex = 14
@@ -376,7 +371,7 @@ Partial Class ViewStructuralCertsRemote
         'cmdClose
         '
         Me.cmdClose.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.cmdClose.Location = New System.Drawing.Point(6, 815)
+        Me.cmdClose.Location = New System.Drawing.Point(8, 727)
         Me.cmdClose.Name = "cmdClose"
         Me.cmdClose.Size = New System.Drawing.Size(65, 36)
         Me.cmdClose.TabIndex = 15
@@ -406,9 +401,9 @@ Partial Class ViewStructuralCertsRemote
         Me.grpView.Controls.Add(Me.dtpBeginDate)
         Me.grpView.Controls.Add(Me.dtpEndDate)
         Me.grpView.Controls.Add(Me.lblEndD)
-        Me.grpView.Location = New System.Drawing.Point(6, 426)
+        Me.grpView.Location = New System.Drawing.Point(6, 409)
         Me.grpView.Name = "grpView"
-        Me.grpView.Size = New System.Drawing.Size(295, 326)
+        Me.grpView.Size = New System.Drawing.Size(295, 312)
         Me.grpView.TabIndex = 17
         Me.grpView.TabStop = False
         Me.grpView.Text = "Search Function"
@@ -548,14 +543,92 @@ Partial Class ViewStructuralCertsRemote
         '
         'dgvStructCert
         '
+        Me.dgvStructCert.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgvStructCert.AutoGenerateColumns = False
+        Me.dgvStructCert.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText
         Me.dgvStructCert.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvStructCert.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.LotNumberDataGridViewTextBoxColumn, Me.HeatNumberDataGridViewTextBoxColumn, Me.PartNumberDataGridViewTextBoxColumn, Me.PartDescriptionDataGridViewTextBoxColumn, Me.ItemClassDataGridViewTextBoxColumn, Me.SalesIDDataGridViewTextBoxColumn, Me.VendorDataGridViewTextBoxColumn, Me.DateDataGridViewTextBoxColumn, Me.PDFStatusDataGridViewTextBoxColumn, Me.StatusDataGridViewTextBoxColumn})
+        Me.dgvStructCert.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.PDFStatusDataGridViewTextBoxColumn, Me.LotNumberDataGridViewTextBoxColumn, Me.HeatNumberDataGridViewTextBoxColumn, Me.PartNumberDataGridViewTextBoxColumn, Me.PartDescriptionDataGridViewTextBoxColumn, Me.ItemClassDataGridViewTextBoxColumn, Me.SalesIDDataGridViewTextBoxColumn, Me.VendorDataGridViewTextBoxColumn, Me.DateDataGridViewTextBoxColumn, Me.StatusDataGridViewTextBoxColumn})
         Me.dgvStructCert.DataSource = Me.StructuralCertTableBindingSource
         Me.dgvStructCert.Location = New System.Drawing.Point(306, 36)
         Me.dgvStructCert.Name = "dgvStructCert"
-        Me.dgvStructCert.Size = New System.Drawing.Size(889, 829)
+        Me.dgvStructCert.Size = New System.Drawing.Size(889, 727)
         Me.dgvStructCert.TabIndex = 18
+        '
+        'PDFStatusDataGridViewTextBoxColumn
+        '
+        Me.PDFStatusDataGridViewTextBoxColumn.DataPropertyName = "PDFStatus"
+        Me.PDFStatusDataGridViewTextBoxColumn.HeaderText = "PDF Status"
+        Me.PDFStatusDataGridViewTextBoxColumn.Name = "PDFStatusDataGridViewTextBoxColumn"
+        Me.PDFStatusDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'LotNumberDataGridViewTextBoxColumn
+        '
+        Me.LotNumberDataGridViewTextBoxColumn.DataPropertyName = "LotNumber"
+        Me.LotNumberDataGridViewTextBoxColumn.HeaderText = "Lot Number"
+        Me.LotNumberDataGridViewTextBoxColumn.Name = "LotNumberDataGridViewTextBoxColumn"
+        Me.LotNumberDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'HeatNumberDataGridViewTextBoxColumn
+        '
+        Me.HeatNumberDataGridViewTextBoxColumn.DataPropertyName = "HeatNumber"
+        Me.HeatNumberDataGridViewTextBoxColumn.HeaderText = "Heat Number"
+        Me.HeatNumberDataGridViewTextBoxColumn.Name = "HeatNumberDataGridViewTextBoxColumn"
+        Me.HeatNumberDataGridViewTextBoxColumn.ReadOnly = True
+        Me.HeatNumberDataGridViewTextBoxColumn.Width = 120
+        '
+        'PartNumberDataGridViewTextBoxColumn
+        '
+        Me.PartNumberDataGridViewTextBoxColumn.DataPropertyName = "PartNumber"
+        Me.PartNumberDataGridViewTextBoxColumn.HeaderText = "Part Number"
+        Me.PartNumberDataGridViewTextBoxColumn.Name = "PartNumberDataGridViewTextBoxColumn"
+        Me.PartNumberDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'PartDescriptionDataGridViewTextBoxColumn
+        '
+        Me.PartDescriptionDataGridViewTextBoxColumn.DataPropertyName = "PartDescription"
+        Me.PartDescriptionDataGridViewTextBoxColumn.HeaderText = "Part Description"
+        Me.PartDescriptionDataGridViewTextBoxColumn.Name = "PartDescriptionDataGridViewTextBoxColumn"
+        Me.PartDescriptionDataGridViewTextBoxColumn.ReadOnly = True
+        Me.PartDescriptionDataGridViewTextBoxColumn.Width = 300
+        '
+        'ItemClassDataGridViewTextBoxColumn
+        '
+        Me.ItemClassDataGridViewTextBoxColumn.DataPropertyName = "ItemClass"
+        Me.ItemClassDataGridViewTextBoxColumn.HeaderText = "Item Class"
+        Me.ItemClassDataGridViewTextBoxColumn.Name = "ItemClassDataGridViewTextBoxColumn"
+        Me.ItemClassDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'SalesIDDataGridViewTextBoxColumn
+        '
+        Me.SalesIDDataGridViewTextBoxColumn.DataPropertyName = "SalesID"
+        Me.SalesIDDataGridViewTextBoxColumn.HeaderText = "Sales ID"
+        Me.SalesIDDataGridViewTextBoxColumn.Name = "SalesIDDataGridViewTextBoxColumn"
+        Me.SalesIDDataGridViewTextBoxColumn.ReadOnly = True
+        Me.SalesIDDataGridViewTextBoxColumn.Width = 200
+        '
+        'VendorDataGridViewTextBoxColumn
+        '
+        Me.VendorDataGridViewTextBoxColumn.DataPropertyName = "Vendor"
+        Me.VendorDataGridViewTextBoxColumn.HeaderText = "Vendor"
+        Me.VendorDataGridViewTextBoxColumn.Name = "VendorDataGridViewTextBoxColumn"
+        Me.VendorDataGridViewTextBoxColumn.ReadOnly = True
+        Me.VendorDataGridViewTextBoxColumn.Width = 200
+        '
+        'DateDataGridViewTextBoxColumn
+        '
+        Me.DateDataGridViewTextBoxColumn.DataPropertyName = "Date"
+        Me.DateDataGridViewTextBoxColumn.HeaderText = "Date"
+        Me.DateDataGridViewTextBoxColumn.Name = "DateDataGridViewTextBoxColumn"
+        Me.DateDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'StatusDataGridViewTextBoxColumn
+        '
+        Me.StatusDataGridViewTextBoxColumn.DataPropertyName = "Status"
+        Me.StatusDataGridViewTextBoxColumn.HeaderText = "Status"
+        Me.StatusDataGridViewTextBoxColumn.Name = "StatusDataGridViewTextBoxColumn"
+        Me.StatusDataGridViewTextBoxColumn.ReadOnly = True
         '
         'StructuralCertTableBindingSource
         '
@@ -573,7 +646,7 @@ Partial Class ViewStructuralCertsRemote
         '
         'cmdViewPDF
         '
-        Me.cmdViewPDF.Location = New System.Drawing.Point(231, 815)
+        Me.cmdViewPDF.Location = New System.Drawing.Point(233, 727)
         Me.cmdViewPDF.Name = "cmdViewPDF"
         Me.cmdViewPDF.Size = New System.Drawing.Size(65, 36)
         Me.cmdViewPDF.TabIndex = 24
@@ -582,7 +655,7 @@ Partial Class ViewStructuralCertsRemote
         '
         'cmdViewAll
         '
-        Me.cmdViewAll.Location = New System.Drawing.Point(156, 815)
+        Me.cmdViewAll.Location = New System.Drawing.Point(158, 727)
         Me.cmdViewAll.Name = "cmdViewAll"
         Me.cmdViewAll.Size = New System.Drawing.Size(65, 36)
         Me.cmdViewAll.TabIndex = 25
@@ -594,89 +667,83 @@ Partial Class ViewStructuralCertsRemote
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditToolStripMenuItem, Me.HelpToolStripMenuItem, Me.ReportsToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1192, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1200, 24)
         Me.MenuStrip1.TabIndex = 26
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'HelpToolStripMenuItem
         '
         Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddUpdateToolStripMenuItem, Me.ClearToolStripMenuItem, Me.RemoveToolStripMenuItem, Me.ScanCertToolStripMenuItem, Me.UploadCertToolStripMenuItem, Me.ViewVsViewAllToolStripMenuItem, Me.KeywordSearchingToolStripMenuItem})
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(40, 20)
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
         Me.HelpToolStripMenuItem.Text = "Help"
         '
         'AddUpdateToolStripMenuItem
         '
         Me.AddUpdateToolStripMenuItem.Name = "AddUpdateToolStripMenuItem"
-        Me.AddUpdateToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
+        Me.AddUpdateToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.AddUpdateToolStripMenuItem.Text = "Add/Update"
         '
         'ClearToolStripMenuItem
         '
         Me.ClearToolStripMenuItem.Name = "ClearToolStripMenuItem"
-        Me.ClearToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
+        Me.ClearToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ClearToolStripMenuItem.Text = "Clear"
         '
         'RemoveToolStripMenuItem
         '
         Me.RemoveToolStripMenuItem.Name = "RemoveToolStripMenuItem"
-        Me.RemoveToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
+        Me.RemoveToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.RemoveToolStripMenuItem.Text = "Remove"
         '
         'ScanCertToolStripMenuItem
         '
         Me.ScanCertToolStripMenuItem.Name = "ScanCertToolStripMenuItem"
-        Me.ScanCertToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
+        Me.ScanCertToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ScanCertToolStripMenuItem.Text = "Scan Cert"
         '
         'UploadCertToolStripMenuItem
         '
         Me.UploadCertToolStripMenuItem.Name = "UploadCertToolStripMenuItem"
-        Me.UploadCertToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
+        Me.UploadCertToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.UploadCertToolStripMenuItem.Text = "Upload Cert"
         '
         'ViewVsViewAllToolStripMenuItem
         '
         Me.ViewVsViewAllToolStripMenuItem.Name = "ViewVsViewAllToolStripMenuItem"
-        Me.ViewVsViewAllToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
+        Me.ViewVsViewAllToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ViewVsViewAllToolStripMenuItem.Text = "View vs. View All"
         '
         'KeywordSearchingToolStripMenuItem
         '
         Me.KeywordSearchingToolStripMenuItem.Name = "KeywordSearchingToolStripMenuItem"
-        Me.KeywordSearchingToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
+        Me.KeywordSearchingToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.KeywordSearchingToolStripMenuItem.Text = "Keyword Searching"
         '
         'ReportsToolStripMenuItem
         '
-        Me.ReportsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmailPDFOfStructCertToolStripMenuItem, Me.EmailCoCOfCurrentLotToolStripMenuItem})
+        Me.ReportsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmailPDFOfStructCertToolStripMenuItem})
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'EmailPDFOfStructCertToolStripMenuItem
         '
         Me.EmailPDFOfStructCertToolStripMenuItem.Name = "EmailPDFOfStructCertToolStripMenuItem"
-        Me.EmailPDFOfStructCertToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
+        Me.EmailPDFOfStructCertToolStripMenuItem.Size = New System.Drawing.Size(200, 22)
         Me.EmailPDFOfStructCertToolStripMenuItem.Text = "Email PDF of Struct Cert"
-        '
-        'EmailCoCOfCurrentLotToolStripMenuItem
-        '
-        Me.EmailCoCOfCurrentLotToolStripMenuItem.Name = "EmailCoCOfCurrentLotToolStripMenuItem"
-        Me.EmailCoCOfCurrentLotToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
-        Me.EmailCoCOfCurrentLotToolStripMenuItem.Text = "Email Cert Of Compliance"
         '
         'ExitToolStripMenuItem
         '
@@ -722,109 +789,9 @@ Partial Class ViewStructuralCertsRemote
         '
         Me.ItemListTableAdapter.ClearBeforeFill = True
         '
-        'grpCOC
-        '
-        Me.grpCOC.Controls.Add(Me.lblCoC)
-        Me.grpCOC.Controls.Add(Me.cboCustomerID)
-        Me.grpCOC.Location = New System.Drawing.Point(6, 758)
-        Me.grpCOC.Name = "grpCOC"
-        Me.grpCOC.Size = New System.Drawing.Size(294, 51)
-        Me.grpCOC.TabIndex = 30
-        Me.grpCOC.TabStop = False
-        Me.grpCOC.Text = "CoC Customer (If Emailing CoC)"
-        '
-        'lblCoC
-        '
-        Me.lblCoC.AutoSize = True
-        Me.lblCoC.Location = New System.Drawing.Point(17, 22)
-        Me.lblCoC.Name = "lblCoC"
-        Me.lblCoC.Size = New System.Drawing.Size(54, 13)
-        Me.lblCoC.TabIndex = 34
-        Me.lblCoC.Text = "Customer:"
-        '
-        'cboCustomerID
-        '
-        Me.cboCustomerID.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.cboCustomerID.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.cboCustomerID.FormattingEnabled = True
-        Me.cboCustomerID.Location = New System.Drawing.Point(104, 19)
-        Me.cboCustomerID.Name = "cboCustomerID"
-        Me.cboCustomerID.Size = New System.Drawing.Size(155, 21)
-        Me.cboCustomerID.TabIndex = 30
-        '
         'StructuralCertTableTableAdapter
         '
         Me.StructuralCertTableTableAdapter.ClearBeforeFill = True
-        '
-        'LotNumberDataGridViewTextBoxColumn
-        '
-        Me.LotNumberDataGridViewTextBoxColumn.DataPropertyName = "LotNumber"
-        Me.LotNumberDataGridViewTextBoxColumn.HeaderText = "Lot Number"
-        Me.LotNumberDataGridViewTextBoxColumn.Name = "LotNumberDataGridViewTextBoxColumn"
-        Me.LotNumberDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'HeatNumberDataGridViewTextBoxColumn
-        '
-        Me.HeatNumberDataGridViewTextBoxColumn.DataPropertyName = "HeatNumber"
-        Me.HeatNumberDataGridViewTextBoxColumn.HeaderText = "Heat Number"
-        Me.HeatNumberDataGridViewTextBoxColumn.Name = "HeatNumberDataGridViewTextBoxColumn"
-        Me.HeatNumberDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'PartNumberDataGridViewTextBoxColumn
-        '
-        Me.PartNumberDataGridViewTextBoxColumn.DataPropertyName = "PartNumber"
-        Me.PartNumberDataGridViewTextBoxColumn.HeaderText = "Part Number"
-        Me.PartNumberDataGridViewTextBoxColumn.Name = "PartNumberDataGridViewTextBoxColumn"
-        Me.PartNumberDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'PartDescriptionDataGridViewTextBoxColumn
-        '
-        Me.PartDescriptionDataGridViewTextBoxColumn.DataPropertyName = "PartDescription"
-        Me.PartDescriptionDataGridViewTextBoxColumn.HeaderText = "Part Description"
-        Me.PartDescriptionDataGridViewTextBoxColumn.Name = "PartDescriptionDataGridViewTextBoxColumn"
-        Me.PartDescriptionDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'ItemClassDataGridViewTextBoxColumn
-        '
-        Me.ItemClassDataGridViewTextBoxColumn.DataPropertyName = "ItemClass"
-        Me.ItemClassDataGridViewTextBoxColumn.HeaderText = "Item Class"
-        Me.ItemClassDataGridViewTextBoxColumn.Name = "ItemClassDataGridViewTextBoxColumn"
-        Me.ItemClassDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'SalesIDDataGridViewTextBoxColumn
-        '
-        Me.SalesIDDataGridViewTextBoxColumn.DataPropertyName = "SalesID"
-        Me.SalesIDDataGridViewTextBoxColumn.HeaderText = "Sales ID"
-        Me.SalesIDDataGridViewTextBoxColumn.Name = "SalesIDDataGridViewTextBoxColumn"
-        Me.SalesIDDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'VendorDataGridViewTextBoxColumn
-        '
-        Me.VendorDataGridViewTextBoxColumn.DataPropertyName = "Vendor"
-        Me.VendorDataGridViewTextBoxColumn.HeaderText = "Vendor"
-        Me.VendorDataGridViewTextBoxColumn.Name = "VendorDataGridViewTextBoxColumn"
-        Me.VendorDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'DateDataGridViewTextBoxColumn
-        '
-        Me.DateDataGridViewTextBoxColumn.DataPropertyName = "Date"
-        Me.DateDataGridViewTextBoxColumn.HeaderText = "Date"
-        Me.DateDataGridViewTextBoxColumn.Name = "DateDataGridViewTextBoxColumn"
-        Me.DateDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'PDFStatusDataGridViewTextBoxColumn
-        '
-        Me.PDFStatusDataGridViewTextBoxColumn.DataPropertyName = "PDFStatus"
-        Me.PDFStatusDataGridViewTextBoxColumn.HeaderText = "PDF Status"
-        Me.PDFStatusDataGridViewTextBoxColumn.Name = "PDFStatusDataGridViewTextBoxColumn"
-        Me.PDFStatusDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'StatusDataGridViewTextBoxColumn
-        '
-        Me.StatusDataGridViewTextBoxColumn.DataPropertyName = "Status"
-        Me.StatusDataGridViewTextBoxColumn.HeaderText = "Status"
-        Me.StatusDataGridViewTextBoxColumn.Name = "StatusDataGridViewTextBoxColumn"
-        Me.StatusDataGridViewTextBoxColumn.ReadOnly = True
         '
         'ViewStructuralCertsRemote
         '
@@ -832,8 +799,7 @@ Partial Class ViewStructuralCertsRemote
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.cmdClose
-        Me.ClientSize = New System.Drawing.Size(1192, 863)
-        Me.Controls.Add(Me.grpCOC)
+        Me.ClientSize = New System.Drawing.Size(1200, 767)
         Me.Controls.Add(Me.cmdRemoteScan)
         Me.Controls.Add(Me.cmdUpload)
         Me.Controls.Add(Me.cmdScan)
@@ -848,7 +814,6 @@ Partial Class ViewStructuralCertsRemote
         Me.Controls.Add(Me.cmdRemove)
         Me.Controls.Add(Me.cmdAdd)
         Me.Controls.Add(Me.grpPart)
-        Me.MaximizeBox = False
         Me.Name = "ViewStructuralCertsRemote"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Structural Certification Form"
@@ -862,8 +827,6 @@ Partial Class ViewStructuralCertsRemote
         CType(Me.StructuralCertTableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        Me.grpCOC.ResumeLayout(False)
-        Me.grpCOC.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -936,20 +899,16 @@ Partial Class ViewStructuralCertsRemote
     Friend WithEvents ItemListBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents ItemListTableAdapter As MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.ItemListTableAdapter
     Friend WithEvents EmailPDFOfStructCertToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents EmailCoCOfCurrentLotToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents grpCOC As System.Windows.Forms.GroupBox
-    Friend WithEvents lblCoC As System.Windows.Forms.Label
-    Friend WithEvents cboCustomerID As System.Windows.Forms.ComboBox
     Friend WithEvents StructuralCertTableBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents StructuralCertTableTableAdapter As MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.StructuralCertTableTableAdapter
-    Friend WithEvents LotNumberDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents HeatNumberDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents PartNumberDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents PartDescriptionDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ItemClassDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents SalesIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents VendorDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DateDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents PDFStatusDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents StatusDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents PDFStatusDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents LotNumberDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents HeatNumberDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents PartNumberDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents PartDescriptionDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents ItemClassDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents SalesIDDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents VendorDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents DateDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents StatusDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
 End Class

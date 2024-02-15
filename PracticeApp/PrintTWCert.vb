@@ -20,6 +20,11 @@ Public Class PrintTWCert
     'Setup data connection and variables
     Dim con As SqlConnection = New SqlConnection("Data Source=TFP-SQL;Initial Catalog=TFPOperationsDatabase;Integrated Security=True;Connect Timeout=30")
     Dim cmd, cmd1, cmd2, cmd3, cmd4, cmd5, cmd6, cmd7, cmd8 As SqlCommand
+
+    Private Sub PrintTWCert_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
     Dim myAdapter, myAdapter1, myAdapter2, myAdapter3, myAdapter4, myAdapter5, myAdapter6, myAdapter7, myAdapter8 As New SqlDataAdapter
     Dim comBuilder As SqlCommandBuilder
     Dim ds, ds1, ds2, ds3, ds4 As DataSet

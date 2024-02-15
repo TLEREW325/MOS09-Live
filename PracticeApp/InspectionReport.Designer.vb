@@ -22,81 +22,81 @@ Partial Class InspectionReport
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.PrintToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.DeleteReportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ClearAllToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.txtRevisionLevel = New System.Windows.Forms.TextBox
-        Me.txtOperator = New System.Windows.Forms.TextBox
-        Me.txtShift = New System.Windows.Forms.TextBox
-        Me.txtDescription = New System.Windows.Forms.TextBox
-        Me.txtCustomer = New System.Windows.Forms.TextBox
-        Me.lblRevisionLevel = New System.Windows.Forms.Label
-        Me.lblOperator = New System.Windows.Forms.Label
-        Me.lblMachineNumber = New System.Windows.Forms.Label
-        Me.lblShift = New System.Windows.Forms.Label
-        Me.Label13 = New System.Windows.Forms.Label
-        Me.txtHeaderComment = New System.Windows.Forms.TextBox
-        Me.lblCustomer = New System.Windows.Forms.Label
-        Me.Label14 = New System.Windows.Forms.Label
-        Me.txtOperation = New System.Windows.Forms.TextBox
-        Me.Label8 = New System.Windows.Forms.Label
-        Me.cboFoxNumber = New System.Windows.Forms.ComboBox
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.Label9 = New System.Windows.Forms.Label
-        Me.txtLineComment = New System.Windows.Forms.TextBox
-        Me.cmdAddLine = New System.Windows.Forms.Button
-        Me.cmdClearLineInputData = New System.Windows.Forms.Button
-        Me.Label4 = New System.Windows.Forms.Label
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.cboInspection = New System.Windows.Forms.ComboBox
-        Me.Label7 = New System.Windows.Forms.Label
-        Me.txtPartDetail = New System.Windows.Forms.TextBox
-        Me.cmdClearAll = New System.Windows.Forms.Button
-        Me.cmdExit = New System.Windows.Forms.Button
-        Me.cmdPrint = New System.Windows.Forms.Button
-        Me.dgvInspectionReports = New System.Windows.Forms.DataGridView
-        Me.gpxFoxInfo = New System.Windows.Forms.GroupBox
-        Me.cboMachineNumber = New System.Windows.Forms.ComboBox
-        Me.cboBluePrint = New System.Windows.Forms.ComboBox
-        Me.txtLotNumber = New System.Windows.Forms.TextBox
-        Me.lblLotNumber = New System.Windows.Forms.Label
-        Me.txtPartNumber = New System.Windows.Forms.TextBox
-        Me.cboInspectionKey = New System.Windows.Forms.ComboBox
-        Me.lblPONumber = New System.Windows.Forms.Label
-        Me.gpxDeleteLine = New System.Windows.Forms.GroupBox
-        Me.cmdDeleteLine = New System.Windows.Forms.Button
-        Me.Label19 = New System.Windows.Forms.Label
-        Me.cboLineNumber = New System.Windows.Forms.ComboBox
-        Me.cmdSave = New System.Windows.Forms.Button
-        Me.cmdDelete = New System.Windows.Forms.Button
-        Me.tabRows = New System.Windows.Forms.TabControl
-        Me.tbCurrentRows = New System.Windows.Forms.TabPage
-        Me.tbAddNewRow = New System.Windows.Forms.TabPage
-        Me.cmdBlankLine = New System.Windows.Forms.Button
-        Me.lblNote = New System.Windows.Forms.Label
-        Me.cboFrequency = New System.Windows.Forms.ComboBox
-        Me.cboSampleSize = New System.Windows.Forms.ComboBox
-        Me.Label5 = New System.Windows.Forms.Label
-        Me.txtHighSpec = New System.Windows.Forms.TextBox
-        Me.lblHighSpec = New System.Windows.Forms.Label
-        Me.lblLowSpec = New System.Windows.Forms.Label
-        Me.txtLowSpec = New System.Windows.Forms.TextBox
-        Me.txtDataGridNote = New System.Windows.Forms.TextBox
-        Me.gpxFirstPieceInspection = New System.Windows.Forms.GroupBox
-        Me.cmdFirstInspectionEntry = New System.Windows.Forms.Button
-        Me.cmdViewEntries = New System.Windows.Forms.Button
-        Me.TextBox1 = New System.Windows.Forms.TextBox
-        Me.pnlBlueprintJournalEntries = New System.Windows.Forms.Panel
-        Me.Label6 = New System.Windows.Forms.Label
-        Me.txtPartSpec = New System.Windows.Forms.TextBox
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PrintToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DeleteReportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ClearAllToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.txtRevisionLevel = New System.Windows.Forms.TextBox()
+        Me.txtOperator = New System.Windows.Forms.TextBox()
+        Me.txtShift = New System.Windows.Forms.TextBox()
+        Me.txtDescription = New System.Windows.Forms.TextBox()
+        Me.txtCustomer = New System.Windows.Forms.TextBox()
+        Me.lblRevisionLevel = New System.Windows.Forms.Label()
+        Me.lblOperator = New System.Windows.Forms.Label()
+        Me.lblMachineNumber = New System.Windows.Forms.Label()
+        Me.lblShift = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.txtHeaderComment = New System.Windows.Forms.TextBox()
+        Me.lblCustomer = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.txtOperation = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.cboFoxNumber = New System.Windows.Forms.ComboBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.txtLineComment = New System.Windows.Forms.TextBox()
+        Me.cmdAddLine = New System.Windows.Forms.Button()
+        Me.cmdClearLineInputData = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.cboInspection = New System.Windows.Forms.ComboBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.txtPartDetail = New System.Windows.Forms.TextBox()
+        Me.cmdClearAll = New System.Windows.Forms.Button()
+        Me.cmdExit = New System.Windows.Forms.Button()
+        Me.cmdPrint = New System.Windows.Forms.Button()
+        Me.dgvInspectionReports = New System.Windows.Forms.DataGridView()
+        Me.gpxFoxInfo = New System.Windows.Forms.GroupBox()
+        Me.cboMachineNumber = New System.Windows.Forms.ComboBox()
+        Me.cboBluePrint = New System.Windows.Forms.ComboBox()
+        Me.txtLotNumber = New System.Windows.Forms.TextBox()
+        Me.lblLotNumber = New System.Windows.Forms.Label()
+        Me.txtPartNumber = New System.Windows.Forms.TextBox()
+        Me.cboInspectionKey = New System.Windows.Forms.ComboBox()
+        Me.lblPONumber = New System.Windows.Forms.Label()
+        Me.gpxDeleteLine = New System.Windows.Forms.GroupBox()
+        Me.cmdDeleteLine = New System.Windows.Forms.Button()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.cboLineNumber = New System.Windows.Forms.ComboBox()
+        Me.cmdSave = New System.Windows.Forms.Button()
+        Me.cmdDelete = New System.Windows.Forms.Button()
+        Me.tabRows = New System.Windows.Forms.TabControl()
+        Me.tbCurrentRows = New System.Windows.Forms.TabPage()
+        Me.tbAddNewRow = New System.Windows.Forms.TabPage()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.txtPartSpec = New System.Windows.Forms.TextBox()
+        Me.cmdBlankLine = New System.Windows.Forms.Button()
+        Me.lblNote = New System.Windows.Forms.Label()
+        Me.cboFrequency = New System.Windows.Forms.ComboBox()
+        Me.cboSampleSize = New System.Windows.Forms.ComboBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txtHighSpec = New System.Windows.Forms.TextBox()
+        Me.lblHighSpec = New System.Windows.Forms.Label()
+        Me.lblLowSpec = New System.Windows.Forms.Label()
+        Me.txtLowSpec = New System.Windows.Forms.TextBox()
+        Me.txtDataGridNote = New System.Windows.Forms.TextBox()
+        Me.gpxFirstPieceInspection = New System.Windows.Forms.GroupBox()
+        Me.cmdFirstInspectionEntry = New System.Windows.Forms.Button()
+        Me.cmdViewEntries = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.pnlBlueprintJournalEntries = New System.Windows.Forms.Panel()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.dgvInspectionReports, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gpxFoxInfo.SuspendLayout()
@@ -121,43 +121,43 @@ Partial Class InspectionReport
         '
         Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveToolStripMenuItem, Me.PrintToolStripMenuItem, Me.DeleteReportToolStripMenuItem, Me.ClearAllToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'SaveToolStripMenuItem
         '
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
-        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
         Me.SaveToolStripMenuItem.Text = "Save"
         '
         'PrintToolStripMenuItem
         '
         Me.PrintToolStripMenuItem.Name = "PrintToolStripMenuItem"
-        Me.PrintToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
+        Me.PrintToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
         Me.PrintToolStripMenuItem.Text = "Print"
         '
         'DeleteReportToolStripMenuItem
         '
         Me.DeleteReportToolStripMenuItem.Name = "DeleteReportToolStripMenuItem"
-        Me.DeleteReportToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
+        Me.DeleteReportToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
         Me.DeleteReportToolStripMenuItem.Text = "Delete Report"
         '
         'ClearAllToolStripMenuItem
         '
         Me.ClearAllToolStripMenuItem.Name = "ClearAllToolStripMenuItem"
-        Me.ClearAllToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
+        Me.ClearAllToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
         Me.ClearAllToolStripMenuItem.Text = "Clear All"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -467,8 +467,8 @@ Partial Class InspectionReport
         Me.dgvInspectionReports.AllowUserToAddRows = False
         Me.dgvInspectionReports.AllowUserToDeleteRows = False
         Me.dgvInspectionReports.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgvInspectionReports.BackgroundColor = System.Drawing.SystemColors.ActiveBorder
         Me.dgvInspectionReports.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvInspectionReports.GridColor = System.Drawing.SystemColors.ControlLight
@@ -644,8 +644,8 @@ Partial Class InspectionReport
         'tabRows
         '
         Me.tabRows.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.tabRows.Controls.Add(Me.tbCurrentRows)
         Me.tabRows.Controls.Add(Me.tbAddNewRow)
         Me.tabRows.Location = New System.Drawing.Point(12, 275)
@@ -692,8 +692,27 @@ Partial Class InspectionReport
         Me.tbAddNewRow.Padding = New System.Windows.Forms.Padding(3)
         Me.tbAddNewRow.Size = New System.Drawing.Size(852, 518)
         Me.tbAddNewRow.TabIndex = 1
-        Me.tbAddNewRow.Text = "Add new line"
+        Me.tbAddNewRow.Text = "Add New Line"
         Me.tbAddNewRow.UseVisualStyleBackColor = True
+        '
+        'Label6
+        '
+        Me.Label6.Location = New System.Drawing.Point(36, 176)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(100, 20)
+        Me.Label6.TabIndex = 30
+        Me.Label6.Text = "Specification"
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'txtPartSpec
+        '
+        Me.txtPartSpec.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtPartSpec.Location = New System.Drawing.Point(216, 176)
+        Me.txtPartSpec.MaxLength = 50
+        Me.txtPartSpec.Name = "txtPartSpec"
+        Me.txtPartSpec.Size = New System.Drawing.Size(150, 20)
+        Me.txtPartSpec.TabIndex = 2
+        Me.txtPartSpec.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'cmdBlankLine
         '
@@ -711,8 +730,8 @@ Partial Class InspectionReport
         Me.lblNote.Name = "lblNote"
         Me.lblNote.Size = New System.Drawing.Size(306, 36)
         Me.lblNote.TabIndex = 27
-        Me.lblNote.Text = "*** If specification is not a measurement input information into the LOW SPECIFIC" & _
-            "ATION Field ***"
+        Me.lblNote.Text = "*** If specification is not a measurement input information into the LOW SPECIFIC" &
+    "ATION Field ***"
         Me.lblNote.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'cboFrequency
@@ -856,25 +875,6 @@ Partial Class InspectionReport
         Me.pnlBlueprintJournalEntries.Size = New System.Drawing.Size(235, 53)
         Me.pnlBlueprintJournalEntries.TabIndex = 28
         Me.pnlBlueprintJournalEntries.Visible = False
-        '
-        'Label6
-        '
-        Me.Label6.Location = New System.Drawing.Point(36, 176)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(100, 20)
-        Me.Label6.TabIndex = 30
-        Me.Label6.Text = "Specification"
-        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'txtPartSpec
-        '
-        Me.txtPartSpec.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtPartSpec.Location = New System.Drawing.Point(216, 176)
-        Me.txtPartSpec.MaxLength = 50
-        Me.txtPartSpec.Name = "txtPartSpec"
-        Me.txtPartSpec.Size = New System.Drawing.Size(150, 20)
-        Me.txtPartSpec.TabIndex = 2
-        Me.txtPartSpec.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'InspectionReport
         '

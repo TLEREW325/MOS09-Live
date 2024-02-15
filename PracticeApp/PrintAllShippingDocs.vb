@@ -107,7 +107,10 @@ Public Class PrintAllShippingDocs
         MyReport.SetDataSource(ds)
         MyReport.PrintToPrinter(2, True, 1, 999)
         MyReport.ExportToDisk(ExportFormatType.PortableDocFormat, "\\TFP-FS\TransferData\TruweldPackList\" & EmailPackingSlip)
+
+        'Dispose resources
         con.Close()
+        CRPackListViewer.Dispose()
 
         cmdExit.Focus()
     End Sub
@@ -164,7 +167,10 @@ Public Class PrintAllShippingDocs
         MyReport1 = CRXBOL1
         MyReport1.SetDataSource(ds)
         MyReport1.PrintToPrinter(2, True, 1, 999)
+
+        'Dispose of resources
         con.Close()
+        CRBOLViewer.Dispose()
 
         cmdExit.Focus()
     End Sub
@@ -223,7 +229,9 @@ Public Class PrintAllShippingDocs
                 MyReport2 = CRXTWCert011
                 MyReport2.SetDataSource(ds)
                 MyReport2.PrintToPrinter(1, True, 1, 999)
+
                 con.Close()
+                CRCertViewer.Dispose()
 
                 'Create new Filename for Cert
                 Dim strGlobalShipmentNumber As String = ""
@@ -317,12 +325,17 @@ Public Class PrintAllShippingDocs
             MyReport.PrintToPrinter(1, True, 1, 999)
             MyReport.ExportToDisk(ExportFormatType.PortableDocFormat, "\\TFP-FS\TransferData\TruweldPackList\" & EmailPackingSlip)
             con.Close()
+
+            'Dispose resources
+            CRPackListViewer.Dispose()
         Else
             MyReport = CRXPackingSlip1
             MyReport.SetDataSource(ds)
             MyReport.PrintToPrinter(1, True, 1, 999)
             MyReport.ExportToDisk(ExportFormatType.PortableDocFormat, "\\TFP-FS\TransferData\TruweldPackList\" & EmailPackingSlip)
+
             con.Close()
+            CRPackListViewer.Dispose()
         End If
 
         'Loads data into dataset for viewing
@@ -369,7 +382,9 @@ Public Class PrintAllShippingDocs
         MyReport1 = CRXBOL1
         MyReport1.SetDataSource(ds)
         MyReport1.PrintToPrinter(2, True, 1, 999)
+
         con.Close()
+        CRBOLViewer.Dispose()
 
         Dim CheckForCertsString As String = "SELECT COUNT(ShipmentNumber) FROM ShipmentLineLotNumbers WHERE ShipmentNumber = @ShipmentNumber AND DivisionID = @DivisionID"
         Dim CheckForCertsCommand As New SqlCommand(CheckForCertsString, con)
@@ -425,7 +440,9 @@ Public Class PrintAllShippingDocs
                 MyReport2 = CRXTWCert011
                 MyReport2.SetDataSource(ds)
                 MyReport2.PrintToPrinter(1, True, 1, 999)
+
                 con.Close()
+                CRCertViewer.Dispose()
             Else
                 'Skip
             End If

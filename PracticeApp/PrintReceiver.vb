@@ -59,8 +59,9 @@ Public Class PrintReceiver
             MyReport = CRXReceivingTicket1
             MyReport.SetDataSource(ds)
             MyReport.PrintToPrinter(1, True, 1, 999)
-            con.Close()
 
+            con.Close()
+            CRReceiverViewer.Dispose()
             Me.Close()
         Else
             MyReport = CRXReceivingTicket1

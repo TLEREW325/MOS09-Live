@@ -9300,6 +9300,12 @@
     <Compile Include="ViewStructuralCerts.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ViewStructuralCertsPopUp.Designer.vb">
+      <DependentUpon>ViewStructuralCertsPopUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStructuralCertsPopUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ViewStructuralCertsRemote.Designer.vb">
       <DependentUpon>ViewStructuralCertsRemote.vb</DependentUpon>
     </Compile>
@@ -15459,6 +15465,9 @@
     <EmbeddedResource Include="ViewStructuralCerts.resx">
       <DependentUpon>ViewStructuralCerts.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ViewStructuralCertsPopUp.resx">
+      <DependentUpon>ViewStructuralCertsPopUp.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ViewStructuralCertsRemote.resx">
       <DependentUpon>ViewStructuralCertsRemote.vb</DependentUpon>
     </EmbeddedResource>
@@ -15810,7 +15819,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="bin\Release\MOS09 TFP Corporation.exe.config" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -15878,8 +15886,6 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bin\Release\MOS09 TFP Corporation.exe" />
-    <Content Include="bin\Release\MOS09 TFP Corporation.pdb" />
     <Content Include="LITENING.ICO">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -16082,9 +16088,7 @@
       <Isolated>False</Isolated>
     </COMReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="bin\Debug\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.5.1.1\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.5.1.1\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

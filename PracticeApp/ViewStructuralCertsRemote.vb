@@ -65,7 +65,6 @@ Public Class ViewStructuralCertsRemote
         cboItemClass.SelectedIndex = -1
         cboPartNumber.SelectedIndex = -1
         cboVendor.SelectedIndex = -1
-        cboCustomerID.SelectedIndex = -1
         cboPartDescription.SelectedIndex = -1
 
         txtSearch.Text = ""
@@ -99,7 +98,6 @@ Public Class ViewStructuralCertsRemote
         LoadItemClass()
         LoadSalesID()
         LoadVendorID()
-        LoadCustomerName()
 
         If My.Computer.Name.StartsWith("TFP") Then
             cmdRemoteScan.Visible = True
@@ -120,32 +118,12 @@ Public Class ViewStructuralCertsRemote
             dgvStructCert.DataSource = ds.Tables("StructuralCertTable")
             con.Close()
 
-            For Each rw As DataGridViewRow In dgvStructCert.Rows
-                If rw.Cells("StatusDataGridViewTextBoxColumn").Value.ToString = "Open" Then
-                    rw.DefaultCellStyle.BackColor = Color.LightCoral
-                Else
-                    rw.DefaultCellStyle.BackColor = Color.LightGreen
-                End If
-            Next
+
 
         Catch ex As System.Exception
         End Try
     End Sub
 
-    Public Sub LoadCustomerName()
-        cmd = New SqlCommand("SELECT CustomerID FROM CustomerList WHERE DivisionID = @DivisionID AND CustomerClass <> @CustomerClass ORDER BY CustomerName", con)
-        cmd.Parameters.Add("@DivisionID", SqlDbType.VarChar).Value = EmployeeCompanyCode
-        cmd.Parameters.Add("@CustomerClass", SqlDbType.VarChar).Value = "DE-ACTIVATED"
-        If con.State = ConnectionState.Closed Then con.Open()
-        ds6 = New DataSet()
-        myAdapter6.SelectCommand = cmd
-        myAdapter6.Fill(ds6, "CustomerList")
-        cboCustomerID.DataSource = ds6.Tables("CustomerList")
-        con.Close()
-        cboCustomerID.ValueMember = "CustomerID"
-        cboCustomerID.DisplayMember = "CustomerID"
-        cboCustomerID.SelectedIndex = -1
-    End Sub
 
     Public Sub ShowDataByFilter()
         If txtLookLotNum.Text <> "" Or txtSearch.Text <> "" Or txtLookHeatNumber.Text <> "" Or txtLookPartDesc.Text <> "" Or txtLookPartNum.Text <> "" Or txtLookSalesID.Text <> "" Or txtLookVendorView.Text <> "" Or chkDateRange.Checked = True Or chkOpen.Checked = True Or chkPDFScanned.Checked = True Then
@@ -274,16 +252,7 @@ Public Class ViewStructuralCertsRemote
             End If
 
 
-            Try
-                For Each rw As DataGridViewRow In dgvStructCert.Rows
-                    If rw.Cells("StatusDataGridViewTextBoxColumn").Value.ToString = "Open" Then
-                        rw.DefaultCellStyle.BackColor = Color.LightCoral
-                    Else
-                        rw.DefaultCellStyle.BackColor = Color.LightGreen
-                    End If
-                Next
-            Catch excep As System.Exception
-            End Try
+
         End If
 
 
@@ -416,6 +385,60 @@ Public Class ViewStructuralCertsRemote
                 MsgBox("Saved Lot Number Information")
             End If
         End If
+        GlobalVariables.stringVar = ""
+        Dim result1 As String
+        result1 = MsgBox("Would you like to scan or upload the structural cert?", vbYesNo, "Upload/Scan Structural Cert")
+        Select Case result1
+            Case vbYes
+                GlobalVariables.stringVar2 = txtLotNumber.Text
+                Dim NewStructuralCertsPopUp As New ViewStructuralCertsPopUp
+                NewStructuralCertsPopUp.ShowDialog()
+
+                Dim status As String
+                If txtLotNumber.Text = "" Or txtHeatNumber.Text = "" Or cboPartNumber.Text = "" Or cboPartDescription.Text = "" Or cboItemClass.Text = "" Or cboItemClass.Text = "" Then
+                    status = "Open"
+                Else
+                    status = "Closed"
+                End If
+                If File.Exists("\\TFP-FS\TransferData\StructuralCerts\" + txtLotNumber.Text + ".pdf") Then
+                    cmd = New SqlCommand("UPDATE StructuralCertTable SET PDFStatus = @PDFStatus, Status = @Status WHERE LotNumber = @LotNumber", con)
+                    With cmd.Parameters
+                        .Add("@LotNumber", SqlDbType.VarChar).Value = txtLotNumber.Text
+                        .Add("@PDFStatus", SqlDbType.VarChar).Value = "Uploaded"
+                        .Add("@Status", SqlDbType.VarChar).Value = status
+                    End With
+                    If con.State = ConnectionState.Closed Then con.Open()
+                    cmd.ExecuteNonQuery()
+                    con.Close()
+                    ''MsgBox("Updated Lot Number Information")
+
+                    cmd = New SqlCommand("SELECT * FROM StructuralCertTable", con)
+                    If con.State = ConnectionState.Closed Then con.Open()
+                    ds = New DataSet()
+                    myAdapter.SelectCommand = cmd
+                    myAdapter.Fill(ds, "StructuralCertTable")
+                    dgvStructCert.DataSource = ds.Tables("StructuralCertTable")
+                    con.Close()
+
+
+                Else
+                    cmd = New SqlCommand("UPDATE StructuralCertTable SET PDFStatus = @PDFStatus, Status = @Status WHERE LotNumber = @LotNumber", con)
+                    With cmd.Parameters
+                        .Add("@LotNumber", SqlDbType.VarChar).Value = txtLotNumber.Text
+                        .Add("@PDFStatus", SqlDbType.VarChar).Value = "Not Uploaded"
+                        .Add("@Status", SqlDbType.VarChar).Value = status
+                    End With
+                    If con.State = ConnectionState.Closed Then con.Open()
+                    cmd.ExecuteNonQuery()
+                End If
+                cleardata()
+            Case vbNo
+
+
+        End Select
+
+
+
         cleardata()
 
         Try
@@ -428,13 +451,7 @@ Public Class ViewStructuralCertsRemote
             dgvStructCert.DataSource = ds.Tables("StructuralCertTable")
             con.Close()
 
-            For Each rw As DataGridViewRow In dgvStructCert.Rows
-                If rw.Cells("StatusDataGridViewTextBoxColumn").Value.ToString = "Open" Then
-                    rw.DefaultCellStyle.BackColor = Color.LightCoral
-                Else
-                    rw.DefaultCellStyle.BackColor = Color.LightGreen
-                End If
-            Next
+
 
         Catch ex As System.Exception
         End Try
@@ -468,13 +485,7 @@ Public Class ViewStructuralCertsRemote
                 dgvStructCert.DataSource = ds.Tables("StructuralCertTable")
                 con.Close()
 
-                For Each rw As DataGridViewRow In dgvStructCert.Rows
-                    If rw.Cells("StatusDataGridViewTextBoxColumn").Value.ToString = "Open" Then
-                        rw.DefaultCellStyle.BackColor = Color.LightCoral
-                    Else
-                        rw.DefaultCellStyle.BackColor = Color.LightGreen
-                    End If
-                Next
+
 
             Catch ex As System.Exception
             End Try
@@ -497,13 +508,7 @@ Public Class ViewStructuralCertsRemote
             dgvStructCert.DataSource = ds.Tables("StructuralCertTable")
             con.Close()
 
-            For Each rw As DataGridViewRow In dgvStructCert.Rows
-                If rw.Cells("StatusDataGridViewTextBoxColumn").Value.ToString = "Open" Then
-                    rw.DefaultCellStyle.BackColor = Color.LightCoral
-                Else
-                    rw.DefaultCellStyle.BackColor = Color.LightGreen
-                End If
-            Next
+
 
         Catch ex As System.Exception
         End Try
@@ -756,13 +761,19 @@ Public Class ViewStructuralCertsRemote
             myAdapter.Fill(ds, "StructuralCertTable")
             dgvStructCert.DataSource = ds.Tables("StructuralCertTable")
             con.Close()
-            For Each rw As DataGridViewRow In dgvStructCert.Rows
-                If rw.Cells("StatusDataGridViewTextBoxColumn").Value.ToString = "Open" Then
-                    rw.DefaultCellStyle.BackColor = Color.LightCoral
-                Else
-                    rw.DefaultCellStyle.BackColor = Color.LightGreen
-                End If
-            Next
+
+            txtLookVendorView.Text = ""
+            txtLookSalesID.Text = ""
+            txtLookPartNum.Text = ""
+            txtLookPartDesc.Text = ""
+            txtLookLotNum.Text = ""
+            txtLookHeatNumber.Text = ""
+            txtSearch.Text = ""
+            chkDateRange.Checked = False
+            dtpBeginDate.Value = Now
+            dtpEndDate.Value = Now
+            chkPDFScanned.Checked = False
+            chkOpen.Checked = False
 
         Catch ex As System.Exception
         End Try
@@ -1148,7 +1159,7 @@ Public Class ViewStructuralCertsRemote
 
     Private Sub cmdScan_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdScan.Click
         Dim exists As Boolean = False
-        Dim autho As Integer = 0
+        Dim autho As String = ""
         Dim ItemDataStatement As String = "SELECT LotNumber FROM StructuralCertTable WHERE LotNumber = @LotNumber"
         Dim ItemDataCommand As New SqlCommand(ItemDataStatement, con)
         ItemDataCommand.Parameters.Add("@LotNumber", SqlDbType.VarChar).Value = txtLotNumber.Text
@@ -1158,7 +1169,7 @@ Public Class ViewStructuralCertsRemote
             If reader.HasRows Then
                 reader.Read()
                 If IsDBNull(reader.Item("LotNumber")) Then
-                    autho = 0
+                    autho = ""
                 Else
                     autho = reader.Item("LotNumber")
                 End If
@@ -1167,7 +1178,7 @@ Public Class ViewStructuralCertsRemote
         End Using
 
         Dim chosenautho = txtLotNumber.Text
-        Dim comString = autho.ToString
+        Dim comString = autho
         If chosenautho = comString Then
             ScanStrucCert()
             Try
@@ -1180,13 +1191,7 @@ Public Class ViewStructuralCertsRemote
                 dgvStructCert.DataSource = ds.Tables("StructuralCertTable")
                 con.Close()
 
-                For Each rw As DataGridViewRow In dgvStructCert.Rows
-                    If rw.Cells("StatusDataGridViewTextBoxColumn").Value.ToString = "Open" Then
-                        rw.DefaultCellStyle.BackColor = Color.LightCoral
-                    Else
-                        rw.DefaultCellStyle.BackColor = Color.LightGreen
-                    End If
-                Next
+
 
             Catch ex As System.Exception
             End Try
@@ -1197,7 +1202,7 @@ Public Class ViewStructuralCertsRemote
 
     Private Sub cmdRemoteScan_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdRemoteScan.Click
         Dim exists As Boolean = False
-        Dim autho As Integer = 0
+        Dim autho As String = ""
         Dim ItemDataStatement As String = "SELECT LotNumber FROM StructuralCertTable WHERE LotNumber = @LotNumber"
         Dim ItemDataCommand As New SqlCommand(ItemDataStatement, con)
         ItemDataCommand.Parameters.Add("@LotNumber", SqlDbType.VarChar).Value = txtLotNumber.Text
@@ -1207,7 +1212,7 @@ Public Class ViewStructuralCertsRemote
             If reader.HasRows Then
                 reader.Read()
                 If IsDBNull(reader.Item("LotNumber")) Then
-                    autho = 0
+                    autho = ""
                 Else
                     autho = reader.Item("LotNumber")
                 End If
@@ -1216,7 +1221,7 @@ Public Class ViewStructuralCertsRemote
         End Using
 
         Dim chosenautho = txtLotNumber.Text
-        Dim comString = autho.ToString
+        Dim comString = autho
         If chosenautho = comString Then
 
             Dim ReceiptFilename As String = ""
@@ -1392,7 +1397,7 @@ Public Class ViewStructuralCertsRemote
                         If con.State = ConnectionState.Closed Then con.Open()
                         cmd.ExecuteNonQuery()
                         con.Close()
-                        'MsgBox("Updated Lot Number Information")
+                        ''MsgBox("Updated Lot Number Information")
 
                         cmd = New SqlCommand("SELECT * FROM StructuralCertTable", con)
                         If con.State = ConnectionState.Closed Then con.Open()
@@ -1402,13 +1407,7 @@ Public Class ViewStructuralCertsRemote
                         dgvStructCert.DataSource = ds.Tables("StructuralCertTable")
                         con.Close()
 
-                        For Each rw As DataGridViewRow In dgvStructCert.Rows
-                            If rw.Cells("StatusDataGridViewTextBoxColumn").Value.ToString = "Open" Then
-                                rw.DefaultCellStyle.BackColor = Color.LightCoral
-                            Else
-                                rw.DefaultCellStyle.BackColor = Color.LightGreen
-                            End If
-                        Next
+
                     Else
                         cmd = New SqlCommand("UPDATE StructuralCertTable SET PDFStatus = @PDFStatus, Status = @Status WHERE LotNumber = @LotNumber", con)
                         With cmd.Parameters
@@ -1429,15 +1428,7 @@ Public Class ViewStructuralCertsRemote
         End If
     End Sub
 
-    Private Sub dgvStructCert_Sorted(ByVal sender As Object, ByVal e As System.EventArgs) Handles dgvStructCert.Sorted
-        For Each rw As DataGridViewRow In dgvStructCert.Rows
-            If rw.Cells("StatusDataGridViewTextBoxColumn").Value.ToString = "Open" Then
-                rw.DefaultCellStyle.BackColor = Color.LightCoral
-            Else
-                rw.DefaultCellStyle.BackColor = Color.LightGreen
-            End If
-        Next
-    End Sub
+
 
     Private Sub AddUpdateToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AddUpdateToolStripMenuItem.Click
         MsgBox("This option will update an existing lot numbers information based on the lot number. If the lot number does not exist yet, it will create a new one")
@@ -1470,95 +1461,143 @@ Public Class ViewStructuralCertsRemote
     End Sub
 
     Private Sub txtLotNumber_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtLotNumber.TextChanged
+        Dim founded As Boolean = False
         If txtLotNumber.Text = "" Then
             cleardata()
         Else
 
             Try
+                For Each rw As DataGridViewRow In dgvStructCert.Rows
+                    If rw.Cells("LotNumberDataGridViewTextBoxColumn").Value.ToString = txtLotNumber.Text Then
+                        Dim RowIndex As Integer = rw.Index
+                        Dim lotNum, heatNum, part, desc, vendor, dateC, itemClass, salesId, status, pdfStatus As String
+                        part = Me.dgvStructCert.Rows(RowIndex).Cells("PartNumberDataGridViewTextBoxColumn").Value.ToString()
+                        desc = Me.dgvStructCert.Rows(RowIndex).Cells("PartDescriptionDataGridViewTextBoxColumn").Value.ToString()
+                        lotNum = Me.dgvStructCert.Rows(RowIndex).Cells("LotNumberDataGridViewTextBoxColumn").Value.ToString()
+                        heatNum = Me.dgvStructCert.Rows(RowIndex).Cells("HeatNumberDataGridViewTextBoxColumn").Value.ToString()
+                        dateC = Me.dgvStructCert.Rows(RowIndex).Cells("DateDataGridViewTextBoxColumn").Value.ToString()
+                        itemClass = Me.dgvStructCert.Rows(RowIndex).Cells("ItemClassDataGridViewTextBoxColumn").Value.ToString()
+                        vendor = Me.dgvStructCert.Rows(RowIndex).Cells("VendorDataGridViewTextBoxColumn").Value.ToString()
+                        salesId = Me.dgvStructCert.Rows(RowIndex).Cells("SalesIDDataGridViewTextBoxColumn").Value.ToString()
+                        pdfStatus = Me.dgvStructCert.Rows(RowIndex).Cells("PDFStatusDataGridViewTextBoxColumn").Value.ToString()
+                        status = Me.dgvStructCert.Rows(RowIndex).Cells("StatusDataGridViewTextBoxColumn").Value.ToString()
+                        cboPartNumber.Text = part
+                        cboPartDescription.Text = desc
+                        dtpDateEntry.Value = Convert.ToDateTime(dateC)
+                        txtLotNumber.Text = lotNum
+                        txtLookLotNum.Text = lotNum
+                        txtHeatNumber.Text = heatNum
+                        cboVendor.Text = vendor
+                        cboSalesID.Text = salesId
+                        cboItemClass.Text = itemClass
+                        founded = True
+                    Else
 
-                Dim PartClass As String = ""
+                        Dim PartClass As String = ""
+                        Dim PartClassStatement As String = "SELECT PartNumber FROM RackingTransactionQuery WHERE DivisionID = @DivisionID AND LotNumber = @LotNumber"
+                        Dim PartClassCommand As New SqlCommand(PartClassStatement, con)
+                        PartClassCommand.Parameters.Add("@DivisionID", SqlDbType.VarChar).Value = EmployeeCompanyCode
+                        PartClassCommand.Parameters.Add("@LotNumber", SqlDbType.VarChar).Value = txtLotNumber.Text
+                        If con.State = ConnectionState.Closed Then con.Open()
+                        Try
+                            PartClass = CStr(PartClassCommand.ExecuteScalar)
+                            If PartClass <> "" Then
+                                cboPartNumber.Text = PartClass
+                                founded = True
+                            End If
 
-                Dim PartClassStatement As String = "SELECT PartNumber FROM RackingTransactionQuery WHERE DivisionID = @DivisionID AND LotNumber = @LotNumber"
-                Dim PartClassCommand As New SqlCommand(PartClassStatement, con)
-                PartClassCommand.Parameters.Add("@DivisionID", SqlDbType.VarChar).Value = EmployeeCompanyCode
-                PartClassCommand.Parameters.Add("@LotNumber", SqlDbType.VarChar).Value = txtLotNumber.Text
+                        Catch ex As System.Exception
+                            founded = False
+                        End Try
+                        con.Close()
 
-                If con.State = ConnectionState.Closed Then con.Open()
-                Try
-                    PartClass = CStr(PartClassCommand.ExecuteScalar)
-                    If PartClass <> "" Then
-                        cboPartNumber.Text = PartClass
+                        Dim HeatNum As String = ""
+
+                        Dim HeatNumStatement As String = "SELECT HeatNumber FROM RackingTransactionQuery WHERE DivisionID = @DivisionID AND LotNumber = @LotNumber"
+                        Dim HeatNumCommand As New SqlCommand(HeatNumStatement, con)
+                        HeatNumCommand.Parameters.Add("@DivisionID", SqlDbType.VarChar).Value = EmployeeCompanyCode
+                        HeatNumCommand.Parameters.Add("@LotNumber", SqlDbType.VarChar).Value = txtLotNumber.Text
+                        If con.State = ConnectionState.Closed Then con.Open()
+                        Try
+                            HeatNum = CStr(HeatNumCommand.ExecuteScalar)
+                            If HeatNum <> "" Then
+                                txtHeatNumber.Text = HeatNum
+                            End If
+                        Catch ex As System.Exception
+                        End Try
+                        con.Close()
+                        Dim Partdescripton As String = ""
+
+                        Dim PartdescriptonStatement As String = "SELECT PartDescription FROM RackingTransactionQuery WHERE DivisionID = @DivisionID AND LotNumber = @LotNumber"
+                        Dim PartdescriptonCommand As New SqlCommand(PartdescriptonStatement, con)
+                        PartdescriptonCommand.Parameters.Add("@DivisionID", SqlDbType.VarChar).Value = EmployeeCompanyCode
+                        PartdescriptonCommand.Parameters.Add("@LotNumber", SqlDbType.VarChar).Value = txtLotNumber.Text
+                        If con.State = ConnectionState.Closed Then con.Open()
+                        Try
+                            Partdescripton = CStr(PartdescriptonCommand.ExecuteScalar)
+                            If Partdescripton <> "" Then
+                                cboPartDescription.Text = Partdescripton
+                            End If
+                        Catch ex As System.Exception
+
+                        End Try
+                        con.Close()
+
+
+
+                        Dim PartClass2 As String = ""
+                        Dim PartClassStatement2 As String = "SELECT ItemClass FROM ItemList WHERE DivisionID = @DivisionID AND ItemID = @ItemID"
+                        Dim PartClassCommand2 As New SqlCommand(PartClassStatement2, con)
+                        PartClassCommand2.Parameters.Add("@DivisionID", SqlDbType.VarChar).Value = EmployeeCompanyCode
+                        PartClassCommand2.Parameters.Add("@ItemID", SqlDbType.VarChar).Value = cboPartNumber.Text
+
+                        If con.State = ConnectionState.Closed Then con.Open()
+                        Try
+                            PartClass2 = CStr(PartClassCommand2.ExecuteScalar)
+                            If PartClass2 <> "" Then
+                                cboItemClass.Text = PartClass2
+                                cboVendor.Text = ""
+                            End If
+                        Catch ex As System.Exception
+                        End Try
+                        con.Close()
+
+                        'Pull in Heat Num
+
                     End If
-
-                Catch ex As System.Exception
-
-                End Try
-                con.Close()
-
-                Dim HeatNum As String = ""
-
-                Dim HeatNumStatement As String = "SELECT HeatNumber FROM RackingTransactionQuery WHERE DivisionID = @DivisionID AND LotNumber = @LotNumber"
-                Dim HeatNumCommand As New SqlCommand(HeatNumStatement, con)
-                HeatNumCommand.Parameters.Add("@DivisionID", SqlDbType.VarChar).Value = EmployeeCompanyCode
-                HeatNumCommand.Parameters.Add("@LotNumber", SqlDbType.VarChar).Value = txtLotNumber.Text
-
-                If con.State = ConnectionState.Closed Then con.Open()
-                Try
-                    HeatNum = CStr(HeatNumCommand.ExecuteScalar)
-                    If HeatNum <> "" Then
-                        txtHeatNumber.Text = HeatNum
-                    End If
-
-                Catch ex As System.Exception
-
-                End Try
-                con.Close()
-
-                Dim Partdescripton As String = ""
-
-                Dim PartdescriptonStatement As String = "SELECT PartDescription FROM RackingTransactionQuery WHERE DivisionID = @DivisionID AND LotNumber = @LotNumber"
-                Dim PartdescriptonCommand As New SqlCommand(PartdescriptonStatement, con)
-                PartdescriptonCommand.Parameters.Add("@DivisionID", SqlDbType.VarChar).Value = EmployeeCompanyCode
-                PartdescriptonCommand.Parameters.Add("@LotNumber", SqlDbType.VarChar).Value = txtLotNumber.Text
-
-                If con.State = ConnectionState.Closed Then con.Open()
-                Try
-                    Partdescripton = CStr(PartdescriptonCommand.ExecuteScalar)
-                    If Partdescripton <> "" Then
-                        cboPartDescription.Text = Partdescripton
-                    End If
-                Catch ex As System.Exception
-
-                End Try
-                con.Close()
-
-
-
-                Dim PartClass2 As String = ""
-
-                Dim PartClassStatement2 As String = "SELECT ItemClass FROM ItemList WHERE DivisionID = @DivisionID AND ItemID = @ItemID"
-                Dim PartClassCommand2 As New SqlCommand(PartClassStatement2, con)
-                PartClassCommand2.Parameters.Add("@DivisionID", SqlDbType.VarChar).Value = EmployeeCompanyCode
-                PartClassCommand2.Parameters.Add("@ItemID", SqlDbType.VarChar).Value = cboPartNumber.Text
-
-                If con.State = ConnectionState.Closed Then con.Open()
-                Try
-                    PartClass2 = CStr(PartClassCommand2.ExecuteScalar)
-                    If PartClass2 <> "" Then
-                        cboItemClass.Text = PartClass2
-                        cboVendor.Text = ""
-                    End If
-
-                Catch ex As System.Exception
-
-                End Try
-                con.Close()
-
-
-
-            Catch ex As Exception
+                Next
+            Catch ex As System.Exception
 
             End Try
+        End If
+        If founded = False Then
+            cboSalesID.Text = ""
+            cboPartDescription.Text = ""
+            cboPartNumber.Text = ""
+            'txtLotNumber.Text = ""
+            txtHeatNumber.Text = ""
+            dtpDateEntry.Value = Now
+            dtpBeginDate.Value = Now
+            dtpEndDate.Value = Now
+            cboVendor.Text = ""
+            cboItemClass.Text = ""
+            'dgvMainRack.DataSource = Nothing
+            cboSalesID.SelectedIndex = -1
+            cboItemClass.SelectedIndex = -1
+            cboPartNumber.SelectedIndex = -1
+            cboVendor.SelectedIndex = -1
+            cboPartDescription.SelectedIndex = -1
+
+            txtSearch.Text = ""
+            txtLookPartNum.Text = ""
+            txtLookPartDesc.Text = ""
+            txtLookLotNum.Text = ""
+            'txtLookHeatNumber.Text = ""
+            txtLookSalesID.Text = ""
+            txtLookVendorView.Text = ""
+            chkDateRange.Checked = False
+            chkOpen.Checked = False
+            chkPDFScanned.Checked = False
         End If
     End Sub
 
@@ -1567,19 +1606,6 @@ Public Class ViewStructuralCertsRemote
         If File.Exists(structCertExists) Then
 
             Dim CertEmail As String = ""
-
-            Dim CertStatement As String = "SELECT InvoiceCertEmail FROM CustomerList WHERE CustomerID = @CustomerID AND DivisionID = @DivisionID"
-            Dim CertCommand As New SqlCommand(CertStatement, con)
-            CertCommand.Parameters.Add("@CustomerID", SqlDbType.VarChar).Value = cboCustomerID.Text
-            CertCommand.Parameters.Add("@DivisionID", SqlDbType.VarChar).Value = EmployeeCompanyCode
-
-            If con.State = ConnectionState.Closed Then con.Open()
-            Try
-                CertEmail = CStr(CertCommand.ExecuteScalar)
-            Catch ex As System.Exception
-                CertEmail = ""
-            End Try
-            con.Close()
 
 
             TFPMailFilename = txtLotNumber.Text + ".pdf"
@@ -1593,116 +1619,11 @@ Public Class ViewStructuralCertsRemote
             End Using
 
             Me.Dispose()
-            Me.Close()
+
         Else
             MsgBox("PDF Does Not Exist, Cannot Email")
         End If
     End Sub
 
-    Private Sub EmailCoCOfCurrentLotToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EmailCoCOfCurrentLotToolStripMenuItem.Click
-        If con.State = ConnectionState.Closed Then con.Open()
 
-        Dim PartClass As String = ""
-
-        Dim PartClassStatement As String = "SELECT PartNumber FROM RackingTransactionQuery WHERE DivisionID = @DivisionID AND LotNumber = @LotNumber"
-        Dim PartClassCommand As New SqlCommand(PartClassStatement, con)
-        PartClassCommand.Parameters.Add("@DivisionID", SqlDbType.VarChar).Value = EmployeeCompanyCode
-        PartClassCommand.Parameters.Add("@LotNumber", SqlDbType.VarChar).Value = txtLotNumber.Text
-
-        If con.State = ConnectionState.Closed Then con.Open()
-        Try
-            PartClass = CStr(PartClassCommand.ExecuteScalar)
-
-
-        Catch ex As System.Exception
-            PartClass = ""
-        End Try
-        If PartClass <> "" Then
-            Dim datefilter2, BeginDate2, EndDate2, CustomerFilter As String
-            If chkDateRange.Checked = True Then
-                BeginDate2 = dtpBeginDate.Text
-                EndDate2 = dtpEndDate.Text
-                datefilter2 = " AND ShipDate BETWEEN @BeginDate AND @EndDate"
-            Else
-                datefilter2 = ""
-            End If
-            If cboCustomerID.Text <> "" Then
-                CustomerFilter = " AND CustomerID = '" + usefulFunctions.checkQuote(cboCustomerID.Text) + "'"
-            Else
-                CustomerFilter = ""
-            End If
-
-            con.Close()
-            cmd = New SqlCommand("SELECT * FROM ShipmentLineQuery2 WHERE DivisionID = @DivisionID" + CustomerFilter + datefilter2 + " ORDER BY ShipmentNumber DESC", con)
-            cmd.Parameters.Add("@DivisionID", SqlDbType.VarChar).Value = EmployeeCompanyCode
-            cmd.Parameters.Add("@BeginDate", SqlDbType.VarChar).Value = BeginDate
-            cmd.Parameters.Add("@EndDate", SqlDbType.VarChar).Value = EndDate
-            If con.State = ConnectionState.Closed Then con.Open()
-            ds2 = New DataSet()
-            myAdapter.SelectCommand = cmd
-            myAdapter.Fill(ds2, "ShipmentLineQuery2")
-
-            con.Close()
-
-            cmd = New SqlCommand("SELECT * FROM CustomerList WHERE DivisionID = @DivisionID", con)
-            cmd.Parameters.Add("@DivisionID", SqlDbType.VarChar).Value = EmployeeCompanyCode
-
-            GlobalDivisionCode = EmployeeCompanyCode
-
-            cmd3 = New SqlCommand("SELECT * FROM ItemList WHERE DivisionID = @DivisionID AND (ItemClass = 'ANCHOR BOLTS' OR ItemClass = 'MACHINING' OR ItemClass = 'CARR BOLTS' OR ItemClass = 'CLEVIS' OR ItemClass = 'CPG NUTS' OR ItemClass = 'DES' OR ItemClass = 'EPOXY' OR ItemClass = 'EXP ANCHOR' OR ItemClass = 'EYE BOLTS' OR ItemClass = 'HEX BOLTS' OR ItemClass = 'HEX NUTS' OR ItemClass = 'JAM NUTS' OR ItemClass = 'LAG BOLTS' OR ItemClass = 'LOCK NUTS' OR ItemClass = 'METRIC' OR ItemClass = 'SES' OR ItemClass = 'THREADED ROD' OR ItemClass = 'TURNBUCKLES' OR ItemClass = 'U BOLTS' OR ItemClass = 'WASHERS') AND ItemID = @ItemID", con)
-            cmd3.Parameters.Add("@DivisionID", SqlDbType.VarChar).Value = EmployeeCompanyCode
-            cmd3.Parameters.Add("@ItemID", SqlDbType.VarChar).Value = PartClass
-
-            GDS1 = New DataSet()
-
-            GDS1 = ds2
-
-            myAdapter.SelectCommand = cmd
-            myAdapter.Fill(GDS1, "CustomerList")
-
-            myAdapter3.SelectCommand = cmd3
-            myAdapter3.Fill(GDS1, "ItemList")
-
-            'Get Login Type
-            Dim GetLoginType As String = ""
-
-            Dim GetLoginTypeStatement As String = "SELECT MOSLoginType FROM EmployeeData WHERE LoginName = @LoginName"
-            Dim GetLoginTypeCommand As New SqlCommand(GetLoginTypeStatement, con)
-            GetLoginTypeCommand.Parameters.Add("@LoginName", SqlDbType.VarChar).Value = EmployeeLoginName
-
-            If con.State = ConnectionState.Closed Then con.Open()
-            Try
-                GetLoginType = CStr(GetLoginTypeCommand.ExecuteScalar)
-            Catch ex As System.Exception
-                GetLoginType = ""
-            End Try
-            con.Close()
-
-            If GetLoginType = "REMOTE" Then
-                Dim NewPrintCustCertOfCompliance As New PrintCertOfComplianceRemote
-                NewPrintCustCertOfCompliance.Show()
-            Else
-                Dim NewPrintCustCertOfCompliance As New PrintCertOfCompliance
-                NewPrintCustCertOfCompliance.Show()
-            End If
-        Else
-            MsgBox("Please select a valid lot number (Must be in database) and customer")
-        End If
-    End Sub
-
-    Private Sub cboPartNumber_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles cboPartNumber.TextChanged
-        If cboPartNumber.Text = "" Then
-            cboPartDescription.SelectedIndex = -1
-            cboItemClass.SelectedIndex = -1
-            cboSalesID.SelectedIndex = -1
-        End If
-    End Sub
-
-    Private Sub cboPartDescription_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles cboPartDescription.TextChanged
-        If cboPartDescription.Text = "" Then
-            cboPartNumber.SelectedIndex = -1
-            cboItemClass.SelectedIndex = -1
-            cboSalesID.SelectedIndex = -1
-        End If
-    End Sub
 End Class
