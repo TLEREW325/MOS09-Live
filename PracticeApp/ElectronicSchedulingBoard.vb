@@ -2552,7 +2552,6 @@ Public Class ElectronicSchedulingBoard
             LabelPrintPosition = 5
         Else
             gpxShippingAddressLabel.Visible = False
-            cboDivisionID05.Text = ""
         End If
     End Sub
 
@@ -2562,13 +2561,12 @@ Public Class ElectronicSchedulingBoard
             ClearAllLabelArray()
             ClearLabelFields()
             ClearAllVariables()
-            LoadPickTicketNumber()
             cboDivisionID06.Text = EmployeeCompanyCode
+            LoadPickTicketNumber()
             cboPickTicket06.Focus()
             LabelPrintPosition = 6
         Else
             gpxShipAddressFromShipment.Visible = False
-            cboDivisionID06.Text = ""
         End If
     End Sub
 
@@ -2990,6 +2988,9 @@ Public Class ElectronicSchedulingBoard
         cboFerrulePartNumber23.SelectedIndex = -1
         cboPartNumber24.SelectedIndex = -1
         cboDescription24.SelectedIndex = -1
+
+        cboDivisionID05.Text = EmployeeCompanyCode
+        cboDivisionID06.Text = EmployeeCompanyCode
 
         nbrLabelCount.Value = 1
     End Sub
