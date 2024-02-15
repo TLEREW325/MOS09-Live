@@ -22,14 +22,14 @@ Partial Class PrintMonthSnapshot
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRMonthViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXMonthSnapshot1 = New MOS09Program.CRXMonthSnapshot
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRMonthViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXMonthSnapshot1 = New MOS09Program.CRXMonthSnapshot()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -45,19 +45,19 @@ Partial Class PrintMonthSnapshot
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -70,22 +70,26 @@ Partial Class PrintMonthSnapshot
         'ExitToolStripMenuItem1
         '
         Me.ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1"
-        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(92, 22)
         Me.ExitToolStripMenuItem1.Text = "Exit"
         '
         'CRMonthViewer
         '
         Me.CRMonthViewer.ActiveViewIndex = 0
         Me.CRMonthViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRMonthViewer.DisplayGroupTree = False
+        Me.CRMonthViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRMonthViewer.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRMonthViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRMonthViewer.Name = "CRMonthViewer"
         Me.CRMonthViewer.ReportSource = Me.CRXMonthSnapshot1
         Me.CRMonthViewer.ShowGroupTreeButton = False
+        Me.CRMonthViewer.ShowLogo = False
+        Me.CRMonthViewer.ShowParameterPanelButton = False
         Me.CRMonthViewer.ShowTextSearchButton = False
+        Me.CRMonthViewer.ShowZoomButton = False
         Me.CRMonthViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRMonthViewer.TabIndex = 1
+        Me.CRMonthViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintMonthSnapshot
         '

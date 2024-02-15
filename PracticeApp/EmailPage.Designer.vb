@@ -22,68 +22,46 @@ Partial Class EmailPage
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.listToAddressBook = New System.Windows.Forms.ListBox
+        Me.components = New System.ComponentModel.Container()
+        Me.listToAddressBook = New System.Windows.Forms.ListBox()
         Me.TFPMailAddressBookBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet
-        Me.txtEmailSubject = New System.Windows.Forms.TextBox
-        Me.txtEmailBcc = New System.Windows.Forms.TextBox
-        Me.txtEmailCc = New System.Windows.Forms.TextBox
-        Me.txtEmailTo = New System.Windows.Forms.TextBox
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.cmdAddCc = New System.Windows.Forms.Button
-        Me.cmdAddBcc = New System.Windows.Forms.Button
-        Me.cmdAddTo = New System.Windows.Forms.Button
-        Me.cmdSendEmail = New System.Windows.Forms.Button
-        Me.txtEmailBody = New System.Windows.Forms.TextBox
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.Label4 = New System.Windows.Forms.Label
-        Me.lblEmailAttachments = New System.Windows.Forms.Label
-        Me.lblEmailCopyTo = New System.Windows.Forms.Label
-        Me.lblEmailSentFrom = New System.Windows.Forms.Label
-        Me.cmdExit = New System.Windows.Forms.Button
-        Me.TFPMailAddressBookTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.TFPMailAddressBookTableAdapter
-        Me.cmdAddAttachment = New System.Windows.Forms.Button
-        Me.ofdAddAttachments = New System.Windows.Forms.OpenFileDialog
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox
-        Me.cmdAddReceiverDocs = New System.Windows.Forms.Button
-        Me.cmdAddShipmentDoc = New System.Windows.Forms.Button
-        Me.Label7 = New System.Windows.Forms.Label
-        Me.txtReceiverNumber = New System.Windows.Forms.TextBox
-        Me.Label8 = New System.Windows.Forms.Label
-        Me.Label6 = New System.Windows.Forms.Label
-        Me.txtShipmentNumber = New System.Windows.Forms.TextBox
-        Me.Label5 = New System.Windows.Forms.Label
-        Me.cmdClearAllFields = New System.Windows.Forms.Button
-        Me.listCCAddressBook = New System.Windows.Forms.ListBox
-        Me.listBCCAddressBook = New System.Windows.Forms.ListBox
-        Me.GroupBox1.SuspendLayout()
+        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet()
+        Me.listBCCAddressBook = New System.Windows.Forms.ListBox()
+        Me.txtEmailSubject = New System.Windows.Forms.TextBox()
+        Me.txtEmailBcc = New System.Windows.Forms.TextBox()
+        Me.txtEmailCc = New System.Windows.Forms.TextBox()
+        Me.txtEmailTo = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.cmdAddCc = New System.Windows.Forms.Button()
+        Me.cmdAddBcc = New System.Windows.Forms.Button()
+        Me.cmdAddTo = New System.Windows.Forms.Button()
+        Me.cmdSendEmail = New System.Windows.Forms.Button()
+        Me.listCCAddressBook = New System.Windows.Forms.ListBox()
+        Me.txtEmailBody = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.lblEmailAttachments = New System.Windows.Forms.Label()
+        Me.lblEmailCopyTo = New System.Windows.Forms.Label()
+        Me.lblEmailSentFrom = New System.Windows.Forms.Label()
+        Me.cmdExit = New System.Windows.Forms.Button()
+        Me.TFPMailAddressBookTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.TFPMailAddressBookTableAdapter()
+        Me.cmdAddAttachment = New System.Windows.Forms.Button()
+        Me.ofdAddAttachments = New System.Windows.Forms.OpenFileDialog()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.cmdAddReceiverDocs = New System.Windows.Forms.Button()
+        Me.cmdAddShipmentDoc = New System.Windows.Forms.Button()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.txtReceiverNumber = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.txtShipmentNumber = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.cmdClearAllFields = New System.Windows.Forms.Button()
         CType(Me.TFPMailAddressBookBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SQLTFPOperationsDatabaseDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.BackColor = System.Drawing.Color.Lavender
-        Me.GroupBox1.Controls.Add(Me.listCCAddressBook)
-        Me.GroupBox1.Controls.Add(Me.listToAddressBook)
-        Me.GroupBox1.Controls.Add(Me.txtEmailSubject)
-        Me.GroupBox1.Controls.Add(Me.txtEmailBcc)
-        Me.GroupBox1.Controls.Add(Me.txtEmailCc)
-        Me.GroupBox1.Controls.Add(Me.txtEmailTo)
-        Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.cmdAddCc)
-        Me.GroupBox1.Controls.Add(Me.cmdAddBcc)
-        Me.GroupBox1.Controls.Add(Me.cmdAddTo)
-        Me.GroupBox1.Controls.Add(Me.cmdSendEmail)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(668, 187)
-        Me.GroupBox1.TabIndex = 0
-        Me.GroupBox1.TabStop = False
         '
         'listToAddressBook
         '
@@ -91,9 +69,10 @@ Partial Class EmailPage
         Me.listToAddressBook.DataSource = Me.TFPMailAddressBookBindingSource
         Me.listToAddressBook.DisplayMember = "EmailAddress"
         Me.listToAddressBook.FormattingEnabled = True
-        Me.listToAddressBook.Location = New System.Drawing.Point(190, 19)
+        Me.listToAddressBook.Location = New System.Drawing.Point(200, 28)
         Me.listToAddressBook.Name = "listToAddressBook"
-        Me.listToAddressBook.Size = New System.Drawing.Size(201, 522)
+        Me.listToAddressBook.ScrollAlwaysVisible = True
+        Me.listToAddressBook.Size = New System.Drawing.Size(201, 535)
         Me.listToAddressBook.TabIndex = 25
         Me.listToAddressBook.TabStop = False
         Me.listToAddressBook.Visible = False
@@ -108,10 +87,24 @@ Partial Class EmailPage
         Me.SQLTFPOperationsDatabaseDataSet.DataSetName = "SQLTFPOperationsDatabaseDataSet"
         Me.SQLTFPOperationsDatabaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
+        'listBCCAddressBook
+        '
+        Me.listBCCAddressBook.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.listBCCAddressBook.DataSource = Me.TFPMailAddressBookBindingSource
+        Me.listBCCAddressBook.DisplayMember = "EmailAddress"
+        Me.listBCCAddressBook.FormattingEnabled = True
+        Me.listBCCAddressBook.Location = New System.Drawing.Point(200, 133)
+        Me.listBCCAddressBook.Name = "listBCCAddressBook"
+        Me.listBCCAddressBook.ScrollAlwaysVisible = True
+        Me.listBCCAddressBook.Size = New System.Drawing.Size(201, 509)
+        Me.listBCCAddressBook.TabIndex = 27
+        Me.listBCCAddressBook.TabStop = False
+        Me.listBCCAddressBook.Visible = False
+        '
         'txtEmailSubject
         '
         Me.txtEmailSubject.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtEmailSubject.Location = New System.Drawing.Point(190, 153)
+        Me.txtEmailSubject.Location = New System.Drawing.Point(200, 162)
         Me.txtEmailSubject.MaxLength = 400
         Me.txtEmailSubject.Multiline = True
         Me.txtEmailSubject.Name = "txtEmailSubject"
@@ -122,7 +115,7 @@ Partial Class EmailPage
         '
         Me.txtEmailBcc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtEmailBcc.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtEmailBcc.Location = New System.Drawing.Point(190, 124)
+        Me.txtEmailBcc.Location = New System.Drawing.Point(200, 133)
         Me.txtEmailBcc.MaxLength = 400
         Me.txtEmailBcc.Multiline = True
         Me.txtEmailBcc.Name = "txtEmailBcc"
@@ -133,7 +126,7 @@ Partial Class EmailPage
         '
         Me.txtEmailCc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtEmailCc.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtEmailCc.Location = New System.Drawing.Point(190, 95)
+        Me.txtEmailCc.Location = New System.Drawing.Point(200, 104)
         Me.txtEmailCc.MaxLength = 400
         Me.txtEmailCc.Multiline = True
         Me.txtEmailCc.Name = "txtEmailCc"
@@ -144,7 +137,7 @@ Partial Class EmailPage
         '
         Me.txtEmailTo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtEmailTo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtEmailTo.Location = New System.Drawing.Point(190, 19)
+        Me.txtEmailTo.Location = New System.Drawing.Point(200, 28)
         Me.txtEmailTo.MaxLength = 400
         Me.txtEmailTo.Multiline = True
         Me.txtEmailTo.Name = "txtEmailTo"
@@ -153,7 +146,7 @@ Partial Class EmailPage
         '
         'Label1
         '
-        Me.Label1.Location = New System.Drawing.Point(108, 153)
+        Me.Label1.Location = New System.Drawing.Point(101, 162)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(76, 23)
         Me.Label1.TabIndex = 1
@@ -163,7 +156,7 @@ Partial Class EmailPage
         'cmdAddCc
         '
         Me.cmdAddCc.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.cmdAddCc.Location = New System.Drawing.Point(109, 95)
+        Me.cmdAddCc.Location = New System.Drawing.Point(102, 104)
         Me.cmdAddCc.Name = "cmdAddCc"
         Me.cmdAddCc.Size = New System.Drawing.Size(75, 23)
         Me.cmdAddCc.TabIndex = 25
@@ -174,7 +167,7 @@ Partial Class EmailPage
         'cmdAddBcc
         '
         Me.cmdAddBcc.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.cmdAddBcc.Location = New System.Drawing.Point(109, 124)
+        Me.cmdAddBcc.Location = New System.Drawing.Point(102, 133)
         Me.cmdAddBcc.Name = "cmdAddBcc"
         Me.cmdAddBcc.Size = New System.Drawing.Size(75, 23)
         Me.cmdAddBcc.TabIndex = 25
@@ -185,7 +178,7 @@ Partial Class EmailPage
         'cmdAddTo
         '
         Me.cmdAddTo.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.cmdAddTo.Location = New System.Drawing.Point(109, 19)
+        Me.cmdAddTo.Location = New System.Drawing.Point(102, 28)
         Me.cmdAddTo.Name = "cmdAddTo"
         Me.cmdAddTo.Size = New System.Drawing.Size(75, 23)
         Me.cmdAddTo.TabIndex = 25
@@ -196,7 +189,7 @@ Partial Class EmailPage
         'cmdSendEmail
         '
         Me.cmdSendEmail.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.cmdSendEmail.Location = New System.Drawing.Point(18, 19)
+        Me.cmdSendEmail.Location = New System.Drawing.Point(11, 28)
         Me.cmdSendEmail.Name = "cmdSendEmail"
         Me.cmdSendEmail.Size = New System.Drawing.Size(75, 52)
         Me.cmdSendEmail.TabIndex = 25
@@ -204,11 +197,25 @@ Partial Class EmailPage
         Me.cmdSendEmail.Text = "Send"
         Me.cmdSendEmail.UseVisualStyleBackColor = False
         '
+        'listCCAddressBook
+        '
+        Me.listCCAddressBook.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.listCCAddressBook.DataSource = Me.TFPMailAddressBookBindingSource
+        Me.listCCAddressBook.DisplayMember = "EmailAddress"
+        Me.listCCAddressBook.FormattingEnabled = True
+        Me.listCCAddressBook.Location = New System.Drawing.Point(200, 103)
+        Me.listCCAddressBook.Name = "listCCAddressBook"
+        Me.listCCAddressBook.ScrollAlwaysVisible = True
+        Me.listCCAddressBook.Size = New System.Drawing.Size(201, 535)
+        Me.listCCAddressBook.TabIndex = 26
+        Me.listCCAddressBook.TabStop = False
+        Me.listCCAddressBook.Visible = False
+        '
         'txtEmailBody
         '
         Me.txtEmailBody.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtEmailBody.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEmailBody.Location = New System.Drawing.Point(12, 205)
+        Me.txtEmailBody.Location = New System.Drawing.Point(6, 205)
         Me.txtEmailBody.Multiline = True
         Me.txtEmailBody.Name = "txtEmailBody"
         Me.txtEmailBody.Size = New System.Drawing.Size(668, 398)
@@ -391,56 +398,38 @@ Partial Class EmailPage
         Me.cmdClearAllFields.Text = "Clear All Fields"
         Me.cmdClearAllFields.UseVisualStyleBackColor = False
         '
-        'listCCAddressBook
-        '
-        Me.listCCAddressBook.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.listCCAddressBook.DataSource = Me.TFPMailAddressBookBindingSource
-        Me.listCCAddressBook.DisplayMember = "EmailAddress"
-        Me.listCCAddressBook.FormattingEnabled = True
-        Me.listCCAddressBook.Location = New System.Drawing.Point(190, 95)
-        Me.listCCAddressBook.Name = "listCCAddressBook"
-        Me.listCCAddressBook.Size = New System.Drawing.Size(201, 522)
-        Me.listCCAddressBook.TabIndex = 26
-        Me.listCCAddressBook.TabStop = False
-        Me.listCCAddressBook.Visible = False
-        '
-        'listBCCAddressBook
-        '
-        Me.listBCCAddressBook.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.listBCCAddressBook.DataSource = Me.TFPMailAddressBookBindingSource
-        Me.listBCCAddressBook.DisplayMember = "EmailAddress"
-        Me.listBCCAddressBook.FormattingEnabled = True
-        Me.listBCCAddressBook.Location = New System.Drawing.Point(202, 136)
-        Me.listBCCAddressBook.Name = "listBCCAddressBook"
-        Me.listBCCAddressBook.Size = New System.Drawing.Size(201, 522)
-        Me.listBCCAddressBook.TabIndex = 27
-        Me.listBCCAddressBook.TabStop = False
-        Me.listBCCAddressBook.Visible = False
-        '
         'EmailPage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Lavender
         Me.ClientSize = New System.Drawing.Size(692, 823)
+        Me.Controls.Add(Me.listCCAddressBook)
         Me.Controls.Add(Me.listBCCAddressBook)
         Me.Controls.Add(Me.cmdClearAllFields)
+        Me.Controls.Add(Me.listToAddressBook)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.cmdAddAttachment)
         Me.Controls.Add(Me.cmdExit)
         Me.Controls.Add(Me.lblEmailSentFrom)
         Me.Controls.Add(Me.lblEmailCopyTo)
         Me.Controls.Add(Me.lblEmailAttachments)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.cmdAddCc)
+        Me.Controls.Add(Me.cmdAddBcc)
         Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.cmdAddTo)
         Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.cmdSendEmail)
         Me.Controls.Add(Me.txtEmailBody)
-        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.txtEmailSubject)
+        Me.Controls.Add(Me.txtEmailBcc)
+        Me.Controls.Add(Me.txtEmailCc)
+        Me.Controls.Add(Me.txtEmailTo)
         Me.Name = "EmailPage"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TFP Corporation Email"
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
         CType(Me.TFPMailAddressBookBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SQLTFPOperationsDatabaseDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
@@ -449,7 +438,6 @@ Partial Class EmailPage
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents cmdAddCc As System.Windows.Forms.Button
     Friend WithEvents cmdAddBcc As System.Windows.Forms.Button
     Friend WithEvents cmdAddTo As System.Windows.Forms.Button

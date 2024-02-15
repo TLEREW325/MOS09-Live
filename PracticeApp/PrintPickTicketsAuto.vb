@@ -25,10 +25,6 @@ Public Class PrintPickTicketsAuto
     Dim ds, ds1, ds2, ds3, ds4, ds5, ds6, ds7 As DataSet
     Dim dt As DataTable
 
-    Public Sub New()
-        InitializeComponent()
-    End Sub
-
     Private Sub CRPickViewer_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CRPickViewer.Load
         'Loads data into dataset for viewing
         cmd = New SqlCommand("SELECT * FROM PickListHeaderTable WHERE DivisionID = @DivisionID AND PickListHeaderKey = @PickListHeaderKey", con)
@@ -79,42 +75,12 @@ Public Class PrintPickTicketsAuto
         Dim MyReport = New CrystalDecisions.CrystalReports.Engine.ReportDocument
         MyReport = CRXPickTicket1
         MyReport.SetDataSource(ds)
+        MyReport.PrintToPrinter(1, True, 1, 999)
 
-        If GlobalDivisionCode.Equals("TWD") Then
-            Dim pd As New PrintDialog()
-            Dim i As Integer
-            pd.UseEXDialog = True
-
-            pd.PrinterSettings = New PrinterSettings()
-            Dim printers(pd.PrinterSettings.InstalledPrinters.Count) As [String]
-            pd.PrinterSettings.InstalledPrinters.CopyTo(printers, 0)
-            pd.PrinterSettings.PrinterName = ""
-            Dim notFound As Boolean = True
-            ''checks to see if the designated printer is present
-            While i < printers.Count() - 1 And notFound
-                Dim test As String = printers(i)
-                If String.IsNullOrEmpty(printers(i)) = False And printers(i).Contains(usefulFunctions.shippingPrinterName) Then
-                    pd.PrinterSettings.PrinterName = printers(i)
-                    notFound = False
-                End If
-                i += 1
-            End While
-            If notFound Then
-                MyReport.PrintToPrinter(1, True, 0, 0)
-            Else
-                ''check to see if the printer is in a state that i can print if not will open print dialog
-                If usefulFunctions.ShippingPrinterStatus(pd.PrinterSettings.PrinterName) Then
-                    MyReport.PrintOptions.PrinterName = pd.PrinterSettings.PrinterName
-                    MyReport.PrintToPrinter(1, True, 0, 0)
-                Else
-                    MyReport.PrintToPrinter(1, True, 0, 0)
-                End If
-            End If
-            Me.Dispose()
-            Me.Close()
-        Else
-            MyReport.PrintToPrinter(1, True, 1, 999)
-        End If
+        con.Close()
+        CRPickViewer.Dispose()
+        Me.Dispose()
+        Me.Close()
     End Sub
 
     Private Sub cmdExit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdExit.Click
@@ -129,14 +95,12 @@ Public Class PrintPickTicketsAuto
         MyReport = CRXPickTicket1
         MyReport.SetDataSource(ds)
         MyReport.PrintToPrinter(1, True, 1, 999)
+
         con.Close()
+        CRPickViewer.Dispose()
     End Sub
 
     Private Sub PrintPickTicketsAuto_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Me.CenterToScreen()
-    End Sub
-
-    Private Sub GroupBox1_Enter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GroupBox1.Enter
-
     End Sub
 End Class

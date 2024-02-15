@@ -22,26 +22,27 @@ Partial Class PrintInvoiceCerts
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.CRCertViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXTWCert011 = New MOS09Program.CRXTWCert01
+        Me.CRCertViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXTWCert011 = New MOS09Program.CRXTWCert01()
         Me.SuspendLayout()
         '
         'CRCertViewer
         '
         Me.CRCertViewer.ActiveViewIndex = 0
         Me.CRCertViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.CRCertViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRCertViewer.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRCertViewer.Location = New System.Drawing.Point(0, 0)
         Me.CRCertViewer.Name = "CRCertViewer"
         Me.CRCertViewer.ReportSource = Me.CRXTWCert011
-        Me.CRCertViewer.Size = New System.Drawing.Size(104, 0)
+        Me.CRCertViewer.Size = New System.Drawing.Size(120, 0)
         Me.CRCertViewer.TabIndex = 0
         '
         'PrintInvoiceCerts
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(104, 0)
+        Me.ClientSize = New System.Drawing.Size(120, 0)
         Me.Controls.Add(Me.CRCertViewer)
         Me.Name = "PrintInvoiceCerts"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

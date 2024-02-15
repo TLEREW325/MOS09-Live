@@ -22,10 +22,10 @@ Partial Class PrintSteelReceivingSummary
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRVSteelReceivingSummary = New CrystalDecisions.Windows.Forms.CrystalReportViewer
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRVSteelReceivingSummary = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -34,7 +34,7 @@ Partial Class PrintSteelReceivingSummary
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1034, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1030, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -54,20 +54,26 @@ Partial Class PrintSteelReceivingSummary
         '
         Me.CRVSteelReceivingSummary.ActiveViewIndex = -1
         Me.CRVSteelReceivingSummary.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRVSteelReceivingSummary.DisplayGroupTree = False
+        Me.CRVSteelReceivingSummary.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRVSteelReceivingSummary.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRVSteelReceivingSummary.Location = New System.Drawing.Point(0, 24)
         Me.CRVSteelReceivingSummary.Name = "CRVSteelReceivingSummary"
         Me.CRVSteelReceivingSummary.SelectionFormula = ""
-        Me.CRVSteelReceivingSummary.Size = New System.Drawing.Size(1034, 687)
+        Me.CRVSteelReceivingSummary.ShowGroupTreeButton = False
+        Me.CRVSteelReceivingSummary.ShowLogo = False
+        Me.CRVSteelReceivingSummary.ShowParameterPanelButton = False
+        Me.CRVSteelReceivingSummary.ShowTextSearchButton = False
+        Me.CRVSteelReceivingSummary.ShowZoomButton = False
+        Me.CRVSteelReceivingSummary.Size = New System.Drawing.Size(1030, 608)
         Me.CRVSteelReceivingSummary.TabIndex = 1
+        Me.CRVSteelReceivingSummary.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         Me.CRVSteelReceivingSummary.ViewTimeSelectionFormula = ""
         '
         'PrintSteelReceivingSummary
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1034, 711)
+        Me.ClientSize = New System.Drawing.Size(1030, 632)
         Me.Controls.Add(Me.CRVSteelReceivingSummary)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1

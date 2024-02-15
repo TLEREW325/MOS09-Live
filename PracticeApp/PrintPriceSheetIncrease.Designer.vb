@@ -22,24 +22,24 @@ Partial Class PrintPriceSheetIncrease
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.chkMildSteel = New System.Windows.Forms.CheckBox
-        Me.chkStainlessSteel = New System.Windows.Forms.CheckBox
-        Me.chkPSR = New System.Windows.Forms.CheckBox
-        Me.cboFilter = New System.Windows.Forms.Button
-        Me.CRPriceSheetIncreaseViewer1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXPriceSheetIncreaseSWR1 = New MOS09Program.CRXPriceSheetIncreaseSWR
-        Me.CRXPriceSheetIncreaseSS1 = New MOS09Program.CRXPriceSheetIncreaseSS
-        Me.CRXPriceSheetIncreasePSR1 = New MOS09Program.CRXPriceSheetIncreasePSR
-        Me.CRXPriceSheetIncrease1 = New MOS09Program.CRXPriceSheetIncrease
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EmailPriceSheetToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.chkSWR = New System.Windows.Forms.CheckBox
+        Me.chkMildSteel = New System.Windows.Forms.CheckBox()
+        Me.chkStainlessSteel = New System.Windows.Forms.CheckBox()
+        Me.chkPSR = New System.Windows.Forms.CheckBox()
+        Me.cboFilter = New System.Windows.Forms.Button()
+        Me.CRPriceSheetIncreaseViewer1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXPriceSheetIncreaseSWR1 = New MOS09Program.CRXPriceSheetIncreaseSWR()
+        Me.CRXPriceSheetIncreaseSS1 = New MOS09Program.CRXPriceSheetIncreaseSS()
+        Me.CRXPriceSheetIncreasePSR1 = New MOS09Program.CRXPriceSheetIncreasePSR()
+        Me.CRXPriceSheetIncrease1 = New MOS09Program.CRXPriceSheetIncrease()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmailPriceSheetToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.chkSWR = New System.Windows.Forms.CheckBox()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -86,17 +86,21 @@ Partial Class PrintPriceSheetIncrease
         '
         Me.CRPriceSheetIncreaseViewer1.ActiveViewIndex = 0
         Me.CRPriceSheetIncreaseViewer1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRPriceSheetIncreaseViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRPriceSheetIncreaseViewer1.DisplayGroupTree = False
+        Me.CRPriceSheetIncreaseViewer1.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRPriceSheetIncreaseViewer1.Location = New System.Drawing.Point(130, 27)
         Me.CRPriceSheetIncreaseViewer1.Name = "CRPriceSheetIncreaseViewer1"
         Me.CRPriceSheetIncreaseViewer1.ReportSource = Me.CRXPriceSheetIncreaseSWR1
         Me.CRPriceSheetIncreaseViewer1.ShowGroupTreeButton = False
+        Me.CRPriceSheetIncreaseViewer1.ShowLogo = False
+        Me.CRPriceSheetIncreaseViewer1.ShowParameterPanelButton = False
         Me.CRPriceSheetIncreaseViewer1.ShowTextSearchButton = False
+        Me.CRPriceSheetIncreaseViewer1.ShowZoomButton = False
         Me.CRPriceSheetIncreaseViewer1.Size = New System.Drawing.Size(898, 584)
         Me.CRPriceSheetIncreaseViewer1.TabIndex = 0
+        Me.CRPriceSheetIncreaseViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'Label1
         '
@@ -120,26 +124,26 @@ Partial Class PrintPriceSheetIncrease
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmailPriceSheetToolStripMenuItem})
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(40, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(42, 20)
         Me.EditToolStripMenuItem.Text = "Edit "
         '
         'EmailPriceSheetToolStripMenuItem
         '
         Me.EmailPriceSheetToolStripMenuItem.Name = "EmailPriceSheetToolStripMenuItem"
-        Me.EmailPriceSheetToolStripMenuItem.Size = New System.Drawing.Size(155, 22)
+        Me.EmailPriceSheetToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
         Me.EmailPriceSheetToolStripMenuItem.Text = "Email Price Sheet"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem

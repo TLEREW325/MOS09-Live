@@ -22,22 +22,28 @@ Partial Class PrintHeaderSetupSheet
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.CRVHeaderSetupSheet = New CrystalDecisions.Windows.Forms.CrystalReportViewer
+        Me.CRVHeaderSetupSheet = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
         Me.SuspendLayout()
         '
         'CRVHeaderSetupSheet
         '
         Me.CRVHeaderSetupSheet.ActiveViewIndex = -1
         Me.CRVHeaderSetupSheet.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRVHeaderSetupSheet.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRVHeaderSetupSheet.DisplayGroupTree = False
+        Me.CRVHeaderSetupSheet.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRVHeaderSetupSheet.Location = New System.Drawing.Point(0, 0)
         Me.CRVHeaderSetupSheet.Name = "CRVHeaderSetupSheet"
         Me.CRVHeaderSetupSheet.SelectionFormula = ""
+        Me.CRVHeaderSetupSheet.ShowGroupTreeButton = False
+        Me.CRVHeaderSetupSheet.ShowLogo = False
+        Me.CRVHeaderSetupSheet.ShowParameterPanelButton = False
+        Me.CRVHeaderSetupSheet.ShowTextSearchButton = False
+        Me.CRVHeaderSetupSheet.ShowZoomButton = False
         Me.CRVHeaderSetupSheet.Size = New System.Drawing.Size(1034, 711)
         Me.CRVHeaderSetupSheet.TabIndex = 0
+        Me.CRVHeaderSetupSheet.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         Me.CRVHeaderSetupSheet.ViewTimeSelectionFormula = ""
         '
         'PrintHeaderSetupSheet

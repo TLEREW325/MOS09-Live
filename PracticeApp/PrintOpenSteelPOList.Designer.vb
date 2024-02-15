@@ -22,14 +22,14 @@ Partial Class PrintOpenSteelPOList
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.CROpenSteelPO = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.crxOpenSteelPOList1 = New MOS09Program.CRXOpenSteelPOList
+        Me.CROpenSteelPO = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.crxOpenSteelPOList1 = New MOS09Program.CRXOpenSteelPOList()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -37,18 +37,21 @@ Partial Class PrintOpenSteelPOList
         '
         Me.CROpenSteelPO.ActiveViewIndex = -1
         Me.CROpenSteelPO.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CROpenSteelPO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CROpenSteelPO.DisplayGroupTree = False
+        Me.CROpenSteelPO.Cursor = System.Windows.Forms.Cursors.Default
         Me.CROpenSteelPO.Location = New System.Drawing.Point(0, 27)
         Me.CROpenSteelPO.Name = "CROpenSteelPO"
         Me.CROpenSteelPO.SelectionFormula = ""
         Me.CROpenSteelPO.ShowGroupTreeButton = False
+        Me.CROpenSteelPO.ShowLogo = False
+        Me.CROpenSteelPO.ShowParameterPanelButton = False
         Me.CROpenSteelPO.ShowTextSearchButton = False
         Me.CROpenSteelPO.ShowZoomButton = False
-        Me.CROpenSteelPO.Size = New System.Drawing.Size(1040, 695)
+        Me.CROpenSteelPO.Size = New System.Drawing.Size(1028, 604)
         Me.CROpenSteelPO.TabIndex = 2
+        Me.CROpenSteelPO.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         Me.CROpenSteelPO.ViewTimeSelectionFormula = ""
         '
         'MenuStrip1
@@ -56,7 +59,7 @@ Partial Class PrintOpenSteelPOList
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditToolStripMenuItem, Me.ReportsToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1042, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1030, 24)
         Me.MenuStrip1.TabIndex = 3
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -95,10 +98,11 @@ Partial Class PrintOpenSteelPOList
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1042, 723)
+        Me.ClientSize = New System.Drawing.Size(1030, 632)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.CROpenSteelPO)
         Me.Name = "PrintOpenSteelPOList"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Print Open Steel Purchase Order List"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()

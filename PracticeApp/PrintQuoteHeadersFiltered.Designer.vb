@@ -22,14 +22,14 @@ Partial Class PrintQuoteHeadersFiltered
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRQuoteViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXQuoteHeaders1 = New MOS09Program.CRXQuoteHeaders
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRQuoteViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXQuoteHeaders1 = New MOS09Program.CRXQuoteHeaders()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -45,19 +45,19 @@ Partial Class PrintQuoteHeadersFiltered
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -77,15 +77,21 @@ Partial Class PrintQuoteHeadersFiltered
         '
         Me.CRQuoteViewer.ActiveViewIndex = 0
         Me.CRQuoteViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRQuoteViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRQuoteViewer.DisplayGroupTree = False
+        Me.CRQuoteViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRQuoteViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRQuoteViewer.Name = "CRQuoteViewer"
         Me.CRQuoteViewer.ReportSource = Me.CRXQuoteHeaders1
+        Me.CRQuoteViewer.ShowGroupTreeButton = False
+        Me.CRQuoteViewer.ShowLogo = False
+        Me.CRQuoteViewer.ShowParameterPanelButton = False
+        Me.CRQuoteViewer.ShowTextSearchButton = False
+        Me.CRQuoteViewer.ShowZoomButton = False
         Me.CRQuoteViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRQuoteViewer.TabIndex = 1
+        Me.CRQuoteViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintQuoteHeadersFiltered
         '

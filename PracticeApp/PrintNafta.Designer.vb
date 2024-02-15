@@ -22,18 +22,18 @@ Partial Class PrintNafta
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.CRNafta = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXNafta_20201 = New MOS09Program.CRXNafta_2020
-        Me.CRXNafta_11 = New MOS09Program.CRXNafta_1
-        Me.CRXNafta1 = New MOS09Program.CRXNafta
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EmailStatementToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.OpenELFFormToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.CRNafta = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXNafta_20201 = New MOS09Program.CRXNafta_2020()
+        Me.CRXNafta_11 = New MOS09Program.CRXNafta_1()
+        Me.CRXNafta1 = New MOS09Program.CRXNafta()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmailStatementToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OpenELFFormToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -41,18 +41,22 @@ Partial Class PrintNafta
         '
         Me.CRNafta.ActiveViewIndex = 0
         Me.CRNafta.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRNafta.AutoScroll = True
         Me.CRNafta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRNafta.DisplayGroupTree = False
+        Me.CRNafta.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRNafta.Location = New System.Drawing.Point(0, 27)
         Me.CRNafta.Name = "CRNafta"
         Me.CRNafta.ReportSource = Me.CRXNafta_20201
         Me.CRNafta.ShowGroupTreeButton = False
+        Me.CRNafta.ShowLogo = False
+        Me.CRNafta.ShowParameterPanelButton = False
         Me.CRNafta.ShowTextSearchButton = False
+        Me.CRNafta.ShowZoomButton = False
         Me.CRNafta.Size = New System.Drawing.Size(993, 602)
         Me.CRNafta.TabIndex = 0
+        Me.CRNafta.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'MenuStrip1
         '
@@ -66,28 +70,34 @@ Partial Class PrintNafta
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmailStatementToolStripMenuItem})
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'EmailStatementToolStripMenuItem
         '
         Me.EmailStatementToolStripMenuItem.Name = "EmailStatementToolStripMenuItem"
-        Me.EmailStatementToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.EmailStatementToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
         Me.EmailStatementToolStripMenuItem.Text = "Email Statement"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenELFFormToolStripMenuItem})
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
+        '
+        'OpenELFFormToolStripMenuItem
+        '
+        Me.OpenELFFormToolStripMenuItem.Name = "OpenELFFormToolStripMenuItem"
+        Me.OpenELFFormToolStripMenuItem.Size = New System.Drawing.Size(155, 22)
+        Me.OpenELFFormToolStripMenuItem.Text = "Open ELF Form"
         '
         'ExitToolStripMenuItem
         '
@@ -99,14 +109,8 @@ Partial Class PrintNafta
         'ExitToolStripMenuItem1
         '
         Me.ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1"
-        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(92, 22)
         Me.ExitToolStripMenuItem1.Text = "Exit"
-        '
-        'OpenELFFormToolStripMenuItem
-        '
-        Me.OpenELFFormToolStripMenuItem.Name = "OpenELFFormToolStripMenuItem"
-        Me.OpenELFFormToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.OpenELFFormToolStripMenuItem.Text = "Open ELF Form"
         '
         'PrintNafta
         '

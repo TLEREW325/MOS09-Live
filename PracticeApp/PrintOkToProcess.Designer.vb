@@ -22,10 +22,10 @@ Partial Class PrintOkToProcess
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRVOkToProcess = New CrystalDecisions.Windows.Forms.CrystalReportViewer
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRVOkToProcess = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -54,13 +54,19 @@ Partial Class PrintOkToProcess
         '
         Me.CRVOkToProcess.ActiveViewIndex = -1
         Me.CRVOkToProcess.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRVOkToProcess.DisplayGroupTree = False
+        Me.CRVOkToProcess.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRVOkToProcess.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRVOkToProcess.Location = New System.Drawing.Point(0, 24)
         Me.CRVOkToProcess.Name = "CRVOkToProcess"
         Me.CRVOkToProcess.SelectionFormula = ""
+        Me.CRVOkToProcess.ShowGroupTreeButton = False
+        Me.CRVOkToProcess.ShowLogo = False
+        Me.CRVOkToProcess.ShowParameterPanelButton = False
+        Me.CRVOkToProcess.ShowTextSearchButton = False
+        Me.CRVOkToProcess.ShowZoomButton = False
         Me.CRVOkToProcess.Size = New System.Drawing.Size(1034, 687)
         Me.CRVOkToProcess.TabIndex = 1
+        Me.CRVOkToProcess.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         Me.CRVOkToProcess.ViewTimeSelectionFormula = ""
         '
         'PrintOkToProcess

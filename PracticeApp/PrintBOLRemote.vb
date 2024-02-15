@@ -153,7 +153,10 @@ Public Class PrintBOLRemote
             MyReport = CRXBOL1
             MyReport.SetDataSource(ds)
             MyReport.PrintToPrinter(2, True, 1, 999)
+
+            'Close data and viewer
             con.Close()
+            CRBOLViewer.Dispose()
             Me.Close()
 
             GlobalCompleteShipment = ""
@@ -161,7 +164,10 @@ Public Class PrintBOLRemote
             MyReport = CRXBOL1
             MyReport.SetDataSource(ds)
             MyReport.PrintToPrinter(2, True, 1, 999)
+
+            'Close data and viewer
             con.Close()
+            CRBOLViewer.Dispose()
             Me.Close()
 
             GlobalCompleteShipment = ""

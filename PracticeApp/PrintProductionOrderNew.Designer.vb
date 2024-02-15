@@ -22,24 +22,28 @@ Partial Class PrintProductionOrderNew
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.CRProductionViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXProductionOrder0331 = New MOS09Program.CRXProductionOrder033
-        Me.CRXProductionOrder0221 = New MOS09Program.CRXProductionOrder022
+        Me.CRProductionViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXProductionOrder0331 = New MOS09Program.CRXProductionOrder033()
+        Me.CRXProductionOrder0221 = New MOS09Program.CRXProductionOrder022()
         Me.SuspendLayout()
         '
         'CRProductionViewer
         '
         Me.CRProductionViewer.ActiveViewIndex = 0
         Me.CRProductionViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRProductionViewer.DisplayGroupTree = False
+        Me.CRProductionViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRProductionViewer.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRProductionViewer.Location = New System.Drawing.Point(0, 0)
         Me.CRProductionViewer.Name = "CRProductionViewer"
         Me.CRProductionViewer.ReportSource = Me.CRXProductionOrder0331
         Me.CRProductionViewer.ShowGroupTreeButton = False
+        Me.CRProductionViewer.ShowLogo = False
+        Me.CRProductionViewer.ShowParameterPanelButton = False
         Me.CRProductionViewer.ShowTextSearchButton = False
+        Me.CRProductionViewer.ShowZoomButton = False
         Me.CRProductionViewer.Size = New System.Drawing.Size(1030, 632)
         Me.CRProductionViewer.TabIndex = 0
+        Me.CRProductionViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintProductionOrderNew
         '

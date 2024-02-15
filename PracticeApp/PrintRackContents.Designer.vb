@@ -22,27 +22,27 @@ Partial Class PrintRackContents
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRRackViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.cmdFilterByRack = New System.Windows.Forms.Button
-        Me.txtRackNumber = New System.Windows.Forms.TextBox
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.cmdClear = New System.Windows.Forms.Button
-        Me.cboPartNumber = New System.Windows.Forms.ComboBox
+        Me.components = New System.ComponentModel.Container()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRRackViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXPrintRackContents1 = New MOS09Program.CRXPrintRackContents()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.cmdFilterByRack = New System.Windows.Forms.Button()
+        Me.txtRackNumber = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.cmdClear = New System.Windows.Forms.Button()
+        Me.cboPartNumber = New System.Windows.Forms.ComboBox()
         Me.ItemListBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet
-        Me.cboPartDescription = New System.Windows.Forms.ComboBox
-        Me.cmdFilterByPart = New System.Windows.Forms.Button
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.ItemListTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.ItemListTableAdapter
-        Me.CRXPrintRackContents1 = New MOS09Program.CRXPrintRackContents
+        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet()
+        Me.cboPartDescription = New System.Windows.Forms.ComboBox()
+        Me.cmdFilterByPart = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.ItemListTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.ItemListTableAdapter()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.ItemListBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SQLTFPOperationsDatabaseDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -60,19 +60,19 @@ Partial Class PrintRackContents
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -92,17 +92,21 @@ Partial Class PrintRackContents
         '
         Me.CRRackViewer.ActiveViewIndex = 0
         Me.CRRackViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRRackViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRRackViewer.DisplayGroupTree = False
+        Me.CRRackViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRRackViewer.Location = New System.Drawing.Point(183, 24)
         Me.CRRackViewer.Name = "CRRackViewer"
         Me.CRRackViewer.ReportSource = Me.CRXPrintRackContents1
         Me.CRRackViewer.ShowGroupTreeButton = False
+        Me.CRRackViewer.ShowLogo = False
+        Me.CRRackViewer.ShowParameterPanelButton = False
         Me.CRRackViewer.ShowTextSearchButton = False
+        Me.CRRackViewer.ShowZoomButton = False
         Me.CRRackViewer.Size = New System.Drawing.Size(847, 608)
         Me.CRRackViewer.TabIndex = 1
+        Me.CRRackViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'Label1
         '

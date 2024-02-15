@@ -25,6 +25,10 @@ Partial Class ShippingUpdater
         Me.components = New System.ComponentModel.Container
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
         Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle31 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle32 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle33 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
@@ -35,10 +39,23 @@ Partial Class ShippingUpdater
         Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
         Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
         Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
-        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
         Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
         Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle21 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle22 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle23 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle24 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle25 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle26 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle27 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle28 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle29 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle30 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
@@ -49,22 +66,6 @@ Partial Class ShippingUpdater
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
         Me.dgvPickLines = New System.Windows.Forms.DataGridView
-        Me.PickListHeaderKeyColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.PickListLineKeyColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.ItemIDColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.DescriptionColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.QuantityColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.SumTotalPiecesColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.LineBoxesColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.SumBoxQuantityColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.LineWeightColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.SumRackingWeightColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.LineCommentColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.LineStatusColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.SalesmanIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.PickDivisionIDColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.PickListLineQuery2BindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
         Me.Label8 = New System.Windows.Forms.Label
         Me.txtSONumber = New System.Windows.Forms.TextBox
@@ -85,24 +86,6 @@ Partial Class ShippingUpdater
         Me.cmdClear = New System.Windows.Forms.Button
         Me.cmdExit = New System.Windows.Forms.Button
         Me.dgvViewRacking = New System.Windows.Forms.DataGridView
-        Me.BinNumberColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.PartNumberColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.BoxQuantityColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.PiecesPerBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.TotalPiecesColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.RackingWeightColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.HeatNumberColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.LotNumberColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.ActivityDateColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.RackDivisionIDColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.CreationDateColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.PickTicketColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.PickDateColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.AddedByColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.CommentColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.PartDescriptionColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.RackingKeyColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.RackingTransactionTableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.gpxRackData = New System.Windows.Forms.GroupBox
         Me.Label18 = New System.Windows.Forms.Label
         Me.cmdAddToOrder = New System.Windows.Forms.Button
@@ -150,23 +133,57 @@ Partial Class ShippingUpdater
         Me.txtScanLotNumber = New System.Windows.Forms.TextBox
         Me.cmdAddLotNumber = New System.Windows.Forms.Button
         Me.cmdExitLotScanner = New System.Windows.Forms.Button
-        Me.RackingTransactionTableTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.RackingTransactionTableTableAdapter
-        Me.PickListLineQuery2TableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.PickListLineQuery2TableAdapter
         Me.gpxRackingList = New System.Windows.Forms.GroupBox
         Me.lblQuantityOnHand = New System.Windows.Forms.Label
         Me.lblTotalInRack = New System.Windows.Forms.Label
         Me.Label30 = New System.Windows.Forms.Label
         Me.Label29 = New System.Windows.Forms.Label
+        Me.PickListHeaderKeyColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.PickListLineKeyColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.ItemIDColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.DescriptionColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.QuantityColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.SumTotalPiecesColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.LineBoxesColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.SumBoxQuantityColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.LineWeightColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.SumRackingWeightColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.LineCommentColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.LineStatusColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.SalesmanIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.PickDivisionIDColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.PickListLineQuery2BindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet
+        Me.BinNumberColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.PartNumberColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.BoxQuantityColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.PiecesPerBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.TotalPiecesColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.RackingWeightColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.HeatNumberColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.LotNumberColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.ActivityDateColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.RackDivisionIDColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.CreationDateColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.PickTicketColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.PickDateColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.AddedByColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.CommentColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.PartDescriptionColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.RackingKeyColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.RackingTransactionTableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.RackingTransactionTableTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.RackingTransactionTableTableAdapter
+        Me.PickListLineQuery2TableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.PickListLineQuery2TableAdapter
         Me.MenuStrip1.SuspendLayout()
         CType(Me.dgvPickLines, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PickListLineQuery2BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.SQLTFPOperationsDatabaseDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.dgvViewRacking, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RackingTransactionTableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gpxRackData.SuspendLayout()
         Me.gpxScanLot.SuspendLayout()
         Me.gpxRackingList.SuspendLayout()
+        CType(Me.PickListLineQuery2BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SQLTFPOperationsDatabaseDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RackingTransactionTableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -261,148 +278,6 @@ Partial Class ShippingUpdater
         Me.dgvPickLines.ReadOnly = True
         Me.dgvPickLines.Size = New System.Drawing.Size(598, 434)
         Me.dgvPickLines.TabIndex = 1
-        '
-        'PickListHeaderKeyColumn
-        '
-        Me.PickListHeaderKeyColumn.DataPropertyName = "PickListHeaderKey"
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PickListHeaderKeyColumn.DefaultCellStyle = DataGridViewCellStyle2
-        Me.PickListHeaderKeyColumn.HeaderText = "PickListHeaderKey"
-        Me.PickListHeaderKeyColumn.Name = "PickListHeaderKeyColumn"
-        Me.PickListHeaderKeyColumn.ReadOnly = True
-        Me.PickListHeaderKeyColumn.Visible = False
-        '
-        'PickListLineKeyColumn
-        '
-        Me.PickListLineKeyColumn.DataPropertyName = "PickListLineKey"
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PickListLineKeyColumn.DefaultCellStyle = DataGridViewCellStyle3
-        Me.PickListLineKeyColumn.HeaderText = "Line #"
-        Me.PickListLineKeyColumn.Name = "PickListLineKeyColumn"
-        Me.PickListLineKeyColumn.ReadOnly = True
-        Me.PickListLineKeyColumn.Width = 50
-        '
-        'ItemIDColumn
-        '
-        Me.ItemIDColumn.DataPropertyName = "ItemID"
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ItemIDColumn.DefaultCellStyle = DataGridViewCellStyle4
-        Me.ItemIDColumn.HeaderText = "Part #"
-        Me.ItemIDColumn.Name = "ItemIDColumn"
-        Me.ItemIDColumn.ReadOnly = True
-        Me.ItemIDColumn.Width = 130
-        '
-        'DescriptionColumn
-        '
-        Me.DescriptionColumn.DataPropertyName = "Description"
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DescriptionColumn.DefaultCellStyle = DataGridViewCellStyle5
-        Me.DescriptionColumn.HeaderText = "Description"
-        Me.DescriptionColumn.Name = "DescriptionColumn"
-        Me.DescriptionColumn.ReadOnly = True
-        Me.DescriptionColumn.Width = 130
-        '
-        'QuantityColumn
-        '
-        Me.QuantityColumn.DataPropertyName = "Quantity"
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.QuantityColumn.DefaultCellStyle = DataGridViewCellStyle6
-        Me.QuantityColumn.HeaderText = "Quantity"
-        Me.QuantityColumn.Name = "QuantityColumn"
-        Me.QuantityColumn.ReadOnly = True
-        Me.QuantityColumn.Width = 80
-        '
-        'SumTotalPiecesColumn
-        '
-        Me.SumTotalPiecesColumn.DataPropertyName = "SumTotalPieces"
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.SumTotalPiecesColumn.DefaultCellStyle = DataGridViewCellStyle7
-        Me.SumTotalPiecesColumn.HeaderText = "Pulled Qty"
-        Me.SumTotalPiecesColumn.Name = "SumTotalPiecesColumn"
-        Me.SumTotalPiecesColumn.ReadOnly = True
-        Me.SumTotalPiecesColumn.Width = 80
-        '
-        'LineBoxesColumn
-        '
-        Me.LineBoxesColumn.DataPropertyName = "LineBoxes"
-        DataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.LineBoxesColumn.DefaultCellStyle = DataGridViewCellStyle8
-        Me.LineBoxesColumn.HeaderText = "Line Boxes"
-        Me.LineBoxesColumn.Name = "LineBoxesColumn"
-        Me.LineBoxesColumn.ReadOnly = True
-        Me.LineBoxesColumn.Width = 80
-        '
-        'SumBoxQuantityColumn
-        '
-        Me.SumBoxQuantityColumn.DataPropertyName = "SumBoxQuantity"
-        DataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.SumBoxQuantityColumn.DefaultCellStyle = DataGridViewCellStyle9
-        Me.SumBoxQuantityColumn.HeaderText = "Pulled Boxes"
-        Me.SumBoxQuantityColumn.Name = "SumBoxQuantityColumn"
-        Me.SumBoxQuantityColumn.ReadOnly = True
-        Me.SumBoxQuantityColumn.Width = 80
-        '
-        'LineWeightColumn
-        '
-        Me.LineWeightColumn.DataPropertyName = "LineWeight"
-        DataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.LineWeightColumn.DefaultCellStyle = DataGridViewCellStyle10
-        Me.LineWeightColumn.HeaderText = "Line Weight"
-        Me.LineWeightColumn.Name = "LineWeightColumn"
-        Me.LineWeightColumn.ReadOnly = True
-        Me.LineWeightColumn.Width = 80
-        '
-        'SumRackingWeightColumn
-        '
-        Me.SumRackingWeightColumn.DataPropertyName = "SumRackingWeight"
-        DataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.SumRackingWeightColumn.DefaultCellStyle = DataGridViewCellStyle11
-        Me.SumRackingWeightColumn.HeaderText = "Pulled Weight"
-        Me.SumRackingWeightColumn.Name = "SumRackingWeightColumn"
-        Me.SumRackingWeightColumn.ReadOnly = True
-        Me.SumRackingWeightColumn.Width = 80
-        '
-        'LineCommentColumn
-        '
-        Me.LineCommentColumn.DataPropertyName = "LineComment"
-        Me.LineCommentColumn.HeaderText = "Line Comment"
-        Me.LineCommentColumn.Name = "LineCommentColumn"
-        Me.LineCommentColumn.ReadOnly = True
-        Me.LineCommentColumn.Visible = False
-        '
-        'LineStatusColumn
-        '
-        Me.LineStatusColumn.DataPropertyName = "LineStatus"
-        Me.LineStatusColumn.HeaderText = "LineStatus"
-        Me.LineStatusColumn.Name = "LineStatusColumn"
-        Me.LineStatusColumn.ReadOnly = True
-        Me.LineStatusColumn.Visible = False
-        '
-        'SalesmanIDDataGridViewTextBoxColumn
-        '
-        Me.SalesmanIDDataGridViewTextBoxColumn.DataPropertyName = "SalesmanID"
-        Me.SalesmanIDDataGridViewTextBoxColumn.HeaderText = "SalesmanID"
-        Me.SalesmanIDDataGridViewTextBoxColumn.Name = "SalesmanIDDataGridViewTextBoxColumn"
-        Me.SalesmanIDDataGridViewTextBoxColumn.ReadOnly = True
-        Me.SalesmanIDDataGridViewTextBoxColumn.Visible = False
-        '
-        'PickDivisionIDColumn
-        '
-        Me.PickDivisionIDColumn.DataPropertyName = "DivisionID"
-        Me.PickDivisionIDColumn.HeaderText = "DivisionID"
-        Me.PickDivisionIDColumn.Name = "PickDivisionIDColumn"
-        Me.PickDivisionIDColumn.ReadOnly = True
-        Me.PickDivisionIDColumn.Visible = False
-        '
-        'PickListLineQuery2BindingSource
-        '
-        Me.PickListLineQuery2BindingSource.DataMember = "PickListLineQuery2"
-        Me.PickListLineQuery2BindingSource.DataSource = Me.SQLTFPOperationsDatabaseDataSet
-        '
-        'SQLTFPOperationsDatabaseDataSet
-        '
-        Me.SQLTFPOperationsDatabaseDataSet.DataSetName = "SQLTFPOperationsDatabaseDataSet"
-        Me.SQLTFPOperationsDatabaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'GroupBox1
         '
@@ -633,6 +508,8 @@ Partial Class ShippingUpdater
         Me.dgvViewRacking.AllowUserToAddRows = False
         Me.dgvViewRacking.AllowUserToDeleteRows = False
         Me.dgvViewRacking.AllowUserToResizeRows = False
+        Me.dgvViewRacking.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgvViewRacking.AutoGenerateColumns = False
         Me.dgvViewRacking.BackgroundColor = System.Drawing.SystemColors.ActiveBorder
         Me.dgvViewRacking.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText
@@ -647,157 +524,30 @@ Partial Class ShippingUpdater
         Me.dgvViewRacking.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvViewRacking.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.BinNumberColumn, Me.PartNumberColumn, Me.BoxQuantityColumn, Me.PiecesPerBoxColumn, Me.TotalPiecesColumn, Me.RackingWeightColumn, Me.HeatNumberColumn, Me.LotNumberColumn, Me.ActivityDateColumn, Me.RackDivisionIDColumn, Me.CreationDateColumn, Me.PickTicketColumn, Me.PickDateColumn, Me.AddedByColumn, Me.CommentColumn, Me.PartDescriptionColumn, Me.RackingKeyColumn})
         Me.dgvViewRacking.DataSource = Me.RackingTransactionTableBindingSource
+        DataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle31.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle31.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle31.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle31.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle31.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvViewRacking.DefaultCellStyle = DataGridViewCellStyle31
         Me.dgvViewRacking.GridColor = System.Drawing.Color.Purple
         Me.dgvViewRacking.Location = New System.Drawing.Point(6, 17)
         Me.dgvViewRacking.Name = "dgvViewRacking"
         Me.dgvViewRacking.ReadOnly = True
-        DataGridViewCellStyle16.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dgvViewRacking.RowsDefaultCellStyle = DataGridViewCellStyle16
+        DataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle32.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle32.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle32.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvViewRacking.RowHeadersDefaultCellStyle = DataGridViewCellStyle32
+        DataGridViewCellStyle33.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dgvViewRacking.RowsDefaultCellStyle = DataGridViewCellStyle33
         Me.dgvViewRacking.Size = New System.Drawing.Size(518, 374)
         Me.dgvViewRacking.TabIndex = 46
-        '
-        'BinNumberColumn
-        '
-        Me.BinNumberColumn.DataPropertyName = "BinNumber"
-        DataGridViewCellStyle14.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BinNumberColumn.DefaultCellStyle = DataGridViewCellStyle14
-        Me.BinNumberColumn.HeaderText = "Bin #"
-        Me.BinNumberColumn.Name = "BinNumberColumn"
-        Me.BinNumberColumn.ReadOnly = True
-        Me.BinNumberColumn.Width = 80
-        '
-        'PartNumberColumn
-        '
-        Me.PartNumberColumn.DataPropertyName = "PartNumber"
-        DataGridViewCellStyle15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PartNumberColumn.DefaultCellStyle = DataGridViewCellStyle15
-        Me.PartNumberColumn.HeaderText = "Part #"
-        Me.PartNumberColumn.Name = "PartNumberColumn"
-        Me.PartNumberColumn.ReadOnly = True
-        Me.PartNumberColumn.Width = 150
-        '
-        'BoxQuantityColumn
-        '
-        Me.BoxQuantityColumn.DataPropertyName = "BoxQuantity"
-        Me.BoxQuantityColumn.HeaderText = "Box Qty"
-        Me.BoxQuantityColumn.Name = "BoxQuantityColumn"
-        Me.BoxQuantityColumn.ReadOnly = True
-        Me.BoxQuantityColumn.Width = 90
-        '
-        'PiecesPerBoxColumn
-        '
-        Me.PiecesPerBoxColumn.DataPropertyName = "PiecesPerBox"
-        Me.PiecesPerBoxColumn.HeaderText = "Pieces/Box"
-        Me.PiecesPerBoxColumn.Name = "PiecesPerBoxColumn"
-        Me.PiecesPerBoxColumn.ReadOnly = True
-        Me.PiecesPerBoxColumn.Width = 90
-        '
-        'TotalPiecesColumn
-        '
-        Me.TotalPiecesColumn.DataPropertyName = "TotalPieces"
-        Me.TotalPiecesColumn.HeaderText = "Total Pieces"
-        Me.TotalPiecesColumn.Name = "TotalPiecesColumn"
-        Me.TotalPiecesColumn.ReadOnly = True
-        Me.TotalPiecesColumn.Width = 90
-        '
-        'RackingWeightColumn
-        '
-        Me.RackingWeightColumn.DataPropertyName = "RackingWeight"
-        Me.RackingWeightColumn.HeaderText = "Weight"
-        Me.RackingWeightColumn.Name = "RackingWeightColumn"
-        Me.RackingWeightColumn.ReadOnly = True
-        Me.RackingWeightColumn.Width = 80
-        '
-        'HeatNumberColumn
-        '
-        Me.HeatNumberColumn.DataPropertyName = "HeatNumber"
-        Me.HeatNumberColumn.HeaderText = "Heat #"
-        Me.HeatNumberColumn.Name = "HeatNumberColumn"
-        Me.HeatNumberColumn.ReadOnly = True
-        '
-        'LotNumberColumn
-        '
-        Me.LotNumberColumn.DataPropertyName = "LotNumber"
-        Me.LotNumberColumn.HeaderText = "Lot #"
-        Me.LotNumberColumn.Name = "LotNumberColumn"
-        Me.LotNumberColumn.ReadOnly = True
-        '
-        'ActivityDateColumn
-        '
-        Me.ActivityDateColumn.DataPropertyName = "ActivityDate"
-        Me.ActivityDateColumn.HeaderText = "ActivityDate"
-        Me.ActivityDateColumn.Name = "ActivityDateColumn"
-        Me.ActivityDateColumn.ReadOnly = True
-        Me.ActivityDateColumn.Visible = False
-        '
-        'RackDivisionIDColumn
-        '
-        Me.RackDivisionIDColumn.DataPropertyName = "DivisionID"
-        Me.RackDivisionIDColumn.HeaderText = "DivisionID"
-        Me.RackDivisionIDColumn.Name = "RackDivisionIDColumn"
-        Me.RackDivisionIDColumn.ReadOnly = True
-        Me.RackDivisionIDColumn.Visible = False
-        '
-        'CreationDateColumn
-        '
-        Me.CreationDateColumn.DataPropertyName = "CreationDate"
-        Me.CreationDateColumn.HeaderText = "CreationDate"
-        Me.CreationDateColumn.Name = "CreationDateColumn"
-        Me.CreationDateColumn.ReadOnly = True
-        Me.CreationDateColumn.Visible = False
-        '
-        'PickTicketColumn
-        '
-        Me.PickTicketColumn.DataPropertyName = "PickTicket"
-        Me.PickTicketColumn.HeaderText = "PickTicket"
-        Me.PickTicketColumn.Name = "PickTicketColumn"
-        Me.PickTicketColumn.ReadOnly = True
-        Me.PickTicketColumn.Visible = False
-        '
-        'PickDateColumn
-        '
-        Me.PickDateColumn.DataPropertyName = "PickDate"
-        Me.PickDateColumn.HeaderText = "PickDate"
-        Me.PickDateColumn.Name = "PickDateColumn"
-        Me.PickDateColumn.ReadOnly = True
-        Me.PickDateColumn.Visible = False
-        '
-        'AddedByColumn
-        '
-        Me.AddedByColumn.DataPropertyName = "AddedBy"
-        Me.AddedByColumn.HeaderText = "AddedBy"
-        Me.AddedByColumn.Name = "AddedByColumn"
-        Me.AddedByColumn.ReadOnly = True
-        Me.AddedByColumn.Visible = False
-        '
-        'CommentColumn
-        '
-        Me.CommentColumn.DataPropertyName = "Comment"
-        Me.CommentColumn.HeaderText = "Comment"
-        Me.CommentColumn.Name = "CommentColumn"
-        Me.CommentColumn.ReadOnly = True
-        Me.CommentColumn.Visible = False
-        '
-        'PartDescriptionColumn
-        '
-        Me.PartDescriptionColumn.DataPropertyName = "PartDescription"
-        Me.PartDescriptionColumn.HeaderText = "PartDescription"
-        Me.PartDescriptionColumn.Name = "PartDescriptionColumn"
-        Me.PartDescriptionColumn.ReadOnly = True
-        Me.PartDescriptionColumn.Visible = False
-        '
-        'RackingKeyColumn
-        '
-        Me.RackingKeyColumn.DataPropertyName = "RackingKey"
-        Me.RackingKeyColumn.HeaderText = "RackingKey"
-        Me.RackingKeyColumn.Name = "RackingKeyColumn"
-        Me.RackingKeyColumn.ReadOnly = True
-        Me.RackingKeyColumn.Visible = False
-        '
-        'RackingTransactionTableBindingSource
-        '
-        Me.RackingTransactionTableBindingSource.DataMember = "RackingTransactionTable"
-        Me.RackingTransactionTableBindingSource.DataSource = Me.SQLTFPOperationsDatabaseDataSet
         '
         'gpxRackData
         '
@@ -1358,16 +1108,10 @@ Partial Class ShippingUpdater
         Me.cmdExitLotScanner.Text = "View Racks"
         Me.cmdExitLotScanner.UseVisualStyleBackColor = True
         '
-        'RackingTransactionTableTableAdapter
-        '
-        Me.RackingTransactionTableTableAdapter.ClearBeforeFill = True
-        '
-        'PickListLineQuery2TableAdapter
-        '
-        Me.PickListLineQuery2TableAdapter.ClearBeforeFill = True
-        '
         'gpxRackingList
         '
+        Me.gpxRackingList.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.gpxRackingList.Controls.Add(Me.lblQuantityOnHand)
         Me.gpxRackingList.Controls.Add(Me.lblTotalInRack)
         Me.gpxRackingList.Controls.Add(Me.Label30)
@@ -1419,6 +1163,329 @@ Partial Class ShippingUpdater
         Me.Label29.Text = "Total Pieces in Rack"
         Me.Label29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'PickListHeaderKeyColumn
+        '
+        Me.PickListHeaderKeyColumn.DataPropertyName = "PickListHeaderKey"
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PickListHeaderKeyColumn.DefaultCellStyle = DataGridViewCellStyle2
+        Me.PickListHeaderKeyColumn.HeaderText = "PickListHeaderKey"
+        Me.PickListHeaderKeyColumn.Name = "PickListHeaderKeyColumn"
+        Me.PickListHeaderKeyColumn.ReadOnly = True
+        Me.PickListHeaderKeyColumn.Visible = False
+        '
+        'PickListLineKeyColumn
+        '
+        Me.PickListLineKeyColumn.DataPropertyName = "PickListLineKey"
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PickListLineKeyColumn.DefaultCellStyle = DataGridViewCellStyle3
+        Me.PickListLineKeyColumn.HeaderText = "Line #"
+        Me.PickListLineKeyColumn.Name = "PickListLineKeyColumn"
+        Me.PickListLineKeyColumn.ReadOnly = True
+        Me.PickListLineKeyColumn.Width = 50
+        '
+        'ItemIDColumn
+        '
+        Me.ItemIDColumn.DataPropertyName = "ItemID"
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ItemIDColumn.DefaultCellStyle = DataGridViewCellStyle4
+        Me.ItemIDColumn.HeaderText = "Part #"
+        Me.ItemIDColumn.Name = "ItemIDColumn"
+        Me.ItemIDColumn.ReadOnly = True
+        Me.ItemIDColumn.Width = 130
+        '
+        'DescriptionColumn
+        '
+        Me.DescriptionColumn.DataPropertyName = "Description"
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DescriptionColumn.DefaultCellStyle = DataGridViewCellStyle5
+        Me.DescriptionColumn.HeaderText = "Description"
+        Me.DescriptionColumn.Name = "DescriptionColumn"
+        Me.DescriptionColumn.ReadOnly = True
+        Me.DescriptionColumn.Width = 130
+        '
+        'QuantityColumn
+        '
+        Me.QuantityColumn.DataPropertyName = "Quantity"
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.QuantityColumn.DefaultCellStyle = DataGridViewCellStyle6
+        Me.QuantityColumn.HeaderText = "Quantity"
+        Me.QuantityColumn.Name = "QuantityColumn"
+        Me.QuantityColumn.ReadOnly = True
+        Me.QuantityColumn.Width = 80
+        '
+        'SumTotalPiecesColumn
+        '
+        Me.SumTotalPiecesColumn.DataPropertyName = "SumTotalPieces"
+        DataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.SumTotalPiecesColumn.DefaultCellStyle = DataGridViewCellStyle7
+        Me.SumTotalPiecesColumn.HeaderText = "Pulled Qty"
+        Me.SumTotalPiecesColumn.Name = "SumTotalPiecesColumn"
+        Me.SumTotalPiecesColumn.ReadOnly = True
+        Me.SumTotalPiecesColumn.Width = 80
+        '
+        'LineBoxesColumn
+        '
+        Me.LineBoxesColumn.DataPropertyName = "LineBoxes"
+        DataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.LineBoxesColumn.DefaultCellStyle = DataGridViewCellStyle8
+        Me.LineBoxesColumn.HeaderText = "Line Boxes"
+        Me.LineBoxesColumn.Name = "LineBoxesColumn"
+        Me.LineBoxesColumn.ReadOnly = True
+        Me.LineBoxesColumn.Width = 80
+        '
+        'SumBoxQuantityColumn
+        '
+        Me.SumBoxQuantityColumn.DataPropertyName = "SumBoxQuantity"
+        DataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.SumBoxQuantityColumn.DefaultCellStyle = DataGridViewCellStyle9
+        Me.SumBoxQuantityColumn.HeaderText = "Pulled Boxes"
+        Me.SumBoxQuantityColumn.Name = "SumBoxQuantityColumn"
+        Me.SumBoxQuantityColumn.ReadOnly = True
+        Me.SumBoxQuantityColumn.Width = 80
+        '
+        'LineWeightColumn
+        '
+        Me.LineWeightColumn.DataPropertyName = "LineWeight"
+        DataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.LineWeightColumn.DefaultCellStyle = DataGridViewCellStyle10
+        Me.LineWeightColumn.HeaderText = "Line Weight"
+        Me.LineWeightColumn.Name = "LineWeightColumn"
+        Me.LineWeightColumn.ReadOnly = True
+        Me.LineWeightColumn.Width = 80
+        '
+        'SumRackingWeightColumn
+        '
+        Me.SumRackingWeightColumn.DataPropertyName = "SumRackingWeight"
+        DataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.SumRackingWeightColumn.DefaultCellStyle = DataGridViewCellStyle11
+        Me.SumRackingWeightColumn.HeaderText = "Pulled Weight"
+        Me.SumRackingWeightColumn.Name = "SumRackingWeightColumn"
+        Me.SumRackingWeightColumn.ReadOnly = True
+        Me.SumRackingWeightColumn.Width = 80
+        '
+        'LineCommentColumn
+        '
+        Me.LineCommentColumn.DataPropertyName = "LineComment"
+        Me.LineCommentColumn.HeaderText = "Line Comment"
+        Me.LineCommentColumn.Name = "LineCommentColumn"
+        Me.LineCommentColumn.ReadOnly = True
+        Me.LineCommentColumn.Visible = False
+        '
+        'LineStatusColumn
+        '
+        Me.LineStatusColumn.DataPropertyName = "LineStatus"
+        Me.LineStatusColumn.HeaderText = "LineStatus"
+        Me.LineStatusColumn.Name = "LineStatusColumn"
+        Me.LineStatusColumn.ReadOnly = True
+        Me.LineStatusColumn.Visible = False
+        '
+        'SalesmanIDDataGridViewTextBoxColumn
+        '
+        Me.SalesmanIDDataGridViewTextBoxColumn.DataPropertyName = "SalesmanID"
+        Me.SalesmanIDDataGridViewTextBoxColumn.HeaderText = "SalesmanID"
+        Me.SalesmanIDDataGridViewTextBoxColumn.Name = "SalesmanIDDataGridViewTextBoxColumn"
+        Me.SalesmanIDDataGridViewTextBoxColumn.ReadOnly = True
+        Me.SalesmanIDDataGridViewTextBoxColumn.Visible = False
+        '
+        'PickDivisionIDColumn
+        '
+        Me.PickDivisionIDColumn.DataPropertyName = "DivisionID"
+        Me.PickDivisionIDColumn.HeaderText = "DivisionID"
+        Me.PickDivisionIDColumn.Name = "PickDivisionIDColumn"
+        Me.PickDivisionIDColumn.ReadOnly = True
+        Me.PickDivisionIDColumn.Visible = False
+        '
+        'PickListLineQuery2BindingSource
+        '
+        Me.PickListLineQuery2BindingSource.DataMember = "PickListLineQuery2"
+        Me.PickListLineQuery2BindingSource.DataSource = Me.SQLTFPOperationsDatabaseDataSet
+        '
+        'SQLTFPOperationsDatabaseDataSet
+        '
+        Me.SQLTFPOperationsDatabaseDataSet.DataSetName = "SQLTFPOperationsDatabaseDataSet"
+        Me.SQLTFPOperationsDatabaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'BinNumberColumn
+        '
+        Me.BinNumberColumn.DataPropertyName = "BinNumber"
+        DataGridViewCellStyle14.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BinNumberColumn.DefaultCellStyle = DataGridViewCellStyle14
+        Me.BinNumberColumn.HeaderText = "Bin #"
+        Me.BinNumberColumn.Name = "BinNumberColumn"
+        Me.BinNumberColumn.ReadOnly = True
+        Me.BinNumberColumn.Width = 80
+        '
+        'PartNumberColumn
+        '
+        Me.PartNumberColumn.DataPropertyName = "PartNumber"
+        DataGridViewCellStyle15.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PartNumberColumn.DefaultCellStyle = DataGridViewCellStyle15
+        Me.PartNumberColumn.HeaderText = "Part #"
+        Me.PartNumberColumn.Name = "PartNumberColumn"
+        Me.PartNumberColumn.ReadOnly = True
+        Me.PartNumberColumn.Width = 150
+        '
+        'BoxQuantityColumn
+        '
+        Me.BoxQuantityColumn.DataPropertyName = "BoxQuantity"
+        DataGridViewCellStyle16.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BoxQuantityColumn.DefaultCellStyle = DataGridViewCellStyle16
+        Me.BoxQuantityColumn.HeaderText = "Box Qty"
+        Me.BoxQuantityColumn.Name = "BoxQuantityColumn"
+        Me.BoxQuantityColumn.ReadOnly = True
+        Me.BoxQuantityColumn.Width = 90
+        '
+        'PiecesPerBoxColumn
+        '
+        Me.PiecesPerBoxColumn.DataPropertyName = "PiecesPerBox"
+        DataGridViewCellStyle17.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PiecesPerBoxColumn.DefaultCellStyle = DataGridViewCellStyle17
+        Me.PiecesPerBoxColumn.HeaderText = "Pieces/Box"
+        Me.PiecesPerBoxColumn.Name = "PiecesPerBoxColumn"
+        Me.PiecesPerBoxColumn.ReadOnly = True
+        Me.PiecesPerBoxColumn.Width = 90
+        '
+        'TotalPiecesColumn
+        '
+        Me.TotalPiecesColumn.DataPropertyName = "TotalPieces"
+        DataGridViewCellStyle18.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TotalPiecesColumn.DefaultCellStyle = DataGridViewCellStyle18
+        Me.TotalPiecesColumn.HeaderText = "Total Pieces"
+        Me.TotalPiecesColumn.Name = "TotalPiecesColumn"
+        Me.TotalPiecesColumn.ReadOnly = True
+        Me.TotalPiecesColumn.Width = 90
+        '
+        'RackingWeightColumn
+        '
+        Me.RackingWeightColumn.DataPropertyName = "RackingWeight"
+        DataGridViewCellStyle19.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RackingWeightColumn.DefaultCellStyle = DataGridViewCellStyle19
+        Me.RackingWeightColumn.HeaderText = "Weight"
+        Me.RackingWeightColumn.Name = "RackingWeightColumn"
+        Me.RackingWeightColumn.ReadOnly = True
+        Me.RackingWeightColumn.Width = 80
+        '
+        'HeatNumberColumn
+        '
+        Me.HeatNumberColumn.DataPropertyName = "HeatNumber"
+        DataGridViewCellStyle20.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HeatNumberColumn.DefaultCellStyle = DataGridViewCellStyle20
+        Me.HeatNumberColumn.HeaderText = "Heat #"
+        Me.HeatNumberColumn.Name = "HeatNumberColumn"
+        Me.HeatNumberColumn.ReadOnly = True
+        '
+        'LotNumberColumn
+        '
+        Me.LotNumberColumn.DataPropertyName = "LotNumber"
+        DataGridViewCellStyle21.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LotNumberColumn.DefaultCellStyle = DataGridViewCellStyle21
+        Me.LotNumberColumn.HeaderText = "Lot #"
+        Me.LotNumberColumn.Name = "LotNumberColumn"
+        Me.LotNumberColumn.ReadOnly = True
+        '
+        'ActivityDateColumn
+        '
+        Me.ActivityDateColumn.DataPropertyName = "ActivityDate"
+        DataGridViewCellStyle22.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ActivityDateColumn.DefaultCellStyle = DataGridViewCellStyle22
+        Me.ActivityDateColumn.HeaderText = "ActivityDate"
+        Me.ActivityDateColumn.Name = "ActivityDateColumn"
+        Me.ActivityDateColumn.ReadOnly = True
+        Me.ActivityDateColumn.Visible = False
+        '
+        'RackDivisionIDColumn
+        '
+        Me.RackDivisionIDColumn.DataPropertyName = "DivisionID"
+        DataGridViewCellStyle23.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RackDivisionIDColumn.DefaultCellStyle = DataGridViewCellStyle23
+        Me.RackDivisionIDColumn.HeaderText = "DivisionID"
+        Me.RackDivisionIDColumn.Name = "RackDivisionIDColumn"
+        Me.RackDivisionIDColumn.ReadOnly = True
+        Me.RackDivisionIDColumn.Visible = False
+        '
+        'CreationDateColumn
+        '
+        Me.CreationDateColumn.DataPropertyName = "CreationDate"
+        DataGridViewCellStyle24.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CreationDateColumn.DefaultCellStyle = DataGridViewCellStyle24
+        Me.CreationDateColumn.HeaderText = "CreationDate"
+        Me.CreationDateColumn.Name = "CreationDateColumn"
+        Me.CreationDateColumn.ReadOnly = True
+        Me.CreationDateColumn.Visible = False
+        '
+        'PickTicketColumn
+        '
+        Me.PickTicketColumn.DataPropertyName = "PickTicket"
+        DataGridViewCellStyle25.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PickTicketColumn.DefaultCellStyle = DataGridViewCellStyle25
+        Me.PickTicketColumn.HeaderText = "PickTicket"
+        Me.PickTicketColumn.Name = "PickTicketColumn"
+        Me.PickTicketColumn.ReadOnly = True
+        Me.PickTicketColumn.Visible = False
+        '
+        'PickDateColumn
+        '
+        Me.PickDateColumn.DataPropertyName = "PickDate"
+        DataGridViewCellStyle26.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PickDateColumn.DefaultCellStyle = DataGridViewCellStyle26
+        Me.PickDateColumn.HeaderText = "PickDate"
+        Me.PickDateColumn.Name = "PickDateColumn"
+        Me.PickDateColumn.ReadOnly = True
+        Me.PickDateColumn.Visible = False
+        '
+        'AddedByColumn
+        '
+        Me.AddedByColumn.DataPropertyName = "AddedBy"
+        DataGridViewCellStyle27.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AddedByColumn.DefaultCellStyle = DataGridViewCellStyle27
+        Me.AddedByColumn.HeaderText = "AddedBy"
+        Me.AddedByColumn.Name = "AddedByColumn"
+        Me.AddedByColumn.ReadOnly = True
+        Me.AddedByColumn.Visible = False
+        '
+        'CommentColumn
+        '
+        Me.CommentColumn.DataPropertyName = "Comment"
+        DataGridViewCellStyle28.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CommentColumn.DefaultCellStyle = DataGridViewCellStyle28
+        Me.CommentColumn.HeaderText = "Comment"
+        Me.CommentColumn.Name = "CommentColumn"
+        Me.CommentColumn.ReadOnly = True
+        Me.CommentColumn.Visible = False
+        '
+        'PartDescriptionColumn
+        '
+        Me.PartDescriptionColumn.DataPropertyName = "PartDescription"
+        DataGridViewCellStyle29.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PartDescriptionColumn.DefaultCellStyle = DataGridViewCellStyle29
+        Me.PartDescriptionColumn.HeaderText = "PartDescription"
+        Me.PartDescriptionColumn.Name = "PartDescriptionColumn"
+        Me.PartDescriptionColumn.ReadOnly = True
+        Me.PartDescriptionColumn.Visible = False
+        '
+        'RackingKeyColumn
+        '
+        Me.RackingKeyColumn.DataPropertyName = "RackingKey"
+        DataGridViewCellStyle30.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RackingKeyColumn.DefaultCellStyle = DataGridViewCellStyle30
+        Me.RackingKeyColumn.HeaderText = "RackingKey"
+        Me.RackingKeyColumn.Name = "RackingKeyColumn"
+        Me.RackingKeyColumn.ReadOnly = True
+        Me.RackingKeyColumn.Visible = False
+        '
+        'RackingTransactionTableBindingSource
+        '
+        Me.RackingTransactionTableBindingSource.DataMember = "RackingTransactionTable"
+        Me.RackingTransactionTableBindingSource.DataSource = Me.SQLTFPOperationsDatabaseDataSet
+        '
+        'RackingTransactionTableTableAdapter
+        '
+        Me.RackingTransactionTableTableAdapter.ClearBeforeFill = True
+        '
+        'PickListLineQuery2TableAdapter
+        '
+        Me.PickListLineQuery2TableAdapter.ClearBeforeFill = True
+        '
         'ShippingUpdater
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1441,17 +1508,17 @@ Partial Class ShippingUpdater
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         CType(Me.dgvPickLines, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PickListLineQuery2BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.SQLTFPOperationsDatabaseDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.dgvViewRacking, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RackingTransactionTableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.gpxRackData.ResumeLayout(False)
         Me.gpxRackData.PerformLayout()
         Me.gpxScanLot.ResumeLayout(False)
         Me.gpxScanLot.PerformLayout()
         Me.gpxRackingList.ResumeLayout(False)
+        CType(Me.PickListLineQuery2BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SQLTFPOperationsDatabaseDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RackingTransactionTableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1551,6 +1618,12 @@ Partial Class ShippingUpdater
     Friend WithEvents LineStatusColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents SalesmanIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents PickDivisionIDColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents gpxRackingList As System.Windows.Forms.GroupBox
+    Friend WithEvents Label29 As System.Windows.Forms.Label
+    Friend WithEvents lblQuantityOnHand As System.Windows.Forms.Label
+    Friend WithEvents lblTotalInRack As System.Windows.Forms.Label
+    Friend WithEvents Label30 As System.Windows.Forms.Label
+    Friend WithEvents RemovePulledItemsFrom1LineToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents BinNumberColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents PartNumberColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents BoxQuantityColumn As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -1568,10 +1641,4 @@ Partial Class ShippingUpdater
     Friend WithEvents CommentColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents PartDescriptionColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents RackingKeyColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents gpxRackingList As System.Windows.Forms.GroupBox
-    Friend WithEvents Label29 As System.Windows.Forms.Label
-    Friend WithEvents lblQuantityOnHand As System.Windows.Forms.Label
-    Friend WithEvents lblTotalInRack As System.Windows.Forms.Label
-    Friend WithEvents Label30 As System.Windows.Forms.Label
-    Friend WithEvents RemovePulledItemsFrom1LineToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

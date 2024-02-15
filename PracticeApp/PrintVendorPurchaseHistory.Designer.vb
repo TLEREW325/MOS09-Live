@@ -22,23 +22,23 @@ Partial Class PrintVendorPurchaseHistory
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRPurchaseHistoryViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXItemsPurVendor1 = New MOS09Program.CRXItemsPurVendor
-        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet
-        Me.cmdClear = New System.Windows.Forms.Button
-        Me.cmdFilterByVendor = New System.Windows.Forms.Button
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.cboVendorID = New System.Windows.Forms.ComboBox
+        Me.components = New System.ComponentModel.Container()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRPurchaseHistoryViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXItemsPurVendor1 = New MOS09Program.CRXItemsPurVendor()
+        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet()
+        Me.cmdClear = New System.Windows.Forms.Button()
+        Me.cmdFilterByVendor = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.cboVendorID = New System.Windows.Forms.ComboBox()
         Me.VendorBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.VendorTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.VendorTableAdapter
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.VendorTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.VendorTableAdapter()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.SQLTFPOperationsDatabaseDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.VendorBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -56,19 +56,19 @@ Partial Class PrintVendorPurchaseHistory
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -88,15 +88,21 @@ Partial Class PrintVendorPurchaseHistory
         '
         Me.CRPurchaseHistoryViewer.ActiveViewIndex = 0
         Me.CRPurchaseHistoryViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRPurchaseHistoryViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRPurchaseHistoryViewer.DisplayGroupTree = False
+        Me.CRPurchaseHistoryViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRPurchaseHistoryViewer.Location = New System.Drawing.Point(183, 24)
         Me.CRPurchaseHistoryViewer.Name = "CRPurchaseHistoryViewer"
         Me.CRPurchaseHistoryViewer.ReportSource = Me.CRXItemsPurVendor1
+        Me.CRPurchaseHistoryViewer.ShowGroupTreeButton = False
+        Me.CRPurchaseHistoryViewer.ShowLogo = False
+        Me.CRPurchaseHistoryViewer.ShowParameterPanelButton = False
+        Me.CRPurchaseHistoryViewer.ShowTextSearchButton = False
+        Me.CRPurchaseHistoryViewer.ShowZoomButton = False
         Me.CRPurchaseHistoryViewer.Size = New System.Drawing.Size(847, 608)
         Me.CRPurchaseHistoryViewer.TabIndex = 1
+        Me.CRPurchaseHistoryViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'SQLTFPOperationsDatabaseDataSet
         '

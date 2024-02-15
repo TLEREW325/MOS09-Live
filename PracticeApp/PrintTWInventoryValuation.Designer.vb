@@ -22,25 +22,25 @@ Partial Class PrintTWInventoryValuation
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRTWInventoryViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXTWInventoryValuation1 = New MOS09Program.CRXTWInventoryValuation
-        Me.cmdPartNumber = New System.Windows.Forms.Button
-        Me.cmdClear = New System.Windows.Forms.Button
-        Me.cboPartNumber = New System.Windows.Forms.ComboBox
+        Me.components = New System.ComponentModel.Container()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRTWInventoryViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXTWInventoryValuation1 = New MOS09Program.CRXTWInventoryValuation()
+        Me.cmdPartNumber = New System.Windows.Forms.Button()
+        Me.cmdClear = New System.Windows.Forms.Button()
+        Me.cboPartNumber = New System.Windows.Forms.ComboBox()
         Me.ItemListBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet
-        Me.cboPartDesc = New System.Windows.Forms.ComboBox
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.ItemListTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.ItemListTableAdapter
-        Me.Label4 = New System.Windows.Forms.Label
+        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet()
+        Me.cboPartDesc = New System.Windows.Forms.ComboBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.ItemListTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.ItemListTableAdapter()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.ItemListBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SQLTFPOperationsDatabaseDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -51,26 +51,26 @@ Partial Class PrintTWInventoryValuation
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditToolStripMenuItem, Me.ReportsToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1028, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1030, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -90,15 +90,21 @@ Partial Class PrintTWInventoryValuation
         '
         Me.CRTWInventoryViewer.ActiveViewIndex = 0
         Me.CRTWInventoryViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRTWInventoryViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRTWInventoryViewer.DisplayGroupTree = False
+        Me.CRTWInventoryViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRTWInventoryViewer.Location = New System.Drawing.Point(183, 24)
         Me.CRTWInventoryViewer.Name = "CRTWInventoryViewer"
         Me.CRTWInventoryViewer.ReportSource = Me.CRXTWInventoryValuation1
-        Me.CRTWInventoryViewer.Size = New System.Drawing.Size(845, 608)
+        Me.CRTWInventoryViewer.ShowGroupTreeButton = False
+        Me.CRTWInventoryViewer.ShowLogo = False
+        Me.CRTWInventoryViewer.ShowParameterPanelButton = False
+        Me.CRTWInventoryViewer.ShowTextSearchButton = False
+        Me.CRTWInventoryViewer.ShowZoomButton = False
+        Me.CRTWInventoryViewer.Size = New System.Drawing.Size(847, 608)
         Me.CRTWInventoryViewer.TabIndex = 1
+        Me.CRTWInventoryViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'cmdPartNumber
         '
@@ -190,7 +196,7 @@ Partial Class PrintTWInventoryValuation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1028, 632)
+        Me.ClientSize = New System.Drawing.Size(1030, 632)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)

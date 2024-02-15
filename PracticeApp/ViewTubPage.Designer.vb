@@ -22,21 +22,27 @@ Partial Class ViewTubPage
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.CRVTubPage = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.crxTubtag1 = New MOS09Program.CRXTubtag
+        Me.CRVTubPage = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.crxTubtag1 = New MOS09Program.CRXTubtag()
         Me.SuspendLayout()
         '
         'CRVTubPage
         '
         Me.CRVTubPage.ActiveViewIndex = -1
         Me.CRVTubPage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRVTubPage.DisplayGroupTree = False
+        Me.CRVTubPage.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRVTubPage.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRVTubPage.Location = New System.Drawing.Point(0, 0)
         Me.CRVTubPage.Name = "CRVTubPage"
         Me.CRVTubPage.SelectionFormula = ""
+        Me.CRVTubPage.ShowGroupTreeButton = False
+        Me.CRVTubPage.ShowLogo = False
+        Me.CRVTubPage.ShowParameterPanelButton = False
+        Me.CRVTubPage.ShowTextSearchButton = False
+        Me.CRVTubPage.ShowZoomButton = False
         Me.CRVTubPage.Size = New System.Drawing.Size(1034, 711)
         Me.CRVTubPage.TabIndex = 0
+        Me.CRVTubPage.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         Me.CRVTubPage.ViewTimeSelectionFormula = ""
         '
         'ViewTubPage

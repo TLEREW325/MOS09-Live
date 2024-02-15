@@ -22,22 +22,22 @@ Partial Class PrintItemPriceSheet
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRPriceSheetViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXItemPriceSheet1 = New MOS09Program.CRXItemPriceSheet
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.cboDescription = New System.Windows.Forms.ComboBox
-        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.cboPartNumber = New System.Windows.Forms.ComboBox
-        Me.cmdClear = New System.Windows.Forms.Button
-        Me.cmdFilter = New System.Windows.Forms.Button
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRPriceSheetViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXItemPriceSheet1 = New MOS09Program.CRXItemPriceSheet()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.cboDescription = New System.Windows.Forms.ComboBox()
+        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.cboPartNumber = New System.Windows.Forms.ComboBox()
+        Me.cmdClear = New System.Windows.Forms.Button()
+        Me.cmdFilter = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.SQLTFPOperationsDatabaseDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -54,19 +54,19 @@ Partial Class PrintItemPriceSheet
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -86,15 +86,21 @@ Partial Class PrintItemPriceSheet
         '
         Me.CRPriceSheetViewer.ActiveViewIndex = -1
         Me.CRPriceSheetViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRPriceSheetViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRPriceSheetViewer.DisplayGroupTree = False
+        Me.CRPriceSheetViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRPriceSheetViewer.Location = New System.Drawing.Point(183, 24)
         Me.CRPriceSheetViewer.Name = "CRPriceSheetViewer"
         Me.CRPriceSheetViewer.SelectionFormula = ""
+        Me.CRPriceSheetViewer.ShowGroupTreeButton = False
+        Me.CRPriceSheetViewer.ShowLogo = False
+        Me.CRPriceSheetViewer.ShowParameterPanelButton = False
+        Me.CRPriceSheetViewer.ShowTextSearchButton = False
+        Me.CRPriceSheetViewer.ShowZoomButton = False
         Me.CRPriceSheetViewer.Size = New System.Drawing.Size(847, 608)
         Me.CRPriceSheetViewer.TabIndex = 1
+        Me.CRPriceSheetViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         Me.CRPriceSheetViewer.ViewTimeSelectionFormula = ""
         '
         'Label2

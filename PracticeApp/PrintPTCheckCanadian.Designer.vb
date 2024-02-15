@@ -22,18 +22,18 @@ Partial Class PrintPTCheckCanadian
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.PrintChecksToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRCheckViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXPTCheckCanadian1 = New MOS09Program.CRXPTCheckCanadian
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.cmdPrint = New System.Windows.Forms.Button
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PrintChecksToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRCheckViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXPTCheckCanadian1 = New MOS09Program.CRXPTCheckCanadian()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.cmdPrint = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -50,25 +50,25 @@ Partial Class PrintPTCheckCanadian
         '
         Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PrintChecksToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'PrintChecksToolStripMenuItem
         '
         Me.PrintChecksToolStripMenuItem.Name = "PrintChecksToolStripMenuItem"
-        Me.PrintChecksToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.PrintChecksToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
         Me.PrintChecksToolStripMenuItem.Text = "Print Checks"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -88,7 +88,7 @@ Partial Class PrintPTCheckCanadian
         '
         Me.CRCheckViewer.ActiveViewIndex = 0
         Me.CRCheckViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRCheckViewer.DisplayGroupTree = False
+        Me.CRCheckViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRCheckViewer.Dock = System.Windows.Forms.DockStyle.Right
         Me.CRCheckViewer.Location = New System.Drawing.Point(185, 24)
         Me.CRCheckViewer.Name = "CRCheckViewer"
@@ -96,11 +96,13 @@ Partial Class PrintPTCheckCanadian
         Me.CRCheckViewer.ShowCloseButton = False
         Me.CRCheckViewer.ShowExportButton = False
         Me.CRCheckViewer.ShowGroupTreeButton = False
+        Me.CRCheckViewer.ShowLogo = False
         Me.CRCheckViewer.ShowPrintButton = False
         Me.CRCheckViewer.ShowTextSearchButton = False
         Me.CRCheckViewer.ShowZoomButton = False
         Me.CRCheckViewer.Size = New System.Drawing.Size(845, 608)
         Me.CRCheckViewer.TabIndex = 1
+        Me.CRCheckViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'Label2
         '
@@ -109,8 +111,8 @@ Partial Class PrintPTCheckCanadian
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(156, 101)
         Me.Label2.TabIndex = 7
-        Me.Label2.Text = "If you choose to re-print the checks, this viewer will close. You will then hit t" & _
-            "he Print Checks Button in the main form and enter the new starting Check #."
+        Me.Label2.Text = "If you choose to re-print the checks, this viewer will close. You will then hit t" &
+    "he Print Checks Button in the main form and enter the new starting Check #."
         '
         'Label1
         '

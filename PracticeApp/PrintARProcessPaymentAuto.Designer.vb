@@ -22,21 +22,27 @@ Partial Class PrintARProcessPaymentAuto
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.CRBatchViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXARCashReceiptBatchSummary1 = New MOS09Program.CRXARCashReceiptBatchSummary
-        Me.lblPrint = New System.Windows.Forms.Label
+        Me.CRBatchViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXARCashReceiptBatchSummary1 = New MOS09Program.CRXARCashReceiptBatchSummary()
+        Me.lblPrint = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'CRBatchViewer
         '
         Me.CRBatchViewer.ActiveViewIndex = 0
         Me.CRBatchViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRBatchViewer.DisplayGroupTree = False
+        Me.CRBatchViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRBatchViewer.Location = New System.Drawing.Point(12, 12)
         Me.CRBatchViewer.Name = "CRBatchViewer"
         Me.CRBatchViewer.ReportSource = Me.CRXARCashReceiptBatchSummary1
+        Me.CRBatchViewer.ShowGroupTreeButton = False
+        Me.CRBatchViewer.ShowLogo = False
+        Me.CRBatchViewer.ShowParameterPanelButton = False
+        Me.CRBatchViewer.ShowTextSearchButton = False
+        Me.CRBatchViewer.ShowZoomButton = False
         Me.CRBatchViewer.Size = New System.Drawing.Size(150, 73)
         Me.CRBatchViewer.TabIndex = 0
+        Me.CRBatchViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         Me.CRBatchViewer.Visible = False
         '
         'lblPrint

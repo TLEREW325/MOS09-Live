@@ -22,14 +22,14 @@ Partial Class PrintShippingBOLMultiple
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRBOLViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXBOL_Multiple1 = New MOS09Program.CRXBOL_Multiple
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRBOLViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXBOL_Multiple1 = New MOS09Program.CRXBOL_Multiple()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -45,19 +45,19 @@ Partial Class PrintShippingBOLMultiple
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -77,15 +77,21 @@ Partial Class PrintShippingBOLMultiple
         '
         Me.CRBOLViewer.ActiveViewIndex = 0
         Me.CRBOLViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRBOLViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRBOLViewer.DisplayGroupTree = False
+        Me.CRBOLViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRBOLViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRBOLViewer.Name = "CRBOLViewer"
         Me.CRBOLViewer.ReportSource = Me.CRXBOL_Multiple1
+        Me.CRBOLViewer.ShowGroupTreeButton = False
+        Me.CRBOLViewer.ShowLogo = False
+        Me.CRBOLViewer.ShowParameterPanelButton = False
+        Me.CRBOLViewer.ShowTextSearchButton = False
+        Me.CRBOLViewer.ShowZoomButton = False
         Me.CRBOLViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRBOLViewer.TabIndex = 1
+        Me.CRBOLViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintShippingBOLMultiple
         '

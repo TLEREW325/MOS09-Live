@@ -22,14 +22,14 @@ Partial Class PrintSteelCoilTotals
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRCoilViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXCoilSummation1 = New MOS09Program.CRXCoilSummation
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRCoilViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXCoilSummation1 = New MOS09Program.CRXCoilSummation()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -45,19 +45,19 @@ Partial Class PrintSteelCoilTotals
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -70,22 +70,26 @@ Partial Class PrintSteelCoilTotals
         'ExitToolStripMenuItem1
         '
         Me.ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1"
-        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(92, 22)
         Me.ExitToolStripMenuItem1.Text = "Exit"
         '
         'CRCoilViewer
         '
         Me.CRCoilViewer.ActiveViewIndex = 0
         Me.CRCoilViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRCoilViewer.DisplayGroupTree = False
+        Me.CRCoilViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRCoilViewer.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRCoilViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRCoilViewer.Name = "CRCoilViewer"
         Me.CRCoilViewer.ReportSource = Me.CRXCoilSummation1
         Me.CRCoilViewer.ShowGroupTreeButton = False
+        Me.CRCoilViewer.ShowLogo = False
+        Me.CRCoilViewer.ShowParameterPanelButton = False
         Me.CRCoilViewer.ShowTextSearchButton = False
+        Me.CRCoilViewer.ShowZoomButton = False
         Me.CRCoilViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRCoilViewer.TabIndex = 1
+        Me.CRCoilViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintSteelCoilTotals
         '

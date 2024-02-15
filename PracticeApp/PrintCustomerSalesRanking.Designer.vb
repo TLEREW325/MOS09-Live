@@ -22,20 +22,26 @@ Partial Class PrintCustomerSalesRanking
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.CRVCustomerSalesRanking = New CrystalDecisions.Windows.Forms.CrystalReportViewer
+        Me.CRVCustomerSalesRanking = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
         Me.SuspendLayout()
         '
         'CRVCustomerSalesRanking
         '
         Me.CRVCustomerSalesRanking.ActiveViewIndex = -1
         Me.CRVCustomerSalesRanking.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRVCustomerSalesRanking.DisplayGroupTree = False
+        Me.CRVCustomerSalesRanking.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRVCustomerSalesRanking.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRVCustomerSalesRanking.Location = New System.Drawing.Point(0, 0)
         Me.CRVCustomerSalesRanking.Name = "CRVCustomerSalesRanking"
         Me.CRVCustomerSalesRanking.SelectionFormula = ""
+        Me.CRVCustomerSalesRanking.ShowGroupTreeButton = False
+        Me.CRVCustomerSalesRanking.ShowLogo = False
+        Me.CRVCustomerSalesRanking.ShowParameterPanelButton = False
+        Me.CRVCustomerSalesRanking.ShowTextSearchButton = False
+        Me.CRVCustomerSalesRanking.ShowZoomButton = False
         Me.CRVCustomerSalesRanking.Size = New System.Drawing.Size(1034, 711)
         Me.CRVCustomerSalesRanking.TabIndex = 0
+        Me.CRVCustomerSalesRanking.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         Me.CRVCustomerSalesRanking.ViewTimeSelectionFormula = ""
         '
         'PrintCustomerSalesRanking

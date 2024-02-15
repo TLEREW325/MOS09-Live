@@ -22,18 +22,18 @@ Partial Class PrintBalanceSheet
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRBalanceViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXBalanceSheet1 = New MOS09Program.CRXBalanceSheet
+        Me.components = New System.ComponentModel.Container()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRBalanceViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXBalanceSheet1 = New MOS09Program.CRXBalanceSheet()
         Me.DivisionTableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet
-        Me.DivisionTableTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.DivisionTableTableAdapter
+        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet()
+        Me.DivisionTableTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.DivisionTableTableAdapter()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.DivisionTableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SQLTFPOperationsDatabaseDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -51,19 +51,19 @@ Partial Class PrintBalanceSheet
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -83,18 +83,21 @@ Partial Class PrintBalanceSheet
         '
         Me.CRBalanceViewer.ActiveViewIndex = 0
         Me.CRBalanceViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRBalanceViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRBalanceViewer.DisplayGroupTree = False
+        Me.CRBalanceViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRBalanceViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRBalanceViewer.Name = "CRBalanceViewer"
         Me.CRBalanceViewer.ReportSource = Me.CRXBalanceSheet1
         Me.CRBalanceViewer.ShowGroupTreeButton = False
+        Me.CRBalanceViewer.ShowLogo = False
+        Me.CRBalanceViewer.ShowParameterPanelButton = False
         Me.CRBalanceViewer.ShowTextSearchButton = False
         Me.CRBalanceViewer.ShowZoomButton = False
         Me.CRBalanceViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRBalanceViewer.TabIndex = 1
+        Me.CRBalanceViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'DivisionTableBindingSource
         '

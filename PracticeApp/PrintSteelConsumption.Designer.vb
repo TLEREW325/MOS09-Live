@@ -22,27 +22,27 @@ Partial Class PrintSteelConsumption
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRLineViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXSteelConsumptionLines1 = New MOS09Program.CRXSteelConsumptionLines
-        Me.cboRMID = New System.Windows.Forms.ComboBox
+        Me.components = New System.ComponentModel.Container()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRLineViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXSteelConsumptionLines1 = New MOS09Program.CRXSteelConsumptionLines()
+        Me.cboRMID = New System.Windows.Forms.ComboBox()
         Me.RawMaterialsTableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet
-        Me.cboCarbon = New System.Windows.Forms.ComboBox
-        Me.cboSteelSize = New System.Windows.Forms.ComboBox
-        Me.cmdRMID = New System.Windows.Forms.Button
-        Me.cmdclear = New System.Windows.Forms.Button
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.RawMaterialsTableTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.RawMaterialsTableTableAdapter
-        Me.Label4 = New System.Windows.Forms.Label
+        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet()
+        Me.cboCarbon = New System.Windows.Forms.ComboBox()
+        Me.cboSteelSize = New System.Windows.Forms.ComboBox()
+        Me.cmdRMID = New System.Windows.Forms.Button()
+        Me.cmdclear = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.RawMaterialsTableTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.RawMaterialsTableTableAdapter()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.RawMaterialsTableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SQLTFPOperationsDatabaseDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -60,19 +60,19 @@ Partial Class PrintSteelConsumption
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -92,15 +92,21 @@ Partial Class PrintSteelConsumption
         '
         Me.CRLineViewer.ActiveViewIndex = 0
         Me.CRLineViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRLineViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRLineViewer.DisplayGroupTree = False
+        Me.CRLineViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRLineViewer.Location = New System.Drawing.Point(183, 24)
         Me.CRLineViewer.Name = "CRLineViewer"
         Me.CRLineViewer.ReportSource = Me.CRXSteelConsumptionLines1
+        Me.CRLineViewer.ShowGroupTreeButton = False
+        Me.CRLineViewer.ShowLogo = False
+        Me.CRLineViewer.ShowParameterPanelButton = False
+        Me.CRLineViewer.ShowTextSearchButton = False
+        Me.CRLineViewer.ShowZoomButton = False
         Me.CRLineViewer.Size = New System.Drawing.Size(845, 608)
         Me.CRLineViewer.TabIndex = 1
+        Me.CRLineViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'cboRMID
         '

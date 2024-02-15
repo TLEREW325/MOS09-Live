@@ -22,40 +22,40 @@ Partial Class PrintCashReceipts
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRCashReceiptsViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXCashReceipts1 = New MOS09Program.CRXCashReceipts
-        Me.cmdFilter = New System.Windows.Forms.Button
-        Me.cmdClear = New System.Windows.Forms.Button
-        Me.cboCustomer = New System.Windows.Forms.ComboBox
+        Me.components = New System.ComponentModel.Container()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRCashReceiptsViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXCashReceipts1 = New MOS09Program.CRXCashReceipts()
+        Me.cmdFilter = New System.Windows.Forms.Button()
+        Me.cmdClear = New System.Windows.Forms.Button()
+        Me.cboCustomer = New System.Windows.Forms.ComboBox()
         Me.CustomerListBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.CustomerListTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.CustomerListTableAdapter
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.cboCustomerName = New System.Windows.Forms.ComboBox
-        Me.dtpBeginDate = New System.Windows.Forms.DateTimePicker
-        Me.dtpEndDate = New System.Windows.Forms.DateTimePicker
-        Me.Label4 = New System.Windows.Forms.Label
-        Me.Label5 = New System.Windows.Forms.Label
-        Me.rdoInvoiceDate = New System.Windows.Forms.RadioButton
-        Me.rdoPaymentDate = New System.Windows.Forms.RadioButton
-        Me.Label14 = New System.Windows.Forms.Label
-        Me.chkDateRange = New System.Windows.Forms.CheckBox
-        Me.Label6 = New System.Windows.Forms.Label
+        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.CustomerListTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.CustomerListTableAdapter()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.cboCustomerName = New System.Windows.Forms.ComboBox()
+        Me.dtpBeginDate = New System.Windows.Forms.DateTimePicker()
+        Me.dtpEndDate = New System.Windows.Forms.DateTimePicker()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.rdoInvoiceDate = New System.Windows.Forms.RadioButton()
+        Me.rdoPaymentDate = New System.Windows.Forms.RadioButton()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.chkDateRange = New System.Windows.Forms.CheckBox()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.ARCustomerPaymentBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ARCustomerPaymentTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.ARCustomerPaymentTableAdapter
-        Me.Label7 = New System.Windows.Forms.Label
-        Me.Label8 = New System.Windows.Forms.Label
-        Me.cboInvoiceNumber = New System.Windows.Forms.ComboBox
-        Me.cboCheckNumber = New System.Windows.Forms.ComboBox
+        Me.ARCustomerPaymentTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.ARCustomerPaymentTableAdapter()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.cboInvoiceNumber = New System.Windows.Forms.ComboBox()
+        Me.cboCheckNumber = New System.Windows.Forms.ComboBox()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.CustomerListBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SQLTFPOperationsDatabaseDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -106,18 +106,21 @@ Partial Class PrintCashReceipts
         '
         Me.CRCashReceiptsViewer.ActiveViewIndex = -1
         Me.CRCashReceiptsViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRCashReceiptsViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRCashReceiptsViewer.DisplayGroupTree = False
+        Me.CRCashReceiptsViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRCashReceiptsViewer.Location = New System.Drawing.Point(183, 24)
         Me.CRCashReceiptsViewer.Name = "CRCashReceiptsViewer"
         Me.CRCashReceiptsViewer.SelectionFormula = ""
         Me.CRCashReceiptsViewer.ShowGroupTreeButton = False
+        Me.CRCashReceiptsViewer.ShowLogo = False
+        Me.CRCashReceiptsViewer.ShowParameterPanelButton = False
         Me.CRCashReceiptsViewer.ShowTextSearchButton = False
         Me.CRCashReceiptsViewer.ShowZoomButton = False
         Me.CRCashReceiptsViewer.Size = New System.Drawing.Size(851, 608)
         Me.CRCashReceiptsViewer.TabIndex = 1
+        Me.CRCashReceiptsViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         Me.CRCashReceiptsViewer.ViewTimeSelectionFormula = ""
         '
         'cmdFilter

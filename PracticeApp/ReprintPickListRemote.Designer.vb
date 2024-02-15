@@ -22,15 +22,15 @@ Partial Class ReprintPickListRemote
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EmailPickTicketToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRReprintViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXPickTicket1 = New MOS09Program.CRXPickTicket
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmailPickTicketToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRReprintViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXPickTicket1 = New MOS09Program.CRXPickTicket()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -46,26 +46,26 @@ Partial Class ReprintPickListRemote
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmailPickTicketToolStripMenuItem})
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'EmailPickTicketToolStripMenuItem
         '
         Me.EmailPickTicketToolStripMenuItem.Name = "EmailPickTicketToolStripMenuItem"
-        Me.EmailPickTicketToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
+        Me.EmailPickTicketToolStripMenuItem.Size = New System.Drawing.Size(163, 22)
         Me.EmailPickTicketToolStripMenuItem.Text = "Email Pick Ticket"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -85,19 +85,22 @@ Partial Class ReprintPickListRemote
         '
         Me.CRReprintViewer.ActiveViewIndex = 0
         Me.CRReprintViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRReprintViewer.DisplayGroupTree = False
+        Me.CRReprintViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRReprintViewer.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRReprintViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRReprintViewer.Name = "CRReprintViewer"
         Me.CRReprintViewer.ReportSource = Me.CRXPickTicket1
         Me.CRReprintViewer.ShowCloseButton = False
+        Me.CRReprintViewer.ShowExportButton = False
         Me.CRReprintViewer.ShowGroupTreeButton = False
-        Me.CRReprintViewer.ShowTextSearchButton = False
+        Me.CRReprintViewer.ShowLogo = False
+        Me.CRReprintViewer.ShowParameterPanelButton = False
         Me.CRReprintViewer.ShowZoomButton = False
         Me.CRReprintViewer.Size = New System.Drawing.Size(1028, 608)
         Me.CRReprintViewer.TabIndex = 1
+        Me.CRReprintViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
-        'ReprintPickList
+        'ReprintPickListRemote
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -105,7 +108,7 @@ Partial Class ReprintPickListRemote
         Me.Controls.Add(Me.CRReprintViewer)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Name = "ReprintPickList"
+        Me.Name = "ReprintPickListRemote"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TFP Corporation Reprint Pick List"
         Me.MenuStrip1.ResumeLayout(False)

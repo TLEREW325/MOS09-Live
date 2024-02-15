@@ -22,31 +22,31 @@ Partial Class PrintCustomerSalesReport
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.dtpEndDate = New System.Windows.Forms.DateTimePicker
-        Me.Label4 = New System.Windows.Forms.Label
-        Me.cboCustomerName = New System.Windows.Forms.ComboBox
+        Me.components = New System.ComponentModel.Container()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.dtpEndDate = New System.Windows.Forms.DateTimePicker()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.cboCustomerName = New System.Windows.Forms.ComboBox()
         Me.CustomerListBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.cmdClear = New System.Windows.Forms.Button
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.cmdFilter = New System.Windows.Forms.Button
-        Me.cboCustomer = New System.Windows.Forms.ComboBox
-        Me.CRCustomerViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXCustSalesReport1 = New MOS09Program.CRXCustSalesReport
-        Me.CustomerListTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.CustomerListTableAdapter
-        Me.Label5 = New System.Windows.Forms.Label
-        Me.dtpBeginDate = New System.Windows.Forms.DateTimePicker
-        Me.Label14 = New System.Windows.Forms.Label
-        Me.chkDateRange = New System.Windows.Forms.CheckBox
+        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.cmdClear = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.cmdFilter = New System.Windows.Forms.Button()
+        Me.cboCustomer = New System.Windows.Forms.ComboBox()
+        Me.CRCustomerViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXCustSalesReport1 = New MOS09Program.CRXCustSalesReport()
+        Me.CustomerListTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.CustomerListTableAdapter()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.dtpBeginDate = New System.Windows.Forms.DateTimePicker()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.chkDateRange = New System.Windows.Forms.CheckBox()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.CustomerListBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SQLTFPOperationsDatabaseDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -64,19 +64,19 @@ Partial Class PrintCustomerSalesReport
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -195,17 +195,20 @@ Partial Class PrintCustomerSalesReport
         '
         Me.CRCustomerViewer.ActiveViewIndex = -1
         Me.CRCustomerViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRCustomerViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRCustomerViewer.DisplayGroupTree = False
+        Me.CRCustomerViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRCustomerViewer.Location = New System.Drawing.Point(185, 24)
         Me.CRCustomerViewer.Name = "CRCustomerViewer"
         Me.CRCustomerViewer.ShowGroupTreeButton = False
+        Me.CRCustomerViewer.ShowLogo = False
+        Me.CRCustomerViewer.ShowParameterPanelButton = False
         Me.CRCustomerViewer.ShowTextSearchButton = False
         Me.CRCustomerViewer.ShowZoomButton = False
         Me.CRCustomerViewer.Size = New System.Drawing.Size(845, 608)
         Me.CRCustomerViewer.TabIndex = 1
+        Me.CRCustomerViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'CustomerListTableAdapter
         '

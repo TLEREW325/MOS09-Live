@@ -22,16 +22,16 @@ Partial Class PrintSalesOrder
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EmailSalesOrderToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRSalesOrderViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXSalesOrder1 = New MOS09Program.CRXSalesOrder
-        Me.CRXSalesOrderTFF1 = New MOS09Program.CRXSalesOrderTFF
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmailSalesOrderToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRSalesOrderViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXSalesOrderTFF1 = New MOS09Program.CRXSalesOrderTFF()
+        Me.CRXSalesOrder1 = New MOS09Program.CRXSalesOrder()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -40,33 +40,33 @@ Partial Class PrintSalesOrder
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditToolStripMenuItem, Me.ReportsToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1028, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1030, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmailSalesOrderToolStripMenuItem})
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'EmailSalesOrderToolStripMenuItem
         '
         Me.EmailSalesOrderToolStripMenuItem.Name = "EmailSalesOrderToolStripMenuItem"
-        Me.EmailSalesOrderToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
+        Me.EmailSalesOrderToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
         Me.EmailSalesOrderToolStripMenuItem.Text = "Email Sales Order"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -86,25 +86,28 @@ Partial Class PrintSalesOrder
         '
         Me.CRSalesOrderViewer.ActiveViewIndex = 0
         Me.CRSalesOrderViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRSalesOrderViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRSalesOrderViewer.DisplayGroupTree = False
+        Me.CRSalesOrderViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRSalesOrderViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRSalesOrderViewer.Name = "CRSalesOrderViewer"
         Me.CRSalesOrderViewer.ReportSource = Me.CRXSalesOrderTFF1
         Me.CRSalesOrderViewer.ShowGroupTreeButton = False
+        Me.CRSalesOrderViewer.ShowLogo = False
+        Me.CRSalesOrderViewer.ShowParameterPanelButton = False
         Me.CRSalesOrderViewer.ShowRefreshButton = False
         Me.CRSalesOrderViewer.ShowTextSearchButton = False
         Me.CRSalesOrderViewer.ShowZoomButton = False
-        Me.CRSalesOrderViewer.Size = New System.Drawing.Size(1028, 608)
+        Me.CRSalesOrderViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRSalesOrderViewer.TabIndex = 1
+        Me.CRSalesOrderViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintSalesOrder
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1028, 632)
+        Me.ClientSize = New System.Drawing.Size(1030, 632)
         Me.Controls.Add(Me.CRSalesOrderViewer)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1

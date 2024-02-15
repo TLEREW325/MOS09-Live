@@ -44,7 +44,10 @@ Partial Class PrintFOXReleaseScheduleCompressed
         Me.CRVFOXReleaseScheduleCompressed.Name = "CRVFOXReleaseScheduleCompressed"
         Me.CRVFOXReleaseScheduleCompressed.SelectionFormula = ""
         Me.CRVFOXReleaseScheduleCompressed.ShowGroupTreeButton = False
+        Me.CRVFOXReleaseScheduleCompressed.ShowLogo = False
+        Me.CRVFOXReleaseScheduleCompressed.ShowParameterPanelButton = False
         Me.CRVFOXReleaseScheduleCompressed.ShowTextSearchButton = False
+        Me.CRVFOXReleaseScheduleCompressed.ShowZoomButton = False
         Me.CRVFOXReleaseScheduleCompressed.Size = New System.Drawing.Size(1034, 684)
         Me.CRVFOXReleaseScheduleCompressed.TabIndex = 0
         Me.CRVFOXReleaseScheduleCompressed.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None

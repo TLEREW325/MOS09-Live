@@ -22,27 +22,33 @@ Partial Class PrintARPaymentReversal
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.CRPaymentViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXARPaymentReversal1 = New MOS09Program.CRXARPaymentReversal
+        Me.CRPaymentViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXARPaymentReversal1 = New MOS09Program.CRXARPaymentReversal()
         Me.SuspendLayout()
         '
         'CRPaymentViewer
         '
         Me.CRPaymentViewer.ActiveViewIndex = 0
         Me.CRPaymentViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRPaymentViewer.DisplayGroupTree = False
+        Me.CRPaymentViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRPaymentViewer.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRPaymentViewer.Location = New System.Drawing.Point(0, 0)
         Me.CRPaymentViewer.Name = "CRPaymentViewer"
         Me.CRPaymentViewer.ReportSource = Me.CRXARPaymentReversal1
-        Me.CRPaymentViewer.Size = New System.Drawing.Size(104, 23)
+        Me.CRPaymentViewer.ShowGroupTreeButton = False
+        Me.CRPaymentViewer.ShowLogo = False
+        Me.CRPaymentViewer.ShowParameterPanelButton = False
+        Me.CRPaymentViewer.ShowTextSearchButton = False
+        Me.CRPaymentViewer.ShowZoomButton = False
+        Me.CRPaymentViewer.Size = New System.Drawing.Size(120, 23)
         Me.CRPaymentViewer.TabIndex = 0
+        Me.CRPaymentViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintARPaymentReversal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(104, 23)
+        Me.ClientSize = New System.Drawing.Size(120, 23)
         Me.Controls.Add(Me.CRPaymentViewer)
         Me.Name = "PrintARPaymentReversal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

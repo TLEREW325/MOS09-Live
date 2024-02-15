@@ -22,64 +22,64 @@ Partial Class PrintCustomerReturnAuthorization
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EmailAuthorizationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ViewAllRMAsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRCustomerYTDViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXCustReturnGoods1 = New MOS09Program.CRXCustReturnGoods
-        Me.cboCustomer = New System.Windows.Forms.ComboBox
+        Me.components = New System.ComponentModel.Container()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DeleteCurrentRMAToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmailAuthorizationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ViewAllRMAsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRCustomerYTDViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXCustReturnGoods1 = New MOS09Program.CRXCustReturnGoods()
+        Me.cboCustomer = New System.Windows.Forms.ComboBox()
         Me.CustomerListBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet
-        Me.cmdViewByFilters = New System.Windows.Forms.Button
-        Me.cmdClear = New System.Windows.Forms.Button
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.CustomerListTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.CustomerListTableAdapter
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.cboCustomerName = New System.Windows.Forms.ComboBox
+        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet()
+        Me.cmdViewByFilters = New System.Windows.Forms.Button()
+        Me.cmdClear = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.CustomerListTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.CustomerListTableAdapter()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.cboCustomerName = New System.Windows.Forms.ComboBox()
         Me.EmployeeDataBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.EmployeeDataTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.EmployeeDataTableAdapter
-        Me.lblDivision = New System.Windows.Forms.Label
-        Me.cboDivision = New System.Windows.Forms.ComboBox
+        Me.EmployeeDataTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.EmployeeDataTableAdapter()
+        Me.lblDivision = New System.Windows.Forms.Label()
+        Me.cboDivision = New System.Windows.Forms.ComboBox()
         Me.DivisionTableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.lblFoxNum = New System.Windows.Forms.Label
-        Me.cboFox = New System.Windows.Forms.ComboBox
+        Me.lblFoxNum = New System.Windows.Forms.Label()
+        Me.cboFox = New System.Windows.Forms.ComboBox()
         Me.FOXTableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.lblNumberOfParts = New System.Windows.Forms.Label
-        Me.txtNumberofParts = New System.Windows.Forms.TextBox
-        Me.lblType = New System.Windows.Forms.Label
-        Me.cboReturnType = New System.Windows.Forms.ComboBox
-        Me.lblRemarks = New System.Windows.Forms.Label
-        Me.txtRemark = New System.Windows.Forms.RichTextBox
-        Me.txtDelivery = New System.Windows.Forms.TextBox
-        Me.lblDelivery = New System.Windows.Forms.Label
-        Me.lblPurchaseOrder = New System.Windows.Forms.Label
-        Me.txtReason = New System.Windows.Forms.RichTextBox
-        Me.lblReason = New System.Windows.Forms.Label
-        Me.cmdGenerateNewSO = New System.Windows.Forms.Button
-        Me.cboReturnGoodNum = New System.Windows.Forms.ComboBox
+        Me.lblNumberOfParts = New System.Windows.Forms.Label()
+        Me.txtNumberofParts = New System.Windows.Forms.TextBox()
+        Me.lblType = New System.Windows.Forms.Label()
+        Me.cboReturnType = New System.Windows.Forms.ComboBox()
+        Me.lblRemarks = New System.Windows.Forms.Label()
+        Me.txtRemark = New System.Windows.Forms.RichTextBox()
+        Me.txtDelivery = New System.Windows.Forms.TextBox()
+        Me.lblDelivery = New System.Windows.Forms.Label()
+        Me.lblPurchaseOrder = New System.Windows.Forms.Label()
+        Me.txtReason = New System.Windows.Forms.RichTextBox()
+        Me.lblReason = New System.Windows.Forms.Label()
+        Me.cmdGenerateNewSO = New System.Windows.Forms.Button()
+        Me.cboReturnGoodNum = New System.Windows.Forms.ComboBox()
         Me.RMATableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Label700 = New System.Windows.Forms.Label
-        Me.btnSave = New System.Windows.Forms.Button
-        Me.btnClose = New System.Windows.Forms.Button
-        Me.DivisionTableTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.DivisionTableTableAdapter
-        Me.FOXTableTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.FOXTableTableAdapter
+        Me.Label700 = New System.Windows.Forms.Label()
+        Me.btnSave = New System.Windows.Forms.Button()
+        Me.btnClose = New System.Windows.Forms.Button()
+        Me.DivisionTableTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.DivisionTableTableAdapter()
+        Me.FOXTableTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.FOXTableTableAdapter()
         Me.PurchaseOrderHeaderTableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.PurchaseOrderHeaderTableTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.PurchaseOrderHeaderTableTableAdapter
-        Me.txtPO = New System.Windows.Forms.TextBox
-        Me.RMATableTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.RMATableTableAdapter
-        Me.txtPartsBy = New System.Windows.Forms.TextBox
-        Me.lblCustNeedParts = New System.Windows.Forms.Label
-        Me.lblSignature = New System.Windows.Forms.Label
-        Me.lblSignDate = New System.Windows.Forms.Label
-        Me.txtSignatureDate = New System.Windows.Forms.DateTimePicker
-        Me.txtSignature = New System.Windows.Forms.ComboBox
-        Me.DeleteCurrentRMAToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.PurchaseOrderHeaderTableTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.PurchaseOrderHeaderTableTableAdapter()
+        Me.txtPO = New System.Windows.Forms.TextBox()
+        Me.RMATableTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.RMATableTableAdapter()
+        Me.txtPartsBy = New System.Windows.Forms.TextBox()
+        Me.lblCustNeedParts = New System.Windows.Forms.Label()
+        Me.lblSignature = New System.Windows.Forms.Label()
+        Me.lblSignDate = New System.Windows.Forms.Label()
+        Me.txtSignatureDate = New System.Windows.Forms.DateTimePicker()
+        Me.txtSignature = New System.Windows.Forms.ComboBox()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.CustomerListBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SQLTFPOperationsDatabaseDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -102,33 +102,39 @@ Partial Class PrintCustomerReturnAuthorization
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DeleteCurrentRMAToolStripMenuItem})
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
+        '
+        'DeleteCurrentRMAToolStripMenuItem
+        '
+        Me.DeleteCurrentRMAToolStripMenuItem.Name = "DeleteCurrentRMAToolStripMenuItem"
+        Me.DeleteCurrentRMAToolStripMenuItem.Size = New System.Drawing.Size(179, 22)
+        Me.DeleteCurrentRMAToolStripMenuItem.Text = "Delete Current RMA"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmailAuthorizationToolStripMenuItem, Me.ViewAllRMAsToolStripMenuItem})
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'EmailAuthorizationToolStripMenuItem
         '
         Me.EmailAuthorizationToolStripMenuItem.Name = "EmailAuthorizationToolStripMenuItem"
-        Me.EmailAuthorizationToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
+        Me.EmailAuthorizationToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
         Me.EmailAuthorizationToolStripMenuItem.Text = "Email Authorization"
         '
         'ViewAllRMAsToolStripMenuItem
         '
         Me.ViewAllRMAsToolStripMenuItem.Name = "ViewAllRMAsToolStripMenuItem"
-        Me.ViewAllRMAsToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
+        Me.ViewAllRMAsToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
         Me.ViewAllRMAsToolStripMenuItem.Text = "View All RMAs"
         '
         'ExitToolStripMenuItem
@@ -148,18 +154,21 @@ Partial Class PrintCustomerReturnAuthorization
         '
         Me.CRCustomerYTDViewer.ActiveViewIndex = -1
         Me.CRCustomerYTDViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRCustomerYTDViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRCustomerYTDViewer.DisplayGroupTree = False
+        Me.CRCustomerYTDViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRCustomerYTDViewer.Location = New System.Drawing.Point(183, 24)
         Me.CRCustomerYTDViewer.Name = "CRCustomerYTDViewer"
         Me.CRCustomerYTDViewer.SelectionFormula = ""
         Me.CRCustomerYTDViewer.ShowGroupTreeButton = False
+        Me.CRCustomerYTDViewer.ShowLogo = False
+        Me.CRCustomerYTDViewer.ShowParameterPanelButton = False
         Me.CRCustomerYTDViewer.ShowTextSearchButton = False
         Me.CRCustomerYTDViewer.ShowZoomButton = False
         Me.CRCustomerYTDViewer.Size = New System.Drawing.Size(901, 710)
         Me.CRCustomerYTDViewer.TabIndex = 1
+        Me.CRCustomerYTDViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         Me.CRCustomerYTDViewer.ViewTimeSelectionFormula = ""
         '
         'cboCustomer
@@ -529,12 +538,6 @@ Partial Class PrintCustomerReturnAuthorization
         Me.txtSignature.Name = "txtSignature"
         Me.txtSignature.Size = New System.Drawing.Size(156, 21)
         Me.txtSignature.TabIndex = 60
-        '
-        'DeleteCurrentRMAToolStripMenuItem
-        '
-        Me.DeleteCurrentRMAToolStripMenuItem.Name = "DeleteCurrentRMAToolStripMenuItem"
-        Me.DeleteCurrentRMAToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
-        Me.DeleteCurrentRMAToolStripMenuItem.Text = "Delete Current RMA"
         '
         'PrintCustomerReturnAuthorization
         '

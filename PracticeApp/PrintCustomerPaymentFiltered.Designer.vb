@@ -22,14 +22,14 @@ Partial Class PrintCustomerPaymentFiltered
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EdityToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRPaymentViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXCustomerPaymentFiltered1 = New MOS09Program.CRXCustomerPaymentFiltered
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EdityToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRPaymentViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXCustomerPaymentFiltered1 = New MOS09Program.CRXCustomerPaymentFiltered()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -45,19 +45,19 @@ Partial Class PrintCustomerPaymentFiltered
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EdityToolStripMenuItem
         '
         Me.EdityToolStripMenuItem.Name = "EdityToolStripMenuItem"
-        Me.EdityToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EdityToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EdityToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -77,15 +77,21 @@ Partial Class PrintCustomerPaymentFiltered
         '
         Me.CRPaymentViewer.ActiveViewIndex = 0
         Me.CRPaymentViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRPaymentViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRPaymentViewer.DisplayGroupTree = False
+        Me.CRPaymentViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRPaymentViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRPaymentViewer.Name = "CRPaymentViewer"
         Me.CRPaymentViewer.ReportSource = Me.CRXCustomerPaymentFiltered1
+        Me.CRPaymentViewer.ShowGroupTreeButton = False
+        Me.CRPaymentViewer.ShowLogo = False
+        Me.CRPaymentViewer.ShowParameterPanelButton = False
+        Me.CRPaymentViewer.ShowTextSearchButton = False
+        Me.CRPaymentViewer.ShowZoomButton = False
         Me.CRPaymentViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRPaymentViewer.TabIndex = 1
+        Me.CRPaymentViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintCustomerPaymentFiltered
         '

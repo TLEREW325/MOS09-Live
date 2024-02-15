@@ -22,27 +22,27 @@ Partial Class PrintVendorList
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.cmdClear = New System.Windows.Forms.Button
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.cboVendorClass = New System.Windows.Forms.ComboBox
+        Me.components = New System.ComponentModel.Container()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.cmdClear = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.cboVendorClass = New System.Windows.Forms.ComboBox()
         Me.VendorClassBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet
-        Me.cmdFilterByVendor = New System.Windows.Forms.Button
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.cboVendorID = New System.Windows.Forms.ComboBox
+        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet()
+        Me.cmdFilterByVendor = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.cboVendorID = New System.Windows.Forms.ComboBox()
         Me.VendorBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.CRVendorViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXVendorList1 = New MOS09Program.CRXVendorList
-        Me.VendorTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.VendorTableAdapter
-        Me.VendorClassTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.VendorClassTableAdapter
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.CRVendorViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXVendorList1 = New MOS09Program.CRXVendorList()
+        Me.VendorTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.VendorTableAdapter()
+        Me.VendorClassTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.VendorClassTableAdapter()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.VendorClassBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SQLTFPOperationsDatabaseDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -54,26 +54,26 @@ Partial Class PrintVendorList
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditToolStripMenuItem, Me.ReportsToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1028, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1030, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -180,15 +180,21 @@ Partial Class PrintVendorList
         '
         Me.CRVendorViewer.ActiveViewIndex = -1
         Me.CRVendorViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRVendorViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRVendorViewer.DisplayGroupTree = False
+        Me.CRVendorViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRVendorViewer.Location = New System.Drawing.Point(178, 24)
         Me.CRVendorViewer.Name = "CRVendorViewer"
         Me.CRVendorViewer.SelectionFormula = ""
-        Me.CRVendorViewer.Size = New System.Drawing.Size(850, 608)
+        Me.CRVendorViewer.ShowGroupTreeButton = False
+        Me.CRVendorViewer.ShowLogo = False
+        Me.CRVendorViewer.ShowParameterPanelButton = False
+        Me.CRVendorViewer.ShowTextSearchButton = False
+        Me.CRVendorViewer.ShowZoomButton = False
+        Me.CRVendorViewer.Size = New System.Drawing.Size(852, 608)
         Me.CRVendorViewer.TabIndex = 1
+        Me.CRVendorViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         Me.CRVendorViewer.ViewTimeSelectionFormula = ""
         '
         'VendorTableAdapter
@@ -203,7 +209,7 @@ Partial Class PrintVendorList
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1028, 632)
+        Me.ClientSize = New System.Drawing.Size(1030, 632)
         Me.Controls.Add(Me.cmdClear)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.cboVendorClass)

@@ -22,23 +22,27 @@ Partial Class PrintRackingActivityLog
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.CRVRackingActivityLog = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXRackingActivityLog1 = New MOS09Program.CRXRackingActivityLog
+        Me.CRVRackingActivityLog = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXRackingActivityLog1 = New MOS09Program.CRXRackingActivityLog()
         Me.SuspendLayout()
         '
         'CRVRackingActivityLog
         '
         Me.CRVRackingActivityLog.ActiveViewIndex = 0
         Me.CRVRackingActivityLog.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRVRackingActivityLog.DisplayGroupTree = False
+        Me.CRVRackingActivityLog.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRVRackingActivityLog.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRVRackingActivityLog.Location = New System.Drawing.Point(0, 0)
         Me.CRVRackingActivityLog.Name = "CRVRackingActivityLog"
         Me.CRVRackingActivityLog.ReportSource = Me.CRXRackingActivityLog1
         Me.CRVRackingActivityLog.ShowGroupTreeButton = False
+        Me.CRVRackingActivityLog.ShowLogo = False
+        Me.CRVRackingActivityLog.ShowParameterPanelButton = False
         Me.CRVRackingActivityLog.ShowTextSearchButton = False
+        Me.CRVRackingActivityLog.ShowZoomButton = False
         Me.CRVRackingActivityLog.Size = New System.Drawing.Size(1030, 632)
         Me.CRVRackingActivityLog.TabIndex = 0
+        Me.CRVRackingActivityLog.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintRackingActivityLog
         '

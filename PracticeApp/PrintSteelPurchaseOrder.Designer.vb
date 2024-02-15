@@ -22,15 +22,15 @@ Partial Class PrintSteelPurchaseOrder
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRPOViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXSteelPurchaseOrder1 = New MOS09Program.CRXSteelPurchaseOrder
-        Me.EmailToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmailToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRPOViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXSteelPurchaseOrder1 = New MOS09Program.CRXSteelPurchaseOrder()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -39,7 +39,7 @@ Partial Class PrintSteelPurchaseOrder
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditToolStripMenuItem, Me.ReportsToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1028, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1030, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -55,6 +55,12 @@ Partial Class PrintSteelPurchaseOrder
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
         Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
+        '
+        'EmailToolStripMenuItem
+        '
+        Me.EmailToolStripMenuItem.Name = "EmailToolStripMenuItem"
+        Me.EmailToolStripMenuItem.Size = New System.Drawing.Size(108, 22)
+        Me.EmailToolStripMenuItem.Text = "E-mail"
         '
         'ReportsToolStripMenuItem
         '
@@ -79,25 +85,25 @@ Partial Class PrintSteelPurchaseOrder
         '
         Me.CRPOViewer.ActiveViewIndex = 0
         Me.CRPOViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRPOViewer.DisplayGroupTree = False
+        Me.CRPOViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRPOViewer.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRPOViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRPOViewer.Name = "CRPOViewer"
         Me.CRPOViewer.ReportSource = Me.CRXSteelPurchaseOrder1
-        Me.CRPOViewer.Size = New System.Drawing.Size(1028, 608)
+        Me.CRPOViewer.ShowGroupTreeButton = False
+        Me.CRPOViewer.ShowLogo = False
+        Me.CRPOViewer.ShowParameterPanelButton = False
+        Me.CRPOViewer.ShowTextSearchButton = False
+        Me.CRPOViewer.ShowZoomButton = False
+        Me.CRPOViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRPOViewer.TabIndex = 1
-        '
-        'EmailToolStripMenuItem
-        '
-        Me.EmailToolStripMenuItem.Name = "EmailToolStripMenuItem"
-        Me.EmailToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.EmailToolStripMenuItem.Text = "E-mail"
+        Me.CRPOViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintSteelPurchaseOrder
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1028, 632)
+        Me.ClientSize = New System.Drawing.Size(1030, 632)
         Me.Controls.Add(Me.CRPOViewer)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1

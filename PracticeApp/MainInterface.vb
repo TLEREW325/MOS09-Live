@@ -4,12 +4,13 @@ Imports System.Net.Mail
 Imports System.Math
 Imports System.IO
 Imports System.Data
-Imports System.Data.OleDb
+'Imports System.Data.OleDb
 Imports CrystalDecisions.Windows.Forms
 Imports CrystalDecisions.ReportSource
 Imports CrystalDecisions.CrystalReports.Engine
 Imports CrystalDecisions.Shared
 Imports System.Data.SqlClient
+'Imports Microsoft.Data.SqlClient
 Public Class MainInterface
     Inherits System.Windows.Forms.Form
 
@@ -228,7 +229,7 @@ Public Class MainInterface
             'Passed verify if enter key is pressed
         End If
 
-        'TODO: This line of code loads data into the 'SQLTFPOperationsDatabaseDataSet.DivisionTable' taSystem.TypeInitializationException: 'The type initializer for 'Microsoft.Data.SqlClient.SqlAuthenticationProviderManager' threw an exception.'
+        'TODO: This line of code loads data into the 'SQLTFPOperationsDatabaseDataSet.DivisionTable' table. You can move, or remove it, as needed.
         Me.DivisionTableTableAdapter.Fill(Me.SQLTFPOperationsDatabaseDataSet.DivisionTable)
         'TODO: This line of code loads data into the 'SQLTFPOperationsDatabaseDataSet.EmployeeData' table. You can move, or remove it, as needed.
         Me.EmployeeDataTableAdapter.Fill(Me.SQLTFPOperationsDatabaseDataSet.EmployeeData)
@@ -6495,8 +6496,13 @@ Public Class MainInterface
         Dim NewViewInvoicesToEmail As New ViewInvoicesToEmail
         NewViewInvoicesToEmail.Show()
     End Sub
-
-    Private Sub SplitContainer1_Panel1_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles SplitContainer1.Panel1.Paint
-
+    Private Sub llViewStructuralCertsSH_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles llViewStructuralCertsSH.LinkClicked
+        If My.Computer.Name.StartsWith("TFP") Then
+            Dim newViewStructuralCerts As New ViewStructuralCertsRemote
+            newViewStructuralCerts.Show()
+        Else
+            Dim newViewStructuralCerts As New ViewStructuralCerts
+            newViewStructuralCerts.Show()
+        End If
     End Sub
 End Class

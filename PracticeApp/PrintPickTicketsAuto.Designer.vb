@@ -22,13 +22,13 @@ Partial Class PrintPickTicketsAuto
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.cmdNo = New System.Windows.Forms.Button
-        Me.cmdExit = New System.Windows.Forms.Button
-        Me.CRPickViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXPickTicket1 = New MOS09Program.CRXPickTicket
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.cmdNo = New System.Windows.Forms.Button()
+        Me.cmdExit = New System.Windows.Forms.Button()
+        Me.CRPickViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXPickTicket1 = New MOS09Program.CRXPickTicket()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -89,13 +89,19 @@ Partial Class PrintPickTicketsAuto
         '
         Me.CRPickViewer.ActiveViewIndex = 0
         Me.CRPickViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRPickViewer.DisplayGroupTree = False
+        Me.CRPickViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRPickViewer.Dock = System.Windows.Forms.DockStyle.Top
         Me.CRPickViewer.Location = New System.Drawing.Point(0, 0)
         Me.CRPickViewer.Name = "CRPickViewer"
         Me.CRPickViewer.ReportSource = Me.CRXPickTicket1
+        Me.CRPickViewer.ShowGroupTreeButton = False
+        Me.CRPickViewer.ShowLogo = False
+        Me.CRPickViewer.ShowParameterPanelButton = False
+        Me.CRPickViewer.ShowTextSearchButton = False
+        Me.CRPickViewer.ShowZoomButton = False
         Me.CRPickViewer.Size = New System.Drawing.Size(492, 49)
         Me.CRPickViewer.TabIndex = 0
+        Me.CRPickViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintPickTicketsAuto
         '

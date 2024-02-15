@@ -22,18 +22,18 @@ Partial Class PrintIncomeStatement2Year
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
-        Me.CRIncomeViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXIncomeStatement2YEAR1 = New MOS09Program.CRXIncomeStatement2YEAR
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
+        Me.components = New System.ComponentModel.Container()
+        Me.CRIncomeViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXIncomeStatement2YEAR1 = New MOS09Program.CRXIncomeStatement2YEAR()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.DivisionTableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet
-        Me.DivisionTableTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.DivisionTableTableAdapter
+        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet()
+        Me.DivisionTableTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.DivisionTableTableAdapter()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.DivisionTableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SQLTFPOperationsDatabaseDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -43,18 +43,21 @@ Partial Class PrintIncomeStatement2Year
         '
         Me.CRIncomeViewer.ActiveViewIndex = 0
         Me.CRIncomeViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRIncomeViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRIncomeViewer.DisplayGroupTree = False
+        Me.CRIncomeViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRIncomeViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRIncomeViewer.Name = "CRIncomeViewer"
         Me.CRIncomeViewer.ReportSource = Me.CRXIncomeStatement2YEAR1
         Me.CRIncomeViewer.ShowGroupTreeButton = False
+        Me.CRIncomeViewer.ShowLogo = False
+        Me.CRIncomeViewer.ShowParameterPanelButton = False
         Me.CRIncomeViewer.ShowTextSearchButton = False
         Me.CRIncomeViewer.ShowZoomButton = False
         Me.CRIncomeViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRIncomeViewer.TabIndex = 0
+        Me.CRIncomeViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'MenuStrip1
         '
@@ -68,19 +71,19 @@ Partial Class PrintIncomeStatement2Year
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem

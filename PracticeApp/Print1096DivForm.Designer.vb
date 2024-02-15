@@ -22,22 +22,31 @@ Partial Class Print1096DivForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.CrystalReportViewer1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRX1096FormDIV1 = New MOS09Program.CRX1096FormDIV
+        Me.CrystalReportViewer1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRX1096FormDIV1 = New MOS09Program.CRX1096FormDIV()
         Me.SuspendLayout()
         '
         'CrystalReportViewer1
         '
         Me.CrystalReportViewer1.ActiveViewIndex = 0
         Me.CrystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CrystalReportViewer1.DisplayGroupTree = False
+        Me.CrystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default
         Me.CrystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CrystalReportViewer1.Location = New System.Drawing.Point(0, 0)
         Me.CrystalReportViewer1.Name = "CrystalReportViewer1"
         Me.CrystalReportViewer1.ReportSource = Me.CRX1096FormDIV1
+        Me.CrystalReportViewer1.ShowGroupTreeButton = False
+        Me.CrystalReportViewer1.ShowLogo = False
+        Me.CrystalReportViewer1.ShowParameterPanelButton = False
         Me.CrystalReportViewer1.ShowTextSearchButton = False
         Me.CrystalReportViewer1.Size = New System.Drawing.Size(1030, 632)
         Me.CrystalReportViewer1.TabIndex = 1
+        Me.CrystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
+        '
+        'CRX1096FormDIV1
+        '
+        Me.CRX1096FormDIV1.FileName = "rassdk://C:\Users\Todd Lerew\AppData\Local\Temp\2\temp_01986fef-ac3e-4a3c-96ee-ea" &
+    "526dc94490.rpt"
         '
         'Print1096DivForm
         '

@@ -22,10 +22,10 @@ Partial Class PrintOkToShip
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileFToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRVOkToShip = New CrystalDecisions.Windows.Forms.CrystalReportViewer
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileFToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRVOkToShip = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -54,13 +54,19 @@ Partial Class PrintOkToShip
         '
         Me.CRVOkToShip.ActiveViewIndex = -1
         Me.CRVOkToShip.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRVOkToShip.DisplayGroupTree = False
+        Me.CRVOkToShip.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRVOkToShip.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRVOkToShip.Location = New System.Drawing.Point(0, 24)
         Me.CRVOkToShip.Name = "CRVOkToShip"
         Me.CRVOkToShip.SelectionFormula = ""
+        Me.CRVOkToShip.ShowGroupTreeButton = False
+        Me.CRVOkToShip.ShowLogo = False
+        Me.CRVOkToShip.ShowParameterPanelButton = False
+        Me.CRVOkToShip.ShowTextSearchButton = False
+        Me.CRVOkToShip.ShowZoomButton = False
         Me.CRVOkToShip.Size = New System.Drawing.Size(1034, 687)
         Me.CRVOkToShip.TabIndex = 1
+        Me.CRVOkToShip.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         Me.CRVOkToShip.ViewTimeSelectionFormula = ""
         '
         'PrintOkToShip

@@ -22,13 +22,13 @@ Partial Class PrintQCInspectionReport
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.crvQCInspectionReport = New CrystalDecisions.Windows.Forms.CrystalReportViewer
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.crvQCInspectionReport = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -44,19 +44,19 @@ Partial Class PrintQCInspectionReport
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -76,13 +76,19 @@ Partial Class PrintQCInspectionReport
         '
         Me.crvQCInspectionReport.ActiveViewIndex = -1
         Me.crvQCInspectionReport.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.crvQCInspectionReport.DisplayGroupTree = False
+        Me.crvQCInspectionReport.Cursor = System.Windows.Forms.Cursors.Default
         Me.crvQCInspectionReport.Dock = System.Windows.Forms.DockStyle.Fill
         Me.crvQCInspectionReport.Location = New System.Drawing.Point(0, 24)
         Me.crvQCInspectionReport.Name = "crvQCInspectionReport"
         Me.crvQCInspectionReport.SelectionFormula = ""
+        Me.crvQCInspectionReport.ShowGroupTreeButton = False
+        Me.crvQCInspectionReport.ShowLogo = False
+        Me.crvQCInspectionReport.ShowParameterPanelButton = False
+        Me.crvQCInspectionReport.ShowTextSearchButton = False
+        Me.crvQCInspectionReport.ShowZoomButton = False
         Me.crvQCInspectionReport.Size = New System.Drawing.Size(1030, 608)
         Me.crvQCInspectionReport.TabIndex = 2
+        Me.crvQCInspectionReport.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         Me.crvQCInspectionReport.ViewTimeSelectionFormula = ""
         '
         'PrintQCInspectionReport

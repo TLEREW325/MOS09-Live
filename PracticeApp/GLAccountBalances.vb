@@ -44,7 +44,7 @@ Public Class GLAccountBalances
 
         LoadGLAccount()
         LoadMonth()
-        cboYearField.Text = "2023"
+        cboYearField.Text = "2024"
         ClearData()
         ClearDataInDatagrid()
     End Sub
@@ -614,7 +614,7 @@ Public Class GLAccountBalances
         cboGLAccount.SelectedIndex = -1
         cboGLAccountDescription.SelectedIndex = -1
         cboMonth.SelectedIndex = -1
-        cboYearField.Text = "2023"
+        cboYearField.Text = "2024"
 
         txtBegBalance.Refresh()
         txtEndBalance.Refresh()

@@ -22,14 +22,14 @@ Partial Class PrintFOXReleaseSchedule
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRReleaseViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXFOXReleaseSchedule1 = New MOS09Program.CRXFOXReleaseSchedule
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRReleaseViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXFOXReleaseSchedule1 = New MOS09Program.CRXFOXReleaseSchedule()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -45,19 +45,19 @@ Partial Class PrintFOXReleaseSchedule
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -77,15 +77,20 @@ Partial Class PrintFOXReleaseSchedule
         '
         Me.CRReleaseViewer.ActiveViewIndex = 0
         Me.CRReleaseViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRReleaseViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRReleaseViewer.DisplayGroupTree = False
-        Me.CRReleaseViewer.Location = New System.Drawing.Point(0, 24)
+        Me.CRReleaseViewer.Cursor = System.Windows.Forms.Cursors.Default
+        Me.CRReleaseViewer.Location = New System.Drawing.Point(0, 27)
         Me.CRReleaseViewer.Name = "CRReleaseViewer"
         Me.CRReleaseViewer.ReportSource = Me.CRXFOXReleaseSchedule1
+        Me.CRReleaseViewer.ShowGroupTreeButton = False
+        Me.CRReleaseViewer.ShowLogo = False
+        Me.CRReleaseViewer.ShowTextSearchButton = False
+        Me.CRReleaseViewer.ShowZoomButton = False
         Me.CRReleaseViewer.Size = New System.Drawing.Size(1028, 608)
         Me.CRReleaseViewer.TabIndex = 1
+        Me.CRReleaseViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintFOXReleaseSchedule
         '

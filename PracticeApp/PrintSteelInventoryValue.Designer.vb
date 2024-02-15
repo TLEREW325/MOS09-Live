@@ -22,13 +22,13 @@ Partial Class PrintSteelInventoryValue
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRVSteelInventoryValue = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXSteelValuation1 = New MOS09Program.CRXSteelValuation
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRVSteelInventoryValue = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXSteelValuation1 = New MOS09Program.CRXSteelValuation()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -44,13 +44,13 @@ Partial Class PrintSteelInventoryValue
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ExitToolStripMenuItem
@@ -63,24 +63,28 @@ Partial Class PrintSteelInventoryValue
         'ExitToolStripMenuItem1
         '
         Me.ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1"
-        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(92, 22)
         Me.ExitToolStripMenuItem1.Text = "Exit"
         '
         'CRVSteelInventoryValue
         '
         Me.CRVSteelInventoryValue.ActiveViewIndex = 0
         Me.CRVSteelInventoryValue.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRVSteelInventoryValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRVSteelInventoryValue.DisplayGroupTree = False
+        Me.CRVSteelInventoryValue.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRVSteelInventoryValue.Location = New System.Drawing.Point(0, 24)
         Me.CRVSteelInventoryValue.Name = "CRVSteelInventoryValue"
         Me.CRVSteelInventoryValue.ReportSource = Me.CRXSteelValuation1
         Me.CRVSteelInventoryValue.ShowGroupTreeButton = False
+        Me.CRVSteelInventoryValue.ShowLogo = False
+        Me.CRVSteelInventoryValue.ShowParameterPanelButton = False
         Me.CRVSteelInventoryValue.ShowTextSearchButton = False
+        Me.CRVSteelInventoryValue.ShowZoomButton = False
         Me.CRVSteelInventoryValue.Size = New System.Drawing.Size(1030, 608)
         Me.CRVSteelInventoryValue.TabIndex = 2
+        Me.CRVSteelInventoryValue.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintSteelInventoryValue
         '

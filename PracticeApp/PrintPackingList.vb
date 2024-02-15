@@ -2,7 +2,7 @@
 Imports System.Math
 Imports System.IO
 Imports System.Data
-'Imports System.Windows.Forms
+Imports System.Windows.Forms
 Imports System.Data.OleDb
 Imports CrystalDecisions.Windows.Forms
 Imports CrystalDecisions.ReportSource
@@ -14,7 +14,7 @@ Public Class PrintPackingList
     Inherits System.Windows.Forms.Form
 
     'Created Outlook Application object
-    Dim OLApp As New Application
+    Dim OLApp As New Microsoft.Office.Interop.Outlook.Application
     Dim MyReport = New CrystalDecisions.CrystalReports.Engine.ReportDocument
 
     'Variables for Date/Filename Creation
@@ -32,19 +32,7 @@ Public Class PrintPackingList
     Dim ds, ds1, ds2, ds3, ds4 As DataSet
     Dim dt As DataTable
 
-    Private Sub ExitToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ExitToolStripMenuItem1.Click
-        GlobalShipmentNumber = 0
-        GlobalCertCustomer = ""
-        GlobalCompleteShipment = ""
-        GlobalShipmentBatchNumber = 0
-        GlobalShipmentPrintType = ""
-        GlobalAutoPrintPackingList = ""
-
-        'Me.Dispose()
-        Me.Close()
-    End Sub
-
-    Private Sub CRPackingListViewer_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CRPackingListViewer.Load
+    Private Sub CRPackListViewer_Load(sender As Object, e As EventArgs) Handles CRPackListViewer.Load
         If GlobalShipmentBatchNumber > 0 And GlobalShipmentPrintType = "PRINT MULTIPLE" Then
             'Loads data into dataset for viewing
             cmd = New SqlCommand("SELECT * FROM ShipmentHeaderTable WHERE BatchNumber = @BatchNumber AND DivisionID = @DivisionID", con)
@@ -194,7 +182,10 @@ Public Class PrintPackingList
             MyReport.SetDataSource(ds)
             MyReport.PrintToPrinter(2, True, 1, 999)
             MyReport.ExportToDisk(ExportFormatType.PortableDocFormat, "\\TFP-FS\TransferData\TruweldPackList\" & EmailPackingSlip)
+
+            'After CR Viewer Loads and print
             con.Close()
+            Me.CRPackListViewer.Dispose()
             Me.Close()
 
             GlobalCompleteShipment = ""
@@ -209,7 +200,10 @@ Public Class PrintPackingList
                 MyReport.PrintToPrinter(1, True, 1, 999)
                 MyReport.ExportToDisk(ExportFormatType.PortableDocFormat, "\\TFP-FS\TransferData\TruweldPackList\" & EmailPackingSlip)
             End If
+
+            'After CR Viewer Loads and print
             con.Close()
+            Me.CRPackListViewer.Dispose()
             Me.Close()
 
             GlobalCompleteShipment = ""
@@ -217,7 +211,7 @@ Public Class PrintPackingList
             'Sets up viewer to display data from the loaded dataset
             MyReport = CRXPackingSlip1
             MyReport.SetDataSource(ds)
-            CRPackingListViewer.ReportSource = MyReport
+            CRPackListViewer.ReportSource = MyReport
             'MyReport.ExportToDisk(ExportFormatType.PortableDocFormat, "\\TFP-FS\TransferData\TruweldPackList\" & EmailPackingSlip)
             con.Close()
         ElseIf GlobalDivisionCode = "CHT" And GlobalCompleteShipment = "COMPLETE SHIPMENT" And GlobalAutoPrintPackingList = "YES" Then
@@ -226,7 +220,10 @@ Public Class PrintPackingList
             MyReport.SetDataSource(ds)
             MyReport.PrintToPrinter(2, True, 1, 999)
             MyReport.ExportToDisk(ExportFormatType.PortableDocFormat, "\\TFP-FS\TransferData\TruweldPackList\" & EmailPackingSlip)
+
+            'After CR Viewer Loads and print
             con.Close()
+            Me.CRPackListViewer.Dispose()
             Me.Close()
 
             GlobalCompleteShipment = ""
@@ -235,7 +232,7 @@ Public Class PrintPackingList
             'Sets up viewer to display data from the loaded dataset
             MyReport = CRXPackingSlip1
             MyReport.SetDataSource(ds)
-            CRPackingListViewer.ReportSource = MyReport
+            CRPackListViewer.ReportSource = MyReport
             MyReport.ExportToDisk(ExportFormatType.PortableDocFormat, "\\TFP-FS\TransferData\TruweldPackList\" & EmailPackingSlip)
             con.Close()
 
@@ -245,17 +242,34 @@ Public Class PrintPackingList
             'Sets up viewer to display data from the loaded dataset
             MyReport = CRXPackingSlip1
             MyReport.SetDataSource(ds)
-            CRPackingListViewer.ReportSource = MyReport
+            CRPackListViewer.ReportSource = MyReport
             'MyReport.ExportToDisk(ExportFormatType.PortableDocFormat, "\\TFP-FS\TransferData\TruweldPackList\" & EmailPackingSlip)
             con.Close()
         Else
             'Sets up viewer to display data from the loaded dataset
             MyReport = CRXPackingSlip1
             MyReport.SetDataSource(ds)
-            CRPackingListViewer.ReportSource = MyReport
+            CRPackListViewer.ReportSource = MyReport
             'MyReport.ExportToDisk(ExportFormatType.PortableDocFormat, "\\TFP-FS\TransferData\TruweldPackList\" & EmailPackingSlip)
             con.Close()
         End If
+    End Sub
+
+
+    Private Sub ExitToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ExitToolStripMenuItem1.Click
+        GlobalShipmentNumber = 0
+        GlobalCertCustomer = ""
+        GlobalCompleteShipment = ""
+        GlobalShipmentBatchNumber = 0
+        GlobalShipmentPrintType = ""
+        GlobalAutoPrintPackingList = ""
+
+        Me.Dispose()
+        Me.Close()
+    End Sub
+
+    Private Sub CRPackingListViewer_Load(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
     End Sub
 
     Private Sub EmailPackingListToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EmailPackingListToolStripMenuItem.Click
@@ -316,4 +330,5 @@ Public Class PrintPackingList
             Me.Visible = True
         End If
     End Sub
+
 End Class

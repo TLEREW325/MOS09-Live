@@ -22,15 +22,15 @@ Partial Class PrintLeadTimesFiltered
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRLeadViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXLeadTimes1 = New MOS09Program.CRXLeadTimes
-        Me.CRXLeadTimeReport1 = New MOS09Program.CRXLeadTimeReport
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRLeadViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXLeadTimeReport1 = New MOS09Program.CRXLeadTimeReport()
+        Me.CRXLeadTimes1 = New MOS09Program.CRXLeadTimes()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -46,19 +46,19 @@ Partial Class PrintLeadTimesFiltered
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -78,15 +78,21 @@ Partial Class PrintLeadTimesFiltered
         '
         Me.CRLeadViewer.ActiveViewIndex = 0
         Me.CRLeadViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRLeadViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRLeadViewer.DisplayGroupTree = False
+        Me.CRLeadViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRLeadViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRLeadViewer.Name = "CRLeadViewer"
         Me.CRLeadViewer.ReportSource = Me.CRXLeadTimeReport1
+        Me.CRLeadViewer.ShowGroupTreeButton = False
+        Me.CRLeadViewer.ShowLogo = False
+        Me.CRLeadViewer.ShowParameterPanelButton = False
+        Me.CRLeadViewer.ShowTextSearchButton = False
+        Me.CRLeadViewer.ShowZoomButton = False
         Me.CRLeadViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRLeadViewer.TabIndex = 1
+        Me.CRLeadViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintLeadTimesFiltered
         '

@@ -33,10 +33,6 @@ Public Class PrintPickTicket
     Dim ds, ds1, ds2, ds3, ds4 As DataSet
     Dim dt As DataTable
 
-    'Public Sub New()
-    '    InitializeComponent()
-
-    'End Sub
 
     Private Sub ExitToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ExitToolStripMenuItem1.Click
         GlobalPickBatchNumber = 0
@@ -151,9 +147,5 @@ Public Class PrintPickTicket
         GlobalPickBatchNumber = 0
         GlobalPickTicketType = ""
         GlobalPickListNumber = 0
-    End Sub
-
-    Private Sub MenuStrip1_ItemClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.ToolStripItemClickedEventArgs) Handles MenuStrip1.ItemClicked
-
     End Sub
 End Class

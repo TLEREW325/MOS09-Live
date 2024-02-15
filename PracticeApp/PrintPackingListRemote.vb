@@ -183,7 +183,10 @@ Public Class PrintPackingListRemote
             MyReport.SetDataSource(ds)
             MyReport.PrintToPrinter(2, True, 1, 999)
             MyReport.ExportToDisk(ExportFormatType.PortableDocFormat, "\\TFP-FS\TransferData\TruweldPackList\" & EmailPackingSlip)
+
+            'After CR Viewer Loads and print
             con.Close()
+            Me.CRPackingListViewer.Dispose()
             Me.Close()
 
             GlobalCompleteShipment = ""
@@ -198,7 +201,10 @@ Public Class PrintPackingListRemote
                 MyReport.PrintToPrinter(1, True, 1, 999)
                 MyReport.ExportToDisk(ExportFormatType.PortableDocFormat, "\\TFP-FS\TransferData\TruweldPackList\" & EmailPackingSlip)
             End If
+
+            'After CR Viewer Loads and print
             con.Close()
+            Me.CRPackingListViewer.Dispose()
             Me.Close()
 
             GlobalCompleteShipment = ""
@@ -215,7 +221,10 @@ Public Class PrintPackingListRemote
             MyReport.SetDataSource(ds)
             MyReport.PrintToPrinter(2, True, 1, 999)
             MyReport.ExportToDisk(ExportFormatType.PortableDocFormat, "\\TFP-FS\TransferData\TruweldPackList\" & EmailPackingSlip)
+
+            'After CR Viewer Loads and print
             con.Close()
+            Me.CRPackingListViewer.Dispose()
             Me.Close()
 
             GlobalCompleteShipment = ""

@@ -2,7 +2,7 @@
 Imports System.Math
 Imports System.IO
 Imports System.Data
-'Imports System.Windows.Forms
+Imports System.Windows.Forms
 Imports System.Data.OleDb
 Imports CrystalDecisions.Windows.Forms
 Imports CrystalDecisions.ReportSource
@@ -14,7 +14,7 @@ Public Class PrintBOL
     Inherits System.Windows.Forms.Form
 
     'Created Outlook Application object
-    Dim OLApp As New Application
+    Dim OLApp As New Microsoft.Office.Interop.Outlook.Application
     Dim MyReport = New CrystalDecisions.CrystalReports.Engine.ReportDocument
 
     'Variables for Date/Filename Creation
@@ -156,7 +156,10 @@ Public Class PrintBOL
             MyReport = CRXBOL1
             MyReport.SetDataSource(ds)
             MyReport.PrintToPrinter(2, True, 1, 999)
+
+            'Close data and viewer
             con.Close()
+            CRBOLViewer.Dispose()
             Me.Close()
 
             GlobalCompleteShipment = ""
@@ -164,7 +167,10 @@ Public Class PrintBOL
             MyReport = CRXBOL1
             MyReport.SetDataSource(ds)
             MyReport.PrintToPrinter(2, True, 1, 999)
+
+            'Close data and viewer
             con.Close()
+            CRBOLViewer.Dispose()
             Me.Close()
 
             GlobalCompleteShipment = ""

@@ -22,28 +22,28 @@ Partial Class PrintInventoryValuationByGL
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRGLViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXInventoryValuationByGL1 = New MOS09Program.CRXInventoryValuationByGL
-        Me.cboGLInvAccount = New System.Windows.Forms.ComboBox
+        Me.components = New System.ComponentModel.Container()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRGLViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXInventoryValuationByGL1 = New MOS09Program.CRXInventoryValuationByGL()
+        Me.cboGLInvAccount = New System.Windows.Forms.ComboBox()
         Me.GLAccountsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet
+        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet()
         Me.InventoryTransactionTableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.Filter = New System.Windows.Forms.Button
-        Me.Label4 = New System.Windows.Forms.Label
-        Me.cmdClear = New System.Windows.Forms.Button
-        Me.GLAccountsTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.GLAccountsTableAdapter
-        Me.InventoryTransactionTableTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.InventoryTransactionTableTableAdapter
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Filter = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.cmdClear = New System.Windows.Forms.Button()
+        Me.GLAccountsTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.GLAccountsTableAdapter()
+        Me.InventoryTransactionTableTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.InventoryTransactionTableTableAdapter()
         Me.InventoryTransactionTableBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.cboAccountDescription = New System.Windows.Forms.ComboBox
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.cboAccountDescription = New System.Windows.Forms.ComboBox()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.GLAccountsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SQLTFPOperationsDatabaseDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -63,19 +63,19 @@ Partial Class PrintInventoryValuationByGL
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -95,15 +95,21 @@ Partial Class PrintInventoryValuationByGL
         '
         Me.CRGLViewer.ActiveViewIndex = 0
         Me.CRGLViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRGLViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRGLViewer.DisplayGroupTree = False
+        Me.CRGLViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRGLViewer.Location = New System.Drawing.Point(185, 24)
         Me.CRGLViewer.Name = "CRGLViewer"
         Me.CRGLViewer.ReportSource = Me.CRXInventoryValuationByGL1
+        Me.CRGLViewer.ShowGroupTreeButton = False
+        Me.CRGLViewer.ShowLogo = False
+        Me.CRGLViewer.ShowParameterPanelButton = False
+        Me.CRGLViewer.ShowTextSearchButton = False
+        Me.CRGLViewer.ShowZoomButton = False
         Me.CRGLViewer.Size = New System.Drawing.Size(845, 608)
         Me.CRGLViewer.TabIndex = 1
+        Me.CRGLViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'cboGLInvAccount
         '

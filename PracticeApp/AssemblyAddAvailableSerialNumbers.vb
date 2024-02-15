@@ -685,7 +685,7 @@ Public Class AssemblyAddAvailableSerialNumbers
                 ElseIf SuffixLength - intSuffixLength = 5 Then
                     strNextSuffix = "00000" + strNextSuffix
                 Else
-                    MsgBox("Pause1", MsgBoxStyle.OkOnly)
+                    'Do nothing
                 End If
 
                 NextSerialNumber = SerialNumberPrefix + strNextSuffix

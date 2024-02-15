@@ -22,14 +22,14 @@ Partial Class PrintRMAReport
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRPickViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXAllRMA1 = New MOS09Program.CRXAllRMA
-        Me.EmailReportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmailReportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRPickViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXAllRMA1 = New MOS09Program.CRXAllRMA()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -45,15 +45,21 @@ Partial Class PrintRMAReport
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmailReportToolStripMenuItem})
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
+        '
+        'EmailReportToolStripMenuItem
+        '
+        Me.EmailReportToolStripMenuItem.Name = "EmailReportToolStripMenuItem"
+        Me.EmailReportToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
+        Me.EmailReportToolStripMenuItem.Text = "Email Report"
         '
         'ExitToolStripMenuItem
         '
@@ -72,21 +78,21 @@ Partial Class PrintRMAReport
         '
         Me.CRPickViewer.ActiveViewIndex = 0
         Me.CRPickViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRPickViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRPickViewer.DisplayGroupTree = False
+        Me.CRPickViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRPickViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRPickViewer.Name = "CRPickViewer"
         Me.CRPickViewer.ReportSource = Me.CRXAllRMA1
+        Me.CRPickViewer.ShowGroupTreeButton = False
+        Me.CRPickViewer.ShowLogo = False
+        Me.CRPickViewer.ShowParameterPanelButton = False
+        Me.CRPickViewer.ShowTextSearchButton = False
+        Me.CRPickViewer.ShowZoomButton = False
         Me.CRPickViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRPickViewer.TabIndex = 1
-        '
-        'EmailReportToolStripMenuItem
-        '
-        Me.EmailReportToolStripMenuItem.Name = "EmailReportToolStripMenuItem"
-        Me.EmailReportToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.EmailReportToolStripMenuItem.Text = "Email Report"
+        Me.CRPickViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintRMAReport
         '

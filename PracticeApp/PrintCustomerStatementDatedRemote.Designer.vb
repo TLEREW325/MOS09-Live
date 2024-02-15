@@ -22,15 +22,15 @@ Partial Class PrintCustomerStatementDatedRemote
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EmailStatementToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRStatementViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXCustStatementDated1 = New MOS09Program.CRXCustStatementDated
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmailStatementToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRStatementViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXCustStatementDated1 = New MOS09Program.CRXCustStatementDated()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -46,26 +46,26 @@ Partial Class PrintCustomerStatementDatedRemote
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmailStatementToolStripMenuItem})
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'EmailStatementToolStripMenuItem
         '
         Me.EmailStatementToolStripMenuItem.Name = "EmailStatementToolStripMenuItem"
-        Me.EmailStatementToolStripMenuItem.Size = New System.Drawing.Size(151, 22)
+        Me.EmailStatementToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
         Me.EmailStatementToolStripMenuItem.Text = "Email Statement"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -85,20 +85,23 @@ Partial Class PrintCustomerStatementDatedRemote
         '
         Me.CRStatementViewer.ActiveViewIndex = 0
         Me.CRStatementViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRStatementViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRStatementViewer.DisplayGroupTree = False
+        Me.CRStatementViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRStatementViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRStatementViewer.Name = "CRStatementViewer"
         Me.CRStatementViewer.ReportSource = Me.CRXCustStatementDated1
         Me.CRStatementViewer.ShowGroupTreeButton = False
+        Me.CRStatementViewer.ShowLogo = False
+        Me.CRStatementViewer.ShowParameterPanelButton = False
         Me.CRStatementViewer.ShowTextSearchButton = False
         Me.CRStatementViewer.ShowZoomButton = False
         Me.CRStatementViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRStatementViewer.TabIndex = 1
+        Me.CRStatementViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
-        'PrintCustomerStatementDated
+        'PrintCustomerStatementDatedRemote
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -106,7 +109,7 @@ Partial Class PrintCustomerStatementDatedRemote
         Me.Controls.Add(Me.CRStatementViewer)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Name = "PrintCustomerStatementDated"
+        Me.Name = "PrintCustomerStatementDatedRemote"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TFP Corporation Customer Statement"
         Me.MenuStrip1.ResumeLayout(False)

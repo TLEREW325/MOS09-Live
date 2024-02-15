@@ -24,12 +24,12 @@ Partial Class PrintReorderWorksheet
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ShowToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.CRReorderViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.crxReorderWorksheet1 = New MOS09Program.CRXReorderWorksheet()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -44,16 +44,9 @@ Partial Class PrintReorderWorksheet
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ShowToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
-        '
-        'ShowToolStripMenuItem
-        '
-        Me.ShowToolStripMenuItem.Name = "ShowToolStripMenuItem"
-        Me.ShowToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
-        Me.ShowToolStripMenuItem.Text = "Show"
         '
         'EditToolStripMenuItem
         '
@@ -83,15 +76,22 @@ Partial Class PrintReorderWorksheet
         'CRReorderViewer
         '
         Me.CRReorderViewer.ActiveViewIndex = -1
-        Me.CRReorderViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRReorderViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.CRReorderViewer.Cursor = System.Windows.Forms.Cursors.Default
+        Me.CRReorderViewer.DisplayBackgroundEdge = False
+        Me.CRReorderViewer.DisplayStatusBar = False
+        Me.CRReorderViewer.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CRReorderViewer.EnableDrillDown = False
         Me.CRReorderViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRReorderViewer.Name = "CRReorderViewer"
+        Me.CRReorderViewer.ShowGroupTreeButton = False
+        Me.CRReorderViewer.ShowLogo = False
+        Me.CRReorderViewer.ShowParameterPanelButton = False
+        Me.CRReorderViewer.ShowTextSearchButton = False
+        Me.CRReorderViewer.ShowZoomButton = False
         Me.CRReorderViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRReorderViewer.TabIndex = 1
+        Me.CRReorderViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintReorderWorksheet
         '
@@ -110,14 +110,13 @@ Partial Class PrintReorderWorksheet
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
-    Friend WithEvents FileToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents EditToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ReportsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ExitToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ExitToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents CRReorderViewer As CrystalDecisions.Windows.Forms.CrystalReportViewer
-    Friend WithEvents CRXReorderWorksheet1 As MOS09Program.CRXReorderWorksheet
-    Friend WithEvents ShowToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents CRXReorderWorksheetTWE1 As MOS09Program.CRXReorderWorksheetTWE
+
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents EditToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ReportsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CRReorderViewer As Forms.CrystalReportViewer
+    Friend WithEvents crxReorderWorksheet1 As CRXReorderWorksheet
+    Friend WithEvents ExitToolStripMenuItem1 As ToolStripMenuItem
 End Class

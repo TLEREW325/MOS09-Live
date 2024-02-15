@@ -22,32 +22,32 @@ Partial Class TimeSlipPosting
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
-        Me.dgvTimeSlipEntries = New System.Windows.Forms.DataGridView
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.TSMenu01 = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.grpPostTimeSlip = New System.Windows.Forms.GroupBox
-        Me.Label16 = New System.Windows.Forms.Label
-        Me.cmdPost = New System.Windows.Forms.Button
-        Me.lblDGVMessage = New System.Windows.Forms.Label
-        Me.cmdExit = New System.Windows.Forms.Button
-        Me.cmdPrint = New System.Windows.Forms.Button
-        Me.bgwkPosting = New System.ComponentModel.BackgroundWorker
-        Me.pnlPostingMessage = New System.Windows.Forms.Panel
-        Me.lblPostingMessage = New System.Windows.Forms.Label
+        Me.components = New System.ComponentModel.Container()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.dgvTimeSlipEntries = New System.Windows.Forms.DataGridView()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.TSMenu01 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.grpPostTimeSlip = New System.Windows.Forms.GroupBox()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.cmdPost = New System.Windows.Forms.Button()
+        Me.lblDGVMessage = New System.Windows.Forms.Label()
+        Me.cmdExit = New System.Windows.Forms.Button()
+        Me.cmdPrint = New System.Windows.Forms.Button()
+        Me.bgwkPosting = New System.ComponentModel.BackgroundWorker()
+        Me.pnlPostingMessage = New System.Windows.Forms.Panel()
+        Me.lblPostingMessage = New System.Windows.Forms.Label()
         Me.tmrPostingMessage = New System.Windows.Forms.Timer(Me.components)
-        Me.gpxAccounting = New System.Windows.Forms.GroupBox
-        Me.cmdPostSpecial = New System.Windows.Forms.Button
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.Button1 = New System.Windows.Forms.Button
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.cmdDeleteSelected = New System.Windows.Forms.Button
+        Me.gpxAccounting = New System.Windows.Forms.GroupBox()
+        Me.cmdPostSpecial = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.cmdDeleteSelected = New System.Windows.Forms.Button()
         Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         CType(Me.dgvTimeSlipEntries, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
@@ -64,8 +64,8 @@ Partial Class TimeSlipPosting
         Me.dgvTimeSlipEntries.AllowUserToResizeColumns = False
         Me.dgvTimeSlipEntries.AllowUserToResizeRows = False
         Me.dgvTimeSlipEntries.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgvTimeSlipEntries.BackgroundColor = System.Drawing.SystemColors.ActiveBorder
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
@@ -97,19 +97,19 @@ Partial Class TimeSlipPosting
         'TSMenu01
         '
         Me.TSMenu01.Name = "TSMenu01"
-        Me.TSMenu01.Size = New System.Drawing.Size(35, 20)
+        Me.TSMenu01.Size = New System.Drawing.Size(37, 20)
         Me.TSMenu01.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -209,7 +209,7 @@ Partial Class TimeSlipPosting
         Me.lblPostingMessage.ForeColor = System.Drawing.Color.Blue
         Me.lblPostingMessage.Location = New System.Drawing.Point(83, 42)
         Me.lblPostingMessage.Name = "lblPostingMessage"
-        Me.lblPostingMessage.Size = New System.Drawing.Size(127, 16)
+        Me.lblPostingMessage.Size = New System.Drawing.Size(126, 16)
         Me.lblPostingMessage.TabIndex = 0
         Me.lblPostingMessage.Text = "Posting please wait."
         '

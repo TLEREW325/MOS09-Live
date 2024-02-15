@@ -3,6 +3,7 @@ Imports System.IO
 Imports System.IO.TextReader
 Imports System.IO.StreamReader
 Imports System.Data.SqlClient
+'Imports Microsoft.Data.SqlClient
 
 Public Class LoginPage
     Inherits System.Windows.Forms.Form

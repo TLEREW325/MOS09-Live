@@ -22,17 +22,17 @@ Partial Class PrintTFAcknowledgement
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EmailAcknowledgementToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRTrufitViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXTFPFOX1 = New MOS09Program.CRXTFPFOX
-        Me.CRXTFAcknowledgement1 = New MOS09Program.CRXTFAcknowledgement
-        Me.CRXTFNORletter1 = New MOS09Program.CRXTFNORletter
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmailAcknowledgementToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRTrufitViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXTFPFOX1 = New MOS09Program.CRXTFPFOX()
+        Me.CRXTFAcknowledgement1 = New MOS09Program.CRXTFAcknowledgement()
+        Me.CRXTFNORletter1 = New MOS09Program.CRXTFNORletter()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -48,26 +48,26 @@ Partial Class PrintTFAcknowledgement
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmailAcknowledgementToolStripMenuItem})
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'EmailAcknowledgementToolStripMenuItem
         '
         Me.EmailAcknowledgementToolStripMenuItem.Name = "EmailAcknowledgementToolStripMenuItem"
-        Me.EmailAcknowledgementToolStripMenuItem.Size = New System.Drawing.Size(188, 22)
+        Me.EmailAcknowledgementToolStripMenuItem.Size = New System.Drawing.Size(206, 22)
         Me.EmailAcknowledgementToolStripMenuItem.Text = "Email Acknowledgement"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -87,15 +87,21 @@ Partial Class PrintTFAcknowledgement
         '
         Me.CRTrufitViewer.ActiveViewIndex = 0
         Me.CRTrufitViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRTrufitViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRTrufitViewer.DisplayGroupTree = False
+        Me.CRTrufitViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRTrufitViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRTrufitViewer.Name = "CRTrufitViewer"
         Me.CRTrufitViewer.ReportSource = Me.CRXTFPFOX1
+        Me.CRTrufitViewer.ShowGroupTreeButton = False
+        Me.CRTrufitViewer.ShowLogo = False
+        Me.CRTrufitViewer.ShowParameterPanelButton = False
+        Me.CRTrufitViewer.ShowTextSearchButton = False
+        Me.CRTrufitViewer.ShowZoomButton = False
         Me.CRTrufitViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRTrufitViewer.TabIndex = 1
+        Me.CRTrufitViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintTFAcknowledgement
         '

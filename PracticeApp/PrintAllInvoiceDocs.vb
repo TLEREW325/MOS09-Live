@@ -368,6 +368,7 @@ Public Class PrintAllInvoiceDocs
             End If
         Next
 
+        CRCertViewer.Dispose()
         Me.Close()
     End Sub
 

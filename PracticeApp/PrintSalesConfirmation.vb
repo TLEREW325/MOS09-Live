@@ -19,7 +19,7 @@ Public Class PrintSalesConfirmation
     'Variables for Date/Filename Creation
     Dim FileDate As Date
     Dim minuteofyear, monthofyear, dayofyear, yearofyear As Integer
-    Dim ConfirmName, strMinute, strMonth, strYear, strDay, strCompany As String
+    Dim ConfirmName, strMinute, strMonth, strYear, strDay, strCompany, strInitials As String
     Dim strSONumber As String = ""
 
     Dim MyReport = New CrystalDecisions.CrystalReports.Engine.ReportDocument
@@ -100,8 +100,9 @@ Public Class PrintSalesConfirmation
         strYear = CStr(yearofyear)
         strMinute = CStr(minuteofyear)
         strCompany = GlobalDivisionCode
+        strInitials = EmployeeLoginName.Substring(0, 2)
 
-        ConfirmName = strCompany + strMonth + strDay + strYear + strMinute
+        ConfirmName = strCompany + strMonth + strDay + strYear + strMinute + strInitials
         strSONumber = CStr(GlobalSONumber)
 
         'Export Document to Folder

@@ -22,14 +22,14 @@ Partial Class PrintAuditTrail
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRAuditViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXAuditTrail1 = New MOS09Program.CRXAuditTrail
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRAuditViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXAuditTrail1 = New MOS09Program.CRXAuditTrail()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -45,19 +45,19 @@ Partial Class PrintAuditTrail
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -70,22 +70,26 @@ Partial Class PrintAuditTrail
         'ExitToolStripMenuItem1
         '
         Me.ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1"
-        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(92, 22)
         Me.ExitToolStripMenuItem1.Text = "Exit"
         '
         'CRAuditViewer
         '
         Me.CRAuditViewer.ActiveViewIndex = 0
         Me.CRAuditViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRAuditViewer.DisplayGroupTree = False
+        Me.CRAuditViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRAuditViewer.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRAuditViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRAuditViewer.Name = "CRAuditViewer"
         Me.CRAuditViewer.ReportSource = Me.CRXAuditTrail1
         Me.CRAuditViewer.ShowGroupTreeButton = False
+        Me.CRAuditViewer.ShowLogo = False
+        Me.CRAuditViewer.ShowParameterPanelButton = False
         Me.CRAuditViewer.ShowTextSearchButton = False
+        Me.CRAuditViewer.ShowZoomButton = False
         Me.CRAuditViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRAuditViewer.TabIndex = 1
+        Me.CRAuditViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintAuditTrail
         '

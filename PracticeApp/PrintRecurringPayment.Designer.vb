@@ -22,12 +22,12 @@ Partial Class PrintRecurringPayment
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EmailToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRVARRecurringPayment = New CrystalDecisions.Windows.Forms.CrystalReportViewer
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmailToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRVARRecurringPayment = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -43,20 +43,20 @@ Partial Class PrintRecurringPayment
         'FileExitToolStripMenuItem
         '
         Me.FileExitToolStripMenuItem.Name = "FileExitToolStripMenuItem"
-        Me.FileExitToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileExitToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileExitToolStripMenuItem.Text = "File"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmailToolStripMenuItem})
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.ExitToolStripMenuItem.Text = "Edit"
         '
         'EmailToolStripMenuItem
         '
         Me.EmailToolStripMenuItem.Name = "EmailToolStripMenuItem"
-        Me.EmailToolStripMenuItem.Size = New System.Drawing.Size(98, 22)
+        Me.EmailToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
         Me.EmailToolStripMenuItem.Text = "Email"
         '
         'ExitToolStripMenuItem1
@@ -69,13 +69,19 @@ Partial Class PrintRecurringPayment
         '
         Me.CRVARRecurringPayment.ActiveViewIndex = -1
         Me.CRVARRecurringPayment.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRVARRecurringPayment.DisplayGroupTree = False
+        Me.CRVARRecurringPayment.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRVARRecurringPayment.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRVARRecurringPayment.Location = New System.Drawing.Point(0, 24)
         Me.CRVARRecurringPayment.Name = "CRVARRecurringPayment"
         Me.CRVARRecurringPayment.SelectionFormula = ""
+        Me.CRVARRecurringPayment.ShowGroupTreeButton = False
+        Me.CRVARRecurringPayment.ShowLogo = False
+        Me.CRVARRecurringPayment.ShowParameterPanelButton = False
+        Me.CRVARRecurringPayment.ShowTextSearchButton = False
+        Me.CRVARRecurringPayment.ShowZoomButton = False
         Me.CRVARRecurringPayment.Size = New System.Drawing.Size(1034, 737)
         Me.CRVARRecurringPayment.TabIndex = 1
+        Me.CRVARRecurringPayment.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         Me.CRVARRecurringPayment.ViewTimeSelectionFormula = ""
         '
         'PrintRecurringPayment

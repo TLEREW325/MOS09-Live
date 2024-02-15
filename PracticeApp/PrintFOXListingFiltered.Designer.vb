@@ -22,15 +22,15 @@ Partial Class PrintFOXListingFiltered
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRFOXViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXFOXListing1 = New MOS09Program.CRXFOXListing
-        Me.CRXFOXListingByFilters1 = New MOS09Program.CRXFOXListingByFilters
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRFOXViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXFOXListingByFilters1 = New MOS09Program.CRXFOXListingByFilters()
+        Me.CRXFOXListing1 = New MOS09Program.CRXFOXListing()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -46,19 +46,19 @@ Partial Class PrintFOXListingFiltered
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -78,15 +78,21 @@ Partial Class PrintFOXListingFiltered
         '
         Me.CRFOXViewer.ActiveViewIndex = 0
         Me.CRFOXViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRFOXViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRFOXViewer.DisplayGroupTree = False
+        Me.CRFOXViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRFOXViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRFOXViewer.Name = "CRFOXViewer"
         Me.CRFOXViewer.ReportSource = Me.CRXFOXListingByFilters1
+        Me.CRFOXViewer.ShowGroupTreeButton = False
+        Me.CRFOXViewer.ShowLogo = False
+        Me.CRFOXViewer.ShowParameterPanelButton = False
+        Me.CRFOXViewer.ShowTextSearchButton = False
+        Me.CRFOXViewer.ShowZoomButton = False
         Me.CRFOXViewer.Size = New System.Drawing.Size(1028, 608)
         Me.CRFOXViewer.TabIndex = 1
+        Me.CRFOXViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintFOXListingFiltered
         '

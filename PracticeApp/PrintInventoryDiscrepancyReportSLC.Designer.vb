@@ -22,34 +22,34 @@ Partial Class PrintInventoryDiscrepancyReportSLC
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
-        Me.CRInventoryViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXInv_RackDiscrepancySLC1 = New MOS09Program.CRXInv_RackDiscrepancySLC
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.cmdClear = New System.Windows.Forms.Button
-        Me.Label1 = New System.Windows.Forms.Label
+        Me.components = New System.ComponentModel.Container()
+        Me.CRInventoryViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXInv_RackDiscrepancySLC1 = New MOS09Program.CRXInv_RackDiscrepancySLC()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.cmdClear = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.ItemClassBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet
-        Me.cmdFilter = New System.Windows.Forms.Button
-        Me.ItemClassTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.ItemClassTableAdapter
-        Me.chkCarrBolt = New System.Windows.Forms.CheckBox
-        Me.chkCpgNuts = New System.Windows.Forms.CheckBox
-        Me.chkEPOXY = New System.Windows.Forms.CheckBox
-        Me.chkEXPANCHOR = New System.Windows.Forms.CheckBox
-        Me.chkHEXBOLTS = New System.Windows.Forms.CheckBox
-        Me.chkHEXNUTS = New System.Windows.Forms.CheckBox
-        Me.chkTWFER = New System.Windows.Forms.CheckBox
-        Me.chkJAMNUTS = New System.Windows.Forms.CheckBox
-        Me.chkLAGBOLTS = New System.Windows.Forms.CheckBox
-        Me.chkWeldStud = New System.Windows.Forms.CheckBox
-        Me.chkSelectAll = New System.Windows.Forms.CheckBox
-        Me.chkUnselectAll = New System.Windows.Forms.CheckBox
-        Me.chkLOCKNUTS = New System.Windows.Forms.CheckBox
-        Me.chkMETRIC = New System.Windows.Forms.CheckBox
-        Me.chkSCREWS = New System.Windows.Forms.CheckBox
-        Me.chkTCBOLTS = New System.Windows.Forms.CheckBox
-        Me.chkSOCKETSCREW = New System.Windows.Forms.CheckBox
-        Me.chkWASHER = New System.Windows.Forms.CheckBox
+        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet()
+        Me.cmdFilter = New System.Windows.Forms.Button()
+        Me.ItemClassTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.ItemClassTableAdapter()
+        Me.chkCarrBolt = New System.Windows.Forms.CheckBox()
+        Me.chkCpgNuts = New System.Windows.Forms.CheckBox()
+        Me.chkEPOXY = New System.Windows.Forms.CheckBox()
+        Me.chkEXPANCHOR = New System.Windows.Forms.CheckBox()
+        Me.chkHEXBOLTS = New System.Windows.Forms.CheckBox()
+        Me.chkHEXNUTS = New System.Windows.Forms.CheckBox()
+        Me.chkTWFER = New System.Windows.Forms.CheckBox()
+        Me.chkJAMNUTS = New System.Windows.Forms.CheckBox()
+        Me.chkLAGBOLTS = New System.Windows.Forms.CheckBox()
+        Me.chkWeldStud = New System.Windows.Forms.CheckBox()
+        Me.chkSelectAll = New System.Windows.Forms.CheckBox()
+        Me.chkUnselectAll = New System.Windows.Forms.CheckBox()
+        Me.chkLOCKNUTS = New System.Windows.Forms.CheckBox()
+        Me.chkMETRIC = New System.Windows.Forms.CheckBox()
+        Me.chkSCREWS = New System.Windows.Forms.CheckBox()
+        Me.chkTCBOLTS = New System.Windows.Forms.CheckBox()
+        Me.chkSOCKETSCREW = New System.Windows.Forms.CheckBox()
+        Me.chkWASHER = New System.Windows.Forms.CheckBox()
         CType(Me.ItemClassBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SQLTFPOperationsDatabaseDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -58,17 +58,21 @@ Partial Class PrintInventoryDiscrepancyReportSLC
         '
         Me.CRInventoryViewer.ActiveViewIndex = 0
         Me.CRInventoryViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRInventoryViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRInventoryViewer.DisplayGroupTree = False
+        Me.CRInventoryViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRInventoryViewer.Location = New System.Drawing.Point(183, 12)
         Me.CRInventoryViewer.Name = "CRInventoryViewer"
         Me.CRInventoryViewer.ReportSource = Me.CRXInv_RackDiscrepancySLC1
         Me.CRInventoryViewer.ShowGroupTreeButton = False
+        Me.CRInventoryViewer.ShowLogo = False
+        Me.CRInventoryViewer.ShowParameterPanelButton = False
         Me.CRInventoryViewer.ShowTextSearchButton = False
+        Me.CRInventoryViewer.ShowZoomButton = False
         Me.CRInventoryViewer.Size = New System.Drawing.Size(850, 608)
         Me.CRInventoryViewer.TabIndex = 0
+        Me.CRInventoryViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'Label2
         '

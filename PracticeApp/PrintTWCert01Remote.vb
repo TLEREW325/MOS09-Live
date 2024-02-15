@@ -85,8 +85,10 @@ Public Class PrintTWCert01Remote
             MyReport = CRXTWCert011
             MyReport.SetDataSource(ds)
             MyReport.PrintToPrinter(1, True, 1, 999)
-            con.Close()
 
+            'Close data connection and resources
+            con.Close()
+            CRCertViewer.Dispose()
             Me.Close()
 
             GlobalCompleteShipment = ""

@@ -2,7 +2,7 @@
 Imports System.Math
 Imports System.IO
 Imports System.Data
-'Imports System.Windows.Forms
+Imports System.Windows.Forms
 Imports System.Data.OleDb
 Imports CrystalDecisions.Windows.Forms
 Imports CrystalDecisions.ReportSource
@@ -14,7 +14,7 @@ Public Class PrintPickTicketBatch
     Inherits System.Windows.Forms.Form
 
     'Created Outlook Application object
-    Dim OLApp As New Application
+    Dim OLApp As New Microsoft.Office.Interop.Outlook.Application
     Dim MyReport = New CrystalDecisions.CrystalReports.Engine.ReportDocument
 
     'Variables for Date/Filename Creation
@@ -144,8 +144,9 @@ Public Class PrintPickTicketBatch
             MyReport = CRXPickTicket1
             MyReport.SetDataSource(ds)
             MyReport.PrintToPrinter(1, True, 1, 999)
-            con.Close()
 
+            con.Close()
+            CRPickViewer.Dispose()
             Me.Close()
         Else
             'Sets up viewer to display data from the loaded dataset

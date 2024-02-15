@@ -22,23 +22,29 @@ Partial Class PrintLotNumberListFiltered
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.CRLotViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXLotNumberList1 = New MOS09Program.CRXLotNumberList
+        Me.CRLotViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXLotNumberList1 = New MOS09Program.CRXLotNumberList()
         Me.SuspendLayout()
         '
         'CRLotViewer
         '
         Me.CRLotViewer.ActiveViewIndex = 0
         Me.CRLotViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRLotViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRLotViewer.DisplayGroupTree = False
+        Me.CRLotViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRLotViewer.Location = New System.Drawing.Point(0, 0)
         Me.CRLotViewer.Name = "CRLotViewer"
         Me.CRLotViewer.ReportSource = Me.CRXLotNumberList1
+        Me.CRLotViewer.ShowGroupTreeButton = False
+        Me.CRLotViewer.ShowLogo = False
+        Me.CRLotViewer.ShowParameterPanelButton = False
+        Me.CRLotViewer.ShowTextSearchButton = False
+        Me.CRLotViewer.ShowZoomButton = False
         Me.CRLotViewer.Size = New System.Drawing.Size(1030, 632)
         Me.CRLotViewer.TabIndex = 0
+        Me.CRLotViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintLotNumberListFiltered
         '

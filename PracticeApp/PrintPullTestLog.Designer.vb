@@ -22,11 +22,11 @@ Partial Class PrintPullTestLog
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.crvPullTestLog = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.crvPullTestLog = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -52,24 +52,30 @@ Partial Class PrintPullTestLog
         Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
+        'ExitToolStripMenuItem1
+        '
+        Me.ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1"
+        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(92, 22)
+        Me.ExitToolStripMenuItem1.Text = "Exit"
+        '
         'crvPullTestLog
         '
         Me.crvPullTestLog.ActiveViewIndex = -1
         Me.crvPullTestLog.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.crvPullTestLog.DisplayGroupTree = False
+        Me.crvPullTestLog.Cursor = System.Windows.Forms.Cursors.Default
         Me.crvPullTestLog.Dock = System.Windows.Forms.DockStyle.Fill
         Me.crvPullTestLog.Location = New System.Drawing.Point(0, 24)
         Me.crvPullTestLog.Name = "crvPullTestLog"
         Me.crvPullTestLog.SelectionFormula = ""
+        Me.crvPullTestLog.ShowGroupTreeButton = False
+        Me.crvPullTestLog.ShowLogo = False
+        Me.crvPullTestLog.ShowParameterPanelButton = False
+        Me.crvPullTestLog.ShowTextSearchButton = False
+        Me.crvPullTestLog.ShowZoomButton = False
         Me.crvPullTestLog.Size = New System.Drawing.Size(1034, 687)
         Me.crvPullTestLog.TabIndex = 1
+        Me.crvPullTestLog.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         Me.crvPullTestLog.ViewTimeSelectionFormula = ""
-        '
-        'ExitToolStripMenuItem1
-        '
-        Me.ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1"
-        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
-        Me.ExitToolStripMenuItem1.Text = "Exit"
         '
         'PrintPullTestLog
         '

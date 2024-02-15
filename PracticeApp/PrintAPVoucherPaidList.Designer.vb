@@ -22,15 +22,15 @@ Partial Class PrintAPVoucherPaidList
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRVoucherViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXAPPaidVouchers1 = New MOS09Program.CRXAPPaidVouchers
-        Me.EmailToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmailToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRVoucherViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXAPPaidVouchers1 = New MOS09Program.CRXAPPaidVouchers()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -46,20 +46,26 @@ Partial Class PrintAPVoucherPaidList
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmailToolStripMenuItem})
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
+        '
+        'EmailToolStripMenuItem
+        '
+        Me.EmailToolStripMenuItem.Name = "EmailToolStripMenuItem"
+        Me.EmailToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
+        Me.EmailToolStripMenuItem.Text = "Email"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -79,24 +85,21 @@ Partial Class PrintAPVoucherPaidList
         '
         Me.CRVoucherViewer.ActiveViewIndex = 0
         Me.CRVoucherViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRVoucherViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRVoucherViewer.DisplayGroupTree = False
+        Me.CRVoucherViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRVoucherViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRVoucherViewer.Name = "CRVoucherViewer"
         Me.CRVoucherViewer.ReportSource = Me.CRXAPPaidVouchers1
         Me.CRVoucherViewer.ShowGroupTreeButton = False
+        Me.CRVoucherViewer.ShowLogo = False
+        Me.CRVoucherViewer.ShowParameterPanelButton = False
         Me.CRVoucherViewer.ShowTextSearchButton = False
         Me.CRVoucherViewer.ShowZoomButton = False
         Me.CRVoucherViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRVoucherViewer.TabIndex = 1
-        '
-        'EmailToolStripMenuItem
-        '
-        Me.EmailToolStripMenuItem.Name = "EmailToolStripMenuItem"
-        Me.EmailToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.EmailToolStripMenuItem.Text = "Email"
+        Me.CRVoucherViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintAPVoucherPaidList
         '

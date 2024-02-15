@@ -75,6 +75,17 @@ Namespace My
                 Return CType(Me("TFPOperationsDatabaseConnectionString1"),String)
             End Get
         End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=TFP-SQL1;Initial Catalog=TFPOperationsDatabase;Integrated Security=Tr"& _ 
+            "ue;Encrypt=False;TrustServerCertificate=True")>  _
+        Public ReadOnly Property TFPOperationsDatabaseConnectionString2() As String
+            Get
+                Return CType(Me("TFPOperationsDatabaseConnectionString2"),String)
+            End Get
+        End Property
     End Class
 End Namespace
 

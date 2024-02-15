@@ -22,15 +22,15 @@ Partial Class PrintBankBatch
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRBankViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXBankTransactionBatch1 = New MOS09Program.CRXBankTransactionBatch
-        Me.EmailReportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmailReportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRBankViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXBankTransactionBatch1 = New MOS09Program.CRXBankTransactionBatch()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -46,20 +46,26 @@ Partial Class PrintBankBatch
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EmailReportToolStripMenuItem})
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
+        '
+        'EmailReportToolStripMenuItem
+        '
+        Me.EmailReportToolStripMenuItem.Name = "EmailReportToolStripMenuItem"
+        Me.EmailReportToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
+        Me.EmailReportToolStripMenuItem.Text = "Email Report"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -79,22 +85,19 @@ Partial Class PrintBankBatch
         '
         Me.CRBankViewer.ActiveViewIndex = 0
         Me.CRBankViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRBankViewer.DisplayGroupTree = False
+        Me.CRBankViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRBankViewer.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRBankViewer.Location = New System.Drawing.Point(0, 24)
         Me.CRBankViewer.Name = "CRBankViewer"
         Me.CRBankViewer.ReportSource = Me.CRXBankTransactionBatch1
         Me.CRBankViewer.ShowGroupTreeButton = False
+        Me.CRBankViewer.ShowLogo = False
+        Me.CRBankViewer.ShowParameterPanelButton = False
         Me.CRBankViewer.ShowTextSearchButton = False
         Me.CRBankViewer.ShowZoomButton = False
         Me.CRBankViewer.Size = New System.Drawing.Size(1030, 608)
         Me.CRBankViewer.TabIndex = 1
-        '
-        'EmailReportToolStripMenuItem
-        '
-        Me.EmailReportToolStripMenuItem.Name = "EmailReportToolStripMenuItem"
-        Me.EmailReportToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.EmailReportToolStripMenuItem.Text = "Email Report"
+        Me.CRBankViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'PrintBankBatch
         '

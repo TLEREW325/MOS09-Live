@@ -22,13 +22,13 @@ Partial Class PrintMachineList
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRVMachineList = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.crxManufacturingMaintenanceList1 = New MOS09Program.CRXManufacturingMaintenanceList
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRVMachineList = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.crxManufacturingMaintenanceList1 = New MOS09Program.CRXManufacturingMaintenanceList()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -63,20 +63,26 @@ Partial Class PrintMachineList
         'ExitToolStripMenuItem1
         '
         Me.ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1"
-        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(92, 22)
         Me.ExitToolStripMenuItem1.Text = "Exit"
         '
         'CRVMachineList
         '
         Me.CRVMachineList.ActiveViewIndex = -1
         Me.CRVMachineList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRVMachineList.DisplayGroupTree = False
+        Me.CRVMachineList.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRVMachineList.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRVMachineList.Location = New System.Drawing.Point(0, 24)
         Me.CRVMachineList.Name = "CRVMachineList"
         Me.CRVMachineList.SelectionFormula = ""
+        Me.CRVMachineList.ShowGroupTreeButton = False
+        Me.CRVMachineList.ShowLogo = False
+        Me.CRVMachineList.ShowParameterPanelButton = False
+        Me.CRVMachineList.ShowTextSearchButton = False
+        Me.CRVMachineList.ShowZoomButton = False
         Me.CRVMachineList.Size = New System.Drawing.Size(1034, 687)
         Me.CRVMachineList.TabIndex = 2
+        Me.CRVMachineList.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         Me.CRVMachineList.ViewTimeSelectionFormula = ""
         '
         'PrintMachineList

@@ -22,22 +22,26 @@ Partial Class PrintCertificationSpecifications
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.CRVCertificaitonSpecifications = New CrystalDecisions.Windows.Forms.CrystalReportViewer
+        Me.CRVCertificaitonSpecifications = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
         Me.SuspendLayout()
         '
         'CRVCertificaitonSpecifications
         '
         Me.CRVCertificaitonSpecifications.ActiveViewIndex = -1
         Me.CRVCertificaitonSpecifications.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRVCertificaitonSpecifications.DisplayGroupTree = False
+        Me.CRVCertificaitonSpecifications.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRVCertificaitonSpecifications.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRVCertificaitonSpecifications.Location = New System.Drawing.Point(0, 0)
         Me.CRVCertificaitonSpecifications.Name = "CRVCertificaitonSpecifications"
         Me.CRVCertificaitonSpecifications.SelectionFormula = ""
         Me.CRVCertificaitonSpecifications.ShowGroupTreeButton = False
+        Me.CRVCertificaitonSpecifications.ShowLogo = False
+        Me.CRVCertificaitonSpecifications.ShowParameterPanelButton = False
         Me.CRVCertificaitonSpecifications.ShowTextSearchButton = False
+        Me.CRVCertificaitonSpecifications.ShowZoomButton = False
         Me.CRVCertificaitonSpecifications.Size = New System.Drawing.Size(1030, 632)
         Me.CRVCertificaitonSpecifications.TabIndex = 0
+        Me.CRVCertificaitonSpecifications.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         Me.CRVCertificaitonSpecifications.ViewTimeSelectionFormula = ""
         '
         'PrintCertificationSpecifications

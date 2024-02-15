@@ -22,26 +22,26 @@ Partial Class PrintGLChartOfAccounts
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.CRGLAccountViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
-        Me.CRXGLAccounts1 = New MOS09Program.CRXGLAccounts
-        Me.Label5 = New System.Windows.Forms.Label
-        Me.cboGLDescription = New System.Windows.Forms.ComboBox
+        Me.components = New System.ComponentModel.Container()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CRGLAccountViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CRXGLAccounts1 = New MOS09Program.CRXGLAccounts()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.cboGLDescription = New System.Windows.Forms.ComboBox()
         Me.GLAccountsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet
-        Me.Label4 = New System.Windows.Forms.Label
-        Me.cboGLAccount = New System.Windows.Forms.ComboBox
-        Me.GLAccountsTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.GLAccountsTableAdapter
-        Me.cmdFilter = New System.Windows.Forms.Button
-        Me.cmdClear = New System.Windows.Forms.Button
-        Me.cboAccountType = New System.Windows.Forms.ComboBox
-        Me.Label1 = New System.Windows.Forms.Label
+        Me.SQLTFPOperationsDatabaseDataSet = New MOS09Program.SQLTFPOperationsDatabaseDataSet()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.cboGLAccount = New System.Windows.Forms.ComboBox()
+        Me.GLAccountsTableAdapter = New MOS09Program.SQLTFPOperationsDatabaseDataSetTableAdapters.GLAccountsTableAdapter()
+        Me.cmdFilter = New System.Windows.Forms.Button()
+        Me.cmdClear = New System.Windows.Forms.Button()
+        Me.cboAccountType = New System.Windows.Forms.ComboBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.GLAccountsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SQLTFPOperationsDatabaseDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -59,19 +59,19 @@ Partial Class PrintGLChartOfAccounts
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'ExitToolStripMenuItem
@@ -91,15 +91,21 @@ Partial Class PrintGLChartOfAccounts
         '
         Me.CRGLAccountViewer.ActiveViewIndex = -1
         Me.CRGLAccountViewer.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CRGLAccountViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CRGLAccountViewer.DisplayGroupTree = False
+        Me.CRGLAccountViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.CRGLAccountViewer.Location = New System.Drawing.Point(183, 27)
         Me.CRGLAccountViewer.Name = "CRGLAccountViewer"
         Me.CRGLAccountViewer.SelectionFormula = ""
+        Me.CRGLAccountViewer.ShowGroupTreeButton = False
+        Me.CRGLAccountViewer.ShowLogo = False
+        Me.CRGLAccountViewer.ShowPrintButton = False
+        Me.CRGLAccountViewer.ShowTextSearchButton = False
+        Me.CRGLAccountViewer.ShowZoomButton = False
         Me.CRGLAccountViewer.Size = New System.Drawing.Size(845, 608)
         Me.CRGLAccountViewer.TabIndex = 1
+        Me.CRGLAccountViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         Me.CRGLAccountViewer.ViewTimeSelectionFormula = ""
         '
         'Label5
